@@ -1,0 +1,5507 @@
+{
+  "aboutDangerZoneDesc": {
+    "description": "Warning text in the danger zone section",
+    "message": "This action is permanent and cannot be undone."
+  },
+  "aboutDescription": {
+    "description": "About section description in options",
+    "message": "Save articles for later. One-click save, reader view, tags, and offline reading."
+  },
+  "aboutDiagnosticsDesc": {
+    "description": "Diagnostics description in options",
+    "message": "View error logs, analytics events, and extension health."
+  },
+  "aboutStorageNote": {
+    "description": "Storage info note in options",
+    "message": "IndexedDB stores articles. chrome.storage stores settings."
+  },
+  "actionFavorite": {
+    "description": "Action title for favorite button on article cards",
+    "message": "Favorite"
+  },
+  "announcerArticleLoaded": {
+    "description": "Screen reader announcement when article loads in reader",
+    "message": "Article loaded"
+  },
+  "announcerArticleNavigation": {
+    "description": "Screen reader announcement when navigating articles with keyboard",
+    "message": "Article $INDEX$ of $TOTAL$: $TITLE$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "3"
+      },
+      "title": {
+        "content": "$3",
+        "example": "How to Build a Chrome Extension"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "announcerArticleRemoved": {
+    "description": "Screen reader announcement when article is deleted via swipe",
+    "message": "Article removed"
+  },
+  "announcerFavoriteToggled": {
+    "description": "Screen reader announcement when favorite is toggled",
+    "message": "Favorite toggled"
+  },
+  "announcerFilteredByTag": {
+    "description": "Screen reader announcement when filtering by tag",
+    "message": "Filtered by tag: $TAG$",
+    "placeholders": {
+      "tag": {
+        "content": "$1",
+        "example": "technology"
+      }
+    }
+  },
+  "announcerStepOfTotal": {
+    "description": "Screen reader announcement during onboarding",
+    "message": "Step $CURRENT$ of $TOTAL$",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "announcerTabSelected": {
+    "description": "Screen reader announcement when switching tabs",
+    "message": "$TAB$ tab selected",
+    "placeholders": {
+      "tab": {
+        "content": "$1",
+        "example": "Favorites"
+      }
+    }
+  },
+  "announcerUpgradeDialogOpened": {
+    "description": "Screen reader announcement when paywall opens",
+    "message": "Upgrade dialog opened"
+  },
+  "appName": {
+    "description": "Application name used throughout the UI",
+    "message": "ReadLater Pro"
+  },
+  "badgeFree": {
+    "description": "Badge text for free tier users",
+    "message": "Free"
+  },
+  "badgeLifetime": {
+    "description": "Badge text for lifetime tier users",
+    "message": "Lifetime"
+  },
+  "badgePro": {
+    "description": "Badge text for Pro tier users",
+    "message": "PRO"
+  },
+  "badgeTrial": {
+    "description": "Badge text for trial tier users",
+    "message": "Trial"
+  },
+  "batchMarkRead": {
+    "description": "Batch action button to mark selected as read",
+    "message": "Mark Read"
+  },
+  "batchSelectedCount": {
+    "description": "Batch selection bar showing number selected",
+    "message": "$COUNT$ selected",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "bugReportCopied": {
+    "description": "Button text after copying diagnostic report",
+    "message": "Copied"
+  },
+  "bugReportDownload": {
+    "description": "Button text to download diagnostic report",
+    "message": "Download"
+  },
+  "buttonActivate": {
+    "description": "Button text for activating a license key",
+    "message": "Activate"
+  },
+  "buttonActivating": {
+    "description": "Button text while license activation is in progress",
+    "message": "Activating..."
+  },
+  "buttonBack": {
+    "description": "Back button on onboarding and upgrade page",
+    "message": "Back"
+  },
+  "buttonChecking": {
+    "description": "Button text while checking restore status",
+    "message": "Checking..."
+  },
+  "buttonCleaningUp": {
+    "description": "Button text while cleanup is in progress",
+    "message": "Cleaning up..."
+  },
+  "buttonCleanup": {
+    "description": "Button text for cleaning up old read articles",
+    "message": "Clean Up Old Read Articles"
+  },
+  "buttonClearAllData": {
+    "description": "Button text for clearing all data",
+    "message": "Clear All Data"
+  },
+  "buttonClearErrorLog": {
+    "description": "Button text for clearing error log",
+    "message": "Clear Error Log"
+  },
+  "buttonClearEventLog": {
+    "description": "Button text for clearing event log",
+    "message": "Clear Event Log"
+  },
+  "buttonClearing": {
+    "description": "Button text while clearing data",
+    "message": "Clearing..."
+  },
+  "buttonClose": {
+    "description": "Close button label on the upgrade dialog.",
+    "message": "Close"
+  },
+  "buttonCollapseAll": {
+    "description": "Button label on the options page",
+    "message": "Collapse all"
+  },
+  "buttonCopied": {
+    "description": "Button label on the options page",
+    "message": "Copied"
+  },
+  "buttonCopy": {
+    "description": "Button that copies the diagnostic data to the clipboard on the options page",
+    "message": "Copy"
+  },
+  "buttonCopyReport": {
+    "description": "Button label on the options page",
+    "message": "Copy report"
+  },
+  "buttonDelete": {
+    "description": "Delete button text used in batch bar and context menu",
+    "message": "Delete"
+  },
+  "buttonDownload": {
+    "description": "Button that downloads the diagnostic data as a file on the options page",
+    "message": "Download"
+  },
+  "buttonEnterLicenseKey": {
+    "description": "Button text to show the license key input",
+    "message": "Enter License Key"
+  },
+  "buttonExpandAll": {
+    "description": "Button label on the options page",
+    "message": "Expand all"
+  },
+  "buttonExportArticles": {
+    "description": "Button text for exporting articles",
+    "message": "Export Articles"
+  },
+  "buttonExportDebugReport": {
+    "description": "Button text for exporting debug report",
+    "message": "Export Debug Report"
+  },
+  "buttonExportStats": {
+    "description": "Button text for exporting statistics",
+    "message": "Export Stats"
+  },
+  "buttonExported": {
+    "description": "Temporary button text after export completes",
+    "message": "Exported"
+  },
+  "buttonExportedDone": {
+    "description": "Temporary button label after an export completes.",
+    "message": "Exported"
+  },
+  "buttonExporting": {
+    "description": "Button text while export is in progress",
+    "message": "Exporting..."
+  },
+  "buttonGetStarted": {
+    "description": "Button text on the upgrade success overlay",
+    "message": "Get Started"
+  },
+  "buttonImportJsonBackup": {
+    "description": "Button text for importing a JSON backup",
+    "message": "Import JSON Backup"
+  },
+  "buttonImportPocket": {
+    "description": "Button text for importing from Pocket",
+    "message": "Import from Pocket"
+  },
+  "buttonImporting": {
+    "description": "Button text while import is in progress",
+    "message": "Importing..."
+  },
+  "buttonImportingProgress": {
+    "description": "Button text during import showing progress",
+    "message": "Importing... ($CURRENT$/$TOTAL$)",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "15"
+      },
+      "total": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "buttonNext": {
+    "description": "Next button on onboarding",
+    "message": "Next"
+  },
+  "buttonOpenDiagnostics": {
+    "description": "Button text to open diagnostics page",
+    "message": "Open Diagnostics Dashboard"
+  },
+  "buttonOpenSupport": {
+    "description": "Button label on the options page",
+    "message": "Open the support page"
+  },
+  "buttonPrepareReport": {
+    "description": "Button label on the options page",
+    "message": "Prepare my report"
+  },
+  "buttonResetStats": {
+    "description": "Button text for resetting reading statistics",
+    "message": "Reset Stats"
+  },
+  "buttonRestorePurchase": {
+    "description": "Button text for restoring a previous purchase",
+    "message": "Restore Purchase"
+  },
+  "buttonRetry": {
+    "description": "Retry button text on error UI",
+    "message": "Retry"
+  },
+  "buttonSeeBothPlans": {
+    "description": "Primary call to action. Opens the canonical pricing page.",
+    "message": "See both plans at zovo.one"
+  },
+  "buttonStatsReset": {
+    "description": "Temporary button text after stats are reset",
+    "message": "Stats Reset"
+  },
+  "buttonStatsResetDone": {
+    "description": "Temporary button label after statistics are reset.",
+    "message": "Stats reset"
+  },
+  "buttonUpgradeToPro": {
+    "description": "CTA button text to upgrade",
+    "message": "Upgrade to Pro"
+  },
+  "buttonWriteAnother": {
+    "description": "Button label on the options page",
+    "message": "Write another"
+  },
+  "changelogSubtitle": {
+    "description": "Subtitle for the changelog section",
+    "message": "See what changed in each version"
+  },
+  "communityGithubDesc": {
+    "description": "Help and links section on the options page",
+    "message": "The code and the person who writes it"
+  },
+  "communityGithubLabel": {
+    "description": "Help and links section on the options page",
+    "message": "GitHub"
+  },
+  "communitySubtitle": {
+    "description": "Help and links section on the options page",
+    "message": "Where to reach a person when something is wrong"
+  },
+  "communitySupportDesc": {
+    "description": "Help and links section on the options page",
+    "message": "Read the help pages or write to the developer"
+  },
+  "communitySupportLabel": {
+    "description": "Help and links section on the options page",
+    "message": "Support"
+  },
+  "communityTitle": {
+    "description": "Help and links section on the options page",
+    "message": "Help and links"
+  },
+  "confirmCleanup": {
+    "description": "Confirm dialog for cleanup old articles",
+    "message": "Delete all read articles older than 30 days?\n\nThis action cannot be undone."
+  },
+  "confirmClearAllData": {
+    "description": "First confirm dialog when clearing all data",
+    "message": "Are you sure you want to clear ALL data?\n\nThis will permanently delete all articles, tags, and settings."
+  },
+  "confirmClearAllDataSecond": {
+    "description": "Second confirm dialog when clearing all data",
+    "message": "This cannot be undone. Type OK to confirm you want to delete everything.\n\nPress OK to permanently delete all data."
+  },
+  "confirmImportJson": {
+    "description": "Confirm dialog for JSON import",
+    "message": "Import $COUNT$ articles from backup?\n\nExisting articles will not be removed.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "confirmResetStats": {
+    "description": "Confirm dialog for resetting stats",
+    "message": "Are you sure you want to reset all reading statistics? This cannot be undone."
+  },
+  "consentAnalyticsDesc": {
+    "description": "Privacy choices dialog",
+    "message": "Counts which features you use and the titles of articles you open, kept on this device so you can see them in Settings. Nothing is uploaded."
+  },
+  "consentAnalyticsLabel": {
+    "description": "Privacy choices dialog",
+    "message": "Anonymous usage counts"
+  },
+  "consentBadgeRequired": {
+    "description": "Privacy choices dialog",
+    "message": "Required"
+  },
+  "consentCrashDesc": {
+    "description": "Privacy choices dialog",
+    "message": "Records the error when something breaks, so a bug report you send actually contains the cause."
+  },
+  "consentCrashLabel": {
+    "description": "Privacy choices dialog",
+    "message": "Crash reports"
+  },
+  "consentEssentialDesc": {
+    "description": "Privacy choices dialog",
+    "message": "Where your articles and settings live. It stays on this device and never leaves the browser."
+  },
+  "consentEssentialLabel": {
+    "description": "Privacy choices dialog",
+    "message": "Essential storage"
+  },
+  "contextMenuOpenList": {
+    "description": "Context menu item to open the reading list side panel",
+    "message": "Open Reading List"
+  },
+  "contextMenuSaveLink": {
+    "description": "Context menu item to save a link",
+    "message": "Save Link to ReadLater"
+  },
+  "contextMenuSavePage": {
+    "description": "Context menu item to save the current page",
+    "message": "Save Page to ReadLater"
+  },
+  "ctxAddTag": {
+    "description": "Context menu action to add a tag",
+    "message": "Add Tag"
+  },
+  "ctxCopyUrl": {
+    "description": "Context menu action to copy article URL",
+    "message": "Copy URL"
+  },
+  "ctxOpenOriginal": {
+    "description": "Context menu action to open original article URL",
+    "message": "Open Original URL"
+  },
+  "ctxOpenReader": {
+    "description": "Context menu action to open article in reader view",
+    "message": "Open in Reader"
+  },
+  "ctxToggleFavorite": {
+    "description": "Context menu action to toggle favorite status",
+    "message": "Toggle Favorite"
+  },
+  "dashboardArticlesSaved": {
+    "description": "Tooltip on a bar of the weekly activity chart.",
+    "message": "$COUNT$ saved",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "dashboardDayUnit": {
+    "description": "Day unit for streak display on dashboard (plural form)",
+    "message": "days"
+  },
+  "dashboardDayUnitSingular": {
+    "description": "Day unit for streak display on dashboard (singular form)",
+    "message": "day"
+  },
+  "dashboardMemberSince": {
+    "description": "Member since text on dashboard",
+    "message": "Member since $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 2025"
+      }
+    }
+  },
+  "dashboardNoDomainsYet": {
+    "description": "Empty state message for top domains",
+    "message": "No domains tracked yet. Save some articles to see your top sources."
+  },
+  "dashboardSavedThisMonth": {
+    "description": "Monthly trend label for monthly saves",
+    "message": "Saved this month"
+  },
+  "dashboardSavedThisWeek": {
+    "description": "Monthly trend label for weekly saves",
+    "message": "Saved this week"
+  },
+  "dashboardStatsExported": {
+    "description": "Screen reader announcement after stats export",
+    "message": "Statistics exported"
+  },
+  "dashboardStatsLoaded": {
+    "description": "Screen reader announcement when dashboard stats finish loading",
+    "message": "Statistics loaded"
+  },
+  "dashboardStatsReset": {
+    "description": "Screen reader announcement after stats reset",
+    "message": "Statistics have been reset"
+  },
+  "dashboardUpgradeDescClean": {
+    "description": "Dashboard upgrade card body. Names only the Pro feature that exists in the code.",
+    "message": "These statistics are free and stay free. The one thing Pro adds is full-text search with no daily cap."
+  },
+  "dashboardUpgradeTitleClean": {
+    "description": "Dashboard upgrade card title. Replaces the old analytics pitch, since reading statistics are now free.",
+    "message": "Search the words, not just the titles"
+  },
+  "diagColumnFeature": {
+    "description": "Column header for feature name in comparison table",
+    "message": "Feature"
+  },
+  "diagColumnFree": {
+    "description": "Column header for free tier in comparison table",
+    "message": "Free"
+  },
+  "diagColumnPro": {
+    "description": "Column header for pro tier in comparison table",
+    "message": "Pro"
+  },
+  "diagErrorRatioLine": {
+    "description": "Health score detail line.",
+    "message": "Error to event ratio: $RATIO$%",
+    "placeholders": {
+      "RATIO": {
+        "content": "$1",
+        "example": "4.2"
+      }
+    }
+  },
+  "diagFeatureComparison": {
+    "description": "Caption for the feature comparison table",
+    "message": "Feature comparison between Free and Pro plans"
+  },
+  "diagFilterAll": {
+    "description": "Event filter option to show all events",
+    "message": "All"
+  },
+  "diagHealthExcellent": {
+    "description": "Health score label for 90-100",
+    "message": "Excellent"
+  },
+  "diagHealthFair": {
+    "description": "Health score label for 50-69",
+    "message": "Fair"
+  },
+  "diagHealthGood": {
+    "description": "Health score label for 70-89",
+    "message": "Good"
+  },
+  "diagHealthNeedsAttention": {
+    "description": "Health score label for below 50",
+    "message": "Needs Attention"
+  },
+  "diagIncluded": {
+    "description": "Aria-label/title for check mark in comparison table",
+    "message": "Included"
+  },
+  "diagInfoChromeVersion": {
+    "description": "Info list label for Chrome version",
+    "message": "Chrome Version"
+  },
+  "diagInfoId": {
+    "description": "Info list label for extension ID",
+    "message": "ID"
+  },
+  "diagInfoName": {
+    "description": "Info list label for extension name",
+    "message": "Name"
+  },
+  "diagInfoPlatform": {
+    "description": "Info list label for platform",
+    "message": "Platform"
+  },
+  "diagInfoVersion": {
+    "description": "Info list label for extension version",
+    "message": "Version"
+  },
+  "diagLimitedAccess": {
+    "description": "Text for limited access in comparison table",
+    "message": "Limited"
+  },
+  "diagLimitedPerDay": {
+    "description": "Free-column value in the comparison table for a metered feature.",
+    "message": "$CAP$ a day",
+    "placeholders": {
+      "CAP": {
+        "content": "$1",
+        "example": "20"
+      }
+    }
+  },
+  "diagNoErrors": {
+    "description": "Empty state message for error table",
+    "message": "No errors recorded."
+  },
+  "diagNoEvents": {
+    "description": "Empty state message for event table",
+    "message": "No events recorded."
+  },
+  "diagNoIssues": {
+    "description": "Health score detail when no issues found",
+    "message": "No issues detected in the last 24 hours."
+  },
+  "diagNotIncluded": {
+    "description": "Aria-label/title for dash in comparison table",
+    "message": "Not included"
+  },
+  "diagRecentErrorsLine": {
+    "description": "Health score detail line. Uses a colon inside data, not a heading.",
+    "message": "Errors in the last 24 hours: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "diagStorageQuota": {
+    "description": "Label for storage quota progress bar in diagnostics",
+    "message": "Storage Quota"
+  },
+  "diagTableContext": {
+    "description": "Table column header for context",
+    "message": "Context"
+  },
+  "diagTableEvent": {
+    "description": "Table column header for event name",
+    "message": "Event"
+  },
+  "diagTableMessage": {
+    "description": "Table column header for message",
+    "message": "Message"
+  },
+  "diagTableProperties": {
+    "description": "Table column header for event properties",
+    "message": "Properties"
+  },
+  "diagTableStack": {
+    "description": "Table column header for stack trace",
+    "message": "Stack"
+  },
+  "diagTableTime": {
+    "description": "Table column header for timestamp",
+    "message": "Time"
+  },
+  "diagTableType": {
+    "description": "Table column header for type",
+    "message": "Type"
+  },
+  "diagUniqueErrorsLine": {
+    "description": "Health score detail line.",
+    "message": "Distinct error types: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "diagUnknown": {
+    "description": "Fallback value when a diagnostic detail cannot be read.",
+    "message": "Unknown"
+  },
+  "dmArticleCount": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "Saved articles"
+  },
+  "dmConfirmCancel": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "Keep my data"
+  },
+  "dmConfirmDelete": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "Delete everything"
+  },
+  "dmConfirmText": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "This removes every saved article and its offline copy, every tag, and every setting. It cannot be undone, and there is no copy anywhere else. Export first if you want one."
+  },
+  "dmConfirmTitle": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "Delete everything on this device"
+  },
+  "dmDataDeleted": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "Everything is gone. The extension is back to how it started."
+  },
+  "dmDeleteAllData": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "Delete all data"
+  },
+  "dmDeletePartial": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "Some of it could not be removed. Your articles may still be on this device. Try again, and use Clear All Data in the Danger Zone if it keeps failing."
+  },
+  "dmExportAllData": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "Export all data"
+  },
+  "dmExportFailed": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "The export did not finish. Nothing was changed."
+  },
+  "dmExported": {
+    "description": "Confirmation on the export button in the Your data section",
+    "message": "Saved, $count$ articles",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "142"
+      }
+    }
+  },
+  "dmNote": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "The export is a single JSON file in your downloads folder, holding your articles with their offline text, your settings and raw storage. To bring back tags and highlights, use Full backup above."
+  },
+  "dmStorageUsed": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "Settings storage"
+  },
+  "dmSubtitle": {
+    "description": "Your data section on the options page, export and delete",
+    "message": "Take a copy of everything ReadLater Pro holds, or remove all of it"
+  },
+  "emptyStateFavoritesTitle": {
+    "description": "Empty state heading when Favorites tab has no articles",
+    "message": "No favorites yet"
+  },
+  "emptyStateSearchTitle": {
+    "description": "Empty state heading when search returns no matches",
+    "message": "No results found"
+  },
+  "emptyStateShortcutHint": {
+    "description": "Label shown next to the keyboard shortcut in the empty state",
+    "message": "to save instantly"
+  },
+  "emptyStateTagTitle": {
+    "description": "Empty state heading when a tag filter returns no articles",
+    "message": "No articles with this tag"
+  },
+  "emptyStateTitle": {
+    "description": "Empty state heading when no articles are saved",
+    "message": "No articles yet"
+  },
+  "errorArticleNotFound": {
+    "description": "Error message when article cannot be found",
+    "message": "Article not found."
+  },
+  "errorFailedToConnect": {
+    "description": "Error when paywall license activation has connection issues",
+    "message": "Failed to connect. Please try again."
+  },
+  "errorFailedToLoadArticle": {
+    "description": "Error message when article fails to load in reader",
+    "message": "Failed to load article. Please try again."
+  },
+  "errorFailedToLoadArticles": {
+    "description": "Error message when articles fail to load",
+    "message": "Failed to load articles"
+  },
+  "errorFailedToLoadStats": {
+    "description": "Error message when statistics fail to load",
+    "message": "Failed to load statistics"
+  },
+  "errorFailedToReadFile": {
+    "description": "Error when file reading fails during import",
+    "message": "Failed to read the file. Please try again."
+  },
+  "errorFeatureUnavailable": {
+    "description": "Error text when a feature crashes",
+    "message": "This feature is temporarily unavailable."
+  },
+  "errorImportFailed": {
+    "description": "Error when import operation fails",
+    "message": "Import failed: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "errorInvalidLicenseKey": {
+    "description": "Error when license key activation fails",
+    "message": "Invalid license key. Please check and try again."
+  },
+  "errorInvalidLicenseKeyPaywall": {
+    "description": "Error in paywall when license key is invalid",
+    "message": "Invalid license key."
+  },
+  "errorLicenseServerUnreachable": {
+    "description": "Shown when license verification cannot reach the server. Pro is never granted in this state.",
+    "message": "Could not reach the license server, so Pro was not turned on. Check your connection and try again."
+  },
+  "errorNoArticleId": {
+    "description": "Error message when reader is opened without an article ID",
+    "message": "No article ID provided."
+  },
+  "errorNoArticlesInExport": {
+    "description": "Error when Pocket export contains no articles",
+    "message": "No articles found in the export file. Make sure this is a valid Pocket export."
+  },
+  "errorNoProSubscription": {
+    "description": "Error when restore purchase finds no subscription",
+    "message": "No active Pro subscription found. Please purchase a plan or enter a license key."
+  },
+  "errorPleaseEnterLicenseKey": {
+    "description": "Error when license key field is empty",
+    "message": "Please enter a license key."
+  },
+  "errorSelectHtmlFile": {
+    "description": "Error when user selects wrong file type for import",
+    "message": "Please select an HTML file exported from Pocket."
+  },
+  "errorStorageCalcFailed": {
+    "description": "Error text when storage calculation fails",
+    "message": "Unable to calculate"
+  },
+  "errorTryReloading": {
+    "description": "Recovery suggestion when a feature fails",
+    "message": "Try reloading the extension."
+  },
+  "extActionTitle": {
+    "description": "Tooltip for the browser action icon in the toolbar",
+    "message": "Save to ReadLater"
+  },
+  "extDescription": {
+    "description": "Extension description for Chrome Web Store listing (max 132 chars)",
+    "message": "Save any page to a clean reader view and read it offline. Tags, title search, Pocket import. Your articles never leave your device."
+  },
+  "extName": {
+    "description": "Extension name shown in Chrome Web Store and extensions page",
+    "message": "ReadLater Pro - Save Pages to an Offline Reader View"
+  },
+  "faqACollect": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Your articles, tags and settings are written to this browser on this machine and are never uploaded. The extension makes a network call only when you check a license key, and when you send feedback you wrote yourself."
+  },
+  "faqACustomShortcuts": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Yes. Open chrome://extensions/shortcuts and set whichever combinations you prefer."
+  },
+  "faqADelete": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Use Delete All Data in the Your Data section on this page. It clears the article database, the settings and the sync store, and it asks you to confirm first."
+  },
+  "faqAExport": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Yes. Open Data on this page and choose Export Articles, or use Export All Data further down for settings and articles together. Both write a JSON file you can import again later."
+  },
+  "faqAFavorites": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Click the star icon on the article card, or right-click it and choose Toggle Favorite. Favorites get their own tab in the side panel."
+  },
+  "faqAFreeIncludes": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Saving, reader view, the side panel, tags, title search, reading progress, offline copies, right-click save, Pocket import, export and reading stats. All of it, with no cap and no account."
+  },
+  "faqALicenseKey": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Open the license page from the upgrade screen, enter the key in the format XXXX-XXXX-XXXX-XXXX and choose Activate. The key is checked on the server, so you need to be online once."
+  },
+  "faqANoContent": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Some sites block content extraction. The URL and title are still saved so the original page stays one click away. A print or reader version of the same page often saves cleanly."
+  },
+  "faqANotWorking": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Chrome blocks extensions on chrome:// pages, the Chrome Web Store and other extension pages. Try a normal website. If it still fails, switch the extension off and on again at chrome://extensions."
+  },
+  "faqAOpenList": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Press Ctrl+Shift+L, which is Cmd+Shift+L on a Mac, to open the side panel. You can also right-click the extension icon and choose Open Reading List."
+  },
+  "faqAOpenSettings": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Right-click the ReadLater Pro icon in your toolbar and choose Options. This page is where the reader theme, font size, content width and the rest live."
+  },
+  "faqAPanel": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Check that the extension is enabled at chrome://extensions, then click the toolbar icon and use the side panel button, or press Ctrl+Shift+L. Removing and reinstalling is the last resort, and it clears your local data, so export first."
+  },
+  "faqAPocket": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Open Data on this page and choose Import a file. Pocket's ZIP export, its CSV and the older HTML export all work. Articles, tags and read status carry over, plus highlights from the ZIP, and the import is free."
+  },
+  "faqAPrice": {
+    "description": "Help and FAQ answer about cost. Carries no price number by design, see hard rule 2",
+    "message": "There are two ways in, a monthly plan you can cancel at any time and a one-time lifetime plan that never renews. The current figures are on zovo.one rather than in the extension, so what you read is always what you will be charged. Monthly cancels any time. Lifetime is final once your key arrives, and anything faulty gets fixed or refunded."
+  },
+  "faqAReaderView": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Click any article in your reading list. It opens in a clean reader with the fonts, width and theme you set on this page."
+  },
+  "faqAReset": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Scroll to the Danger Zone on this page and choose Clear All Data. That removes every article, tag and setting, and it cannot be undone. Export first if you want a copy."
+  },
+  "faqASaveArticle": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Click the ReadLater Pro icon in your toolbar, or press Ctrl+Shift+S, which is Cmd+Shift+S on a Mac. The page goes straight to your reading list."
+  },
+  "faqASearchBase": {
+    "description": "Help and FAQ answer about search, first half",
+    "message": "Yes. The search bar at the top of the side panel matches article titles, site names and short excerpts, with no limit. Full-text search reads inside the article body as well."
+  },
+  "faqASearchCap": {
+    "description": "Help and FAQ answer about search, free daily allowance read from limits-config.json",
+    "message": "On the free plan it covers $cap$ of those a day.",
+    "placeholders": {
+      "cap": {
+        "content": "$1",
+        "example": "20"
+      }
+    }
+  },
+  "faqASearchCapUnknown": {
+    "description": "Help and FAQ fallback when the limits config cannot be read",
+    "message": "On the free plan it has a daily allowance."
+  },
+  "faqAShortcuts": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Ctrl+Shift+S saves the page you are on. Ctrl+Shift+L opens the reading list. On a Mac both use Cmd instead of Ctrl."
+  },
+  "faqASync": {
+    "description": "Help and FAQ section on the options page",
+    "message": "No. There is no sync and no account. Every device keeps its own list. Moving a list means exporting on one machine and importing on the other."
+  },
+  "faqATags": {
+    "description": "Help and FAQ answer about tagging articles",
+    "message": "Right-click any article in your reading list and choose Add Tag. You can create a new tag or pick an existing one."
+  },
+  "faqCatGettingStarted": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Getting started"
+  },
+  "faqCatImportExport": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Importing and exporting"
+  },
+  "faqCatPricing": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Pricing"
+  },
+  "faqCatPrivacy": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Privacy and data"
+  },
+  "faqCatReading": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Reading and organizing"
+  },
+  "faqCatShortcuts": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Keyboard shortcuts"
+  },
+  "faqCatTrouble": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Troubleshooting"
+  },
+  "faqNoResults": {
+    "description": "Help and FAQ section on the options page",
+    "message": "No question matches that search. Try a different word."
+  },
+  "faqQCollect": {
+    "description": "Help and FAQ section on the options page",
+    "message": "What does ReadLater Pro collect"
+  },
+  "faqQCustomShortcuts": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Can I change the shortcuts"
+  },
+  "faqQDelete": {
+    "description": "Help and FAQ section on the options page",
+    "message": "How do I delete everything"
+  },
+  "faqQExport": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Can I export my articles"
+  },
+  "faqQFavorites": {
+    "description": "Help and FAQ section on the options page",
+    "message": "How do I mark an article as a favorite"
+  },
+  "faqQFreeIncludes": {
+    "description": "Help and FAQ section on the options page",
+    "message": "What is free"
+  },
+  "faqQLicenseKey": {
+    "description": "Help and FAQ section on the options page",
+    "message": "How do I activate a license key"
+  },
+  "faqQNoContent": {
+    "description": "Help and FAQ section on the options page",
+    "message": "An article saved without its content"
+  },
+  "faqQNotWorking": {
+    "description": "Help and FAQ section on the options page",
+    "message": "The extension does not work on this page"
+  },
+  "faqQOpenList": {
+    "description": "Help and FAQ section on the options page",
+    "message": "How do I open my reading list"
+  },
+  "faqQOpenSettings": {
+    "description": "Help and FAQ section on the options page",
+    "message": "How do I open settings"
+  },
+  "faqQPanel": {
+    "description": "Help and FAQ section on the options page",
+    "message": "The side panel will not open"
+  },
+  "faqQPocket": {
+    "description": "Help and FAQ section on the options page",
+    "message": "How do I import from Pocket"
+  },
+  "faqQPrice": {
+    "description": "Help and FAQ section on the options page",
+    "message": "What does an upgrade cost"
+  },
+  "faqQReaderView": {
+    "description": "Help and FAQ section on the options page",
+    "message": "How do I use reader view"
+  },
+  "faqQReset": {
+    "description": "Help and FAQ section on the options page",
+    "message": "How do I reset the extension"
+  },
+  "faqQSaveArticle": {
+    "description": "Help and FAQ section on the options page",
+    "message": "How do I save an article"
+  },
+  "faqQSearch": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Can I search my saved articles"
+  },
+  "faqQShortcuts": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Which keyboard shortcuts exist"
+  },
+  "faqQSync": {
+    "description": "Help and FAQ section on the options page",
+    "message": "Is my reading list synced across devices"
+  },
+  "faqQTags": {
+    "description": "Help and FAQ section on the options page",
+    "message": "How do I tag articles"
+  },
+  "faqQuestionCount": {
+    "description": "Help and FAQ total count on the options page",
+    "message": "$total$ questions",
+    "placeholders": {
+      "total": {
+        "content": "$1",
+        "example": "21"
+      }
+    }
+  },
+  "faqSendFeedback": {
+    "description": "Link text in FAQ footer to open feedback form",
+    "message": "Send us feedback"
+  },
+  "faqShowingCount": {
+    "description": "Help and FAQ result count on the options page",
+    "message": "Showing $shown$ of $total$",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "4"
+      },
+      "total": {
+        "content": "$2",
+        "example": "21"
+      }
+    }
+  },
+  "faqStillNeedHelp": {
+    "description": "Footer text in FAQ section",
+    "message": "Still need help?"
+  },
+  "featureExportArticles": {
+    "description": "Feature list item in upgrade prompt",
+    "message": "Export articles"
+  },
+  "featureFullTextSearch": {
+    "description": "Feature list item in upgrade prompt",
+    "message": "Full-text search"
+  },
+  "featureOfflineArticles": {
+    "description": "Feature name in paywall comparison table",
+    "message": "Offline Articles"
+  },
+  "featurePocketImport": {
+    "description": "Feature name in paywall comparison table",
+    "message": "Pocket Import"
+  },
+  "featureReaderView": {
+    "description": "Feature name in paywall comparison table",
+    "message": "Reader View"
+  },
+  "featureReadingStats": {
+    "description": "Row label in the free versus Pro table.",
+    "message": "Reading statistics"
+  },
+  "featureSaveReadArticles": {
+    "description": "Feature name in paywall comparison table",
+    "message": "Save & Read Articles"
+  },
+  "featureTagsBasicSearch": {
+    "description": "Feature name in paywall comparison table",
+    "message": "Tags & Basic Search"
+  },
+  "feedbackDraftRestored": {
+    "description": "Feedback form on the options page",
+    "message": "Draft restored"
+  },
+  "feedbackDraftSaved": {
+    "description": "Indicator text when feedback draft is auto-saved",
+    "message": "Draft saved"
+  },
+  "feedbackErrDescLong": {
+    "description": "Feedback form validation error, limit read from MAX_DESCRIPTION",
+    "message": "The description has to fit in $max$ characters",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "2000"
+      }
+    }
+  },
+  "feedbackErrDescRequired": {
+    "description": "Feedback form on the options page",
+    "message": "A description is required"
+  },
+  "feedbackErrEmail": {
+    "description": "Feedback form on the options page",
+    "message": "That does not look like an email address"
+  },
+  "feedbackErrSubjectLong": {
+    "description": "Feedback form validation error, limit read from MAX_SUBJECT",
+    "message": "The subject has to fit in $max$ characters",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "feedbackErrSubjectRequired": {
+    "description": "Feedback form on the options page",
+    "message": "A subject is required"
+  },
+  "feedbackHandoffCopied": {
+    "description": "Feedback form on the options page",
+    "message": "A mail draft to support@zovo.one should have opened, and the full report is on your clipboard. If no draft appeared, paste it into a message to support@zovo.one yourself."
+  },
+  "feedbackHandoffPlain": {
+    "description": "Feedback form on the options page",
+    "message": "A mail draft to support@zovo.one should have opened. If no draft appeared, use the copy button below and paste the report into a message to support@zovo.one."
+  },
+  "feedbackHandoffTitle": {
+    "description": "Feedback form on the options page",
+    "message": "Your report is ready to send"
+  },
+  "feedbackIncludeDiagnostics": {
+    "description": "Checkbox label for including diagnostics in bug reports",
+    "message": "Include diagnostic data with this report"
+  },
+  "feedbackLabelDescription": {
+    "description": "Label for feedback description textarea",
+    "message": "Description"
+  },
+  "feedbackLabelEmail": {
+    "description": "Label for feedback email input",
+    "message": "Email (optional)"
+  },
+  "feedbackLabelSubject": {
+    "description": "Label for feedback subject input",
+    "message": "Subject"
+  },
+  "feedbackLabelType": {
+    "description": "Label for feedback type dropdown",
+    "message": "Type"
+  },
+  "feedbackPreparing": {
+    "description": "Feedback form on the options page",
+    "message": "Preparing"
+  },
+  "feedbackPreviewDiagnostics": {
+    "description": "Toggle button to show/hide diagnostic data preview",
+    "message": "Preview diagnostic data"
+  },
+  "feedbackSubtitle": {
+    "description": "Feedback form on the options page",
+    "message": "Report a bug, ask for a feature, or say what is not working. Writing this puts the report on your clipboard and opens a mail draft to support@zovo.one."
+  },
+  "feedbackTypeBugReport": {
+    "description": "Feedback type option for bug reports",
+    "message": "Bug Report"
+  },
+  "feedbackTypeFeatureRequest": {
+    "description": "Feedback type option for feature requests",
+    "message": "Feature Request"
+  },
+  "feedbackTypeGeneral": {
+    "description": "Feedback type option for general feedback",
+    "message": "General Feedback"
+  },
+  "fontGeorgiaSerif": {
+    "description": "Georgia font option",
+    "message": "Georgia (serif)"
+  },
+  "fontInterSansSerif": {
+    "description": "Inter font option",
+    "message": "Inter (sans-serif)"
+  },
+  "fontMerriweatherSerif": {
+    "description": "Merriweather font option",
+    "message": "Merriweather (serif)"
+  },
+  "fontSizeExtraLarge": {
+    "description": "Extra large font size option",
+    "message": "Extra Large (20px)"
+  },
+  "fontSizeHuge": {
+    "description": "Huge font size option",
+    "message": "Huge (22px)"
+  },
+  "fontSizeLarge": {
+    "description": "Large font size option",
+    "message": "Large (18px)"
+  },
+  "fontSizeMedium": {
+    "description": "Medium font size option",
+    "message": "Medium (16px)"
+  },
+  "fontSizeSmall": {
+    "description": "Small font size option",
+    "message": "Small (14px)"
+  },
+  "fontSystemDefault": {
+    "description": "System default font option",
+    "message": "System Default"
+  },
+  "footerManageSubscription": {
+    "description": "Link text for managing subscription",
+    "message": "Manage Subscription"
+  },
+  "headingAbout": {
+    "description": "Heading for about section in options",
+    "message": "About"
+  },
+  "headingAlreadyBought": {
+    "description": "Heading above the license key form on the upgrade page.",
+    "message": "Already bought Pro"
+  },
+  "headingBehavior": {
+    "description": "Heading for behavior settings section",
+    "message": "Behavior"
+  },
+  "headingDangerZone": {
+    "description": "Heading for the danger zone section",
+    "message": "Danger Zone"
+  },
+  "headingData": {
+    "description": "Heading for data import/export section",
+    "message": "Data"
+  },
+  "headingDiagnostics": {
+    "description": "Heading for diagnostics section in options",
+    "message": "Diagnostics"
+  },
+  "headingEventLog": {
+    "description": "Heading for the event log section in diagnostics",
+    "message": "Event Log"
+  },
+  "headingExtensionInfo": {
+    "description": "Heading for the extension info section in diagnostics",
+    "message": "Extension Info"
+  },
+  "headingFeedback": {
+    "description": "Heading for the feedback section in options",
+    "message": "Feedback"
+  },
+  "headingFreeVsPro": {
+    "description": "Heading for the feature comparison section on upgrade page",
+    "message": "Free vs Pro"
+  },
+  "headingHealthScore": {
+    "description": "Heading for the health score section in diagnostics",
+    "message": "Health Score"
+  },
+  "headingHelpFaq": {
+    "description": "Section heading for the help and FAQ block on the options page",
+    "message": "Help and FAQ"
+  },
+  "headingHowToGetPro": {
+    "description": "Heading of the neutral handoff section. Carries no price, per the two-places price rule.",
+    "message": "How to get Pro"
+  },
+  "headingKeyboardShortcuts": {
+    "description": "Heading for keyboard shortcuts section",
+    "message": "Keyboard Shortcuts"
+  },
+  "headingMonthlyTrend": {
+    "description": "Heading for the monthly trend section on dashboard",
+    "message": "Monthly Trend"
+  },
+  "headingNotifications": {
+    "description": "Heading for notifications settings section",
+    "message": "Notifications"
+  },
+  "headingOverview": {
+    "description": "Heading for the overview section on dashboard",
+    "message": "Overview"
+  },
+  "headingPrivacy": {
+    "description": "Heading for the privacy section on welcome page",
+    "message": "Your Privacy Matters"
+  },
+  "headingPrivacyControls": {
+    "description": "Section heading on the options page",
+    "message": "Privacy controls"
+  },
+  "headingReaderSettings": {
+    "description": "Heading for reader settings section in options",
+    "message": "Reader Settings"
+  },
+  "headingRecentErrors": {
+    "description": "Heading for the error log section in diagnostics",
+    "message": "Recent Errors"
+  },
+  "headingStatistics": {
+    "description": "Heading for statistics section in options",
+    "message": "Statistics"
+  },
+  "headingStorage": {
+    "description": "Heading for storage section in options",
+    "message": "Storage"
+  },
+  "headingStorageUsage": {
+    "description": "Heading for storage usage section in diagnostics",
+    "message": "Storage Usage"
+  },
+  "headingTopDomains": {
+    "description": "Heading for the top domains section on dashboard",
+    "message": "Top Domains"
+  },
+  "headingUsageStats": {
+    "description": "Heading for usage stats section in options",
+    "message": "Usage Stats"
+  },
+  "headingWeeklyActivity": {
+    "description": "Heading for the weekly activity chart section",
+    "message": "Weekly Activity"
+  },
+  "headingWhatProAdds": {
+    "description": "Section heading above the single Pro outcome.",
+    "message": "What Pro adds"
+  },
+  "headingWhatsNew": {
+    "description": "Heading for the changelog section in options",
+    "message": "What's New"
+  },
+  "headingYourData": {
+    "description": "Section heading on the options page",
+    "message": "Your data"
+  },
+  "importArticlesImported": {
+    "description": "Import result detail",
+    "message": "$COUNT$ articles imported",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "150"
+      }
+    }
+  },
+  "importDescription": {
+    "description": "Description text on the import page",
+    "message": "Bring your entire reading list over from Pocket. Your articles, tags, and read/unread status will all be preserved."
+  },
+  "importDropzoneHint": {
+    "description": "Secondary text in the import drop zone",
+    "message": "or click to browse for the HTML file"
+  },
+  "importDropzoneText": {
+    "description": "Primary text in the import drop zone",
+    "message": "Drop your Pocket export here"
+  },
+  "importDuplicatesSkipped": {
+    "description": "Import result detail for skipped duplicates",
+    "message": "$COUNT$ duplicates skipped",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "importStep1": {
+    "description": "Import step 1 instruction",
+    "message": "Find the HTML export file you downloaded from Pocket before it closed"
+  },
+  "importStep1Html": {
+    "description": "Import step 1 instruction with link HTML",
+    "message": "Find the HTML export file you downloaded from Pocket before it closed"
+  },
+  "importStep2": {
+    "description": "Import step 2 instruction",
+    "message": "Click the area below or drag your export file into it"
+  },
+  "importStep3": {
+    "description": "Import step 3 instruction",
+    "message": "Your articles and tags will be imported automatically"
+  },
+  "importTagsCreated": {
+    "description": "Import result detail for created tags",
+    "message": "$COUNT$ tags created",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "importTitle": {
+    "description": "Main heading on the import page",
+    "message": "Import from Pocket"
+  },
+  "keyboardShortcutsHint": {
+    "description": "Hint shown in the footer about keyboard shortcuts",
+    "message": "Press ? for keyboard shortcuts"
+  },
+  "keyboardShortcutsTitle": {
+    "description": "Title for the keyboard shortcuts panel",
+    "message": "Keyboard Shortcuts"
+  },
+  "labelArticleActions": {
+    "description": "Aria-label for the context menu",
+    "message": "Article actions"
+  },
+  "labelArticleFilters": {
+    "description": "Aria-label for the filter tabs navigation",
+    "message": "Article filters"
+  },
+  "labelArticleList": {
+    "description": "Aria-label for the article list container",
+    "message": "Article list"
+  },
+  "labelClosePaywall": {
+    "description": "Aria-label for the paywall close button",
+    "message": "Close paywall"
+  },
+  "labelContents": {
+    "description": "Title for the table of contents sidebar",
+    "message": "Contents"
+  },
+  "labelDecreaseFontSize": {
+    "description": "Aria-label for font size decrease button",
+    "message": "Decrease font size"
+  },
+  "labelDefaultContentWidth": {
+    "description": "Label for content width select",
+    "message": "Default content width"
+  },
+  "labelDefaultFontSize": {
+    "description": "Label for font size select",
+    "message": "Default font size"
+  },
+  "labelDefaultTheme": {
+    "description": "Label for the default theme select",
+    "message": "Default theme"
+  },
+  "labelDeleteSelected": {
+    "description": "Aria-label for batch delete button",
+    "message": "Delete selected articles"
+  },
+  "labelDropzone": {
+    "description": "Aria-label for the import drop zone",
+    "message": "Drop zone for Pocket export file, click or drag file here"
+  },
+  "labelFilterEvents": {
+    "description": "Aria-label for the event filter dropdown in diagnostics",
+    "message": "Filter events by type"
+  },
+  "labelFontFamily": {
+    "description": "Label for font family select",
+    "message": "Font family"
+  },
+  "labelFontSize": {
+    "description": "Label for font size in reader settings panel",
+    "message": "Font size"
+  },
+  "labelHealthScore": {
+    "description": "Aria-label for the health score meter",
+    "message": "Health score"
+  },
+  "labelImportJsonFile": {
+    "description": "Aria-label for the JSON import file input",
+    "message": "Import JSON backup file"
+  },
+  "labelImportProgress": {
+    "description": "Aria-label for the import progress bar",
+    "message": "Import progress"
+  },
+  "labelIncreaseFontSize": {
+    "description": "Aria-label for font size increase button",
+    "message": "Increase font size"
+  },
+  "labelLicenseKey": {
+    "description": "Aria-label for the license key input",
+    "message": "License key"
+  },
+  "labelLineHeight": {
+    "description": "Label for line height select",
+    "message": "Line height"
+  },
+  "labelMarkReadOnOpen": {
+    "description": "Label for mark read on open toggle",
+    "message": "Mark as read when opened"
+  },
+  "labelMarkSelectedRead": {
+    "description": "Aria-label for batch mark read button",
+    "message": "Mark selected as read"
+  },
+  "labelOnboardingProgress": {
+    "description": "Aria-label for the onboarding progress bar",
+    "message": "Onboarding progress"
+  },
+  "labelOnboardingSteps": {
+    "description": "Aria-label for the onboarding dots navigation",
+    "message": "Onboarding steps"
+  },
+  "labelReadingProgress": {
+    "description": "Aria-label for the reader progress bar",
+    "message": "Reading progress"
+  },
+  "labelReengagementDescription": {
+    "description": "Description for re-engagement reminders setting",
+    "message": "Get a friendly reminder if you haven't used ReadLater in a few days"
+  },
+  "labelReengagementReminders": {
+    "description": "Label for re-engagement notification toggle",
+    "message": "Re-engagement reminders"
+  },
+  "labelSaveOffline": {
+    "description": "Label for auto-offline toggle",
+    "message": "Save articles for offline reading"
+  },
+  "labelSearchArticles": {
+    "description": "Aria-label for the search input in sidebar",
+    "message": "Search articles"
+  },
+  "labelSearchHelp": {
+    "description": "Accessible label for the help search field on the options page",
+    "message": "Search help articles"
+  },
+  "labelSelectPocketFile": {
+    "description": "Aria-label for the file input on import page",
+    "message": "Select Pocket export file"
+  },
+  "labelShowNotifications": {
+    "description": "Label for the notification toggle",
+    "message": "Show save notifications"
+  },
+  "labelSortErrors": {
+    "description": "Aria-label for the error sort dropdown in diagnostics",
+    "message": "Sort errors"
+  },
+  "labelStorageUsage": {
+    "description": "Aria-label for the storage usage progress bar",
+    "message": "Storage usage"
+  },
+  "labelTagName": {
+    "description": "Label for the tag name input in the tag prompt",
+    "message": "Tag name"
+  },
+  "labelTheme": {
+    "description": "Label for theme selection in reader settings panel",
+    "message": "Theme"
+  },
+  "labelWidth": {
+    "description": "Label for width selection in reader settings panel",
+    "message": "Width"
+  },
+  "lineHeightCompact": {
+    "description": "Compact line height option",
+    "message": "Compact (1.4)"
+  },
+  "lineHeightDouble": {
+    "description": "Double line height option",
+    "message": "Double (2.0)"
+  },
+  "lineHeightNormal": {
+    "description": "Normal line height option",
+    "message": "Normal (1.6)"
+  },
+  "lineHeightRelaxed": {
+    "description": "Relaxed line height option",
+    "message": "Relaxed (1.7)"
+  },
+  "lineHeightSpacious": {
+    "description": "Spacious line height option",
+    "message": "Spacious (1.8)"
+  },
+  "linkOpensNewTab": {
+    "description": "Screen reader text indicating a link opens in a new tab",
+    "message": "(opens in new tab)"
+  },
+  "linkPrivacyPolicy": {
+    "description": "Link text for the privacy policy page",
+    "message": "Privacy Policy"
+  },
+  "linkSupport": {
+    "description": "Link text for support page",
+    "message": "Support"
+  },
+  "linkTermsOfService": {
+    "description": "Link text for the terms of service page",
+    "message": "Terms of Service"
+  },
+  "notifArticlesWaitingBody": {
+    "description": "Re-engagement notification body variant 2",
+    "message": "Your reading list is ready. Pick up where you left off."
+  },
+  "notifArticlesWaitingTitle": {
+    "description": "Re-engagement notification title variant 2",
+    "message": "Articles waiting for you"
+  },
+  "notifCatchUpBody": {
+    "description": "Re-engagement notification body variant 3",
+    "message": "It has been $DAYS$ days. Your saved articles are waiting.",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifCatchUpTitle": {
+    "description": "Re-engagement notification title variant 3",
+    "message": "Time to catch up."
+  },
+  "notifMilestoneBody": {
+    "description": "Notification body for milestone achievements",
+    "message": "You've saved $COUNT$ articles. Keep reading.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "notifMilestoneTitle": {
+    "description": "Notification title for milestone achievements",
+    "message": "ReadLater Pro Milestone"
+  },
+  "notifMissesYouBody": {
+    "description": "Re-engagement notification body variant 1",
+    "message": "You had a $COUNT$-day streak going. Come back to keep it alive.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifMissesYouTitle": {
+    "description": "Re-engagement notification title variant 1",
+    "message": "ReadLater Pro misses you."
+  },
+  "notifWeeklyImpactBody": {
+    "description": "Notification body for weekly impact summary",
+    "message": "You saved $COUNT$ articles this week.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifWeeklyImpactTitle": {
+    "description": "Notification title for weekly impact reminder",
+    "message": "Your Weekly ReadLater Recap"
+  },
+  "obBreakevenLabel": {
+    "description": "Break-even wording on the pricing step. The month count is rendered in its own span immediately before this text and is computed at runtime from obPriceLifetimeAmount divided by obPriceMonthlyAmount. This string must never contain a number or a currency figure.",
+    "message": "months, and the one payment has paid for itself"
+  },
+  "obChipImport": {
+    "description": "ReadLater Pro first run",
+    "message": "Pocket import is free"
+  },
+  "obChipLocal": {
+    "description": "ReadLater Pro first run",
+    "message": "Stored in your browser"
+  },
+  "obChipMv3": {
+    "description": "ReadLater Pro first run",
+    "message": "Manifest V3"
+  },
+  "obChipNoAccount": {
+    "description": "ReadLater Pro first run",
+    "message": "No account needed"
+  },
+  "obDot1": {
+    "description": "ReadLater Pro first run",
+    "message": "Step 1, why this exists"
+  },
+  "obDot2": {
+    "description": "ReadLater Pro first run",
+    "message": "Step 2, save your first article"
+  },
+  "obDot3": {
+    "description": "ReadLater Pro first run",
+    "message": "Step 3, reader settings"
+  },
+  "obDot4": {
+    "description": "ReadLater Pro first run",
+    "message": "Step 4, privacy and who built it"
+  },
+  "obDot5": {
+    "description": "ReadLater Pro first run",
+    "message": "Step 5, pricing"
+  },
+  "obDot6": {
+    "description": "ReadLater Pro first run",
+    "message": "Step 6, all set"
+  },
+  "obFaqA1": {
+    "description": "ReadLater Pro first run, pricing step",
+    "message": "No. Saving, reader view, the side panel, tags, highlights, title search, offline reading, imports and the backup, CSV and bookmarks exports are free and uncapped. If you never upgrade, nothing you have saved gets taken away."
+  },
+  "obFaqA2": {
+    "description": "ReadLater Pro first run",
+    "message": "One payment unlocks the Pro features in ReadLater Pro, including the ones added later. There is no renewal and nothing to cancel."
+  },
+  "obFaqA3": {
+    "description": "ReadLater Pro first run",
+    "message": "Yes, and the import is free. Open Settings, choose the import option, and give it the export file Pocket produced. Titles, tags and read status come across."
+  },
+  "obFaqQ1": {
+    "description": "ReadLater Pro first run",
+    "message": "Do I have to pay to keep my reading list"
+  },
+  "obFaqQ2": {
+    "description": "ReadLater Pro first run",
+    "message": "What does Lifetime actually cover"
+  },
+  "obFaqQ3": {
+    "description": "ReadLater Pro first run",
+    "message": "I am coming from Pocket. Can I bring my library"
+  },
+  "obFounderCred": {
+    "description": "ReadLater Pro first run",
+    "message": "Zovo is one person. I write every extension, I keep the data on your device, and I answer the support mail myself. ReadLater Pro asks for the permissions it needs to read the page you are saving and nothing beyond that."
+  },
+  "obFounderName": {
+    "description": "ReadLater Pro first run",
+    "message": "Michal Lip"
+  },
+  "obFounderRole": {
+    "description": "ReadLater Pro first run",
+    "message": "founder, Zovo"
+  },
+  "obFreeCapLabel": {
+    "description": "Free allowance wording on the pricing step. The count renders in its own span immediately before this text and is read at runtime from src/features/limits-config.json freeCaps.full_text_search. This string must never contain a number.",
+    "message": "full-text searches and 3 Listen articles a day are free. Saving, reading, highlights and imports have no cap"
+  },
+  "obKeyCommand": {
+    "description": "ReadLater Pro first run",
+    "message": "Cmd"
+  },
+  "obKeyRightClick": {
+    "description": "ReadLater Pro first run",
+    "message": "Right click"
+  },
+  "obMarkReadDesc": {
+    "description": "ReadLater Pro first run",
+    "message": "Keeps the unread tab honest without you tidying it."
+  },
+  "obMarkReadTitle": {
+    "description": "ReadLater Pro first run",
+    "message": "Mark an article read when I open it"
+  },
+  "obNavPrivacyLine": {
+    "description": "ReadLater Pro first run",
+    "message": "Your list stays in this browser"
+  },
+  "obNext1": {
+    "description": "ReadLater Pro first run",
+    "message": "Show me"
+  },
+  "obNext2": {
+    "description": "ReadLater Pro first run",
+    "message": "That was it"
+  },
+  "obNext3": {
+    "description": "ReadLater Pro first run",
+    "message": "Save and continue"
+  },
+  "obNext4": {
+    "description": "ReadLater Pro first run",
+    "message": "See what Pro costs"
+  },
+  "obNext5": {
+    "description": "ReadLater Pro first run",
+    "message": "Get Pro"
+  },
+  "obNext6": {
+    "description": "ReadLater Pro first run",
+    "message": "Start reading"
+  },
+  "obNoBrowserApi": {
+    "description": "ReadLater Pro first run",
+    "message": "This page is running outside the extension, so saving is switched off here."
+  },
+  "obNotifDesc": {
+    "description": "ReadLater Pro first run",
+    "message": "A quiet nudge about a list you have not opened in a while. Off is fine."
+  },
+  "obNotifTitle": {
+    "description": "ReadLater Pro first run",
+    "message": "Let ReadLater Pro send me reminders"
+  },
+  "obOpenPanel": {
+    "description": "ReadLater Pro first run",
+    "message": "Open the side panel"
+  },
+  "obPanelEmptyCount": {
+    "description": "ReadLater Pro first run",
+    "message": "nothing saved yet"
+  },
+  "obPanelFailed": {
+    "description": "ReadLater Pro first run",
+    "message": "The side panel would not open from here. Press the reading list shortcut on any normal page and it will."
+  },
+  "obPanelOneSaved": {
+    "description": "ReadLater Pro first run",
+    "message": "1 article"
+  },
+  "obPanelOpened": {
+    "description": "ReadLater Pro first run",
+    "message": "The side panel is open on the right, with your article in it."
+  },
+  "obPanelOpening": {
+    "description": "ReadLater Pro first run",
+    "message": "Opening the side panel"
+  },
+  "obPanelPlaceholder": {
+    "description": "ReadLater Pro first run",
+    "message": "Whatever you save lands here, and in the side panel."
+  },
+  "obPanelTitle": {
+    "description": "ReadLater Pro first run",
+    "message": "Your reading list"
+  },
+  "obPinTip": {
+    "description": "ReadLater Pro first run",
+    "message": "Click the puzzle piece in your toolbar, find ReadLater Pro, then pin it. It stays put after that."
+  },
+  "obPlanGroupLabel": {
+    "description": "ReadLater Pro first run",
+    "message": "Choose a plan"
+  },
+  "obPlanLifetime": {
+    "description": "ReadLater Pro first run",
+    "message": "Lifetime"
+  },
+  "obPlanMonthly": {
+    "description": "ReadLater Pro first run",
+    "message": "Monthly"
+  },
+  "obPriceLifetimeAmount": {
+    "description": "PRICE FIGURE, SINGLE SOURCE. This is the only place this number exists in the package. Do not translate, do not duplicate into prose, do not fork per locale. The lifetime tier advances by cumulative buyer count, so raising it is an edit to this key alone. Rendered only on the onboarding pricing step.",
+    "message": "$$99"
+  },
+  "obPriceLifetimePer": {
+    "description": "Billing cadence beside the lifetime figure. Carries no number.",
+    "message": "once"
+  },
+  "obPriceLifetimeSub": {
+    "description": "Lifetime supporting line. Must carry no price figure.",
+    "message": "Never pay again."
+  },
+  "obPriceMonthlyAmount": {
+    "description": "PRICE FIGURE, SINGLE SOURCE. This is the only place this number exists in the package. Do not translate, do not duplicate into prose, do not fork per locale. The lifetime tier advances by cumulative buyer count, so raising it is an edit to this key alone. Rendered only on the onboarding pricing step.",
+    "message": "$$4.99"
+  },
+  "obPriceMonthlyPer": {
+    "description": "Billing cadence beside the monthly figure. Carries no number.",
+    "message": "per month"
+  },
+  "obPriceMonthlySub": {
+    "description": "Monthly supporting line. Must carry no price figure.",
+    "message": "Cancel anytime."
+  },
+  "obProFullText": {
+    "description": "ReadLater Pro first run",
+    "message": "Full-text search"
+  },
+  "obProFullTextDesc": {
+    "description": "ReadLater Pro first run, pricing step",
+    "message": "Search the words inside every article you saved, with no daily limit."
+  },
+  "obProMembership": {
+    "description": "ReadLater Pro first run, pricing step",
+    "message": "The whole Zovo membership"
+  },
+  "obProMembershipDesc": {
+    "description": "ReadLater Pro first run, pricing step",
+    "message": "One membership covers ReadLater Pro and the rest of the Zovo tools at zovo.one."
+  },
+  "obProUpdates": {
+    "description": "ReadLater Pro first run, pricing step",
+    "message": "Every future update"
+  },
+  "obProUpdatesDesc": {
+    "description": "ReadLater Pro first run, pricing step",
+    "message": "Whatever gets built next is included, and the one-time plan never bills again."
+  },
+  "obReassureCheckout": {
+    "description": "ReadLater Pro first run",
+    "message": "Checkout runs on zovo.one"
+  },
+  "obReassureFree": {
+    "description": "ReadLater Pro first run",
+    "message": "The free list keeps working either way"
+  },
+  "obReassureLifetime": {
+    "description": "ReadLater Pro first run",
+    "message": "One-time payment"
+  },
+  "obReassureMonthly": {
+    "description": "Reassurance chip shown while Monthly is selected.",
+    "message": "Cancel anytime"
+  },
+  "obReceipt1": {
+    "description": "ReadLater Pro first run",
+    "message": "Articles and settings are stored locally, and the list works offline"
+  },
+  "obReceipt2": {
+    "description": "ReadLater Pro first run",
+    "message": "Manifest V3, no remote code, no third-party scripts"
+  },
+  "obReceipt3": {
+    "description": "ReadLater Pro first run",
+    "message": "Usage counts stay on your device, and only you can export them"
+  },
+  "obReceipt4": {
+    "description": "ReadLater Pro first run",
+    "message": "The only call to our servers is checking a licence key. Articles you open may load their images from the original site"
+  },
+  "obRefund": {
+    "description": "Risk reversal, prints on both plans. SURFACE-COPY-SPEC.md line 28.",
+    "message": "Monthly cancels any time"
+  },
+  "obSaveCta": {
+    "description": "ReadLater Pro first run",
+    "message": "Save it to my list"
+  },
+  "obSaveDone": {
+    "description": "ReadLater Pro first run",
+    "message": "Saved. It is in your reading list on this machine, and it stays there."
+  },
+  "obSaveDuplicate": {
+    "description": "ReadLater Pro first run",
+    "message": "That one was already on your list, so nothing was duplicated."
+  },
+  "obSaveFailed": {
+    "description": "ReadLater Pro first run",
+    "message": "That one did not save. The background worker did not answer, so try again or use the toolbar icon on the page itself."
+  },
+  "obSaveNoTabs": {
+    "description": "ReadLater Pro first run",
+    "message": "Nothing to save from here yet, and that is fine. The toolbar icon does the same job on any page."
+  },
+  "obSaveWorking": {
+    "description": "ReadLater Pro first run",
+    "message": "Saving it now"
+  },
+  "obSavedBadge": {
+    "description": "ReadLater Pro first run",
+    "message": "saved"
+  },
+  "obSavedFullText": {
+    "description": "Shown under the article saved during first run. SAVE_ARTICLE stores the link, not the body.",
+    "message": "The full text comes with it when you save from the page itself, with the toolbar icon or the shortcut."
+  },
+  "obSetupFailed": {
+    "description": "ReadLater Pro first run",
+    "message": "These could not be written just now. Settings has the same controls whenever you want them."
+  },
+  "obSetupSaved": {
+    "description": "ReadLater Pro first run",
+    "message": "Saved to your settings."
+  },
+  "obShortcutContext": {
+    "description": "ReadLater Pro first run",
+    "message": "Save a link straight from the page, without opening it"
+  },
+  "obShortcutPanel": {
+    "description": "ReadLater Pro first run",
+    "message": "Open your reading list in the side panel"
+  },
+  "obShortcutSave": {
+    "description": "ReadLater Pro first run",
+    "message": "Save the page you are on, without leaving it"
+  },
+  "obShortcutsTitle": {
+    "description": "ReadLater Pro first run",
+    "message": "The three you will use every day"
+  },
+  "obSignoffP1": {
+    "description": "ReadLater Pro first run",
+    "message": "I built ReadLater Pro after watching a service people relied on for a decade close its doors and take the reading lists with it. The fix is not a better cloud. The fix is keeping the list where you can see it, in your own browser, exportable any day you want it back."
+  },
+  "obSignoffP2": {
+    "description": "ReadLater Pro first run",
+    "message": "It is one person here. I write the code, I read the support mail, and I answer it. If a page saves badly or the reader mangles something, send me the link and I will look at it myself."
+  },
+  "obSignoffPs": {
+    "description": "ReadLater Pro first run",
+    "message": "One more thing. Lifetime is a single payment that never renews, and you saw both plans a moment ago. Saving and reading are free forever, and that part is the point."
+  },
+  "obSignoffRole": {
+    "description": "ReadLater Pro first run",
+    "message": "a note from the person who wrote this"
+  },
+  "obSignoffSig": {
+    "description": "ReadLater Pro first run",
+    "message": "Michal"
+  },
+  "obSizeHint": {
+    "description": "ReadLater Pro first run",
+    "message": "Reader text starts at this size. The reader has its own controls once you are in an article."
+  },
+  "obSizeLabel": {
+    "description": "ReadLater Pro first run",
+    "message": "Text size"
+  },
+  "obSizeLarge": {
+    "description": "ReadLater Pro first run",
+    "message": "Large"
+  },
+  "obSizeMedium": {
+    "description": "ReadLater Pro first run",
+    "message": "Medium"
+  },
+  "obSizeSmall": {
+    "description": "ReadLater Pro first run",
+    "message": "Small"
+  },
+  "obSkipToContent": {
+    "description": "ReadLater Pro first run",
+    "message": "Skip to the first step"
+  },
+  "obStep1Kicker": {
+    "description": "ReadLater Pro first run",
+    "message": "For everyone who has lost a reading list once"
+  },
+  "obStep1Lede": {
+    "description": "ReadLater Pro first run",
+    "message": "Pocket shut down in July 2025, and a list people had trusted for years stopped being theirs. ReadLater Pro keeps your articles in your own browser, on your own machine, so no company can switch your reading list off."
+  },
+  "obStep1TitleA": {
+    "description": "ReadLater Pro first run",
+    "message": "Pocket closed. Your reading list"
+  },
+  "obStep1TitleB": {
+    "description": "ReadLater Pro first run",
+    "message": "went with it"
+  },
+  "obStep2Kicker": {
+    "description": "ReadLater Pro first run",
+    "message": "One click, and it is already saved"
+  },
+  "obStep2Lede": {
+    "description": "ReadLater Pro first run",
+    "message": "Pick something you already have open. ReadLater Pro puts it on your reading list in this browser right away, before you have agreed to anything and before we mention money. No account, no setup, and it is yours from that second on."
+  },
+  "obStep2TitleA": {
+    "description": "ReadLater Pro first run",
+    "message": "Save one now."
+  },
+  "obStep2TitleB": {
+    "description": "ReadLater Pro first run",
+    "message": "Nothing to sign up for"
+  },
+  "obStep3Kicker": {
+    "description": "ReadLater Pro first run",
+    "message": "Twenty seconds, then never again"
+  },
+  "obStep3Lede": {
+    "description": "ReadLater Pro first run",
+    "message": "These are the real settings the reader uses. Nothing here is a preview, and you can change any of it later under Settings."
+  },
+  "obStep3TitleA": {
+    "description": "ReadLater Pro first run",
+    "message": "Set the reading part"
+  },
+  "obStep3TitleB": {
+    "description": "ReadLater Pro first run",
+    "message": "the way you like it"
+  },
+  "obStep4Kicker": {
+    "description": "ReadLater Pro first run",
+    "message": "Where your articles actually live"
+  },
+  "obStep4Lede": {
+    "description": "ReadLater Pro first run",
+    "message": "Your articles, tags and settings are written to this browser's own storage on this machine. Nothing is uploaded while you read, and there is no account to create."
+  },
+  "obStep4TitleA": {
+    "description": "ReadLater Pro first run",
+    "message": "Safe by design,"
+  },
+  "obStep4TitleB": {
+    "description": "ReadLater Pro first run",
+    "message": "and by default"
+  },
+  "obStep5Kicker": {
+    "description": "ReadLater Pro first run",
+    "message": "Saving and reading stay free, for good"
+  },
+  "obStep5Lede": {
+    "description": "ReadLater Pro first run, pricing step",
+    "message": "Saving, reader view, the side panel, tags, highlights, title search, reading progress, right-click save, imports, offline reading and the backup, CSV and bookmarks exports are free, complete and uncapped. Unlimited full-text search, unlimited Listen and Markdown export sit behind the upgrade."
+  },
+  "obStep5TitleA": {
+    "description": "ReadLater Pro first run",
+    "message": "The reading list is free."
+  },
+  "obStep5TitleB": {
+    "description": "ReadLater Pro first run",
+    "message": "Pro is for the heavy shelf"
+  },
+  "obStep6Kicker": {
+    "description": "ReadLater Pro first run",
+    "message": "Set up and ready"
+  },
+  "obStep6Lede": {
+    "description": "ReadLater Pro first run",
+    "message": "Three habits turn this into the place your reading actually lands. Pin the icon first, so saving is always one click away."
+  },
+  "obStep6TitleA": {
+    "description": "ReadLater Pro first run",
+    "message": "You are"
+  },
+  "obStep6TitleB": {
+    "description": "ReadLater Pro first run",
+    "message": "good to go"
+  },
+  "obTabsEmpty": {
+    "description": "ReadLater Pro first run",
+    "message": "No other pages are open right now. Open an article in another tab, then use the toolbar icon or press the save shortcut. It works exactly the same way."
+  },
+  "obTabsLoading": {
+    "description": "ReadLater Pro first run",
+    "message": "reading your tabs"
+  },
+  "obTabsNone": {
+    "description": "ReadLater Pro first run",
+    "message": "nothing to pick"
+  },
+  "obTabsPickOne": {
+    "description": "ReadLater Pro first run",
+    "message": "to pick from"
+  },
+  "obTabsTitle": {
+    "description": "ReadLater Pro first run",
+    "message": "Tabs you have open"
+  },
+  "obThemeDark": {
+    "description": "ReadLater Pro first run",
+    "message": "Dark"
+  },
+  "obThemeHint": {
+    "description": "ReadLater Pro first run",
+    "message": "Reader view uses this background when you open a saved article."
+  },
+  "obThemeLabel": {
+    "description": "ReadLater Pro first run",
+    "message": "Reader theme"
+  },
+  "obThemeLight": {
+    "description": "ReadLater Pro first run",
+    "message": "Light"
+  },
+  "obThemeSepia": {
+    "description": "ReadLater Pro first run",
+    "message": "Sepia"
+  },
+  "obVillainFlag": {
+    "description": "ReadLater Pro first run",
+    "message": "fragile"
+  },
+  "obVillainK1": {
+    "description": "ReadLater Pro first run",
+    "message": "Open tab"
+  },
+  "obVillainK2": {
+    "description": "ReadLater Pro first run",
+    "message": "Bookmark"
+  },
+  "obVillainK3": {
+    "description": "ReadLater Pro first run",
+    "message": "Self message"
+  },
+  "obVillainK4": {
+    "description": "ReadLater Pro first run",
+    "message": "Cloud list"
+  },
+  "obVillainTitle": {
+    "description": "ReadLater Pro first run",
+    "message": "The usual backup plan"
+  },
+  "obVillainV1": {
+    "description": "ReadLater Pro first run",
+    "message": "still open since Tuesday, still unread"
+  },
+  "obVillainV2": {
+    "description": "ReadLater Pro first run",
+    "message": "filed in a folder you never open again"
+  },
+  "obVillainV3": {
+    "description": "ReadLater Pro first run",
+    "message": "a link you sent yourself and scrolled past"
+  },
+  "obVillainV4": {
+    "description": "ReadLater Pro first run",
+    "message": "someone else decides how long it lives"
+  },
+  "paywallFeature": {
+    "description": "Table header in paywall comparison table",
+    "message": "Feature"
+  },
+  "paywallFree": {
+    "description": "Table header in paywall comparison table",
+    "message": "Free"
+  },
+  "paywallGuarantee": {
+    "description": "Risk reversal line. Matches the seller's terms on zovo.one/pricing; do not promise a money-back period.",
+    "message": "Monthly cancels any time. Lifetime is final once your key arrives, and anything faulty gets fixed or refunded."
+  },
+  "paywallPro": {
+    "description": "Table header in paywall comparison table",
+    "message": "Pro"
+  },
+  "paywallProBadge": {
+    "description": "Small badge at the top of the upgrade dialog.",
+    "message": "Pro"
+  },
+  "paywallReframe": {
+    "description": "Value reframe. Contains no figure of any kind, names no competitor, and prints no price, so it cannot go stale when the lifetime tier advances.",
+    "message": "The tools this replaces bill you every month. Here you can pay monthly or once."
+  },
+  "paywallSeePlans": {
+    "description": "The one neutral call to action. Verbatim string required by the build brief. Carries no price. The href is the canonical /pricing URL with utm_content naming the surface.",
+    "message": "See both plans at zovo.one"
+  },
+  "paywallStackMembership": {
+    "description": "Value stack line. Points at zovo.one without naming a sibling extension, itemizing the membership, or printing a price.",
+    "message": "One membership covers this and the rest of the Zovo tools at zovo.one"
+  },
+  "paywallStackSearch": {
+    "description": "Value stack line one. The only Pro unlock that exists in code.",
+    "message": "Search the words inside every article you saved, with no daily limit"
+  },
+  "paywallStackUpdates": {
+    "description": "Value stack line. States the shape of the offer with no figure.",
+    "message": "Every future update included, with no repeat billing on the one-time plan"
+  },
+  "paywallUnlimited": {
+    "description": "Paywall feature access label for unlimited",
+    "message": "Unlimited"
+  },
+  "pcInfoSuffix": {
+    "description": "Privacy controls section on the options page",
+    "message": "along with every network call the extension makes."
+  },
+  "pcInfoText": {
+    "description": "Privacy controls section on the options page",
+    "message": "Neither switch uploads anything. Both write to this browser only, and the full detail is in the"
+  },
+  "pcSaved": {
+    "description": "Privacy controls section on the options page",
+    "message": "saved"
+  },
+  "pcSubtitle": {
+    "description": "Privacy controls section on the options page",
+    "message": "The same three items you were asked about on the first run. Changing one takes effect straight away."
+  },
+  "placeholderFeedbackDescription": {
+    "description": "Placeholder text in the description field of the feedback form",
+    "message": "Describe in detail..."
+  },
+  "placeholderFeedbackEmail": {
+    "description": "Placeholder text in the optional email field of the feedback form",
+    "message": "your@email.com (for follow-up)"
+  },
+  "placeholderFeedbackSubject": {
+    "description": "Placeholder text in the subject field of the feedback form",
+    "message": "Brief summary of your feedback"
+  },
+  "placeholderLicenseKey": {
+    "description": "Placeholder for license key input fields",
+    "message": "XXXX-XXXX-XXXX-XXXX"
+  },
+  "placeholderSearch": {
+    "description": "Placeholder for the article search input in sidebar",
+    "message": "Search articles..."
+  },
+  "placeholderSearchErrors": {
+    "description": "Placeholder for the error search input in diagnostics",
+    "message": "Search errors..."
+  },
+  "placeholderSearchEvents": {
+    "description": "Placeholder for the event search input in diagnostics",
+    "message": "Search events..."
+  },
+  "placeholderSearchHelp": {
+    "description": "Placeholder text in the help search field on the options page",
+    "message": "Search help articles..."
+  },
+  "placeholderTagInput": {
+    "description": "Placeholder for the tag input prompt",
+    "message": "Enter tag..."
+  },
+  "popupAlreadySaved": {
+    "description": "Save button text when the page was already in the reading list",
+    "message": "Already saved"
+  },
+  "popupCannotSave": {
+    "description": "Save button text for restricted pages (chrome://, about:, etc.)",
+    "message": "Cannot save this page"
+  },
+  "popupOpenList": {
+    "description": "Button label to open the reading list from the popup",
+    "message": "Reading List"
+  },
+  "popupSaveFailed": {
+    "description": "Save button text when save encounters an error",
+    "message": "Save failed"
+  },
+  "popupSavePage": {
+    "description": "Button label to save the current page from the popup",
+    "message": "Save Page"
+  },
+  "popupUnreadCount": {
+    "description": "Plural unread article count shown in popup footer",
+    "message": "$COUNT$ unread articles",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "popupUnreadCountSingular": {
+    "description": "Singular unread article count shown in popup footer",
+    "message": "$COUNT$ unread article",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "proFeaturesHeader": {
+    "description": "Header for the pro feature preview section",
+    "message": "Pro Features"
+  },
+  "pullToRefresh": {
+    "description": "Text shown during pull to refresh gesture",
+    "message": "Pull to refresh"
+  },
+  "readTimeMin": {
+    "description": "Estimated read time on article card",
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "readerFavoriteAdded": {
+    "description": "Tooltip when article is added to favorites",
+    "message": "Added to favorites"
+  },
+  "readerFavoriteRemoved": {
+    "description": "Tooltip when article is removed from favorites",
+    "message": "Removed from favorites"
+  },
+  "readerFinished": {
+    "description": "Reader time remaining text when article is done",
+    "message": "Finished"
+  },
+  "readerFontSizeChanged": {
+    "description": "Tooltip when changing font size",
+    "message": "Font size: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "readerLessThan1Min": {
+    "description": "Reader time remaining when less than 1 min left",
+    "message": "< 1 min remaining"
+  },
+  "readerMinRead": {
+    "description": "Article estimated read time",
+    "message": "$COUNT$ min read",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "readerMinRemaining": {
+    "description": "Reader time remaining display",
+    "message": "$COUNT$ min remaining",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "readerNoContent": {
+    "description": "Message when reader has no article content",
+    "message": "No content available for this article."
+  },
+  "readerSaved": {
+    "description": "Article saved date in reader meta",
+    "message": "Saved $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "12/15/2025"
+      }
+    }
+  },
+  "readerSearchCleared": {
+    "description": "Screen reader announcement when search is cleared",
+    "message": "Search cleared"
+  },
+  "readerThemeChanged": {
+    "description": "Tooltip when cycling reader themes",
+    "message": "Theme: $THEME$",
+    "placeholders": {
+      "theme": {
+        "content": "$1",
+        "example": "Sepia"
+      }
+    }
+  },
+  "readerViewOriginalPage": {
+    "description": "Link text to view the original article page",
+    "message": "View original page"
+  },
+  "readerWidthChanged": {
+    "description": "Tooltip when cycling reader width",
+    "message": "Width: $LABEL$ ($SIZE$px)",
+    "placeholders": {
+      "label": {
+        "content": "$1",
+        "example": "Medium"
+      },
+      "size": {
+        "content": "$2",
+        "example": "680"
+      }
+    }
+  },
+  "refreshing": {
+    "description": "Text shown during refresh operation",
+    "message": "Refreshing"
+  },
+  "releaseToRefresh": {
+    "description": "Text shown when pull threshold is exceeded",
+    "message": "Release to refresh"
+  },
+  "rlClose": {
+    "description": "Accessible name for a close button",
+    "message": "Close"
+  },
+  "rlCurrentPage": {
+    "description": "Accessible name for the popup region describing the page about to be saved",
+    "message": "Current page"
+  },
+  "rlEmptyClearSearch": {
+    "description": "Button in the side panel empty state that clears the current search",
+    "message": "Clear search"
+  },
+  "rlEmptyFavoritesHint": {
+    "description": "Side panel empty state hint for the Favorites tab",
+    "message": "Star an article and it shows up here."
+  },
+  "rlEmptyFirstHint": {
+    "description": "Side panel empty state hint shown when the reading list has never held an article",
+    "message": "Click the ReadLater icon on any page and it lands here, stripped of clutter and ready to read."
+  },
+  "rlEmptySearchHint": {
+    "description": "Side panel empty state hint when a search returns nothing",
+    "message": "No saved article matches that. Try fewer words, or clear the search to see everything."
+  },
+  "rlEmptyShowAll": {
+    "description": "Button in the side panel empty state that clears filters and shows every article",
+    "message": "Show all articles"
+  },
+  "rlEmptyTagHint": {
+    "description": "Side panel empty state hint when a tag filter matches no article",
+    "message": "Nothing carries this tag yet. Right-click an article and choose Add Tag."
+  },
+  "rlEmptyUnreadHint": {
+    "description": "Side panel empty state hint for the Unread tab",
+    "message": "Every article you saved is marked read. Switch to All to revisit one."
+  },
+  "rlEmptyUnreadTitle": {
+    "description": "Side panel empty state headline for the Unread tab when every saved article is read",
+    "message": "Nothing left unread"
+  },
+  "rlImportComplete": {
+    "description": "Headline shown when a Pocket import finishes",
+    "message": "Import complete"
+  },
+  "rlImportError": {
+    "description": "Headline shown when a Pocket import fails",
+    "message": "Import did not finish"
+  },
+  "rlLoadingPage": {
+    "description": "Placeholder shown in the popup while the current tab title is being read",
+    "message": "Reading page"
+  },
+  "rlManageAtZovo": {
+    "description": "Neutral account link in the side panel footer",
+    "message": "Manage at zovo.one"
+  },
+  "rlMaybeLater": {
+    "description": "Button that dismisses the upgrade prompt",
+    "message": "Maybe later"
+  },
+  "rlOpenInReader": {
+    "description": "Popup button that opens the article that was just saved in reader view",
+    "message": "Open in reader"
+  },
+  "rlOpenListTooltip": {
+    "description": "Tooltip on the popup button that opens the side panel",
+    "message": "Open your reading list"
+  },
+  "rlPopupCannotSaveWhy": {
+    "description": "Popup explanation shown when the user activates the save button on a page the extension cannot read, such as a chrome:// page or an extension page",
+    "message": "ReadLater saves ordinary web pages. Browser and extension pages hold no article to keep. Open a website, then click the icon again."
+  },
+  "rlPopupEmptyWelcome": {
+    "description": "Popup footer message shown when the reading list is empty",
+    "message": "Save your first article"
+  },
+  "rlPopupSaved": {
+    "description": "Popup save button label after a successful save",
+    "message": "Saved"
+  },
+  "rlPopupSavedAnnouncement": {
+    "description": "Screen reader announcement after a successful save",
+    "message": "Article saved to your reading list"
+  },
+  "rlPopupSaving": {
+    "description": "Popup save button label while the save is in flight",
+    "message": "Saving"
+  },
+  "rlPopupUndone": {
+    "description": "Screen reader announcement after the user undoes a save",
+    "message": "Save undone, the article was removed"
+  },
+  "rlSaveThisPage": {
+    "description": "Tooltip on the popup save button",
+    "message": "Save this page"
+  },
+  "rlSupportChangelog": {
+    "description": "Support menu entry that opens the changelog",
+    "message": "What changed"
+  },
+  "rlSupportChangelogDesc": {
+    "description": "Tooltip for the support menu changelog entry",
+    "message": "See what shipped in this version"
+  },
+  "rlSupportEmail": {
+    "description": "Support menu entry that opens a mail client",
+    "message": "Email support"
+  },
+  "rlSupportEmailDesc": {
+    "description": "Tooltip for the support menu email entry",
+    "message": "Write to the people who build this"
+  },
+  "rlSupportFaq": {
+    "description": "Support menu entry that opens the FAQ",
+    "message": "Questions and answers"
+  },
+  "rlSupportFaqDesc": {
+    "description": "Tooltip for the support menu FAQ entry",
+    "message": "Browse the common questions"
+  },
+  "rlSupportFeedback": {
+    "description": "Support menu entry that opens the feedback form",
+    "message": "Send feedback"
+  },
+  "rlSupportFeedbackDesc": {
+    "description": "Tooltip for the support menu feedback entry",
+    "message": "Report a bug or ask for a feature"
+  },
+  "rlSupportRate": {
+    "description": "Support menu entry that opens the Chrome Web Store listing",
+    "message": "Rate the extension"
+  },
+  "rlSupportRateDesc": {
+    "description": "Tooltip for the support menu rating entry",
+    "message": "Leave a review on the Chrome Web Store"
+  },
+  "rlSupportTitle": {
+    "description": "Title of the side panel support menu and its trigger button",
+    "message": "Help and support"
+  },
+  "rlSupportWebsite": {
+    "description": "Support menu entry that opens the product support site",
+    "message": "Support pages"
+  },
+  "rlSupportWebsiteDesc": {
+    "description": "Tooltip for the support menu website entry",
+    "message": "Guides and troubleshooting"
+  },
+  "rlUndoSave": {
+    "description": "Popup button that removes the article that was just saved",
+    "message": "Undo"
+  },
+  "rlUntitledPage": {
+    "description": "Fallback title for a page that reports no title",
+    "message": "Untitled page"
+  },
+  "rlUpgradePromptText": {
+    "description": "Text of the dismissible upgrade prompt in the side panel. Full-text search is metered for free users, not withheld",
+    "message": "Pro lifts the daily limit on full-text search"
+  },
+  "rlUsageArticlesSaved": {
+    "description": "Label for the all-time saved-article counter in the side panel",
+    "message": "Articles saved"
+  },
+  "searchResultCount": {
+    "description": "Result count shown during search",
+    "message": "$COUNT$ results",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "searchResultCountSingle": {
+    "description": "Result count shown when exactly one search result is found",
+    "message": "1 result"
+  },
+  "shortcutClosePanel": {
+    "description": "Keyboard shortcut description for escape key",
+    "message": "Close / clear"
+  },
+  "shortcutCustomizeLink": {
+    "description": "Link text to customize shortcuts",
+    "message": "Customize shortcuts in Chrome settings"
+  },
+  "shortcutDeleteArticle": {
+    "description": "Keyboard shortcut description for deleting an article",
+    "message": "Delete article"
+  },
+  "shortcutFocusSearch": {
+    "description": "Keyboard shortcut description for focusing search",
+    "message": "Focus search"
+  },
+  "shortcutNavigateDown": {
+    "description": "Keyboard shortcut description for navigating down",
+    "message": "Next article"
+  },
+  "shortcutNavigateUp": {
+    "description": "Keyboard shortcut description for navigating up",
+    "message": "Previous article"
+  },
+  "shortcutOpenArticle": {
+    "description": "Keyboard shortcut description for opening an article",
+    "message": "Open article"
+  },
+  "shortcutOpenReadingList": {
+    "description": "Description for the open reading list keyboard shortcut",
+    "message": "Open reading list"
+  },
+  "shortcutSaveCurrentPage": {
+    "description": "Description for the save page keyboard shortcut",
+    "message": "Save current page"
+  },
+  "shortcutToggleFavorite": {
+    "description": "Keyboard shortcut description for toggling favorite",
+    "message": "Toggle favorite"
+  },
+  "skipToArticles": {
+    "description": "Skip link at the top of the side panel. The key was referenced by sidebar.html but was absent from _locales",
+    "message": "Skip to articles"
+  },
+  "skipToMainContent": {
+    "description": "Accessibility skip link to jump to main content",
+    "message": "Skip to main content"
+  },
+  "sortByContext": {
+    "description": "Sort option in diagnostics error table",
+    "message": "By context"
+  },
+  "sortByType": {
+    "description": "Sort option in diagnostics error table",
+    "message": "By type"
+  },
+  "sortDomainAZ": {
+    "description": "Sort option: alphabetical by domain ascending (Pro)",
+    "message": "Domain A-Z"
+  },
+  "sortDomainZA": {
+    "description": "Sort option: alphabetical by domain descending (Pro)",
+    "message": "Domain Z-A"
+  },
+  "sortLongest": {
+    "description": "Sort option: longest read time first",
+    "message": "Longest"
+  },
+  "sortNewest": {
+    "description": "Sort option: newest articles first",
+    "message": "Newest"
+  },
+  "sortNewestFirst": {
+    "description": "Sort option in diagnostics error table",
+    "message": "Newest first"
+  },
+  "sortOldest": {
+    "description": "Sort option: oldest articles first",
+    "message": "Oldest"
+  },
+  "sortOldestFirst": {
+    "description": "Sort option in diagnostics error table",
+    "message": "Oldest first"
+  },
+  "sortShortest": {
+    "description": "Sort option: shortest read time first",
+    "message": "Shortest"
+  },
+  "sortTitleAZ": {
+    "description": "Sort option: alphabetical by title ascending",
+    "message": "Title A-Z"
+  },
+  "sortTitleZA": {
+    "description": "Sort option: alphabetical by title descending",
+    "message": "Title Z-A"
+  },
+  "statArticlesRead": {
+    "description": "Stat label on dashboard for articles read",
+    "message": "Articles Read"
+  },
+  "statArticlesSaved": {
+    "description": "Stat label for total articles saved",
+    "message": "Articles saved"
+  },
+  "statBestStreak": {
+    "description": "Stat label for best streak",
+    "message": "Best Streak"
+  },
+  "statCurrentStreak": {
+    "description": "Stat label for current streak",
+    "message": "Current Streak"
+  },
+  "statErrorCount": {
+    "description": "Stat label in diagnostics for error count",
+    "message": "Error Count"
+  },
+  "statEventCount": {
+    "description": "Stat label in diagnostics for event count",
+    "message": "Event Count"
+  },
+  "statOffline": {
+    "description": "Stat label for offline article count",
+    "message": "Offline"
+  },
+  "statReadingStreak": {
+    "description": "Stat label on dashboard for reading streak",
+    "message": "Reading Streak"
+  },
+  "statReadingTime": {
+    "description": "Stat label on dashboard for total reading time",
+    "message": "Reading Time"
+  },
+  "statRuntimeLogCount": {
+    "description": "Stat label in diagnostics for runtime log count",
+    "message": "Runtime Log Count"
+  },
+  "statTags": {
+    "description": "Stat label for tag count",
+    "message": "Tags"
+  },
+  "statTotalDaysUsed": {
+    "description": "Stat label for total days used",
+    "message": "Total Days Used"
+  },
+  "statTotalStorage": {
+    "description": "Stat label in diagnostics for total storage",
+    "message": "Total Storage"
+  },
+  "statUnread": {
+    "description": "Stat label for unread article count",
+    "message": "Unread"
+  },
+  "statUnreadQueue": {
+    "description": "Stat label on dashboard for unread article count",
+    "message": "Unread Queue"
+  },
+  "statusArticleCount": {
+    "description": "Singular article count shown in footer",
+    "message": "$COUNT$ article",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "statusArticleCountPlural": {
+    "description": "Plural article count shown in footer",
+    "message": "$COUNT$ articles",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "statusCalculating": {
+    "description": "Calculating text for storage and health score",
+    "message": "Calculating..."
+  },
+  "statusFoundArticles": {
+    "description": "Import progress text after parsing",
+    "message": "Found $ARTICLES$ articles and $TAGS$ tags. Importing...",
+    "placeholders": {
+      "articles": {
+        "content": "$1",
+        "example": "150"
+      },
+      "tags": {
+        "content": "$2",
+        "example": "12"
+      }
+    }
+  },
+  "statusImporting": {
+    "description": "Import progress text",
+    "message": "Importing..."
+  },
+  "statusLoading": {
+    "description": "Generic loading state text",
+    "message": "Loading..."
+  },
+  "statusLoadingArticle": {
+    "description": "Loading text in reader view",
+    "message": "Loading article..."
+  },
+  "statusLoadingChart": {
+    "description": "Loading text in weekly chart placeholder",
+    "message": "Loading chart..."
+  },
+  "statusLoadingDomains": {
+    "description": "Loading text in top domains placeholder",
+    "message": "Loading domains..."
+  },
+  "statusParsingExport": {
+    "description": "Import progress text during file parsing",
+    "message": "Parsing export file..."
+  },
+  "swipeDelete": {
+    "description": "Swipe action label on article cards",
+    "message": "Delete"
+  },
+  "tabAll": {
+    "description": "Label for the All articles filter tab",
+    "message": "All"
+  },
+  "tabFavorites": {
+    "description": "Label for the Favorites filter tab",
+    "message": "Favorites"
+  },
+  "tabUnread": {
+    "description": "Label for the Unread filter tab in sidebar",
+    "message": "Unread"
+  },
+  "themeDark": {
+    "description": "Dark theme option",
+    "message": "Dark"
+  },
+  "themeLight": {
+    "description": "Light theme option",
+    "message": "Light"
+  },
+  "themeSepia": {
+    "description": "Sepia theme option",
+    "message": "Sepia"
+  },
+  "timeAgoDays": {
+    "description": "Time ago abbreviation for days",
+    "message": "$COUNT$d",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "timeAgoHours": {
+    "description": "Time ago abbreviation for hours",
+    "message": "$COUNT$h",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "timeAgoMinutes": {
+    "description": "Time ago abbreviation for minutes",
+    "message": "$COUNT$m",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeAgoMonths": {
+    "description": "Time ago abbreviation for months",
+    "message": "$COUNT$mo",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "timeAgoNow": {
+    "description": "Time ago label for just now",
+    "message": "now"
+  },
+  "titleDashboard": {
+    "description": "Page title for the reading statistics dashboard",
+    "message": "Reading Statistics - ReadLater Pro"
+  },
+  "titleDiagnostics": {
+    "description": "Page title for the diagnostics dashboard",
+    "message": "ReadLater Pro - Diagnostics"
+  },
+  "titleImport": {
+    "description": "Page title for the Pocket import page",
+    "message": "Import from Pocket - ReadLater Pro"
+  },
+  "titlePopup": {
+    "description": "Title displayed in the popup header",
+    "message": "ReadLater Pro"
+  },
+  "titleReader": {
+    "description": "Page title for the reader view",
+    "message": "Reader - ReadLater Pro"
+  },
+  "titleReadingList": {
+    "description": "Page title for the sidebar reading list",
+    "message": "Reading List"
+  },
+  "titleSettings": {
+    "description": "Page title for the settings/options page",
+    "message": "ReadLater Pro Settings"
+  },
+  "titleUpgrade": {
+    "description": "Page title for the upgrade page",
+    "message": "Upgrade to Pro - ReadLater Pro"
+  },
+  "titleWelcome": {
+    "description": "Page title for the onboarding page",
+    "message": "Welcome to ReadLater Pro"
+  },
+  "toastAllDataCleared": {
+    "description": "Toast message after clearing all data",
+    "message": "All data cleared"
+  },
+  "toastArticleDeleted": {
+    "description": "Toast message when an article is deleted",
+    "message": "Article deleted"
+  },
+  "toastArticlesDeleted": {
+    "description": "Toast after batch deleting articles",
+    "message": "$COUNT$ article(s) deleted",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastArticlesMarkedRead": {
+    "description": "Toast after batch marking articles as read",
+    "message": "$COUNT$ article(s) marked as read",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "toastCleanupFailed": {
+    "description": "Toast when cleanup fails",
+    "message": "Cleanup failed: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Database error"
+      }
+    }
+  },
+  "toastCleanupResult": {
+    "description": "Toast after cleaning up old articles",
+    "message": "Removed $COUNT$ old read article(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "toastClearDataFailed": {
+    "description": "Toast when clearing all data fails",
+    "message": "Failed to clear data: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Unknown error"
+      }
+    }
+  },
+  "toastDebugReportCopied": {
+    "description": "Toast after debug report is copied",
+    "message": "Debug report copied to clipboard"
+  },
+  "toastDebugReportDownloaded": {
+    "description": "Toast after debug report is downloaded",
+    "message": "Debug report downloaded"
+  },
+  "toastErrorLogCleared": {
+    "description": "Toast after error log is cleared",
+    "message": "Error log cleared"
+  },
+  "toastEventLogCleared": {
+    "description": "Toast after event log is cleared",
+    "message": "Event log cleared"
+  },
+  "toastExportFailed": {
+    "description": "Toast when export fails",
+    "message": "Export failed: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "toastExportedArticles": {
+    "description": "Toast after exporting articles",
+    "message": "Exported $COUNT$ articles",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "toastFailedToSaveSettings": {
+    "description": "Toast message when settings save fails",
+    "message": "Failed to save settings"
+  },
+  "toastImportedArticles": {
+    "description": "Toast after importing articles",
+    "message": "Imported $COUNT$ articles",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "toastImportedArticlesFailed": {
+    "description": "Toast after importing with some failures",
+    "message": "Imported $IMPORTED$ articles ($FAILED$ failed)",
+    "placeholders": {
+      "failed": {
+        "content": "$2",
+        "example": "5"
+      },
+      "imported": {
+        "content": "$1",
+        "example": "20"
+      }
+    }
+  },
+  "toastInvalidBackupFormat": {
+    "description": "Toast when imported backup has wrong structure",
+    "message": "Invalid backup format: missing articles array"
+  },
+  "toastInvalidJson": {
+    "description": "Toast when imported JSON file is invalid",
+    "message": "Invalid JSON file"
+  },
+  "toastNoArticlesInBackup": {
+    "description": "Toast when imported backup has no articles",
+    "message": "No articles found in backup"
+  },
+  "toastRemindersDisabled": {
+    "description": "Toast message when re-engagement reminders are disabled",
+    "message": "Reminders disabled"
+  },
+  "toastRemindersEnabled": {
+    "description": "Toast message when re-engagement reminders are enabled",
+    "message": "Reminders enabled"
+  },
+  "toastSettingsResetDefaults": {
+    "description": "Screen reader announcement after data clear",
+    "message": "Settings reset to defaults"
+  },
+  "toastSettingsSaved": {
+    "description": "Toast message after settings are saved",
+    "message": "Settings saved"
+  },
+  "toastSettingsSavedSuccess": {
+    "description": "Screen reader announcement after settings save",
+    "message": "Settings saved successfully"
+  },
+  "toastTagAdded": {
+    "description": "Toast message when a tag is added",
+    "message": "Tag \"$NAME$\" added",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "technology"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "description": "Toast message when URL is copied to clipboard",
+    "message": "URL copied"
+  },
+  "tooltipAlreadySaved": {
+    "description": "Action title for tab badge when page is already saved",
+    "message": "Already saved to ReadLater"
+  },
+  "tooltipBackToList": {
+    "description": "Tooltip for the back button in reader view",
+    "message": "Back to list"
+  },
+  "tooltipBackToReadingList": {
+    "description": "Tooltip for back link on dashboard page",
+    "message": "Back to reading list"
+  },
+  "tooltipClearSearch": {
+    "description": "Tooltip for the search clear button",
+    "message": "Clear search"
+  },
+  "tooltipClose": {
+    "description": "Tooltip for close buttons",
+    "message": "Close"
+  },
+  "tooltipCloseTOC": {
+    "description": "Aria-label for the close TOC button",
+    "message": "Close table of contents"
+  },
+  "tooltipExitSelection": {
+    "description": "Tooltip for the batch bar close button",
+    "message": "Exit selection mode"
+  },
+  "tooltipImport": {
+    "description": "Tooltip and aria-label for the import button",
+    "message": "Import a file"
+  },
+  "tooltipPrintArticle": {
+    "description": "Tooltip for the print button in reader view",
+    "message": "Print article"
+  },
+  "tooltipReadingSettings": {
+    "description": "Tooltip for the reading settings panel toggle",
+    "message": "Reading settings"
+  },
+  "tooltipSaveToReadLater": {
+    "description": "Action title for tab badge when page is not saved",
+    "message": "Save to ReadLater"
+  },
+  "tooltipSettings": {
+    "description": "Tooltip and aria-label for the settings button",
+    "message": "Settings"
+  },
+  "tooltipSortArticles": {
+    "description": "Tooltip and aria-label for the sort dropdown",
+    "message": "Sort articles"
+  },
+  "tooltipTableOfContents": {
+    "description": "Tooltip for the TOC toggle button",
+    "message": "Table of contents"
+  },
+  "tooltipToggleFavorite": {
+    "description": "Tooltip for the favorite toggle button",
+    "message": "Toggle favorite"
+  },
+  "tooltipToggleFavoriteShortcut": {
+    "description": "Tooltip for favorite button showing keyboard shortcut",
+    "message": "Toggle favorite (F)"
+  },
+  "tooltipViewOriginal": {
+    "description": "Tooltip for the view original page button",
+    "message": "View original"
+  },
+  "tooltipViewOriginalNewTab": {
+    "description": "Aria-label for the view original button",
+    "message": "View original page (opens in new tab)"
+  },
+  "trialBannerText": {
+    "description": "Trial countdown banner text",
+    "message": "Pro preview: $DAYS$ days left",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "upgradeAlreadyHaveLicense": {
+    "description": "Toggle link to show license key form in paywall",
+    "message": "Already have a license key?"
+  },
+  "upgradeCtaNote": {
+    "description": "Note under the primary call to action.",
+    "message": "Opens zovo.one in a new tab. Everything that is free today stays free."
+  },
+  "upgradeGuarantee": {
+    "description": "Risk reversal line. Matches the seller's terms on zovo.one/pricing; do not promise a money-back period.",
+    "message": "Monthly cancels any time. Lifetime is final once your key arrives, and anything faulty gets fixed or refunded."
+  },
+  "upgradeHeadline": {
+    "description": "Upgrade page headline. Names the one outcome Pro actually delivers.",
+    "message": "Search inside everything you saved"
+  },
+  "upgradeHonestyLine": {
+    "description": "States plainly what stays free, so the page never implies a wider paywall than the code has.",
+    "message": "Pro also makes Listen unlimited (free is 3 articles a day) and includes Markdown export (free gets one try). Saving, reader view, the side panel, tags, highlights, imports, reading progress, offline reading, the backup, CSV and bookmarks exports and your reading stats are free and uncapped. Nothing here gets taken away later."
+  },
+  "upgradeLicenseActivated": {
+    "description": "Success message in paywall after license activation",
+    "message": "License activated. Reloading..."
+  },
+  "upgradeLicenseHelp": {
+    "description": "Help text above the license key field.",
+    "message": "Paste the license key from your purchase email. The key is checked against the license server before Pro turns on, so this will not work while you are offline."
+  },
+  "upgradeLimitReached": {
+    "description": "Limit banner message on upgrade page",
+    "message": "You've reached the free tier limit for $FEATURE$. Upgrade to Pro for unlimited access.",
+    "placeholders": {
+      "feature": {
+        "content": "$1",
+        "example": "Full-Text Search"
+      }
+    }
+  },
+  "upgradeOutcomeSearchBody": {
+    "description": "Body of the Pro feature card. The cap number is read from src/features/limits-config.json at runtime.",
+    "message": "Free gives you $CAP$ full-text searches a day, which is plenty for a small list. Pro removes the counter, so a library of a few thousand articles stays searchable on the days you are actually digging.",
+    "placeholders": {
+      "CAP": {
+        "content": "$1",
+        "example": "20"
+      }
+    }
+  },
+  "upgradeOutcomeSearchTitle": {
+    "description": "Title of the only Pro feature that exists in the code.",
+    "message": "Full-text search with no daily cap"
+  },
+  "upgradePaywallSubtitle": {
+    "description": "Replaces the v1.1.1 line. Headline benefit, one outcome, no price.",
+    "message": "Keep every article on your device and search all of it."
+  },
+  "upgradePaywallTitle": {
+    "description": "Paywall modal title",
+    "message": "Unlock $FEATURE$",
+    "placeholders": {
+      "feature": {
+        "content": "$1",
+        "example": "Full-Text Search"
+      }
+    }
+  },
+  "upgradePlansNote": {
+    "description": "Names the shape of the two plans without stating a figure. Lifetime pricing advances with cumulative buyer count, so any number compiled into the package goes stale and needs a store review to correct.",
+    "message": "Pro arrives with a Zovo membership. There is a monthly plan and a one-time lifetime plan, and both are laid out on zovo.one with whatever the current pricing is."
+  },
+  "upgradeProblem": {
+    "description": "Upgrade page opening paragraph. States the honest gap between free search and Pro search.",
+    "message": "Free search matches titles, site names and short excerpts. That works until the list gets long, and then you're hunting for an article whose title you can't remember. Full-text search reads the words inside every article you saved."
+  },
+  "upgradeRailCta": {
+    "description": "Upgrade rail on the options page, the neutral in-store CTA, verbatim per SURFACE-COPY-SPEC",
+    "message": "See both plans at zovo.one"
+  },
+  "upgradeRailFree": {
+    "description": "Upgrade rail on the options page, what the free plan covers",
+    "message": "Saving, reader view, the side panel, tags, title search, offline copies, Pocket import, export and reading stats are free and stay free. Full-text search has a daily allowance on the free plan, and Help below states the current figure."
+  },
+  "upgradeRailGuarantee": {
+    "description": "Upgrade rail on the options page, risk reversal line",
+    "message": "Monthly cancels any time, and anything faulty gets fixed or refunded."
+  },
+  "upgradeRailLede": {
+    "description": "Upgrade rail on the options page",
+    "message": "Search inside everything you saved, not just the titles."
+  },
+  "upgradeRailManage": {
+    "description": "Upgrade rail on the options page",
+    "message": "Manage at zovo.one"
+  },
+  "upgradeRailTitle": {
+    "description": "Upgrade rail on the options page",
+    "message": "Get Pro"
+  },
+  "upgradeSuccessAnnouncement": {
+    "description": "Screen reader announcement for upgrade success",
+    "message": "Upgrade successful. Welcome to Pro."
+  },
+  "upgradeSuccessAnnouncementClean": {
+    "description": "Screen reader announcement after a license activates.",
+    "message": "License activated. Full-text search is now unlimited."
+  },
+  "upgradeSuccessText": {
+    "description": "Text on upgrade success overlay",
+    "message": "Your account has been upgraded. All Pro features are now unlocked. Enjoy the full reading experience."
+  },
+  "upgradeSuccessTextClean": {
+    "description": "Body of the dialog shown after a license activates.",
+    "message": "Full-text search is unlimited on this browser from now on."
+  },
+  "upgradeSuccessTitle": {
+    "description": "Title on upgrade success overlay",
+    "message": "Welcome to Pro"
+  },
+  "upgradeSuccessTitleClean": {
+    "description": "Title of the dialog shown after a license activates.",
+    "message": "You are on Pro"
+  },
+  "upgradeTrustCancel": {
+    "description": "Trust signal on upgrade page",
+    "message": "Cancel anytime"
+  },
+  "upgradeTrustGuarantee": {
+    "description": "Trust signal on upgrade page",
+    "message": "Monthly cancels any time"
+  },
+  "upgradeTrustGuarantee14": {
+    "description": "Trust row item. Replaces the older 7-day string, which was wrong.",
+    "message": "Monthly cancels any time"
+  },
+  "upgradeTrustSecure": {
+    "description": "Trust signal on upgrade page",
+    "message": "Secure checkout"
+  },
+  "whatsNewClose": {
+    "description": "Close button aria label for what's new overlay",
+    "message": "Close"
+  },
+  "whatsNewGotIt": {
+    "description": "What's new dialog",
+    "message": "Got it"
+  },
+  "whatsNewTitle": {
+    "description": "Title for the update notification overlay",
+    "message": "What's New"
+  },
+  "whatsNewTypeFeature": {
+    "description": "Label on a What's New entry that describes a new capability.",
+    "message": "New"
+  },
+  "whatsNewTypeFix": {
+    "description": "Label on a What's New entry that describes a corrected defect.",
+    "message": "Fixed"
+  },
+  "whatsNewTypeImprovement": {
+    "description": "Label on a What's New entry that describes an improvement to an existing capability.",
+    "message": "Improved"
+  },
+  "widthMedium": {
+    "description": "Medium content width option",
+    "message": "Medium"
+  },
+  "widthMediumPx": {
+    "description": "Medium width option with pixel value",
+    "message": "Medium (680px)"
+  },
+  "widthNarrow": {
+    "description": "Narrow content width option",
+    "message": "Narrow"
+  },
+  "widthNarrowPx": {
+    "description": "Narrow width option with pixel value",
+    "message": "Narrow (560px)"
+  },
+  "widthWide": {
+    "description": "Wide content width option",
+    "message": "Wide"
+  },
+  "widthWidePx": {
+    "description": "Wide width option with pixel value",
+    "message": "Wide (800px)"
+  },
+  "labelShowWhatsNew": {
+    "message": "Show what's new after an update",
+    "description": "Options toggle for the update page"
+  },
+  "labelShowWhatsNewDescription": {
+    "message": "Open a short page in the background after a feature update",
+    "description": "Options toggle description"
+  },
+  "corePopupTextNotCaptured": {
+    "message": "This page didn't let ReadLater read its text, so only the link was saved.",
+    "description": "Toolbar popup note after a save where no article body could be captured (only the URL and title were stored)."
+  },
+  "core2PopupFilled": {
+    "message": "Added the full text to the copy you already had.",
+    "description": "Toolbar popup note after saving a page that was already saved as a link only (for example from a Pocket import); the saved copy now has the article text."
+  },
+  "dataImportSkipPrivateOne": {
+    "message": "$FIRST$ Instapaper item was emailed or private (instapaper-private://), so it has no web address to save.",
+    "description": "DATA lane, pages/import.js (singular, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportSkipPrivate": {
+    "message": "$FIRST$ Instapaper items were emailed or private (instapaper-private://), so they have no web address to save.",
+    "description": "DATA lane, pages/import.js (plural, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportSkipInvalidOne": {
+    "message": "$FIRST$ entry had no valid web address (http or https).",
+    "description": "DATA lane, pages/import.js (singular, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportSkipInvalid": {
+    "message": "$FIRST$ entries had no valid web address (http or https).",
+    "description": "DATA lane, pages/import.js (plural, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportSkipNotUrlOne": {
+    "message": "$FIRST$ line didn't contain a web address.",
+    "description": "DATA lane, pages/import.js (singular, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportSkipNotUrl": {
+    "message": "$FIRST$ lines didn't contain a web address.",
+    "description": "DATA lane, pages/import.js (plural, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportMergedOne": {
+    "message": "$FIRST$ row repeated a link that appears earlier in the file, so they were combined into one article.",
+    "description": "DATA lane, pages/import.js (singular, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportMerged": {
+    "message": "$FIRST$ rows repeated a link that appears earlier in the file. Each was combined with the earlier one.",
+    "description": "DATA lane, pages/import.js (plural, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportResTagsOne": {
+    "message": "$FIRST$ new tag created",
+    "description": "DATA lane, pages/import.js (singular, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportResTags": {
+    "message": "$FIRST$ new tags created",
+    "description": "DATA lane, pages/import.js (plural, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportResHighlightsOne": {
+    "message": "$FIRST$ highlight added",
+    "description": "DATA lane, pages/import.js (singular, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportResHighlights": {
+    "message": "$FIRST$ highlights added",
+    "description": "DATA lane, pages/import.js (plural, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportResTextOne": {
+    "message": "Full text saved for $FIRST$ article, readable offline now",
+    "description": "DATA lane, pages/import.js (singular, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportResText": {
+    "message": "Full text saved for $FIRST$ articles, readable offline now",
+    "description": "DATA lane, pages/import.js (plural, $1 is a count)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportSourcePocket": {
+    "message": "Pocket export",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportSourcePocketHtml": {
+    "message": "Pocket export (HTML)",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportSourceBookmarks": {
+    "message": "Bookmarks file",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportSourceInstapaper": {
+    "message": "Instapaper export",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportSourceOmnivore": {
+    "message": "Omnivore export",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportSourceRaindrop": {
+    "message": "Raindrop.io export",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportSourceTxt": {
+    "message": "List of links",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportSourceBackup": {
+    "message": "ReadLater backup",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportSourceCsv": {
+    "message": "Spreadsheet (CSV) of links",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportSkipLimit": {
+    "message": "$FIRST$ items were over the 50,000 item limit for one import. Import the rest in a second file.",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportNoTextNamed": {
+    "message": "$FIRST$ exports don't include the article text, only the links. Your links and tags come over now, plus read state where the file has it. To keep an article's full text for offline reading, open it and save it again from its page.",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportNoText": {
+    "message": "This file has links only, not the article text. To keep an article's full text for offline reading, open it and save it again from its page.",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportProblems": {
+    "message": "Problems found while reading the file ($FIRST$)",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportReading": {
+    "message": "Reading your file...",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportReadFailed": {
+    "message": "This file couldn't be read",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportNothingFound": {
+    "message": "Nothing to import in this file",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportNothingFoundHint": {
+    "message": "We couldn't find any links in it. Check that it's an export from one of the apps listed above.",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportDetected": {
+    "message": "Detected: $FIRST$",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportStatItems": {
+    "message": "Articles",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportStatUnread": {
+    "message": "Unread",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportStatRead": {
+    "message": "Read",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportStatFavorites": {
+    "message": "Favorites",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportStatTags": {
+    "message": "Tags",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportStatHighlights": {
+    "message": "Highlights",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportStatFullText": {
+    "message": "With full text",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportTagsLabel": {
+    "message": "Tags",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportTagsMore": {
+    "message": "+$FIRST$ more",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportAlreadyAll": {
+    "message": "Everything in this file is already in your list. Importing adds any missing tags and highlights and changes nothing else.",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportAlreadySome": {
+    "message": "$FIRST$ of these are already in your list. They stay as they are; only missing tags and highlights are added.",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportSomeText": {
+    "message": "Full text is included for $FIRST$ of $SECOND$ articles, so those are readable offline right away. The others open as links; save them again from their page to keep the text.",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "dataImportAllText": {
+    "message": "Full text is included for every article, so they're readable offline right away.",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportWillSkip": {
+    "message": "They'll be skipped.",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportAnnounceCount": {
+    "message": "$FIRST$ articles.",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportStarting": {
+    "message": "Starting...",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportProgressSaving": {
+    "message": "Saving $FIRST$ of $SECOND$ articles...",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "dataImportChunkFailed": {
+    "message": "Part $FIRST$ of the import reported a problem: $SECOND$",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "dataImportProgressChecking": {
+    "message": "Checking what was saved...",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportProgressText": {
+    "message": "Adding full text and details $FIRST$ of $SECOND$...",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "dataImportProgressDetails": {
+    "message": "Adding favorites and details $FIRST$ of $SECOND$...",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "dataImportProgressTags": {
+    "message": "Adding tags to articles already in your list $FIRST$ of $SECOND$...",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "dataImportProgressHighlights": {
+    "message": "Adding highlights...",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportProgressDone": {
+    "message": "Done",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportDoneTitle": {
+    "message": "Import complete",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportPartialTitle": {
+    "message": "Import finished with some problems",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportFailedTitle": {
+    "message": "The import didn't finish",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportResImported": {
+    "message": "$FIRST$ $SECOND$ imported",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "dataWordArticle": {
+    "message": "article",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataWordArticles": {
+    "message": "articles",
+    "description": "DATA lane, pages/import.js"
+  },
+  "dataImportResAlready": {
+    "message": "$FIRST$ already in your list (left as they were)",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportResTagged": {
+    "message": "Tags added to $FIRST$ of them",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportResFailed": {
+    "message": "$FIRST$ couldn't be saved. Try importing the file again; anything already saved is skipped.",
+    "description": "DATA lane, pages/import.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataExportMdTitle": {
+    "message": "my reading list",
+    "description": "DATA lane, options/export-card.js"
+  },
+  "dataExportMdIntro": {
+    "message": "Exported $FIRST$. $SECOND$ articles.",
+    "description": "DATA lane, options/export-card.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "dataExportMdNoText": {
+    "message": "No saved text. Read it at the link above.",
+    "description": "DATA lane, options/export-card.js"
+  },
+  "dataExportMdHighlights": {
+    "message": "Highlights",
+    "description": "DATA lane, options/export-card.js"
+  },
+  "dataExportHlTitle": {
+    "message": "Highlights from ReadLater Pro",
+    "description": "DATA lane, options/export-card.js"
+  },
+  "dataExportWorking": {
+    "message": "Preparing your file...",
+    "description": "DATA lane, options/export-card.js"
+  },
+  "dataExportNoHighlights": {
+    "message": "There are no highlights to export yet.",
+    "description": "DATA lane, options/export-card.js"
+  },
+  "dataExportNothing": {
+    "message": "There are no articles to export with this choice.",
+    "description": "DATA lane, options/export-card.js"
+  },
+  "dataExportDoneHighlights": {
+    "message": "Saved $FIRST$ highlights to $SECOND$",
+    "description": "DATA lane, options/export-card.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "dataExportDone": {
+    "message": "Saved $FIRST$ articles to $SECOND$",
+    "description": "DATA lane, options/export-card.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "dataExportFailed": {
+    "message": "The export didn't work: $FIRST$",
+    "description": "DATA lane, options/export-card.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataSettingsCurrentPx": {
+    "message": "$FIRST$ px (current)",
+    "description": "DATA lane, options/reader-settings.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataSettingsCurrent": {
+    "message": "$FIRST$ (current)",
+    "description": "DATA lane, options/reader-settings.js",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "dataImportPageTitle": {
+    "message": "Import your reading list - ReadLater Pro",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportHeading": {
+    "message": "Import your reading list",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportIntro": {
+    "message": "Moving from Pocket, Omnivore, Instapaper or Raindrop? Drop your export file below. We'll show you what's inside before anything is imported. Nothing already in your list is changed or removed; only missing tags and highlights are added.",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportSourcesHeading": {
+    "message": "Files you can import",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportSrcPocket": {
+    "message": "the pocket.zip export, a part_000000.csv file, or the older HTML export",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportSrcOmnivore": {
+    "message": "the export .zip, including the full text of each article and your highlights",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportSrcInstapaper": {
+    "message": "the CSV export",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportSrcRaindrop": {
+    "message": "the CSV or HTML export",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportSrcBookmarksName": {
+    "message": "Browser bookmarks",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportSrcBookmarks": {
+    "message": "a bookmarks .html file from Chrome, Firefox, Safari or Edge (folders become tags)",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportSrcTxtName": {
+    "message": "A list of links",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportSrcTxt": {
+    "message": "a .txt file with one address per line",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportSrcBackupName": {
+    "message": "ReadLater backup",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportSrcBackup": {
+    "message": "a full backup .json from Settings, with tags and highlights",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportDropzoneText": {
+    "message": "Drop your export file here",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportDropzoneHint": {
+    "message": "or click to choose a .zip, .csv, .html, .json or .txt file",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportPreviewTitle": {
+    "message": "Ready to import",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportRestoreSettings": {
+    "message": "Also restore my reader settings (theme, font, size, spacing)",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportStart": {
+    "message": "Import",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportCancel": {
+    "message": "Cancel",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportKeepOpen": {
+    "message": "Keep this tab open until the import finishes.",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportOpenList": {
+    "message": "Open my reading list",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportAnother": {
+    "message": "Import another file",
+    "description": "DATA lane, pages/import.html"
+  },
+  "dataImportDropzoneLabel": {
+    "message": "Choose an export file to import",
+    "description": "DATA lane, pages/import.html (accessible name)"
+  },
+  "dataImportFileLabel": {
+    "message": "Choose an export file",
+    "description": "DATA lane, pages/import.html (accessible name)"
+  },
+  "dataImportProgressLabel": {
+    "message": "Import progress",
+    "description": "DATA lane, pages/import.html (accessible name)"
+  },
+  "dataSettingsThemeAuto": {
+    "message": "Auto (match my system)",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataSettingsFontSerif": {
+    "message": "Serif",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataSettingsFontSans": {
+    "message": "Sans",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataSettingsFontReadable": {
+    "message": "Readable (easier to tell letters apart)",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataSettingsFontMono": {
+    "message": "Mono",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataSettingsFontSystem": {
+    "message": "System",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataSettingsLineSpacing": {
+    "message": "Line spacing",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataSettingsLineRelaxed": {
+    "message": "Relaxed (1.8)",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataSettingsLineLoose": {
+    "message": "Loose (2.0)",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataSettingsOpenIn": {
+    "message": "Open articles from the side panel in",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataSettingsOpenInTab": {
+    "message": "New tab",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataSettingsOpenInPanel": {
+    "message": "Side panel",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataImportCardTitle": {
+    "message": "Import",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataImportCardText": {
+    "message": "Bring your list over from Pocket, Omnivore, Instapaper, Raindrop, browser bookmarks, a list of links, or a ReadLater backup.",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataImportCardButton": {
+    "message": "Import a file",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportTitle": {
+    "message": "Export",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportText": {
+    "message": "Take your reading list anywhere. Files are made on this computer and nothing is uploaded.",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportFormat": {
+    "message": "Format",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportBackupName": {
+    "message": "Full backup (.json)",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportBackupDesc": {
+    "message": "Everything: articles with their text, tags, highlights and reader settings. Restore it with Import.",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportMdName": {
+    "message": "Markdown (.md)",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportMdDesc": {
+    "message": "One Markdown file with each article's text, tags and highlights. Opens in Obsidian and other notes apps.",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportHlName": {
+    "message": "Highlights only (.md)",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportHlDesc": {
+    "message": "Every highlight and note, grouped by article, in one Markdown file for Obsidian or any notes app.",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportBmName": {
+    "message": "Bookmarks (.html)",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportBmDesc": {
+    "message": "Imports into any browser. Apps that read bookmark tags, like Pinboard, keep your tags too.",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportCsvName": {
+    "message": "Spreadsheet (.csv)",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportCsvDesc": {
+    "message": "Pocket's columns (title, url, time_added, tags, status), so other apps can import it.",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportWhich": {
+    "message": "Articles",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportWhichAll": {
+    "message": "All articles",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportWhichUnread": {
+    "message": "Unread only",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportWhichFav": {
+    "message": "Favorites only",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportImages": {
+    "message": "Keep images as links",
+    "description": "DATA lane, options/options.html"
+  },
+  "dataExportButton": {
+    "message": "Export",
+    "description": "DATA lane, options/options.html"
+  },
+  "panelAlreadySaved": {
+    "message": "Already in your list",
+    "description": "Side panel (1.3.0): AlreadySaved"
+  },
+  "panelAlreadySavedLink": {
+    "message": "Already saved as a link",
+    "description": "Side panel (1.3.0): AlreadySavedLink"
+  },
+  "panelCantSave": {
+    "message": "This page can't be saved",
+    "description": "Side panel (1.3.0): CantSave"
+  },
+  "panelCantSaveNote": {
+    "message": "Browser pages and local files can't be saved. Switch to a web page and try again.",
+    "description": "Side panel (1.3.0): CantSaveNote"
+  },
+  "panelClearLength": {
+    "message": "Show every length",
+    "description": "Side panel (1.3.0): ClearLength"
+  },
+  "panelDeleteFailed": {
+    "message": "Couldn't delete that. Try again.",
+    "description": "Side panel (1.3.0): DeleteFailed"
+  },
+  "panelDismiss": {
+    "message": "Dismiss",
+    "description": "Side panel (1.3.0): Dismiss"
+  },
+  "panelDurH": {
+    "message": "$VALUE1$ h",
+    "description": "Side panel (1.3.0): DurH",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelDurHM": {
+    "message": "$VALUE1$ h $VALUE2$ min",
+    "description": "Side panel (1.3.0): DurHM",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      },
+      "value2": {
+        "content": "$2"
+      }
+    }
+  },
+  "panelDurM": {
+    "message": "$VALUE1$ min",
+    "description": "Side panel (1.3.0): DurM",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelEmptyLengthHint": {
+    "message": "Nothing in this view matches that length. Try another tab or show every length.",
+    "description": "Side panel (1.3.0): EmptyLengthHint"
+  },
+  "panelEmptyLongTitle": {
+    "message": "No long reads here",
+    "description": "Side panel (1.3.0): EmptyLongTitle"
+  },
+  "panelEmptyQuickTitle": {
+    "message": "No quick reads here",
+    "description": "Side panel (1.3.0): EmptyQuickTitle"
+  },
+  "panelHlArticleGone": {
+    "message": "That article isn't in your list anymore, so the original page opened.",
+    "description": "Side panel (1.3.0): HlArticleGone"
+  },
+  "panelHlArticleGoneNoUrl": {
+    "message": "That article isn't in your list anymore.",
+    "description": "Side panel (1.3.0): HlArticleGoneNoUrl"
+  },
+  "panelHlCopied": {
+    "message": "Highlight copied",
+    "description": "Side panel (1.3.0): HlCopied"
+  },
+  "panelHlCopy": {
+    "message": "Copy highlight",
+    "description": "Side panel (1.3.0): HlCopy"
+  },
+  "panelHlCountMany": {
+    "message": "$VALUE1$ highlights",
+    "description": "Side panel (1.3.0): HlCountMany",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelHlCountOne": {
+    "message": "1 highlight",
+    "description": "Side panel (1.3.0): HlCountOne"
+  },
+  "panelHlDelete": {
+    "message": "Delete highlight",
+    "description": "Side panel (1.3.0): HlDelete"
+  },
+  "panelHlDeleteFailed": {
+    "message": "Couldn't delete that highlight. Try again.",
+    "description": "Side panel (1.3.0): HlDeleteFailed"
+  },
+  "panelHlDeleted": {
+    "message": "Highlight deleted",
+    "description": "Side panel (1.3.0): HlDeleted"
+  },
+  "panelHlEmptyHint": {
+    "message": "Open any saved article in reader view, select a sentence you like and pick a color. Every highlight and note you make shows up here.",
+    "description": "Side panel (1.3.0): HlEmptyHint"
+  },
+  "panelHlEmptyTitle": {
+    "message": "No highlights yet",
+    "description": "Side panel (1.3.0): HlEmptyTitle"
+  },
+  "panelHlExport": {
+    "message": "Export highlights",
+    "description": "Side panel (1.3.0): HlExport"
+  },
+  "panelHlExportHeading": {
+    "message": "ReadLater highlights",
+    "description": "Side panel (1.3.0): HlExportHeading"
+  },
+  "panelHlExportTitle": {
+    "message": "Download every highlight as one Markdown file",
+    "description": "Side panel (1.3.0): HlExportTitle"
+  },
+  "panelHlExportedMany": {
+    "message": "Exported $VALUE1$ highlights",
+    "description": "Side panel (1.3.0): HlExportedMany",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelHlExportedOn": {
+    "message": "Exported $VALUE1$",
+    "description": "Side panel (1.3.0): HlExportedOn",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelHlExportedOne": {
+    "message": "Exported 1 highlight",
+    "description": "Side panel (1.3.0): HlExportedOne"
+  },
+  "panelHlFromMany": {
+    "message": "from $VALUE1$ articles",
+    "description": "Side panel (1.3.0): HlFromMany",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelHlFromOne": {
+    "message": "from 1 article",
+    "description": "Side panel (1.3.0): HlFromOne"
+  },
+  "panelHlListLabel": {
+    "message": "Highlights",
+    "description": "Side panel (1.3.0): HlListLabel"
+  },
+  "panelHlMatchMany": {
+    "message": "$VALUE1$ highlights match",
+    "description": "Side panel (1.3.0): HlMatchMany",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelHlMatchOne": {
+    "message": "1 highlight matches",
+    "description": "Side panel (1.3.0): HlMatchOne"
+  },
+  "panelHlNoMatchHint": {
+    "message": "Try another word. Search looks at quotes, notes and article titles.",
+    "description": "Side panel (1.3.0): HlNoMatchHint"
+  },
+  "panelHlNoMatchTitle": {
+    "message": "No highlights match",
+    "description": "Side panel (1.3.0): HlNoMatchTitle"
+  },
+  "panelHlNothingToExport": {
+    "message": "There are no highlights to export yet.",
+    "description": "Side panel (1.3.0): HlNothingToExport"
+  },
+  "panelHlOpen": {
+    "message": "Open in article",
+    "description": "Side panel (1.3.0): HlOpen"
+  },
+  "panelHlOpenArticle": {
+    "message": "Open article",
+    "description": "Side panel (1.3.0): HlOpenArticle"
+  },
+  "panelHlRestored": {
+    "message": "Highlight restored",
+    "description": "Side panel (1.3.0): HlRestored"
+  },
+  "panelHlSearchLabel": {
+    "message": "Search highlights",
+    "description": "Side panel (1.3.0): HlSearchLabel"
+  },
+  "panelHlSearchPlaceholder": {
+    "message": "Search highlights...",
+    "description": "Side panel (1.3.0): HlSearchPlaceholder"
+  },
+  "panelHlShowMore": {
+    "message": "Show more highlights",
+    "description": "Side panel (1.3.0): HlShowMore"
+  },
+  "panelHlUntitled": {
+    "message": "Untitled article",
+    "description": "Side panel (1.3.0): HlUntitled"
+  },
+  "panelLengthAll": {
+    "message": "Showing every length",
+    "description": "Side panel (1.3.0): LengthAll"
+  },
+  "panelLengthLong": {
+    "message": "Showing long reads, 15 min or more",
+    "description": "Side panel (1.3.0): LengthLong"
+  },
+  "panelLengthQuick": {
+    "message": "Showing quick reads, 5 min or less",
+    "description": "Side panel (1.3.0): LengthQuick"
+  },
+  "panelLinkNote": {
+    "message": "Chrome lets ReadLater read a page only after you click the ReadLater icon on it. Do that, then save again here to add the full text.",
+    "description": "Side panel (1.3.0): LinkNote"
+  },
+  "panelListSummary": {
+    "message": "$VALUE1$, about $VALUE2$",
+    "description": "Side panel (1.3.0): ListSummary",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      },
+      "value2": {
+        "content": "$2"
+      }
+    }
+  },
+  "panelLongReadsHint": {
+    "message": "15 min or more",
+    "description": "Side panel (1.3.0): LongReadsHint"
+  },
+  "panelMarkRead": {
+    "message": "Mark as read",
+    "description": "Side panel (1.3.0): MarkRead"
+  },
+  "panelMarkUnread": {
+    "message": "Mark as unread",
+    "description": "Side panel (1.3.0): MarkUnread"
+  },
+  "panelMarkedRead": {
+    "message": "Marked as read",
+    "description": "Side panel (1.3.0): MarkedRead"
+  },
+  "panelMarkedUnread": {
+    "message": "Marked as unread",
+    "description": "Side panel (1.3.0): MarkedUnread"
+  },
+  "panelNoTabs": {
+    "message": "There are no web pages to save in this window.",
+    "description": "Side panel (1.3.0): NoTabs"
+  },
+  "panelOpenArticlesIn": {
+    "message": "Open articles in",
+    "description": "Side panel (1.3.0): OpenArticlesIn"
+  },
+  "panelOpenInChangedPanel": {
+    "message": "Articles will open in this panel",
+    "description": "Side panel (1.3.0): OpenInChangedPanel"
+  },
+  "panelOpenInChangedTab": {
+    "message": "Articles will open in a new tab",
+    "description": "Side panel (1.3.0): OpenInChangedTab"
+  },
+  "panelOpenInPanel": {
+    "message": "This panel",
+    "description": "Side panel (1.3.0): OpenInPanel"
+  },
+  "panelOpenNewTab": {
+    "message": "Open in new tab",
+    "description": "Side panel (1.3.0): OpenNewTab"
+  },
+  "panelQuickReadsHint": {
+    "message": "5 min or less",
+    "description": "Side panel (1.3.0): QuickReadsHint"
+  },
+  "panelReadInPanel": {
+    "message": "Read in panel",
+    "description": "Side panel (1.3.0): ReadInPanel"
+  },
+  "panelReadNow": {
+    "message": "Read now",
+    "description": "Side panel (1.3.0): ReadNow"
+  },
+  "panelRediscover": {
+    "message": "Rediscover",
+    "description": "Side panel (1.3.0): Rediscover"
+  },
+  "panelRediscoverHint": {
+    "message": "Open a random unread article you saved a while ago",
+    "description": "Side panel (1.3.0): RediscoverHint"
+  },
+  "panelRediscoverNone": {
+    "message": "Nothing unread to rediscover. Nice work.",
+    "description": "Side panel (1.3.0): RediscoverNone"
+  },
+  "panelRediscoverOpened": {
+    "message": "Opened \"$VALUE1$\" in a new tab",
+    "description": "Side panel (1.3.0): RediscoverOpened",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelRemoveTag": {
+    "message": "Remove tag",
+    "description": "Side panel (1.3.0): RemoveTag"
+  },
+  "panelRemoveTagMany": {
+    "message": "Remove a tag",
+    "description": "Side panel (1.3.0): RemoveTagMany"
+  },
+  "panelRemoveTagNamed": {
+    "message": "Remove tag \"$VALUE1$\"",
+    "description": "Side panel (1.3.0): RemoveTagNamed",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelRemoveWhichTag": {
+    "message": "Remove which tag?",
+    "description": "Side panel (1.3.0): RemoveWhichTag"
+  },
+  "panelRestoreFailed": {
+    "message": "Some articles couldn't be restored.",
+    "description": "Side panel (1.3.0): RestoreFailed"
+  },
+  "panelRestoredMany": {
+    "message": "$VALUE1$ articles restored",
+    "description": "Side panel (1.3.0): RestoredMany",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelRestoredOne": {
+    "message": "Article restored",
+    "description": "Side panel (1.3.0): RestoredOne"
+  },
+  "panelSaveAllTabs": {
+    "message": "Save all tabs in this window",
+    "description": "Side panel (1.3.0): SaveAllTabs"
+  },
+  "panelSaveFailed": {
+    "message": "Couldn't save this page",
+    "description": "Side panel (1.3.0): SaveFailed"
+  },
+  "panelSaveFailedNote": {
+    "message": "Something went wrong. Try again in a moment.",
+    "description": "Side panel (1.3.0): SaveFailedNote"
+  },
+  "panelSaveShort": {
+    "message": "Save page",
+    "description": "Side panel (1.3.0): SaveShort"
+  },
+  "panelSavedFilled": {
+    "message": "Full text added",
+    "description": "Side panel (1.3.0): SavedFilled"
+  },
+  "panelSavedFull": {
+    "message": "Saved with full text",
+    "description": "Side panel (1.3.0): SavedFull"
+  },
+  "panelSavedLink": {
+    "message": "Saved as a link",
+    "description": "Side panel (1.3.0): SavedLink"
+  },
+  "panelSavedTabsMany": {
+    "message": "Saved $VALUE1$ tabs",
+    "description": "Side panel (1.3.0): SavedTabsMany",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelSavedTabsNone": {
+    "message": "Nothing new to save",
+    "description": "Side panel (1.3.0): SavedTabsNone"
+  },
+  "panelSavedTabsOne": {
+    "message": "Saved 1 tab",
+    "description": "Side panel (1.3.0): SavedTabsOne"
+  },
+  "panelSavedText": {
+    "message": "Saved",
+    "description": "Side panel (1.3.0): SavedText"
+  },
+  "panelSavedTextNote": {
+    "message": "Only the plain text of this page could be kept.",
+    "description": "Side panel (1.3.0): SavedTextNote"
+  },
+  "panelSaving": {
+    "message": "Saving this page...",
+    "description": "Side panel (1.3.0): Saving"
+  },
+  "panelSavingTabs": {
+    "message": "Saving tabs...",
+    "description": "Side panel (1.3.0): SavingTabs"
+  },
+  "panelStats": {
+    "message": "Reading stats",
+    "description": "Side panel (1.3.0): Stats"
+  },
+  "panelTabHighlights": {
+    "message": "Highlights",
+    "description": "Side panel (1.3.0): TabHighlights"
+  },
+  "panelTabsDupMany": {
+    "message": "$VALUE1$ were already in your list.",
+    "description": "Side panel (1.3.0): TabsDupMany",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelTabsDupOne": {
+    "message": "1 was already in your list.",
+    "description": "Side panel (1.3.0): TabsDupOne"
+  },
+  "panelTabsFailMany": {
+    "message": "$VALUE1$ couldn't be saved.",
+    "description": "Side panel (1.3.0): TabsFailMany",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelTabsFailOne": {
+    "message": "1 couldn't be saved.",
+    "description": "Side panel (1.3.0): TabsFailOne"
+  },
+  "panelTabsLinkNoteAll": {
+    "message": "Tabs are saved as links. To add a page's full text, click the ReadLater icon on it, then save again here.",
+    "description": "Side panel (1.3.0): TabsLinkNoteAll"
+  },
+  "panelTabsLinkNoteOther": {
+    "message": "Other tabs are saved as links. To add a page's full text, click the ReadLater icon on it, then save again here.",
+    "description": "Side panel (1.3.0): TabsLinkNoteOther"
+  },
+  "panelTabsUndoneMany": {
+    "message": "Removed the $VALUE1$ tabs you just saved",
+    "description": "Side panel (1.3.0): TabsUndoneMany",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelTabsUndoneOne": {
+    "message": "Removed the tab you just saved",
+    "description": "Side panel (1.3.0): TabsUndoneOne"
+  },
+  "panelTagRemoved": {
+    "message": "Removed tag \"$VALUE1$\"",
+    "description": "Side panel (1.3.0): TagRemoved",
+    "placeholders": {
+      "value1": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelTagRestored": {
+    "message": "Tag restored",
+    "description": "Side panel (1.3.0): TagRestored"
+  },
+  "panelTryAgain": {
+    "message": "Try again",
+    "description": "Side panel (1.3.0): TryAgain"
+  },
+  "panelUndo": {
+    "message": "Undo",
+    "description": "Side panel (1.3.0): Undo"
+  },
+  "panelUndoHint": {
+    "message": "Press Cmd+Z or choose Undo to bring it back.",
+    "description": "Side panel (1.3.0): UndoHint"
+  },
+  "panelUntagFailed": {
+    "message": "Couldn't remove that tag. Try again.",
+    "description": "Side panel (1.3.0): UntagFailed"
+  },
+  "panelViewOptions": {
+    "message": "View options",
+    "description": "Side panel (1.3.0): ViewOptions"
+  },
+  "readerEndBack": {
+    "message": "Back to list",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerEndCaughtUp": {
+    "message": "That was your last unread article. Nice work.",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerEndMarkRead": {
+    "message": "Mark as read",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerEndMarkUnread": {
+    "message": "Mark unread",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerEndMarkedRead": {
+    "message": "Marked as read",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerEndMinRead": {
+    "message": "$ARG1$ min read",
+    "description": "Reader lane (reader-end.js) $1/$2 are substituted values.",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "readerEndNextUnread": {
+    "message": "Next unread",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerEndNoneLeft": {
+    "message": "No more unread articles",
+    "description": "Reader lane (reader-end.js)"
+  },
+  "readerEndTitle": {
+    "message": "End of article",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerEndUntitled": {
+    "message": "Untitled",
+    "description": "Reader lane (reader-end.js)"
+  },
+  "readerHlAddNote": {
+    "message": "Add note",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlButton": {
+    "message": "Highlights",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlButtonCount": {
+    "message": "Highlights ($ARG1$)",
+    "description": "Reader lane (reader-highlights.js) $1/$2 are substituted values.",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "readerHlButtonTitle": {
+    "message": "Highlights and notes",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerHlCancel": {
+    "message": "Cancel",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlColorAria": {
+    "message": "Highlight $ARG1$",
+    "description": "Reader lane (reader-highlights.js) $1/$2 are substituted values.",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "readerHlColorBlue": {
+    "message": "Blue",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlColorGreen": {
+    "message": "Green",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlColorPink": {
+    "message": "Pink",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlColorYellow": {
+    "message": "Yellow",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlCopied": {
+    "message": "Copied",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlCopy": {
+    "message": "Copy",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlCopyAll": {
+    "message": "Copy all as Markdown",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerHlDelete": {
+    "message": "Delete",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlDeleted": {
+    "message": "Highlight deleted",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlDownload": {
+    "message": "Download .md",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerHlDrawerClose": {
+    "message": "Close highlights",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerHlDrawerTitle": {
+    "message": "Highlights",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerHlEditNote": {
+    "message": "Edit note",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlEmpty": {
+    "message": "No highlights yet. Select text in the article, then pick a color.",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerHlJump": {
+    "message": "Show in article",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlNotFound": {
+    "message": "Not found in this copy",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlNotInCopy": {
+    "message": "That highlight isn't in this copy of the article",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlNoteHint": {
+    "message": "Ctrl+Enter to save",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlNoteHintMac": {
+    "message": "Cmd+Enter to save",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlNoteLabel": {
+    "message": "Note",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlNotePlaceholder": {
+    "message": "Write a note...",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlNoteRemoved": {
+    "message": "Note removed",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlNoteSaved": {
+    "message": "Note saved",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlRestored": {
+    "message": "Highlight restored",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlSave": {
+    "message": "Save",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlSaveFailed": {
+    "message": "Couldn't save the highlight. Try again.",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlToolbar": {
+    "message": "Highlight",
+    "description": "Reader lane (reader-highlights.js)"
+  },
+  "readerHlUndo": {
+    "message": "Undo",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerThemeAuto": {
+    "message": "Auto",
+    "description": "Reader lane (reader.js)"
+  },
+  "readerThemeAutoAria": {
+    "message": "Auto theme, follows your system",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerThemeAutoTitle": {
+    "message": "Auto (follows your system)",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTtsClose": {
+    "message": "Stop listening",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTtsError": {
+    "message": "Couldn't play this voice. Try another one.",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTtsFinished": {
+    "message": "Finished",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTtsListen": {
+    "message": "Listen",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTtsListenTitle": {
+    "message": "Listen (L)",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTtsNext": {
+    "message": "Next paragraph",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTtsNoVoices": {
+    "message": "No voices are installed. Add a voice in your system's speech settings, then try again.",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTtsNoVoicesShort": {
+    "message": "Listen (no voices installed)",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTtsPause": {
+    "message": "Pause",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTtsPlay": {
+    "message": "Play",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTtsPlayer": {
+    "message": "Listen player",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTtsPrev": {
+    "message": "Previous paragraph",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTtsProgress": {
+    "message": "$ARG1$ of $ARG2$",
+    "description": "Reader lane (reader-tts.js) $1/$2 are substituted values.",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      },
+      "arg2": {
+        "content": "$2"
+      }
+    }
+  },
+  "readerTtsRate": {
+    "message": "$ARG1$x",
+    "description": "Reader lane (reader-tts.js) $1/$2 are substituted values. Playback speed label, e.g. 1.25x.",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "readerTtsSpeed": {
+    "message": "Speed",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTtsUnsupported": {
+    "message": "This browser can't read articles aloud.",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTtsVoice": {
+    "message": "Voice",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTtsVoiceAuto": {
+    "message": "Automatic voice",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTtsVoicesArticle": {
+    "message": "Article language",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTtsVoicesOther": {
+    "message": "Other languages",
+    "description": "Reader lane (reader-tts.js)"
+  },
+  "readerTypeFontLabel": {
+    "message": "Font",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTypeFontMono": {
+    "message": "Mono",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTypeFontReadable": {
+    "message": "Readable",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTypeFontSans": {
+    "message": "Sans",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTypeFontSerif": {
+    "message": "Serif",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTypeFontSystem": {
+    "message": "System",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTypeLineCompact": {
+    "message": "Compact",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTypeLineLabel": {
+    "message": "Line spacing",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTypeLineLoose": {
+    "message": "Loose",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTypeLineNormal": {
+    "message": "Normal",
+    "description": "Reader lane (reader.html)"
+  },
+  "readerTypeLineRelaxed": {
+    "message": "Relaxed",
+    "description": "Reader lane (reader.html)"
+  },
+  "popupWnAria": {
+    "message": "What's new in ReadLater 1.3",
+    "description": "Popup: label of the New in 1.3 card"
+  },
+  "popupWnClose": {
+    "message": "Hide this note",
+    "description": "Popup: close button on the New in 1.3 card"
+  },
+  "popupWnEyebrow": {
+    "message": "New in 1.3",
+    "description": "Popup: small heading on the New in 1.3 card"
+  },
+  "popupWnTitle": {
+    "message": "Highlights, Listen mode and a smarter side panel",
+    "description": "Popup: New in 1.3 card title"
+  },
+  "popupWnBody": {
+    "message": "It's the biggest update yet, and nearly all of it is free. Here's what changed and why.",
+    "description": "Popup: New in 1.3 card text"
+  },
+  "popupWnOpen": {
+    "message": "See what's new",
+    "description": "Popup: button opening the What's new page"
+  },
+  "whatsNewSeeAll": {
+    "message": "See the full page",
+    "description": "Side panel What's new dialog: opens the full What's new page"
+  },
+  "proExportTag": {
+    "message": "Pro",
+    "description": "Settings export: tag on Pro-only formats"
+  },
+  "proExportBlocked": {
+    "message": "Markdown export is part of Pro. Your free try has been used. The full backup, bookmarks and CSV exports stay free.",
+    "description": "Settings export: shown when a free user's Markdown try is used up"
+  },
+  "proExportFeature": {
+    "message": "Markdown export",
+    "description": "Paywall feature name"
+  },
+  "proListenCap": {
+    "message": "You've listened to 3 articles today on the free plan. Listen is back tomorrow, or unlimited with Pro.",
+    "description": "Reader: free daily Listen limit reached"
+  },
+  "proListenFeature": {
+    "message": "Unlimited Listen",
+    "description": "Paywall feature name"
+  },
+  "proExportBlockedShort": {
+    "message": "Markdown export is part of Pro, and your free try has been used.",
+    "description": "Side panel: Markdown export blocked"
+  },
+  "polishTtsOnline": {
+    "message": "(online)",
+    "description": "Reader Listen: suffix after a voice name for Chrome's network voices, which need a connection"
+  },
+  "fetchAllowContinue": {
+    "message": "Allow and continue",
+    "description": "Get the full text page."
+  },
+  "fetchAllowReading": {
+    "message": "Allow reading pages",
+    "description": "Side panel save message / link-only banner."
+  },
+  "fetchAllowStart": {
+    "message": "Allow and start",
+    "description": "Get the full text page."
+  },
+  "fetchBanner": {
+    "message": "$COUNT$ articles have no saved text",
+    "description": "Side panel save message / link-only banner.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "fetchBannerAction": {
+    "message": "Get the full text",
+    "description": "Side panel link-only banner/menu."
+  },
+  "fetchBannerOne": {
+    "message": "1 article has no saved text",
+    "description": "Side panel save message / link-only banner."
+  },
+  "fetchBannerRunning": {
+    "message": "Getting full text, $COUNT$ left",
+    "description": "Side panel save message / link-only banner.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "fetchBannerShow": {
+    "message": "Show progress",
+    "description": "Side panel save message / link-only banner."
+  },
+  "fetchDenied": {
+    "message": "No problem. Nothing was downloaded. You can allow it any time from this page.",
+    "description": "Get the full text page."
+  },
+  "fetchDoneSomeTitle": {
+    "message": "Finished, with a few pages that couldn't be read",
+    "description": "Get the full text page."
+  },
+  "fetchDoneTitle": {
+    "message": "All done",
+    "description": "Get the full text page."
+  },
+  "fetchExplain1": {
+    "message": "ReadLater downloads each page straight from its own site and keeps only the readable article, on this computer.",
+    "description": "Get the full text page."
+  },
+  "fetchExplain2": {
+    "message": "Nothing is sent to Zovo or anyone else, and it goes gently, one page at a time per site.",
+    "description": "Get the full text page."
+  },
+  "fetchFailedHint": {
+    "message": "You can open these pages and save them from there, or try them again later.",
+    "description": "Get the full text page."
+  },
+  "fetchFailedMore": {
+    "message": "Showing the latest $COUNT$.",
+    "description": "Get the full text page.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "fetchHeading": {
+    "message": "Get the full text of your saved links",
+    "description": "Get the full text page."
+  },
+  "fetchImportButton": {
+    "message": "Get the full text for $COUNT$ imported articles",
+    "description": "Import result card.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "fetchImportButtonOne": {
+    "message": "Get the full text for 1 imported article",
+    "description": "Import result card."
+  },
+  "fetchImportNote": {
+    "message": "They came over as links only. ReadLater can download each page's text from its site, so you can read them offline, highlight them and listen to them.",
+    "description": "Import result card."
+  },
+  "fetchIntro": {
+    "message": "Articles you imported or saved as links have no text yet, so you can't read them offline, highlight them or listen to them. ReadLater can fill them in for you.",
+    "description": "Get the full text page."
+  },
+  "fetchLoading": {
+    "message": "Checking your list...",
+    "description": "Get the full text page."
+  },
+  "fetchLockNote": {
+    "message": "This is already running in another ReadLater tab. Use that tab to follow it, or close it and reload this one.",
+    "description": "Get the full text page."
+  },
+  "fetchMenuItem": {
+    "message": "Get full text for saved links ($COUNT$)",
+    "description": "Side panel save message / link-only banner.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "fetchMenuItemPlain": {
+    "message": "Get full text for saved links",
+    "description": "Side panel link-only banner/menu."
+  },
+  "fetchNeedAccessHint": {
+    "message": "ReadLater no longer has access to read pages. Allow it again to continue.",
+    "description": "Get the full text page."
+  },
+  "fetchNoneTitle": {
+    "message": "Every saved article already has its text",
+    "description": "Get the full text page."
+  },
+  "fetchNowLabel": {
+    "message": "Reading now",
+    "description": "Get the full text page."
+  },
+  "fetchOfflinePaused": {
+    "message": "You're offline. This continues when you're back online.",
+    "description": "Get the full text page."
+  },
+  "fetchOfflineTitle": {
+    "message": "Waiting for the internet",
+    "description": "Get the full text page."
+  },
+  "fetchOpenList": {
+    "message": "Open my reading list",
+    "description": "Get the full text page."
+  },
+  "fetchOpenPage": {
+    "message": "Open page",
+    "description": "Get the full text page."
+  },
+  "fetchOpenPageNamed": {
+    "message": "Open \"$TITLE$\" in a new tab",
+    "description": "Get the full text page.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "fetchPageTitle": {
+    "message": "Get the full text - ReadLater Pro",
+    "description": "Get the full text page."
+  },
+  "fetchPanelAllowNote": {
+    "message": "Allow ReadLater to read pages and it keeps the full text of anything you save here, ready offline.",
+    "description": "Side panel save message / link-only banner."
+  },
+  "fetchPanelUnreadable": {
+    "message": "This page couldn't be read, so its link was saved. Chrome doesn't let extensions read some pages, like PDFs and the Chrome Web Store.",
+    "description": "Side panel save message / link-only banner."
+  },
+  "fetchPause": {
+    "message": "Pause",
+    "description": "Get the full text page."
+  },
+  "fetchPausedAnnounce": {
+    "message": "Paused",
+    "description": "Get the full text page."
+  },
+  "fetchPausedHint": {
+    "message": "Nothing is downloading. Resume whenever you like.",
+    "description": "Get the full text page."
+  },
+  "fetchPausedTitle": {
+    "message": "Paused",
+    "description": "Get the full text page."
+  },
+  "fetchPermNote": {
+    "message": "Chrome will ask to let ReadLater read pages on the sites you visit. That's what lets it download them. You can turn it off any time in Chrome's extension settings.",
+    "description": "Get the full text page."
+  },
+  "fetchProgressAnnounce": {
+    "message": "$PERCENT$ percent done",
+    "description": "Get the full text page.",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "fetchProgressLabel": {
+    "message": "Full text progress",
+    "description": "Get the full text page (screen reader label)."
+  },
+  "fetchProgressValue": {
+    "message": "$COUNT$ of $TOTAL$ pages",
+    "description": "Get the full text page.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "fetchResume": {
+    "message": "Resume",
+    "description": "Get the full text page."
+  },
+  "fetchResumedAnnounce": {
+    "message": "Picking up where you left off.",
+    "description": "Get the full text page."
+  },
+  "fetchRetry": {
+    "message": "Try these again",
+    "description": "Get the full text page."
+  },
+  "fetchRunningHint": {
+    "message": "Keep this tab open. If you close it, it picks up where it left off next time you open this page.",
+    "description": "Get the full text page."
+  },
+  "fetchRunningTitle": {
+    "message": "Getting the full text...",
+    "description": "Get the full text page."
+  },
+  "fetchSettingsButton": {
+    "message": "Get the full text",
+    "description": "Settings, Data section."
+  },
+  "fetchSettingsText": {
+    "message": "Some of your articles are links only, usually from an import. ReadLater can download their text from each site so they're readable offline. Nothing is sent to Zovo.",
+    "description": "Settings, Data section."
+  },
+  "fetchSettingsTitle": {
+    "message": "Full text for saved links",
+    "description": "Settings, Data section."
+  },
+  "fetchStart": {
+    "message": "Start",
+    "description": "Get the full text page."
+  },
+  "fetchStartAgain": {
+    "message": "Get the rest",
+    "description": "Get the full text page."
+  },
+  "fetchStartedAnnounce": {
+    "message": "Getting the full text. You can keep using Chrome while this runs.",
+    "description": "Get the full text page."
+  },
+  "fetchStatDone": {
+    "message": "Saved",
+    "description": "Get the full text page."
+  },
+  "fetchStatFailed": {
+    "message": "Couldn't read",
+    "description": "Get the full text page."
+  },
+  "fetchStatLeft": {
+    "message": "Left",
+    "description": "Get the full text page."
+  },
+  "fetchStop": {
+    "message": "Stop",
+    "description": "Get the full text page."
+  },
+  "fetchStoppedAnnounce": {
+    "message": "Stopped. Nothing was lost; you can start again any time.",
+    "description": "Get the full text page."
+  },
+  "fetchStoppedTitle": {
+    "message": "Stopped",
+    "description": "Get the full text page."
+  },
+  "fetchTabsAllowNote": {
+    "message": "Tabs were saved as links. Allow ReadLater to read pages to keep their full text.",
+    "description": "Side panel save message / link-only banner."
+  },
+  "fetchTabsProgress": {
+    "message": "Tab $COUNT$ of $TOTAL$",
+    "description": "Side panel save message / link-only banner.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "fetchTabsUnreadable": {
+    "message": "$COUNT$ tabs couldn't be read, so their links were saved.",
+    "description": "Side panel save message / link-only banner.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "fetchTabsUnreadableOne": {
+    "message": "1 tab couldn't be read, so its link was saved.",
+    "description": "Side panel save message / link-only banner."
+  },
+  "fetchWhyBlocked": {
+    "message": "The site blocked the download ($CODE$)",
+    "description": "Get the full text page.",
+    "placeholders": {
+      "code": {
+        "content": "$1"
+      }
+    }
+  },
+  "fetchWhyInsecure": {
+    "message": "Couldn't reach a secure (https) copy of this page",
+    "description": "Get the full text page."
+  },
+  "fetchWhyNetwork": {
+    "message": "Couldn't reach the site",
+    "description": "Get the full text page."
+  },
+  "fetchWhyNotArticle": {
+    "message": "No article found on this page",
+    "description": "Get the full text page."
+  },
+  "fetchWhyNotFound": {
+    "message": "Page not found ($CODE$)",
+    "description": "Get the full text page.",
+    "placeholders": {
+      "code": {
+        "content": "$1"
+      }
+    }
+  },
+  "fetchWhyNotHtml": {
+    "message": "Not a web page (maybe a PDF or a file)",
+    "description": "Get the full text page."
+  },
+  "fetchWhyOther": {
+    "message": "Something went wrong",
+    "description": "Get the full text page."
+  },
+  "fetchWhySave": {
+    "message": "The text couldn't be saved",
+    "description": "Get the full text page."
+  },
+  "fetchWhyServer": {
+    "message": "The site had a problem ($CODE$)",
+    "description": "Get the full text page.",
+    "placeholders": {
+      "code": {
+        "content": "$1"
+      }
+    }
+  },
+  "fetchWhyTimeout": {
+    "message": "The site took too long to answer",
+    "description": "Get the full text page."
+  },
+  "fetchWhyTiny": {
+    "message": "Only a few lines came through. It may need a sign-in or a subscription.",
+    "description": "Get the full text page."
+  },
+  "fetchWhyTooBig": {
+    "message": "The page is over 5 MB",
+    "description": "Get the full text page."
+  },
+  "featureHighlightsNotes": {
+    "message": "Highlights and notes",
+    "description": "Paywall comparison row"
+  },
+  "featureExportFreeFormats": {
+    "message": "Backup, CSV and bookmarks export",
+    "description": "Paywall comparison row"
+  },
+  "featureListenAloud": {
+    "message": "Listen to articles",
+    "description": "Paywall comparison row"
+  },
+  "featureMarkdownExport": {
+    "message": "Markdown export",
+    "description": "Paywall comparison row"
+  },
+  "paywallStackListen": {
+    "message": "Listen to as many articles as you like, every day",
+    "description": "Paywall Pro benefit"
+  },
+  "paywallStackMarkdown": {
+    "message": "Export articles and highlights to Markdown for Obsidian and other notes apps",
+    "description": "Paywall Pro benefit"
+  },
+  "paywallSubtitleListen": {
+    "message": "You've used today's 3 free listens. Pro lets you listen to as many articles as you like.",
+    "description": "Paywall subtitle after the Listen cap"
+  },
+  "paywallSubtitleMarkdown": {
+    "message": "Your free Markdown export is used. Pro exports articles and highlights whenever you like. Backup, CSV and bookmarks stay free.",
+    "description": "Paywall subtitle after the Markdown try"
+  }
+}

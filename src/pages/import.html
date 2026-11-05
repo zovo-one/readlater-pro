@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cross-browser.css">
+    <link rel="stylesheet" href="../styles/design-tokens.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/design-system.css">
+    <title data-i18n="dataImportPageTitle">Import your reading list - ReadLater Pro</title>
+    <link rel="stylesheet" href="import.css">
+    <link rel="stylesheet" href="../styles/high-contrast.css">
+    <link rel="stylesheet" href="../styles/i18n-rtl.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToMainContent">Skip to main content</a>
+    <main class="import-container" id="main-content">
+        <header class="import-header">
+            <div class="import-logo">
+                <div class="import-logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                </div>
+                <span class="import-logo-text" data-i18n="appName">ReadLater Pro</span>
+            </div>
+            <h1 class="import-title" data-i18n="dataImportHeading">Import your reading list</h1>
+            <p class="import-description" data-i18n="dataImportIntro">Moving from Pocket, Omnivore, Instapaper or Raindrop? Drop your export file below. We'll show you what's inside before anything is imported. Nothing already in your list is changed or removed; only missing tags and highlights are added.</p>
+        </header>
+
+        <section class="import-sources" aria-labelledby="sources-heading">
+            <h2 class="import-sources-title" id="sources-heading" data-i18n="dataImportSourcesHeading">Files you can import</h2>
+            <ul class="import-sources-list">
+                <li><strong>Pocket</strong> <span data-i18n="dataImportSrcPocket">the pocket.zip export, a part_000000.csv file, or the older HTML export</span></li>
+                <li><strong>Omnivore</strong> <span data-i18n="dataImportSrcOmnivore">the export .zip, including the full text of each article and your highlights</span></li>
+                <li><strong>Instapaper</strong> <span data-i18n="dataImportSrcInstapaper">the CSV export</span></li>
+                <li><strong>Raindrop.io</strong> <span data-i18n="dataImportSrcRaindrop">the CSV or HTML export</span></li>
+                <li><strong data-i18n="dataImportSrcBookmarksName">Browser bookmarks</strong> <span data-i18n="dataImportSrcBookmarks">a bookmarks .html file from Chrome, Firefox, Safari or Edge (folders become tags)</span></li>
+                <li><strong data-i18n="dataImportSrcTxtName">A list of links</strong> <span data-i18n="dataImportSrcTxt">a .txt file with one address per line</span></li>
+                <li><strong data-i18n="dataImportSrcBackupName">ReadLater backup</strong> <span data-i18n="dataImportSrcBackup">a full backup .json from Settings, with tags and highlights</span></li>
+            </ul>
+        </section>
+
+        <div class="import-dropzone" id="dropzone" role="button" tabindex="0" aria-describedby="dropzone-hint" data-i18n-aria="dataImportDropzoneLabel" aria-label="Choose an export file to import">
+            <div class="import-dropzone-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="17 8 12 3 7 8"/>
+                    <line x1="12" y1="3" x2="12" y2="15"/>
+                </svg>
+            </div>
+            <div class="import-dropzone-text" data-i18n="dataImportDropzoneText">Drop your export file here</div>
+            <div class="import-dropzone-hint" id="dropzone-hint" data-i18n="dataImportDropzoneHint">or click to choose a .zip, .csv, .html, .json or .txt file</div>
+        </div>
+
+        <input type="file" id="file-input" accept=".zip,.csv,.tsv,.html,.htm,.json,.txt,application/zip,text/csv,text/html,application/json,text/plain" data-i18n-aria="dataImportFileLabel" aria-label="Choose an export file">
+
+        <div class="import-reading" id="reading-status" hidden>
+            <span class="import-spinner" aria-hidden="true"></span>
+            <span id="reading-text" data-i18n="dataImportReading">Reading your file...</span>
+        </div>
+
+        <section class="import-card import-preview" id="preview-section" hidden aria-labelledby="preview-title" tabindex="-1">
+            <h2 class="import-card-title" id="preview-title" data-i18n="dataImportPreviewTitle">Ready to import</h2>
+            <p class="import-card-sub" id="preview-source"></p>
+            <dl class="import-stats" id="preview-stats"></dl>
+            <div class="import-tags" id="preview-tags" hidden></div>
+            <div class="import-notes" id="preview-notes"></div>
+            <label class="import-check" id="restore-settings-row" hidden>
+                <input type="checkbox" id="restore-settings" checked>
+                <span data-i18n="dataImportRestoreSettings">Also restore my reader settings (theme, font, size, spacing)</span>
+            </label>
+            <div class="import-actions">
+                <button type="button" class="btn btn-primary" id="btn-start" data-i18n="dataImportStart">Import</button>
+                <button type="button" class="btn btn-secondary" id="btn-cancel" data-i18n="dataImportCancel">Cancel</button>
+            </div>
+        </section>
+
+        <div class="import-progress" id="progress-section">
+            <div class="import-progress-bar-container">
+                <div class="import-progress-bar" id="progress-bar" role="progressbar" data-i18n-aria="dataImportProgressLabel" aria-label="Import progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+            </div>
+            <div class="import-progress-text" id="progress-text" data-i18n="dataImportStarting">Starting...</div>
+            <p class="import-progress-hint" data-i18n="dataImportKeepOpen">Keep this tab open until the import finishes.</p>
+        </div>
+
+        <section class="import-card import-result" id="result-section" aria-labelledby="result-title" tabindex="-1">
+            <h2 class="import-result-title" id="result-title"></h2>
+            <ul class="import-result-list" id="result-details"></ul>
+            <div class="import-notes" id="result-notes"></div>
+            <div class="import-actions" id="result-actions" hidden>
+                <!-- fetch lane hook: shown by import.js after a link-only import -->
+                <button type="button" class="btn btn-primary" id="btn-fetch-text" data-rl-fetch-open="from=import" hidden></button>
+                <button type="button" class="btn btn-primary" id="btn-open-list" data-i18n="dataImportOpenList">Open my reading list</button>
+                <button type="button" class="btn btn-secondary" id="btn-another" data-i18n="dataImportAnother">Import another file</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Screen reader announcements -->
+    <div id="sr-announcements" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="../utils/focus-manager.js"></script>
+    <script src="../utils/announcer.js"></script>
+    <script src="../utils/sanitize.js"></script>
+    <script src="../shared/message-types.js"></script>
+    <script src="../shared/highlights-store.js"></script>
+    <script src="../shared/zip-reader.js"></script>
+    <script src="../features/pocket-import.js"></script>
+    <script src="import-csv.js"></script>
+    <script src="import-sources.js"></script>
+    <script src="../shared/i18n.js"></script>
+    <script src="../utils/i18n-loader.js"></script>
+    <script src="../shared/fulltext-access.js"></script><!-- fetch lane hook -->
+    <script src="import.js"></script>
+
+</body>
+</html>

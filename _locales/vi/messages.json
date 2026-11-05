@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "Lưu vào ReadLater"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing",
+      "message": "Lưu bài viết vào danh sách đọc. Chế độ đọc sạch, đọc ngoại tuyến. Sắp xếp bằng thẻ. Nhập từ Pocket."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - Lưu & Đọc Ngoại Tuyến"
+   }
+}

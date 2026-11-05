@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cross-browser.css">
+    <link rel="stylesheet" href="../styles/design-tokens.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/design-system.css">
+    <link rel="stylesheet" href="options.css">
+    <link rel="stylesheet" href="../styles/high-contrast.css">
+    <link rel="stylesheet" href="../components/paywall.css">
+    <link rel="stylesheet" href="community-links.css">
+    <link rel="stylesheet" href="feedback-form.css">
+    <link rel="stylesheet" href="faq-section.css">
+    <link rel="stylesheet" href="bug-report.css">
+    <link rel="stylesheet" href="changelog-section.css">
+    <link rel="stylesheet" href="../styles/i18n-rtl.css">
+    <title data-i18n="titleSettings">ReadLater Pro Settings</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToMainContent">Skip to main content</a>
+    <main class="options-container" id="main-content">
+        <header class="options-header">
+            <h1 class="options-title">ReadLater <span class="options-title-accent">Pro</span></h1>
+            <span class="badge" id="tier-badge" data-i18n="badgeFree">Free</span>
+            <span class="options-version" id="app-version"></span>
+        </header>
+
+        <!-- Upgrade rail. An offer, not a wall. Nothing here is gated,
+             nothing counts down, and the card never dismisses or returns. -->
+        <aside class="upgrade-rail" aria-labelledby="upgrade-rail-title">
+            <h2 class="upgrade-rail-title" id="upgrade-rail-title" data-i18n="upgradeRailTitle">Get Pro</h2>
+            <p class="upgrade-rail-lede" data-i18n="upgradeRailLede">Search inside everything you saved, not just the titles.</p>
+            <ul class="upgrade-rail-stack">
+                <li data-i18n="paywallStackSearch">Search the words inside every article you saved, with no daily limit</li>
+                <li data-i18n="paywallStackUpdates">Every future update, with no second payment on the lifetime plan</li>
+            </ul>
+            <p class="upgrade-rail-free" data-i18n="upgradeRailFree">Saving, reader view, the side panel, tags, title search, offline copies, Pocket import, export and reading stats are free and stay free. Full-text search has a daily allowance on the free plan, and Help below states the current figure.</p>
+            <p class="upgrade-rail-guarantee" data-i18n="upgradeRailGuarantee">Monthly cancels any time, and anything faulty gets fixed or refunded.</p>
+            <a class="upgrade-rail-cta" id="upgrade-rail-cta"
+               href="https://zovo.one/pricing?utm_source=readlater_pro&amp;utm_medium=extension&amp;utm_campaign=upgrade&amp;utm_content=options"
+               target="_blank" rel="noopener">
+                <span data-i18n="upgradeRailCta">See both plans at zovo.one</span>
+                <span class="sr-only" data-i18n="linkOpensNewTab">(opens in new tab)</span>
+            </a>
+            <a class="upgrade-rail-manage" href="https://zovo.one/pricing?utm_source=readlater_pro&amp;utm_medium=extension&amp;utm_campaign=upgrade&amp;utm_content=options" target="_blank" rel="noopener">
+                <span data-i18n="upgradeRailManage">Manage at zovo.one</span>
+                <span class="sr-only" data-i18n="linkOpensNewTab">(opens in new tab)</span>
+            </a>
+        </aside>
+
+        <!-- Reader Settings -->
+        <section class="options-section">
+            <h2 class="options-section-title" data-i18n="headingReaderSettings">Reader Settings</h2>
+
+            <div class="options-row">
+                <label class="options-label" for="rs-theme" data-i18n="labelDefaultTheme">Default theme</label>
+                <select class="options-select" id="rs-theme">
+                    <option value="auto" data-i18n="dataSettingsThemeAuto">Auto (match my system)</option>
+                    <option value="light" data-i18n="themeLight">Light</option>
+                    <option value="sepia" data-i18n="themeSepia">Sepia</option>
+                    <option value="dark" data-i18n="themeDark">Dark</option>
+                </select>
+            </div>
+
+            <div class="options-row">
+                <label class="options-label" for="rs-font-family" data-i18n="labelFontFamily">Font family</label>
+                <select class="options-select" id="rs-font-family">
+                    <option value="serif" data-i18n="dataSettingsFontSerif">Serif</option>
+                    <option value="sans" data-i18n="dataSettingsFontSans">Sans</option>
+                    <option value="readable" data-i18n="dataSettingsFontReadable">Readable (easier to tell letters apart)</option>
+                    <option value="mono" data-i18n="dataSettingsFontMono">Mono</option>
+                    <option value="system" data-i18n="dataSettingsFontSystem">System</option>
+                </select>
+            </div>
+
+            <div class="options-row">
+                <label class="options-label" for="rs-font-size" data-i18n="labelDefaultFontSize">Default font size</label>
+                <select class="options-select" id="rs-font-size">
+                    <option value="12">12 px</option>
+                    <option value="14">14 px</option>
+                    <option value="16">16 px</option>
+                    <option value="18" selected>18 px</option>
+                    <option value="20">20 px</option>
+                    <option value="22">22 px</option>
+                    <option value="24">24 px</option>
+                    <option value="26">26 px</option>
+                    <option value="28">28 px</option>
+                </select>
+            </div>
+
+            <div class="options-row">
+                <label class="options-label" for="rs-line-height" data-i18n="dataSettingsLineSpacing">Line spacing</label>
+                <select class="options-select" id="rs-line-height">
+                    <option value="1.4" data-i18n="lineHeightCompact">Compact (1.4)</option>
+                    <option value="1.6" data-i18n="lineHeightNormal">Normal (1.6)</option>
+                    <option value="1.8" data-i18n="dataSettingsLineRelaxed">Relaxed (1.8)</option>
+                    <option value="2" data-i18n="dataSettingsLineLoose">Loose (2.0)</option>
+                </select>
+            </div>
+
+            <div class="options-row">
+                <label class="options-label" for="rs-width" data-i18n="labelDefaultContentWidth">Default content width</label>
+                <select class="options-select" id="rs-width">
+                    <option value="560" data-i18n="widthNarrowPx">Narrow (560px)</option>
+                    <option value="680" selected data-i18n="widthMediumPx">Medium (680px)</option>
+                    <option value="800" data-i18n="widthWidePx">Wide (800px)</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Behavior -->
+        <section class="options-section">
+            <h2 class="options-section-title" data-i18n="headingBehavior">Behavior</h2>
+
+            <div class="options-row">
+                <label class="options-label" for="rs-open-in" data-i18n="dataSettingsOpenIn">Open articles from the side panel in</label>
+                <select class="options-select" id="rs-open-in">
+                    <option value="tab" data-i18n="dataSettingsOpenInTab">New tab</option>
+                    <option value="panel" data-i18n="dataSettingsOpenInPanel">Side panel</option>
+                </select>
+            </div>
+
+            <div class="options-row">
+                <label class="options-label" for="opt-notifications" data-i18n="labelShowNotifications">
+                    Show save notifications
+                </label>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="opt-notifications" checked>
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+
+            <div class="options-row">
+                <label class="options-label" for="opt-auto-offline" data-i18n="labelSaveOffline">
+                    Save articles for offline reading
+                </label>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="opt-auto-offline" checked>
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+
+            <div class="options-row">
+                <label class="options-label" for="opt-mark-read" data-i18n="labelMarkReadOnOpen">
+                    Mark as read when opened
+                </label>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="opt-mark-read" checked>
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </section>
+
+        <!-- Notifications -->
+        <section class="options-section">
+            <h2 class="options-section-title" data-i18n="headingNotifications">Notifications</h2>
+
+            <div class="options-row">
+                <div class="setting-info">
+                    <span class="options-label" data-i18n="labelReengagementReminders">Re-engagement reminders</span>
+                    <span class="setting-description" data-i18n="labelReengagementDescription">Get a friendly reminder if you haven't used ReadLater in a few days</span>
+                </div>
+                <label class="toggle-switch" for="notif-toggle">
+                    <input type="checkbox" id="notif-toggle" checked data-i18n-aria="labelReengagementReminders" aria-label="Re-engagement reminders">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+
+            <div class="options-row">
+                <div class="setting-info">
+                    <span class="options-label" id="whatsNewLabel" data-i18n="labelShowWhatsNew">Show what's new after an update</span>
+                    <span class="setting-description" data-i18n="labelShowWhatsNewDescription">Open a short page in the background after a feature update</span>
+                </div>
+                <label class="toggle-switch" for="whatsnew-toggle">
+                    <input type="checkbox" id="whatsnew-toggle" checked aria-labelledby="whatsNewLabel">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </section>
+
+        <!-- Usage Stats (Streak): StreakTracker is not wired up, so the block stays hidden -->
+        <section class="options-section" hidden>
+            <h2 class="options-section-title" data-i18n="headingUsageStats">Usage Stats</h2>
+            <div class="stats-grid" id="streak-stats">
+                <div class="stat-card">
+                    <span class="stat-value" id="stat-streak">0</span>
+                    <span class="stat-label" data-i18n="statCurrentStreak">Current Streak</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="stat-best">0</span>
+                    <span class="stat-label" data-i18n="statBestStreak">Best Streak</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="stat-total-days">0</span>
+                    <span class="stat-label" data-i18n="statTotalDaysUsed">Total Days Used</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Keyboard Shortcuts -->
+        <section class="options-section">
+            <h2 class="options-section-title" data-i18n="headingKeyboardShortcuts">Keyboard Shortcuts</h2>
+
+            <div class="shortcut-row">
+                <span class="shortcut-desc" data-i18n="shortcutSaveCurrentPage">Save current page</span>
+                <span class="shortcut-keys">
+                    <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>
+                </span>
+            </div>
+
+            <div class="shortcut-row">
+                <span class="shortcut-desc" data-i18n="shortcutOpenReadingList">Open reading list</span>
+                <span class="shortcut-keys">
+                    <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd>
+                </span>
+            </div>
+
+            <p class="options-text options-text-muted shortcut-link-row">
+                <a href="#" id="link-shortcuts" class="options-link" data-i18n="shortcutCustomizeLink">Customize shortcuts in Chrome settings</a>
+            </p>
+        </section>
+
+        <!-- Import / Export -->
+        <section class="options-section">
+            <h2 class="options-section-title" data-i18n="headingData">Data</h2>
+
+            <div class="data-card">
+                <h3 class="data-card-title" data-i18n="dataImportCardTitle">Import</h3>
+                <p class="data-card-text" data-i18n="dataImportCardText">Bring your list over from Pocket, Omnivore, Instapaper, Raindrop, browser bookmarks, a list of links, or a ReadLater backup.</p>
+                <button class="btn" id="btn-import" data-i18n="dataImportCardButton">Import a file</button>
+            </div>
+
+            <!-- fetch lane hook: full text for link-only articles (fulltext-access.js wires it) -->
+            <div class="data-card" id="fetch-text-card" data-rl-fetch-count hidden>
+                <h3 class="data-card-title" data-i18n="fetchSettingsTitle">Full text for saved links</h3>
+                <p class="data-card-text" data-i18n="fetchSettingsText">Some of your articles are links only, usually from an import. ReadLater can download their text from each site so they're readable offline. Nothing is sent to Zovo.</p>
+                <button class="btn" type="button" data-rl-fetch-open="from=settings" data-i18n="fetchSettingsButton">Get the full text</button>
+            </div>
+
+            <div class="data-card" id="export-card">
+                <h3 class="data-card-title" id="export-title" data-i18n="dataExportTitle">Export</h3>
+                <p class="data-card-text" data-i18n="dataExportText">Take your reading list anywhere. Files are made on this computer and nothing is uploaded.</p>
+                <fieldset class="export-formats">
+                    <legend class="export-legend" data-i18n="dataExportFormat">Format</legend>
+                    <label class="export-option">
+                        <input type="radio" name="export-format" value="backup" checked>
+                        <span class="export-option-body">
+                            <span class="export-option-name" data-i18n="dataExportBackupName">Full backup (.json)</span>
+                            <span class="export-option-desc" data-i18n="dataExportBackupDesc">Everything: articles with their text, tags, highlights and reader settings. Restore it with Import.</span>
+                        </span>
+                    </label>
+                    <label class="export-option">
+                        <input type="radio" name="export-format" value="markdown">
+                        <span class="export-option-body">
+                            <span class="export-option-name"><span data-i18n="dataExportMdName">Markdown (.md)</span> <span class="export-pro" data-i18n="proExportTag">Pro</span></span>
+                            <span class="export-option-desc" data-i18n="dataExportMdDesc">One Markdown file with each article's text, tags and highlights. Opens in Obsidian and other notes apps.</span>
+                        </span>
+                    </label>
+                    <label class="export-option">
+                        <input type="radio" name="export-format" value="highlights">
+                        <span class="export-option-body">
+                            <span class="export-option-name"><span data-i18n="dataExportHlName">Highlights only (.md)</span> <span class="export-pro" data-i18n="proExportTag">Pro</span></span>
+                            <span class="export-option-desc" data-i18n="dataExportHlDesc">Every highlight and note, grouped by article, in one Markdown file for Obsidian or any notes app.</span>
+                        </span>
+                    </label>
+                    <label class="export-option">
+                        <input type="radio" name="export-format" value="bookmarks">
+                        <span class="export-option-body">
+                            <span class="export-option-name" data-i18n="dataExportBmName">Bookmarks (.html)</span>
+                            <span class="export-option-desc" data-i18n="dataExportBmDesc">Imports into any browser. Apps that read bookmark tags, like Pinboard, keep your tags too.</span>
+                        </span>
+                    </label>
+                    <label class="export-option">
+                        <input type="radio" name="export-format" value="csv">
+                        <span class="export-option-body">
+                            <span class="export-option-name" data-i18n="dataExportCsvName">Spreadsheet (.csv)</span>
+                            <span class="export-option-desc" data-i18n="dataExportCsvDesc">Pocket's columns (title, url, time_added, tags, status), so other apps can import it.</span>
+                        </span>
+                    </label>
+                </fieldset>
+                <div class="options-row export-sub" id="export-which-row">
+                    <label class="options-label" for="export-which" data-i18n="dataExportWhich">Articles</label>
+                    <select class="options-select" id="export-which">
+                        <option value="all" data-i18n="dataExportWhichAll">All articles</option>
+                        <option value="unread" data-i18n="dataExportWhichUnread">Unread only</option>
+                        <option value="favorites" data-i18n="dataExportWhichFav">Favorites only</option>
+                    </select>
+                </div>
+                <label class="export-check" id="export-images-row">
+                    <input type="checkbox" id="export-images" checked>
+                    <span data-i18n="dataExportImages">Keep images as links</span>
+                </label>
+                <div class="export-actions">
+                    <button class="btn btn-primary" id="btn-export-run" data-i18n="dataExportButton">Export</button>
+                    <p class="export-status" id="export-status" role="status" aria-live="polite"></p>
+                </div>
+            </div>
+
+            <div class="options-row">
+                <button class="btn btn-secondary" id="btn-cleanup" data-i18n="buttonCleanup">Clean Up Old Read Articles</button>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="options-section">
+            <h2 class="options-section-title" data-i18n="headingStatistics">Statistics</h2>
+            <div class="options-stats" id="stats-container">
+                <div class="options-stat">
+                    <span class="options-stat-value" id="stat-total">0</span>
+                    <span class="options-stat-label" data-i18n="statArticlesSaved">Articles saved</span>
+                </div>
+                <div class="options-stat">
+                    <span class="options-stat-value" id="stat-unread">0</span>
+                    <span class="options-stat-label" data-i18n="statUnread">Unread</span>
+                </div>
+                <div class="options-stat">
+                    <span class="options-stat-value" id="stat-tags">0</span>
+                    <span class="options-stat-label" data-i18n="statTags">Tags</span>
+                </div>
+                <div class="options-stat">
+                    <span class="options-stat-value" id="stat-offline">0</span>
+                    <span class="options-stat-label" data-i18n="statOffline">Offline</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Storage Usage -->
+        <section class="options-section">
+            <h2 class="options-section-title" data-i18n="headingStorage">Storage</h2>
+            <div class="storage-info">
+                <div class="storage-bar-container">
+                    <div class="storage-bar" id="storage-bar" role="progressbar" data-i18n-aria="labelStorageUsage" aria-label="Storage usage" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="storage-text" id="storage-text" aria-live="polite" data-i18n="statusCalculating">Calculating...</span>
+            </div>
+            <p class="options-text options-text-muted" data-i18n="aboutStorageNote">IndexedDB stores articles. chrome.storage stores settings.</p>
+        </section>
+
+        <!-- Diagnostics -->
+        <section class="options-section">
+            <h2 class="options-section-title" data-i18n="headingDiagnostics">Diagnostics</h2>
+            <p class="options-text options-text-muted" data-i18n="aboutDiagnosticsDesc">View error logs, analytics events, and extension health.</p>
+            <div class="options-row">
+                <a href="../pages/diagnostics.html" target="_blank" rel="noopener" class="btn" id="link-diagnostics"><span data-i18n="buttonOpenDiagnostics">Open Diagnostics Dashboard</span> <span class="sr-only" data-i18n="linkOpensNewTab">(opens in new tab)</span></a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="options-section">
+            <h2 class="options-section-title" data-i18n="headingAbout">About</h2>
+            <p class="options-text"><span data-i18n="appName">ReadLater Pro</span> <span id="about-version"></span></p>
+            <p class="options-text options-text-muted" data-i18n="aboutDescription">Save articles for later. One-click save, reader view, tags, and offline reading.</p>
+            <div class="options-about-links">
+                <a href="https://zovo.one/support" target="_blank" rel="noopener" class="options-link"><span data-i18n="linkSupport">Support</span> <span class="sr-only" data-i18n="linkOpensNewTab">(opens in new tab)</span></a>
+            </div>
+            <div class="options-legal-links">
+                <a href="../legal/privacy-policy.html" target="_blank" rel="noopener" class="options-link"><span data-i18n="linkPrivacyPolicy">Privacy Policy</span> <span class="sr-only" data-i18n="linkOpensNewTab">(opens in new tab)</span></a>
+                <span class="options-link-separator">&middot;</span>
+                <a href="../legal/terms.html" target="_blank" rel="noopener" class="options-link"><span data-i18n="linkTermsOfService">Terms of Service</span> <span class="sr-only" data-i18n="linkOpensNewTab">(opens in new tab)</span></a>
+            </div>
+        </section>
+
+        <!-- Community -->
+        <section id="community-section">
+            <div id="community-container"></div>
+        </section>
+
+        <!-- Your Data (Export / Delete) -->
+        <section class="options-section">
+            <div id="data-management-container"></div>
+        </section>
+
+        <!-- Privacy Controls -->
+        <section class="options-section">
+            <div id="privacy-controls-container"></div>
+        </section>
+
+        <!-- What's New / Changelog -->
+        <section class="options-section" id="section-changelog">
+            <h2 class="options-section-title" data-i18n="headingWhatsNew">What's New <span class="changelog-dot hidden" id="changelog-dot"></span></h2>
+            <p class="changelog-subtitle" data-i18n="changelogSubtitle">See what changed in each version</p>
+            <div id="changelog-container"></div>
+        </section>
+
+        <!-- Help / FAQ -->
+        <section class="options-section" id="section-faq">
+            <h2 class="options-section-title" data-i18n="headingHelpFaq">Help and FAQ</h2>
+            <div class="faq-search-wrapper">
+                <svg class="faq-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <circle cx="11" cy="11" r="8"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="text" class="faq-search-input" id="faq-search" placeholder="Search help articles..." aria-label="Search help articles" data-i18n-placeholder="placeholderSearchHelp" data-i18n-aria="labelSearchHelp">
+            </div>
+            <div class="faq-controls">
+                <span class="faq-results-count" id="faq-results-count" aria-live="polite"></span>
+                <button class="faq-expand-all" id="faq-expand-all" data-i18n="buttonExpandAll" aria-expanded="false">Expand all</button>
+            </div>
+            <div id="faq-container"></div>
+            <div class="faq-footer">
+                <p class="faq-footer-text" data-i18n="faqStillNeedHelp">Still need help?</p>
+                <button class="faq-footer-link" id="faq-need-help" data-i18n="faqSendFeedback">Send us feedback</button>
+            </div>
+        </section>
+
+        <!-- Feedback -->
+        <section class="options-section feedback-section" id="section-feedback">
+            <h2 class="options-section-title" data-i18n="headingFeedback">Feedback</h2>
+            <p class="options-text options-text-muted" style="margin-bottom: var(--space-md);" data-i18n="feedbackSubtitle">Report a bug, ask for a feature, or say what is not working. Writing this puts the report on your clipboard and opens a mail draft to support@zovo.one.</p>
+
+            <div id="feedback-success" class="feedback-success" role="status" aria-live="polite"></div>
+
+            <div id="feedback-form" class="feedback-form">
+                <div class="feedback-field">
+                    <label class="feedback-label" for="feedback-type" data-i18n="feedbackLabelType">Type</label>
+                    <select class="feedback-select" id="feedback-type">
+                        <option value="bug" data-i18n="feedbackTypeBugReport">Bug Report</option>
+                        <option value="feature" data-i18n="feedbackTypeFeatureRequest">Feature Request</option>
+                        <option value="general" data-i18n="feedbackTypeGeneral">General Feedback</option>
+                    </select>
+                </div>
+
+                <div class="feedback-field">
+                    <label class="feedback-label" for="feedback-subject" data-i18n="feedbackLabelSubject">Subject <span class="required">*</span></label>
+                    <input type="text" class="feedback-input" id="feedback-subject" maxlength="100" placeholder="Brief summary of your feedback" required data-i18n-placeholder="placeholderFeedbackSubject">
+                    <span class="feedback-error"></span>
+                </div>
+
+                <div class="feedback-field">
+                    <label class="feedback-label" for="feedback-description" data-i18n="feedbackLabelDescription">Description <span class="required">*</span></label>
+                    <textarea class="feedback-textarea" id="feedback-description" maxlength="2000" placeholder="Describe in detail..." required data-i18n-placeholder="placeholderFeedbackDescription"></textarea>
+                    <span class="feedback-char-count" id="feedback-char-count" aria-live="polite">0 / 2000</span>
+                    <span class="feedback-error"></span>
+                </div>
+
+                <div class="feedback-field">
+                    <label class="feedback-label" for="feedback-email" data-i18n="feedbackLabelEmail">Email (optional)</label>
+                    <input type="email" class="feedback-input" id="feedback-email" placeholder="your@email.com (for follow-up)" data-i18n-placeholder="placeholderFeedbackEmail">
+                    <span class="feedback-error"></span>
+                </div>
+
+                <!-- Diagnostic data for bug reports -->
+                <div class="feedback-diagnostics" id="feedback-diagnostics">
+                    <label class="feedback-include-diag">
+                        <input type="checkbox" id="feedback-include-diag" checked>
+                        <span data-i18n="feedbackIncludeDiagnostics">Include diagnostic data with this report</span>
+                    </label>
+                    <button class="feedback-diagnostics-toggle" id="feedback-diag-toggle" aria-expanded="false" aria-controls="feedback-diag-preview">
+                        <span class="chevron" aria-hidden="true">&#9654;</span>
+                        <span data-i18n="feedbackPreviewDiagnostics">Preview diagnostic data</span>
+                    </button>
+                    <div class="feedback-diagnostics-preview" id="feedback-diag-preview">
+                        <pre id="feedback-diag-preview-pre"></pre>
+                    </div>
+                    <div class="feedback-diagnostics-actions">
+                        <button class="feedback-diag-btn" id="feedback-diag-copy" aria-label="Copy diagnostic data" data-i18n="buttonCopy">Copy</button>
+                        <button class="feedback-diag-btn" id="feedback-diag-download" aria-label="Download diagnostic data" data-i18n="buttonDownload">Download</button>
+                    </div>
+                </div>
+
+                <div class="feedback-actions">
+                    <button class="feedback-submit" id="feedback-submit" type="button" data-i18n="buttonPrepareReport">Prepare my report</button>
+                    <span class="feedback-draft-indicator" id="feedback-draft-indicator"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Danger Zone -->
+        <section class="options-section danger-zone">
+            <h2 class="options-section-title danger-zone-title" data-i18n="headingDangerZone">Danger Zone</h2>
+            <p class="options-text options-text-muted" data-i18n="aboutDangerZoneDesc">This action is permanent and cannot be undone.</p>
+            <div class="options-row">
+                <button class="btn btn-danger" id="btn-clear" data-i18n="buttonClearAllData">Clear All Data</button>
+            </div>
+        </section>
+
+        <!-- Zovo Footer -->
+        <footer class="options-footer">
+            <span class="options-footer-text">Made with care by</span>
+            <a href="https://www.zovo.one" target="_blank" rel="noopener" class="options-footer-link">zovo.one</a>
+        </footer>
+    </main>
+
+    <!-- Screen reader announcements -->
+    <div id="sr-announcements" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="../utils/focus-manager.js"></script>
+    <script src="../utils/announcer.js"></script>
+    <script src="../utils/sanitize.js"></script>
+    <script src="../shared/message-types.js"></script>
+    <script src="../utils/error-handler.js"></script>
+    <script src="../utils/analytics.js"></script>
+    <script src="../components/paywall.js"></script>
+    <script src="../shared/i18n.js"></script>
+    <script src="../utils/i18n-loader.js"></script>
+    <script src="community-links.js"></script>
+    <script src="data-management.js"></script>
+    <script src="privacy-controls.js"></script>
+    <script src="../background/update-notifier.js"></script>
+    <script src="bug-report.js"></script>
+    <script src="feedback-form.js"></script>
+    <script src="faq-section.js"></script>
+    <script src="changelog-section.js"></script>
+    <script src="options.js"></script>
+    <script src="whats-new-setting.js"></script>
+    <script src="../shared/highlights-store.js"></script>
+    <script src="../pages/import-csv.js"></script>
+    <script src="export-markdown.js"></script>
+    <script src="../utils/feature-gate.js"></script>
+    <script src="export-card.js"></script>
+    <script src="reader-settings.js"></script>
+    <script src="../shared/fulltext-access.js"></script><!-- fetch lane hook -->
+
+<script src="../../zovo-whats-new/config.js"></script><script src="../../zovo-whats-new/zovo-cards.js" data-zovo-mount="settings" data-zovo-anchor="#main-content"></script>
+</body>
+</html>

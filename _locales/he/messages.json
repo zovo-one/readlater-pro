@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "שמירה ב-ReadLater"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing",
+      "message": "שמרו מאמרים ברשימת קריאה. תצוגת קורא נקייה, קריאה לא מקוונת. ארגנו עם תגיות. ייבוא מ-Pocket."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - שמור וקרא במצב לא מקוון"
+   }
+}

@@ -1,0 +1,123 @@
+{
+    "type": "object",
+    "properties": {
+        "companyName": {
+            "title": "Company Name",
+            "description": "The organization name displayed in the extension UI when managed by enterprise policy.",
+            "type": "string"
+        },
+        "enforceSettings": {
+            "title": "Enforced Settings",
+            "description": "Settings enforced by the administrator that users cannot override.",
+            "type": "object",
+            "properties": {
+                "theme": {
+                    "title": "Theme",
+                    "description": "Force a specific theme for all managed users.",
+                    "type": "string",
+                    "enum": ["light", "sepia", "dark"]
+                },
+                "analyticsEnabled": {
+                    "title": "Analytics Enabled",
+                    "description": "Enable or disable usage analytics collection.",
+                    "type": "boolean"
+                },
+                "syncEnabled": {
+                    "title": "Sync Enabled",
+                    "description": "Enable or disable cross-device syncing.",
+                    "type": "boolean"
+                },
+                "notificationsEnabled": {
+                    "title": "Notifications Enabled",
+                    "description": "Enable or disable browser notifications.",
+                    "type": "boolean"
+                }
+            }
+        },
+        "disableFeatures": {
+            "title": "Disabled Features",
+            "description": "Array of feature identifiers to disable for managed users (e.g., 'import', 'export', 'sharing', 'offline').",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "allowedDomains": {
+            "title": "Allowed Domains",
+            "description": "If set, only articles from these domains can be saved. An empty array means no restriction.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "blockedDomains": {
+            "title": "Blocked Domains",
+            "description": "Articles from these domains cannot be saved. Checked after allowedDomains.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "supportUrl": {
+            "title": "Support URL",
+            "description": "Custom support URL shown to users instead of the default support link.",
+            "type": "string"
+        },
+        "defaultSettings": {
+            "title": "Default Settings",
+            "description": "Default setting values applied on first install. Users can override these unless also enforced.",
+            "type": "object",
+            "properties": {
+                "readerFontSize": {
+                    "type": "integer"
+                },
+                "readerFontFamily": {
+                    "type": "string"
+                },
+                "readerTheme": {
+                    "type": "string",
+                    "enum": ["light", "sepia", "dark"]
+                },
+                "readerWidth": {
+                    "type": "integer"
+                },
+                "readerLineHeight": {
+                    "type": "number"
+                },
+                "showNotifications": {
+                    "type": "boolean"
+                },
+                "autoSaveOffline": {
+                    "type": "boolean"
+                },
+                "markReadOnOpen": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "hideElements": {
+            "title": "Hidden UI Elements",
+            "description": "Array of UI element identifiers to hide from managed users (e.g., 'upgrade-button', 'referral-section', 'analytics-dashboard').",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "licenseKey": {
+            "title": "License Key",
+            "description": "Enterprise license key automatically applied to managed installs.",
+            "type": "string"
+        },
+        "reportingEndpoint": {
+            "title": "Reporting Endpoint",
+            "description": "URL endpoint where usage reports and diagnostics are sent for enterprise monitoring.",
+            "type": "string"
+        },
+        "updateChannel": {
+            "title": "Update Channel",
+            "description": "Controls which release channel the extension follows.",
+            "type": "string",
+            "enum": ["stable", "beta"]
+        }
+    }
+}

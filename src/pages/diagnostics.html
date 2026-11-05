@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="titleDiagnostics">ReadLater Pro - Diagnostics</title>
+    <link rel="stylesheet" href="../styles/cross-browser.css">
+    <link rel="stylesheet" href="../styles/design-tokens.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/design-system.css">
+    <link rel="stylesheet" href="diagnostics.css">
+    <link rel="stylesheet" href="../styles/high-contrast.css">
+    <link rel="stylesheet" href="../styles/i18n-rtl.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToMainContent">Skip to main content</a>
+
+    <header class="diag-header">
+        <h1 class="diag-title" data-i18n="headingDiagnostics">Diagnostics</h1>
+        <div class="header-actions">
+            <button class="btn btn-primary" id="export-btn" data-i18n="buttonExportDebugReport" aria-label="Export debug report">Export Debug Report</button>
+            <button class="btn" id="clear-errors-btn" data-i18n="buttonClearErrorLog" aria-label="Clear error log">Clear Error Log</button>
+            <button class="btn" id="clear-events-btn" data-i18n="buttonClearEventLog" aria-label="Clear event log">Clear Event Log</button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Health Score Card -->
+        <section class="health-card" id="health-score" data-i18n-aria="labelHealthScore" aria-label="Extension health score">
+            <h2 class="section-title" data-i18n="headingHealthScore">Health Score</h2>
+            <div class="health-display">
+                <div class="score-circle"
+                     role="meter"
+                     aria-valuemin="0"
+                     aria-valuemax="100"
+                     aria-valuenow="100"
+                     data-i18n-aria="labelHealthScore"
+                     aria-label="Health score">
+                    <span class="score-value" id="score-value"></span>
+                </div>
+                <span class="score-label" id="score-label" data-i18n="statusCalculating">Calculating...</span>
+            </div>
+            <div class="health-details" id="health-details"></div>
+        </section>
+
+        <!-- Storage Usage -->
+        <section class="storage-section" id="storage-stats" aria-label="Storage statistics">
+            <h2 class="section-title" data-i18n="headingStorageUsage">Storage Usage</h2>
+            <div class="stats-grid">
+                <div class="stat">
+                    <span class="stat-label" data-i18n="statErrorCount">Error Count</span>
+                    <span class="stat-value" id="error-count">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label" data-i18n="statEventCount">Event Count</span>
+                    <span class="stat-value" id="event-count">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label" data-i18n="statRuntimeLogCount">Runtime Log Count</span>
+                    <span class="stat-value" id="runtime-count">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label" data-i18n="statTotalStorage">Total Storage</span>
+                    <span class="stat-value" id="storage-size">0 B</span>
+                </div>
+            </div>
+            <div class="storage-quota">
+                <label class="storage-quota-label" for="storage-fill" data-i18n="diagStorageQuota">Storage Quota</label>
+                <div class="progress-bar" id="storage-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-i18n-aria="labelStorageUsage" aria-label="Storage quota usage">
+                    <div class="progress-fill" id="storage-fill"></div>
+                </div>
+                <span class="storage-percent" id="storage-percent">0%</span>
+            </div>
+        </section>
+
+        <!-- Recent Errors Table -->
+        <section class="table-section" id="error-table" aria-label="Recent errors">
+            <h2 class="section-title" data-i18n="headingRecentErrors">Recent Errors</h2>
+            <div class="table-controls">
+                <input type="search" class="input" id="error-search" data-i18n-placeholder="placeholderSearchErrors" placeholder="Search errors..." data-i18n-aria="placeholderSearchErrors" aria-label="Search errors">
+                <select class="input" id="error-sort" data-i18n-aria="labelSortErrors" aria-label="Sort errors">
+                    <option value="timestamp-desc" data-i18n="sortNewestFirst">Newest first</option>
+                    <option value="timestamp-asc" data-i18n="sortOldestFirst">Oldest first</option>
+                    <option value="context" data-i18n="sortByContext">By context</option>
+                    <option value="type" data-i18n="sortByType">By type</option>
+                </select>
+            </div>
+            <div class="table-wrapper">
+                <table aria-label="Error log table">
+                    <thead>
+                        <tr>
+                            <th scope="col" data-i18n="diagTableTime">Time</th>
+                            <th scope="col" data-i18n="diagTableContext">Context</th>
+                            <th scope="col" data-i18n="diagTableType">Type</th>
+                            <th scope="col" data-i18n="diagTableMessage">Message</th>
+                            <th scope="col" data-i18n="diagTableStack">Stack</th>
+                        </tr>
+                    </thead>
+                    <tbody id="error-tbody"></tbody>
+                </table>
+            </div>
+            <p class="no-data-message" id="no-errors" data-i18n="diagNoErrors">No errors recorded.</p>
+        </section>
+
+        <!-- Event Log Table -->
+        <section class="table-section" id="event-table" aria-label="Event log">
+            <h2 class="section-title" data-i18n="headingEventLog">Event Log</h2>
+            <div class="table-controls">
+                <input type="search" class="input" id="event-search" data-i18n-placeholder="placeholderSearchEvents" placeholder="Search events..." data-i18n-aria="placeholderSearchEvents" aria-label="Search events">
+                <select class="input" id="event-filter" data-i18n-aria="labelFilterEvents" aria-label="Filter events by type">
+                    <option value="all" data-i18n="diagFilterAll">All</option>
+                    <option value="feature_used">feature_used</option>
+                    <option value="settings_changed">settings_changed</option>
+                    <option value="error_occurred">error_occurred</option>
+                    <option value="session_start">session_start</option>
+                    <option value="session_end">session_end</option>
+                    <option value="extension_installed">extension_installed</option>
+                    <option value="extension_updated">extension_updated</option>
+                </select>
+            </div>
+            <div class="table-wrapper">
+                <table aria-label="Event log table">
+                    <thead>
+                        <tr>
+                            <th scope="col" data-i18n="diagTableTime">Time</th>
+                            <th scope="col" data-i18n="diagTableEvent">Event</th>
+                            <th scope="col" data-i18n="diagTableContext">Context</th>
+                            <th scope="col" data-i18n="diagTableProperties">Properties</th>
+                        </tr>
+                    </thead>
+                    <tbody id="event-tbody"></tbody>
+                </table>
+            </div>
+            <p class="no-data-message" id="no-events" data-i18n="diagNoEvents">No events recorded.</p>
+        </section>
+
+        <!-- Extension Info -->
+        <section class="info-section" aria-label="Extension information">
+            <h2 class="section-title" data-i18n="headingExtensionInfo">Extension Info</h2>
+            <dl class="info-list">
+                <dt data-i18n="diagInfoName">Name</dt>
+                <dd id="ext-name"></dd>
+                <dt data-i18n="diagInfoVersion">Version</dt>
+                <dd id="ext-version"></dd>
+                <dt data-i18n="diagInfoId">ID</dt>
+                <dd id="ext-id"></dd>
+                <dt data-i18n="diagInfoChromeVersion">Chrome Version</dt>
+                <dd id="chrome-version"></dd>
+                <dt data-i18n="diagInfoPlatform">Platform</dt>
+                <dd id="ext-platform"></dd>
+            </dl>
+        </section>
+    </main>
+
+    <!-- Screen reader announcements -->
+    <div id="sr-announcements" class="sr-only" role="status" aria-live="polite"></div>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="../shared/i18n.js"></script>
+    <script src="../utils/i18n-loader.js"></script>
+    <script src="diagnostics.js"></script>
+</body>
+</html>

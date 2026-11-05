@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cross-browser.css">
+    <link rel="stylesheet" href="../styles/design-tokens.css">
+    <link rel="stylesheet" href="../styles/design-system.css">
+    <link rel="stylesheet" href="upgrade.css">
+    <link rel="stylesheet" href="../styles/high-contrast.css">
+    <link rel="stylesheet" href="../styles/i18n-rtl.css">
+    <title data-i18n="titleUpgrade">Upgrade to Pro - ReadLater Pro</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToMainContent">Skip to main content</a>
+
+    <!-- Shown only when the page was opened from a feature limit -->
+    <div class="upgrade-limit-banner" id="limit-banner" role="alert" style="display:none;">
+        <svg class="upgrade-limit-banner-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+        <span class="upgrade-limit-banner-text" id="limit-banner-text"></span>
+    </div>
+
+    <main class="upgrade-container" id="main-content">
+
+        <header class="upgrade-header">
+            <div class="upgrade-logo">
+                <div class="upgrade-logo-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                </div>
+                <span class="upgrade-logo-text" data-i18n="appName">ReadLater Pro</span>
+                <span class="upgrade-pro-badge">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                    <span data-i18n="badgePro">PRO</span>
+                </span>
+            </div>
+            <h1 class="upgrade-title" data-i18n="upgradeHeadline">Search inside everything you saved</h1>
+            <p class="upgrade-subtitle" data-i18n="upgradeProblem">Free search matches titles, URLs and tags. That works until the list gets long, and then you are hunting for an article whose title you cannot remember. Full-text search reads the words inside every article you saved.</p>
+        </header>
+
+        <!-- The single thing Pro changes -->
+        <section class="upgrade-outcomes" aria-labelledby="outcomes-heading">
+            <h2 class="upgrade-section-title" id="outcomes-heading" data-i18n="headingWhatProAdds">What Pro adds</h2>
+            <div class="upgrade-outcome upgrade-outcome-single">
+                <h3 class="upgrade-outcome-title" data-i18n="upgradeOutcomeSearchTitle">Full-text search with no daily cap</h3>
+                <p class="upgrade-outcome-body" id="outcome-search-body" data-i18n="upgradeOutcomeSearchBody">Free gives you twenty full-text searches a day, which is plenty for a small list. Pro removes the counter, so a library of a few thousand articles stays searchable on the days you are actually digging.</p>
+            </div>
+            <p class="upgrade-honesty" data-i18n="upgradeHonestyLine">Pro also makes Listen unlimited (free is 3 articles a day) and includes Markdown export (free gets one try). Saving, reader view, the side panel, tags, highlights, imports, reading progress, offline reading, the backup, CSV and bookmarks exports and your reading stats are free and uncapped. Nothing here gets taken away later.</p>
+        </section>
+
+        <!-- Free vs Pro, rendered from the feature registry -->
+        <section class="upgrade-comparison" id="comparison-section" aria-labelledby="comparison-heading">
+            <h2 class="upgrade-section-title" id="comparison-heading" data-i18n="headingFreeVsPro">Free vs Pro</h2>
+            <table class="upgrade-table" id="comparison-table">
+                <caption class="sr-only" data-i18n="diagFeatureComparison">Feature comparison between Free and Pro plans</caption>
+                <thead>
+                    <tr>
+                        <th class="upgrade-table-feature" scope="col" data-i18n="diagColumnFeature">Feature</th>
+                        <th class="upgrade-table-tier" scope="col" data-i18n="diagColumnFree">Free</th>
+                        <th class="upgrade-table-tier upgrade-table-tier-pro" scope="col" data-i18n="diagColumnPro">Pro</th>
+                    </tr>
+                </thead>
+                <tbody id="comparison-body">
+                    <!-- Rows are built by upgrade.js from FeatureRegistry -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Neutral handoff. No price number renders here on purpose, because a
+             price compiled into the package cannot be corrected without a store
+             review. The live figures are on zovo.one. -->
+        <section class="upgrade-pricing" aria-labelledby="pricing-heading">
+            <h2 class="upgrade-section-title" id="pricing-heading" data-i18n="headingHowToGetPro">How to get Pro</h2>
+
+            <p class="upgrade-plans-note" data-i18n="upgradePlansNote">Pro arrives with a Zovo membership. There is a monthly plan and a one-time lifetime plan, and both are laid out on zovo.one with whatever the current pricing is.</p>
+
+            <p class="upgrade-guarantee" data-i18n="upgradeGuarantee">Monthly cancels any time. Lifetime is final once your key arrives, and anything faulty gets fixed or refunded.</p>
+
+            <button class="upgrade-btn upgrade-btn-primary upgrade-cta" id="btn-see-plans" type="button" data-i18n="buttonSeeBothPlans">See both plans at zovo.one</button>
+            <p class="upgrade-cta-note" data-i18n="upgradeCtaNote">Opens zovo.one in a new tab. Everything that is free today stays free.</p>
+        </section>
+
+        <div class="upgrade-trust">
+            <span class="upgrade-trust-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                <span data-i18n="upgradeTrustSecure">Secure checkout</span>
+            </span>
+            <span class="upgrade-trust-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <span data-i18n="upgradeTrustGuarantee14">Monthly cancels any time</span>
+            </span>
+            <span class="upgrade-trust-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span data-i18n="upgradeTrustCancel">Cancel anytime</span>
+            </span>
+        </div>
+
+        <!-- Already bought, activate here -->
+        <section class="upgrade-license-section" id="license-section" hidden aria-labelledby="license-heading">
+            <h2 class="upgrade-section-title" id="license-heading" data-i18n="headingAlreadyBought">Already bought Pro</h2>
+            <p class="upgrade-license-help" data-i18n="upgradeLicenseHelp">Paste the license key from your purchase email. The key is checked against the license server before Pro turns on, so this will not work while you are offline.</p>
+            <div class="upgrade-license-form" id="license-form">
+                <label for="license-input" class="sr-only" data-i18n="labelLicenseKey">License key</label>
+                <input class="upgrade-license-input" id="license-input" type="text" data-i18n-placeholder="placeholderLicenseKey" placeholder="XXXX-XXXX-XXXX-XXXX" autocomplete="off" spellcheck="false" maxlength="64" data-i18n-aria="labelLicenseKey" aria-label="License key" aria-describedby="license-message">
+                <button class="upgrade-license-submit" id="btn-license-submit" type="button" data-i18n="buttonActivate">Activate</button>
+            </div>
+            <div class="upgrade-license-message" id="license-message" role="alert" hidden></div>
+        </section>
+
+        <footer class="upgrade-footer">
+            <button class="upgrade-footer-link" id="btn-restore" type="button" data-i18n="buttonRestorePurchase">Restore Purchase</button>
+            <span class="upgrade-footer-divider" aria-hidden="true">|</span>
+            <button class="upgrade-footer-link" id="btn-license-key" type="button" aria-expanded="false" aria-controls="license-section" data-i18n="buttonEnterLicenseKey">Enter License Key</button>
+            <span class="upgrade-footer-divider" aria-hidden="true">|</span>
+            <button class="upgrade-footer-link" id="btn-back" type="button" data-i18n="buttonBack">Back</button>
+        </footer>
+    </main>
+
+    <div id="sr-announcements" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="../utils/focus-manager.js"></script>
+    <script src="../utils/announcer.js"></script>
+    <script src="../utils/sanitize.js"></script>
+    <script src="../shared/message-types.js"></script>
+    <script src="../utils/feature-gate.js"></script>
+    <script src="../features/feature-registry.js"></script>
+    <script src="../shared/i18n.js"></script>
+    <script src="../utils/i18n-loader.js"></script>
+    <script src="upgrade.js"></script>
+</body>
+</html>

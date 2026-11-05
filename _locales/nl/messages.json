@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "Opslaan in ReadLater"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing (max 132 chars)",
+      "message": "Sla artikelen op met één klik. Leeslijst, tags, lezerweergave en offline modus. Uw bladwijzerbeheerder en artikelbibliotheek."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - Bewaar & Lees Offline"
+   }
+}

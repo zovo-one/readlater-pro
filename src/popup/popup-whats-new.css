@@ -1,0 +1,71 @@
+/* "New in 1.3" card (popup-whats-new.js). One card at a time: the
+   membership note steps aside while this one is showing. */
+.rl-wn-active .ztm-card { display: none !important; }
+
+.rl-wn-card {
+  position: relative;
+  margin: 0 var(--popup-gutter, 20px) 12px;
+  padding: 12px 36px 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border, #E4E4E7);
+  background: var(--color-primary-light, #EDE9FE);
+  color: var(--color-text, #0A0A0B);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.rl-wn-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--color-primary-text, #7C3AED);
+}
+.rl-wn-title { font-size: 14px; line-height: 1.3; }
+.rl-wn-body { margin: 0; font-size: 12.5px; line-height: 1.45; color: var(--color-text-secondary, #57575E); }
+.rl-wn-open {
+  align-self: flex-start;
+  margin-top: 6px;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--color-primary, #7C3AED);
+  color: #fff;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.rl-wn-open:hover { background: var(--color-primary-hover, #6D28D9); }
+.rl-wn-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color-text-secondary, #57575E);
+  cursor: pointer;
+}
+.rl-wn-close:hover { background: rgba(0, 0, 0, .06); }
+.rl-wn-open:focus-visible, .rl-wn-close:focus-visible { outline: 2px solid var(--color-primary, #7C3AED); outline-offset: 2px; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="sepia"]) .rl-wn-card {
+    background: rgba(124, 58, 237, .16);
+    border-color: rgba(167, 139, 250, .35);
+    color: #F4F4F5;
+  }
+  :root:not([data-theme="light"]):not([data-theme="sepia"]) .rl-wn-eyebrow { color: #C4B5FD; }
+  :root:not([data-theme="light"]):not([data-theme="sepia"]) .rl-wn-body { color: #C7C7CC; }
+  :root:not([data-theme="light"]):not([data-theme="sepia"]) .rl-wn-close { color: #C7C7CC; }
+  :root:not([data-theme="light"]):not([data-theme="sepia"]) .rl-wn-close:hover { background: rgba(255, 255, 255, .08); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .rl-wn-card { animation: rl-wn-in .18s ease-out; }
+  @keyframes rl-wn-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+}

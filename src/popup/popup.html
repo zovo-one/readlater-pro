@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/design-tokens.css">
+    <link rel="stylesheet" href="../styles/design-system.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="../styles/high-contrast.css">
+    <link rel="stylesheet" href="../styles/i18n-rtl.css">
+    <link rel="stylesheet" href="popup-whats-new.css">
+    <title data-i18n="titlePopup">ReadLater Pro</title>
+</head>
+<body>
+<main>
+    <!-- Status area (shows save result) -->
+    <div class="popup-status" id="popup-status" role="status" aria-live="polite" style="display:none;">
+        <div class="popup-status-icon" id="popup-status-icon" aria-hidden="true"></div>
+        <div class="popup-status-text" id="popup-status-text"></div>
+    </div>
+
+    <!-- Main content -->
+    <div class="popup-main" id="popup-main">
+
+        <!-- Header -->
+        <header class="popup-header">
+            <h1 class="popup-title">ReadLater<span class="popup-title-pro"> Pro</span></h1>
+        </header>
+
+        <!-- Current page info card -->
+        <div class="popup-page-card" role="region" aria-label="Current page" data-i18n-aria="rlCurrentPage">
+            <div class="popup-page-info" id="popup-page-info">
+                <div class="popup-page-favicon" id="popup-page-favicon" aria-hidden="true"></div>
+                <div class="popup-page-details">
+                    <div class="popup-page-title" id="popup-page-title" aria-live="polite" data-i18n="rlLoadingPage">Reading page</div>
+                    <div class="popup-page-url" id="popup-page-url"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="popup-actions">
+            <button class="popup-btn popup-btn-primary" id="btn-save" type="button" title="Save this page" data-i18n-title="rlSaveThisPage">
+                <span class="popup-btn-icon">
+                    <svg class="icon-bookmark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    <svg class="icon-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    <svg class="icon-bookmark-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                        <polyline points="9 11 11 13 15 9" stroke-width="2"/>
+                    </svg>
+                    <svg class="icon-x" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </span>
+                <span id="btn-save-text" data-i18n="popupSavePage">Save Page</span>
+            </button>
+
+            <button class="popup-btn popup-btn-sidepanel" id="btn-open-list" type="button" title="Open your reading list" data-i18n-title="rlOpenListTooltip">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="15" y1="3" x2="15" y2="21"/>
+                </svg>
+                <span data-i18n="popupOpenList">Manage Reading List</span>
+            </button>
+        </div>
+
+        <!-- One line under the actions. Carries either the reason a page cannot
+             be saved, or the fact that a save kept the link without the body. -->
+        <p class="popup-restricted-msg" id="popup-note" hidden></p>
+
+        <!-- Post-save actions. Hidden until a save actually succeeds. -->
+        <div class="popup-saved-actions" id="popup-saved-actions" hidden>
+            <button class="popup-link-btn" id="btn-open-reader" type="button" data-i18n="rlOpenInReader">Open in reader</button>
+            <button class="popup-link-btn popup-link-btn-quiet" id="btn-undo-save" type="button" data-i18n="rlUndoSave">Undo</button>
+        </div>
+
+        <!-- Unread count -->
+        <div class="popup-stats" id="popup-stats" role="status" aria-live="polite">
+            <span class="popup-stat" id="popup-unread-count"></span>
+        </div>
+    </div>
+
+    <div aria-live="polite" class="sr-only" id="popup-announcer"></div>
+</main>
+
+    <script src="../shared/message-types.js"></script>
+    <script src="../shared/i18n.js"></script>
+    <script src="../utils/i18n-loader.js"></script>
+    <script src="popup.js"></script>
+    <script src="popup-whats-new.js"></script>
+    <link rel="stylesheet" href="../../membership/popup.css">
+    <script src="../../membership/eligibility.js" defer></script>
+    <script src="../../membership/popup.js" defer></script>
+<script src="../../zovo-whats-new/config.js"></script><script src="../../zovo-whats-new/zovo-cards.js" data-zovo-mount="popup"></script>
+</body>
+</html>

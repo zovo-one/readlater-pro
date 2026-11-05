@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="fetchPageTitle">Get the full text - ReadLater Pro</title>
+    <link rel="stylesheet" href="../styles/cross-browser.css">
+    <link rel="stylesheet" href="../styles/design-tokens.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/design-system.css">
+    <link rel="stylesheet" href="import.css">
+    <link rel="stylesheet" href="fetch-text.css">
+    <link rel="stylesheet" href="../styles/high-contrast.css">
+    <link rel="stylesheet" href="../styles/i18n-rtl.css">
+</head>
+<body class="fetch-page">
+    <a href="#main-content" class="skip-link" data-i18n="skipToMainContent">Skip to main content</a>
+    <main class="import-container" id="main-content">
+        <header class="import-header">
+            <div class="import-logo">
+                <div class="import-logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                </div>
+                <span class="import-logo-text" data-i18n="appName">ReadLater Pro</span>
+            </div>
+            <h1 class="import-title" data-i18n="fetchHeading">Get the full text of your saved links</h1>
+            <p class="import-description" data-i18n="fetchIntro">Articles you imported or saved as links have no text yet, so you can't read them offline, highlight them or listen to them. ReadLater can fill them in for you.</p>
+        </header>
+
+        <div class="import-reading" id="loading">
+            <span class="import-spinner" aria-hidden="true"></span>
+            <span data-i18n="fetchLoading">Checking your list...</span>
+        </div>
+
+        <section class="import-card" id="summary" hidden aria-labelledby="summary-title" tabindex="-1">
+            <h2 class="import-card-title" id="summary-title"></h2>
+            <div id="summary-notes"></div>
+            <div class="fetch-explain" id="explain">
+                <p class="import-note import-note-info" data-i18n="fetchExplain1">ReadLater downloads each page straight from its own site and keeps only the readable article, on this computer.</p>
+                <p class="import-note import-note-info" data-i18n="fetchExplain2">Nothing is sent to Zovo or anyone else, and it goes gently, one page at a time per site.</p>
+            </div>
+            <p class="fetch-perm-note" id="perm-note" hidden data-i18n="fetchPermNote">Chrome will ask to let ReadLater read pages on the sites you visit. That's what lets it download them. You can turn it off any time in Chrome's extension settings.</p>
+            <div class="import-actions">
+                <button type="button" class="btn btn-primary" id="btn-start" data-i18n="fetchAllowStart">Allow and start</button>
+                <button type="button" class="btn btn-secondary" id="btn-list" hidden data-i18n="fetchOpenList">Open my reading list</button>
+            </div>
+        </section>
+
+        <section class="import-card" id="run" hidden aria-labelledby="run-title" tabindex="-1">
+            <h2 class="import-card-title" id="run-title" data-i18n="fetchRunningTitle">Getting the full text...</h2>
+            <div class="import-progress active fetch-progress">
+                <div class="import-progress-bar-container">
+                    <div class="import-progress-bar" id="bar" role="progressbar" data-i18n-aria="fetchProgressLabel" aria-label="Full text progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+                </div>
+            </div>
+            <dl class="import-stats fetch-stats">
+                <div class="import-stat"><dt class="import-stat-label" data-i18n="fetchStatDone">Saved</dt><dd class="import-stat-value" id="stat-done">0</dd></div>
+                <div class="import-stat"><dt class="import-stat-label" data-i18n="fetchStatFailed">Couldn't read</dt><dd class="import-stat-value" id="stat-failed">0</dd></div>
+                <div class="import-stat"><dt class="import-stat-label" data-i18n="fetchStatLeft">Left</dt><dd class="import-stat-value" id="stat-left">0</dd></div>
+            </dl>
+            <div class="fetch-now-wrap" id="now-wrap" hidden>
+                <h3 class="fetch-now-label" data-i18n="fetchNowLabel">Reading now</h3>
+                <ul class="fetch-now" id="now"></ul>
+            </div>
+            <p class="import-card-sub fetch-run-hint" id="run-hint"></p>
+            <div class="import-actions">
+                <button type="button" class="btn btn-secondary" id="btn-pause" data-i18n="fetchPause">Pause</button>
+                <button type="button" class="btn btn-secondary" id="btn-stop" data-i18n="fetchStop">Stop</button>
+            </div>
+        </section>
+
+        <section class="import-card fetch-failures" id="failures" hidden aria-labelledby="failures-title">
+            <h2 class="import-card-title" id="failures-title"></h2>
+            <p class="import-card-sub" id="fail-hint"></p>
+            <ul class="fetch-fail-list" id="fail-list"></ul>
+            <p class="fetch-fail-more" id="fail-more" hidden></p>
+            <div class="import-actions">
+                <button type="button" class="btn btn-secondary" id="btn-retry" data-i18n="fetchRetry">Try these again</button>
+            </div>
+        </section>
+
+        <p class="import-note import-note-warn" id="lock-note" hidden data-i18n="fetchLockNote">This is already running in another ReadLater tab. Use that tab to follow it, or close it and reload this one.</p>
+    </main>
+
+    <div id="live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="../utils/sanitize.js"></script>
+    <script src="../shared/message-types.js"></script>
+    <script src="../shared/i18n.js"></script>
+    <script src="../utils/i18n-loader.js"></script>
+    <script src="../content/readability.js"></script>
+    <script src="../shared/fulltext-access.js"></script>
+    <script src="fetch-text.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "ذخیره در ReadLater"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing",
+      "message": "مقالات را ذخیره و به لیست مطالعه اضافه کنید. نمای خواننده تمیز، خواندن آفلاین. با برچسب‌ها سازمان‌دهی. واردات از Pocket."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - ذخیره و خواندن آفلاین"
+   }
+}

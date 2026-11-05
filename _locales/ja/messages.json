@@ -1,0 +1,1929 @@
+{
+  "aboutDangerZoneDesc": {
+    "description": "Warning text in the danger zone section",
+    "message": "この操作は永久的で、元に戻すことはできません。"
+  },
+  "aboutDescription": {
+    "description": "About section description in options",
+    "message": "記事をあとで読むために保存。ワンクリック保存、リーダービュー、タグ、オフライン閲覧。"
+  },
+  "aboutDiagnosticsDesc": {
+    "description": "Diagnostics description in options",
+    "message": "エラーログ、アナリティクスイベント、拡張機能の状態を確認できます。"
+  },
+  "aboutStorageNote": {
+    "description": "Storage info note in options",
+    "message": "IndexedDBが記事を保存します。chrome.storageが設定を保存します。"
+  },
+  "actionFavorite": {
+    "description": "Action title for favorite button on article cards",
+    "message": "お気に入り"
+  },
+  "announcerArticleLoaded": {
+    "description": "Screen reader announcement when article loads in reader",
+    "message": "記事が読み込まれました"
+  },
+  "announcerArticleNavigation": {
+    "description": "Screen reader announcement when navigating articles with keyboard",
+    "message": "記事$INDEX$/$TOTAL$：$TITLE$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "3"
+      },
+      "title": {
+        "content": "$3",
+        "example": "How to Build a Chrome Extension"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "announcerArticleRemoved": {
+    "description": "Screen reader announcement when article is deleted via swipe",
+    "message": "記事を削除しました"
+  },
+  "announcerFavoriteToggled": {
+    "description": "Screen reader announcement when favorite is toggled",
+    "message": "お気に入りを切り替えました"
+  },
+  "announcerFilteredByTag": {
+    "description": "Screen reader announcement when filtering by tag",
+    "message": "タグでフィルター：$TAG$",
+    "placeholders": {
+      "tag": {
+        "content": "$1",
+        "example": "technology"
+      }
+    }
+  },
+  "announcerStepOfTotal": {
+    "description": "Screen reader announcement during onboarding",
+    "message": "ステップ$CURRENT$/$TOTAL$",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "announcerTabSelected": {
+    "description": "Screen reader announcement when switching tabs",
+    "message": "$TAB$タブを選択",
+    "placeholders": {
+      "tab": {
+        "content": "$1",
+        "example": "Favorites"
+      }
+    }
+  },
+  "announcerUpgradeDialogOpened": {
+    "description": "Screen reader announcement when paywall opens",
+    "message": "アップグレードダイアログが開きました"
+  },
+  "appName": {
+    "description": "Application name used throughout the UI",
+    "message": "ReadLater Pro"
+  },
+  "badgeFree": {
+    "description": "Badge text for free tier users",
+    "message": "無料"
+  },
+  "badgeLifetime": {
+    "description": "Badge text for lifetime tier users",
+    "message": "永久"
+  },
+  "badgePro": {
+    "description": "Badge text for Pro tier users",
+    "message": "PRO"
+  },
+  "badgeTrial": {
+    "description": "Badge text for trial tier users",
+    "message": "お試し"
+  },
+  "batchMarkRead": {
+    "description": "Batch action button to mark selected as read",
+    "message": "既読にする"
+  },
+  "batchSelectedCount": {
+    "description": "Batch selection bar showing number selected",
+    "message": "$COUNT$件選択中",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "bugReportCopied": {
+    "description": "Button text after copying diagnostic report",
+    "message": "コピーしました"
+  },
+  "bugReportDownload": {
+    "description": "Button text to download diagnostic report",
+    "message": "ダウンロード"
+  },
+  "buttonActivate": {
+    "description": "Button text for activating a license key",
+    "message": "アクティベート"
+  },
+  "buttonActivating": {
+    "description": "Button text while license activation is in progress",
+    "message": "アクティベート中..."
+  },
+  "buttonBack": {
+    "description": "Back button on onboarding and upgrade page",
+    "message": "戻る"
+  },
+  "buttonChecking": {
+    "description": "Button text while checking restore status",
+    "message": "確認中..."
+  },
+  "buttonCleaningUp": {
+    "description": "Button text while cleanup is in progress",
+    "message": "整理中..."
+  },
+  "buttonCleanup": {
+    "description": "Button text for cleaning up old read articles",
+    "message": "古い既読記事を整理"
+  },
+  "buttonClearAllData": {
+    "description": "Button text for clearing all data",
+    "message": "すべてのデータを消去"
+  },
+  "buttonClearErrorLog": {
+    "description": "Button text for clearing error log",
+    "message": "エラーログを消去"
+  },
+  "buttonClearEventLog": {
+    "description": "Button text for clearing event log",
+    "message": "イベントログを消去"
+  },
+  "buttonClearing": {
+    "description": "Button text while clearing data",
+    "message": "消去中..."
+  },
+  "buttonDelete": {
+    "description": "Delete button text used in batch bar and context menu",
+    "message": "削除"
+  },
+  "buttonEnterLicenseKey": {
+    "description": "Button text to show the license key input",
+    "message": "ライセンスキーを入力"
+  },
+  "buttonExportArticles": {
+    "description": "Button text for exporting articles",
+    "message": "記事をエクスポート"
+  },
+  "buttonExportDebugReport": {
+    "description": "Button text for exporting debug report",
+    "message": "デバッグレポートをエクスポート"
+  },
+  "buttonExportStats": {
+    "description": "Button text for exporting statistics",
+    "message": "統計をエクスポート"
+  },
+  "buttonExported": {
+    "description": "Temporary button text after export completes",
+    "message": "エクスポート完了"
+  },
+  "buttonExporting": {
+    "description": "Button text while export is in progress",
+    "message": "エクスポート中..."
+  },
+  "buttonGetStarted": {
+    "description": "Button text on the upgrade success overlay",
+    "message": "始める"
+  },
+  "buttonImportJsonBackup": {
+    "description": "Button text for importing a JSON backup",
+    "message": "JSONバックアップをインポート"
+  },
+  "buttonImportPocket": {
+    "description": "Button text for importing from Pocket",
+    "message": "Pocketからインポート"
+  },
+  "buttonImporting": {
+    "description": "Button text while import is in progress",
+    "message": "インポート中..."
+  },
+  "buttonImportingProgress": {
+    "description": "Button text during import showing progress",
+    "message": "インポート中... ($CURRENT$/$TOTAL$)",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "15"
+      },
+      "total": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "buttonNext": {
+    "description": "Next button on onboarding",
+    "message": "次へ"
+  },
+  "buttonOpenDiagnostics": {
+    "description": "Button text to open diagnostics page",
+    "message": "診断ダッシュボードを開く"
+  },
+  "buttonResetStats": {
+    "description": "Button text for resetting reading statistics",
+    "message": "統計をリセット"
+  },
+  "buttonRestorePurchase": {
+    "description": "Button text for restoring a previous purchase",
+    "message": "購入を復元"
+  },
+  "buttonRetry": {
+    "description": "Retry button text on error UI",
+    "message": "再試行"
+  },
+  "buttonStatsReset": {
+    "description": "Temporary button text after stats are reset",
+    "message": "統計がリセットされました"
+  },
+  "buttonUpgradeToPro": {
+    "description": "CTA button text to upgrade",
+    "message": "Proにアップグレード"
+  },
+  "changelogSubtitle": {
+    "description": "Subtitle for the changelog section",
+    "message": "各バージョンの変更内容を確認"
+  },
+  "communitySubtitle": {
+    "description": "Subtitle for the community links section",
+    "message": "他のReadLater Proユーザーとつながる"
+  },
+  "communityTitle": {
+    "description": "Title for the community links section in options",
+    "message": "コミュニティ"
+  },
+  "confirmCleanup": {
+    "description": "Confirm dialog for cleanup old articles",
+    "message": "30日以上前の既読記事をすべて削除しますか？\n\nこの操作は元に戻せません。"
+  },
+  "confirmClearAllData": {
+    "description": "First confirm dialog when clearing all data",
+    "message": "すべてのデータを消去してもよろしいですか？\n\nこの操作でall記事、タグ、設定が完全に削除されます。"
+  },
+  "confirmClearAllDataSecond": {
+    "description": "Second confirm dialog when clearing all data",
+    "message": "この操作は元に戻せません。すべてを削除することを確認するにはOKと入力してください。\n\nOKを押すとすべてのデータが完全に削除されます。"
+  },
+  "confirmImportJson": {
+    "description": "Confirm dialog for JSON import",
+    "message": "バックアップから$COUNT$件の記事をインポートしますか？\n\n既存の記事は削除されません。",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "confirmResetStats": {
+    "description": "Confirm dialog for resetting stats",
+    "message": "すべての閲覧統計をリセットしてもよろしいですか？この操作は元に戻せません。"
+  },
+  "contextMenuOpenList": {
+    "description": "Context menu item to open the reading list side panel",
+    "message": "リーディングリストを開く"
+  },
+  "contextMenuSaveLink": {
+    "description": "Context menu item to save a link",
+    "message": "リンクをReadLaterに保存"
+  },
+  "contextMenuSavePage": {
+    "description": "Context menu item to save the current page",
+    "message": "ページをReadLaterに保存"
+  },
+  "ctxAddTag": {
+    "description": "Context menu action to add a tag",
+    "message": "タグを追加"
+  },
+  "ctxCopyUrl": {
+    "description": "Context menu action to copy article URL",
+    "message": "URLをコピー"
+  },
+  "ctxOpenOriginal": {
+    "description": "Context menu action to open original article URL",
+    "message": "元のURLを開く"
+  },
+  "ctxOpenReader": {
+    "description": "Context menu action to open article in reader view",
+    "message": "リーダーで開く"
+  },
+  "ctxToggleFavorite": {
+    "description": "Context menu action to toggle favorite status",
+    "message": "お気に入りを切り替え"
+  },
+  "dashboardDayUnit": {
+    "description": "Day unit for streak display on dashboard (plural form)",
+    "message": "日"
+  },
+  "dashboardDayUnitSingular": {
+    "description": "Day unit for streak display on dashboard (singular form)",
+    "message": "日"
+  },
+  "dashboardMemberSince": {
+    "description": "Member since text on dashboard",
+    "message": "$DATE$から利用",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 2025"
+      }
+    }
+  },
+  "dashboardNoDomainsYet": {
+    "description": "Empty state message for top domains",
+    "message": "まだドメインが追跡されていません。記事を保存して、主要なソースを確認しましょう。"
+  },
+  "dashboardSavedThisMonth": {
+    "description": "Monthly trend label for monthly saves",
+    "message": "今月保存"
+  },
+  "dashboardSavedThisWeek": {
+    "description": "Monthly trend label for weekly saves",
+    "message": "今週保存"
+  },
+  "dashboardStatsExported": {
+    "description": "Screen reader announcement after stats export",
+    "message": "統計をエクスポートしました"
+  },
+  "dashboardStatsLoaded": {
+    "description": "Screen reader announcement when dashboard stats finish loading",
+    "message": "統計が読み込まれました"
+  },
+  "dashboardStatsReset": {
+    "description": "Screen reader announcement after stats reset",
+    "message": "統計がリセットされました"
+  },
+  "diagColumnFeature": {
+    "description": "Column header for feature name in comparison table",
+    "message": "機能"
+  },
+  "diagColumnFree": {
+    "description": "Column header for free tier in comparison table",
+    "message": "Free"
+  },
+  "diagColumnPro": {
+    "description": "Column header for pro tier in comparison table",
+    "message": "Pro"
+  },
+  "diagFeatureComparison": {
+    "description": "Caption for the feature comparison table",
+    "message": "FreeプランとProプランの機能比較"
+  },
+  "diagFilterAll": {
+    "description": "Event filter option to show all events",
+    "message": "すべて"
+  },
+  "diagHealthExcellent": {
+    "description": "Health score label for 90-100",
+    "message": "優秀"
+  },
+  "diagHealthFair": {
+    "description": "Health score label for 50-69",
+    "message": "普通"
+  },
+  "diagHealthGood": {
+    "description": "Health score label for 70-89",
+    "message": "良好"
+  },
+  "diagHealthNeedsAttention": {
+    "description": "Health score label for below 50",
+    "message": "注意が必要"
+  },
+  "diagIncluded": {
+    "description": "Aria-label/title for check mark in comparison table",
+    "message": "含まれる"
+  },
+  "diagInfoChromeVersion": {
+    "description": "Info list label for Chrome version",
+    "message": "Chromeバージョン"
+  },
+  "diagInfoId": {
+    "description": "Info list label for extension ID",
+    "message": "ID"
+  },
+  "diagInfoName": {
+    "description": "Info list label for extension name",
+    "message": "名前"
+  },
+  "diagInfoPlatform": {
+    "description": "Info list label for platform",
+    "message": "プラットフォーム"
+  },
+  "diagInfoVersion": {
+    "description": "Info list label for extension version",
+    "message": "バージョン"
+  },
+  "diagLimitedAccess": {
+    "description": "Text for limited access in comparison table",
+    "message": "制限あり"
+  },
+  "diagNoErrors": {
+    "description": "Empty state message for error table",
+    "message": "エラーは記録されていません。"
+  },
+  "diagNoEvents": {
+    "description": "Empty state message for event table",
+    "message": "イベントは記録されていません。"
+  },
+  "diagNoIssues": {
+    "description": "Health score detail when no issues found",
+    "message": "過去24時間で問題は検出されませんでした。"
+  },
+  "diagNotIncluded": {
+    "description": "Aria-label/title for dash in comparison table",
+    "message": "含まれない"
+  },
+  "diagStorageQuota": {
+    "description": "Label for storage quota progress bar in diagnostics",
+    "message": "ストレージクォータ"
+  },
+  "diagTableContext": {
+    "description": "Table column header for context",
+    "message": "コンテキスト"
+  },
+  "diagTableEvent": {
+    "description": "Table column header for event name",
+    "message": "イベント"
+  },
+  "diagTableMessage": {
+    "description": "Table column header for message",
+    "message": "メッセージ"
+  },
+  "diagTableProperties": {
+    "description": "Table column header for event properties",
+    "message": "プロパティ"
+  },
+  "diagTableStack": {
+    "description": "Table column header for stack trace",
+    "message": "スタック"
+  },
+  "diagTableTime": {
+    "description": "Table column header for timestamp",
+    "message": "時刻"
+  },
+  "diagTableType": {
+    "description": "Table column header for type",
+    "message": "タイプ"
+  },
+  "dmConfirmCancel": {
+    "description": "Button text to cancel deletion",
+    "message": "キャンセル"
+  },
+  "dmConfirmDelete": {
+    "description": "Button text to confirm deletion of all data",
+    "message": "はい、すべて削除します"
+  },
+  "dmConfirmText": {
+    "description": "Text for the delete confirmation dialog",
+    "message": "すべての設定、環境設定、保存データが完全に削除されます。この操作は取り消せません。"
+  },
+  "dmConfirmTitle": {
+    "description": "Title for the delete confirmation dialog",
+    "message": "本当に実行しますか？"
+  },
+  "dmDeleteAllData": {
+    "description": "Button text for deleting all extension data",
+    "message": "すべてのデータを削除"
+  },
+  "dmExportAllData": {
+    "description": "Button text for exporting all extension data",
+    "message": "すべてのデータをエクスポート"
+  },
+  "dmNote": {
+    "description": "Info note in the data management section",
+    "message": "エクスポートされたデータはダウンロードフォルダにJSONファイルとして保存されます。データを削除すると拡張機能が初期状態にリセットされます。"
+  },
+  "dmStorageUsed": {
+    "description": "Label for storage usage stat in data management",
+    "message": "使用済みストレージ"
+  },
+  "dmSubtitle": {
+    "description": "Subtitle for the data management section",
+    "message": "ReadLater Proが保存したすべてのデータの表示、エクスポート、削除ができます"
+  },
+  "emptyStateTitle": {
+    "description": "Empty state heading when no articles are saved",
+    "message": "まだ記事がありません"
+  },
+  "errorArticleNotFound": {
+    "description": "Error message when article cannot be found",
+    "message": "記事が見つかりません。"
+  },
+  "errorFailedToConnect": {
+    "description": "Error when paywall license activation has connection issues",
+    "message": "接続に失敗しました。もう一度お試しください。"
+  },
+  "errorFailedToLoadArticle": {
+    "description": "Error message when article fails to load in reader",
+    "message": "記事の読み込みに失敗しました。もう一度お試しください。"
+  },
+  "errorFailedToLoadArticles": {
+    "description": "Error message when articles fail to load",
+    "message": "記事の読み込みに失敗しました"
+  },
+  "errorFailedToLoadStats": {
+    "description": "Error message when statistics fail to load",
+    "message": "統計の読み込みに失敗しました"
+  },
+  "errorFailedToReadFile": {
+    "description": "Error when file reading fails during import",
+    "message": "ファイルの読み込みに失敗しました。もう一度お試しください。"
+  },
+  "errorFeatureUnavailable": {
+    "description": "Error text when a feature crashes",
+    "message": "この機能は一時的にご利用いただけません。"
+  },
+  "errorImportFailed": {
+    "description": "Error when import operation fails",
+    "message": "インポートに失敗しました：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "errorInvalidLicenseKey": {
+    "description": "Error when license key activation fails",
+    "message": "無効なライセンスキーです。確認してもう一度お試しください。"
+  },
+  "errorInvalidLicenseKeyPaywall": {
+    "description": "Error in paywall when license key is invalid",
+    "message": "無効なライセンスキーです。"
+  },
+  "errorNoArticleId": {
+    "description": "Error message when reader is opened without an article ID",
+    "message": "記事IDが指定されていません。"
+  },
+  "errorNoArticlesInExport": {
+    "description": "Error when Pocket export contains no articles",
+    "message": "エクスポートファイルに記事が見つかりませんでした。有効なPocketエクスポートであることを確認してください。"
+  },
+  "errorNoProSubscription": {
+    "description": "Error when restore purchase finds no subscription",
+    "message": "アクティブなProサブスクリプションが見つかりません。プランを購入するか、ライセンスキーを入力してください。"
+  },
+  "errorPleaseEnterLicenseKey": {
+    "description": "Error when license key field is empty",
+    "message": "ライセンスキーを入力してください。"
+  },
+  "errorSelectHtmlFile": {
+    "description": "Error when user selects wrong file type for import",
+    "message": "PocketからエクスポートしたHTMLファイルを選択してください。"
+  },
+  "errorStorageCalcFailed": {
+    "description": "Error text when storage calculation fails",
+    "message": "計算できませんでした"
+  },
+  "errorTryReloading": {
+    "description": "Recovery suggestion when a feature fails",
+    "message": "拡張機能を再読み込みしてみてください。"
+  },
+  "extActionTitle": {
+    "description": "Tooltip for the browser action icon in the toolbar",
+    "message": "ReadLaterに保存"
+  },
+  "extDescription": {
+    "description": "Extension description for Chrome Web Store listing",
+    "message": "記事を保存してリーディングリストに追加。リーダービューでオフライン閲覧。タグで整理。Pocketからインポート対応。"
+  },
+  "extName": {
+    "description": "Extension name shown in Chrome Web Store and extensions page",
+    "message": "ReadLater Pro - 記事を保存してオフラインで読む"
+  },
+  "faqNoResults": {
+    "description": "Empty state when FAQ search has no matches",
+    "message": "結果が見つかりませんでした。別の検索語をお試しください。"
+  },
+  "faqSendFeedback": {
+    "description": "Link text in FAQ footer to open feedback form",
+    "message": "フィードバックを送信"
+  },
+  "faqStillNeedHelp": {
+    "description": "Footer text in FAQ section",
+    "message": "まだお困りですか？"
+  },
+  "featureExportArticles": {
+    "description": "Feature list item in upgrade prompt",
+    "message": "記事のエクスポート"
+  },
+  "featureFullTextSearch": {
+    "description": "Feature list item in upgrade prompt",
+    "message": "全文検索"
+  },
+  "featureOfflineArticles": {
+    "description": "Feature name in paywall comparison table",
+    "message": "オフライン記事"
+  },
+  "featurePocketImport": {
+    "description": "Feature name in paywall comparison table",
+    "message": "Pocketインポート"
+  },
+  "featureReaderView": {
+    "description": "Feature name in paywall comparison table",
+    "message": "リーダービュー"
+  },
+  "featureSaveReadArticles": {
+    "description": "Feature name in paywall comparison table",
+    "message": "記事の保存と閲覧"
+  },
+  "featureTagsBasicSearch": {
+    "description": "Feature name in paywall comparison table",
+    "message": "タグと基本検索"
+  },
+  "feedbackDraftSaved": {
+    "description": "Indicator text when feedback draft is auto-saved",
+    "message": "下書き保存済み"
+  },
+  "feedbackIncludeDiagnostics": {
+    "description": "Checkbox label for including diagnostics in bug reports",
+    "message": "このレポートに診断データを含める"
+  },
+  "feedbackLabelDescription": {
+    "description": "Label for feedback description textarea",
+    "message": "説明"
+  },
+  "feedbackLabelEmail": {
+    "description": "Label for feedback email input",
+    "message": "メールアドレス（任意）"
+  },
+  "feedbackLabelSubject": {
+    "description": "Label for feedback subject input",
+    "message": "件名"
+  },
+  "feedbackLabelType": {
+    "description": "Label for feedback type dropdown",
+    "message": "種類"
+  },
+  "feedbackPreviewDiagnostics": {
+    "description": "Toggle button to show/hide diagnostic data preview",
+    "message": "診断データのプレビュー"
+  },
+  "feedbackSubtitle": {
+    "description": "Subtitle for the feedback section",
+    "message": "バグの報告、機能のリクエスト、またはご意見をお聞かせください。"
+  },
+  "feedbackTypeBugReport": {
+    "description": "Feedback type option for bug reports",
+    "message": "バグレポート"
+  },
+  "feedbackTypeFeatureRequest": {
+    "description": "Feedback type option for feature requests",
+    "message": "機能リクエスト"
+  },
+  "feedbackTypeGeneral": {
+    "description": "Feedback type option for general feedback",
+    "message": "一般的なフィードバック"
+  },
+  "fontGeorgiaSerif": {
+    "description": "Georgia font option",
+    "message": "Georgia (セリフ)"
+  },
+  "fontInterSansSerif": {
+    "description": "Inter font option",
+    "message": "Inter (サンセリフ)"
+  },
+  "fontMerriweatherSerif": {
+    "description": "Merriweather font option",
+    "message": "Merriweather (セリフ)"
+  },
+  "fontSizeExtraLarge": {
+    "description": "Extra large font size option",
+    "message": "特大 (20px)"
+  },
+  "fontSizeHuge": {
+    "description": "Huge font size option",
+    "message": "最大 (22px)"
+  },
+  "fontSizeLarge": {
+    "description": "Large font size option",
+    "message": "大 (18px)"
+  },
+  "fontSizeMedium": {
+    "description": "Medium font size option",
+    "message": "中 (16px)"
+  },
+  "fontSizeSmall": {
+    "description": "Small font size option",
+    "message": "小 (14px)"
+  },
+  "fontSystemDefault": {
+    "description": "System default font option",
+    "message": "システムデフォルト"
+  },
+  "footerManageSubscription": {
+    "description": "Link text for managing subscription",
+    "message": "サブスクリプションを管理"
+  },
+  "headingAbout": {
+    "description": "Heading for about section in options",
+    "message": "情報"
+  },
+  "headingBehavior": {
+    "description": "Heading for behavior settings section",
+    "message": "動作"
+  },
+  "headingDangerZone": {
+    "description": "Heading for the danger zone section",
+    "message": "危険ゾーン"
+  },
+  "headingData": {
+    "description": "Heading for data import/export section",
+    "message": "データ"
+  },
+  "headingDiagnostics": {
+    "description": "Heading for diagnostics section in options",
+    "message": "診断"
+  },
+  "headingEventLog": {
+    "description": "Heading for the event log section in diagnostics",
+    "message": "イベントログ"
+  },
+  "headingExtensionInfo": {
+    "description": "Heading for the extension info section in diagnostics",
+    "message": "拡張機能情報"
+  },
+  "headingFeedback": {
+    "description": "Heading for the feedback section in options",
+    "message": "フィードバック"
+  },
+  "headingFreeVsPro": {
+    "description": "Heading for the feature comparison section on upgrade page",
+    "message": "無料版 vs Pro"
+  },
+  "headingHealthScore": {
+    "description": "Heading for the health score section in diagnostics",
+    "message": "ヘルススコア"
+  },
+  "headingKeyboardShortcuts": {
+    "description": "Heading for keyboard shortcuts section",
+    "message": "キーボードショートカット"
+  },
+  "headingMonthlyTrend": {
+    "description": "Heading for the monthly trend section on dashboard",
+    "message": "月間トレンド"
+  },
+  "headingNotifications": {
+    "description": "Heading for notifications settings section",
+    "message": "通知"
+  },
+  "headingOverview": {
+    "description": "Heading for the overview section on dashboard",
+    "message": "概要"
+  },
+  "headingPrivacy": {
+    "description": "Heading for the privacy section on welcome page",
+    "message": "プライバシーを大切にしています"
+  },
+  "headingPrivacyControls": {
+    "description": "Heading for the privacy controls section in options",
+    "message": "プライバシー設定"
+  },
+  "headingReaderSettings": {
+    "description": "Heading for reader settings section in options",
+    "message": "リーダー設定"
+  },
+  "headingRecentErrors": {
+    "description": "Heading for the error log section in diagnostics",
+    "message": "最近のエラー"
+  },
+  "headingStatistics": {
+    "description": "Heading for statistics section in options",
+    "message": "統計"
+  },
+  "headingStorage": {
+    "description": "Heading for storage section in options",
+    "message": "ストレージ"
+  },
+  "headingStorageUsage": {
+    "description": "Heading for storage usage section in diagnostics",
+    "message": "ストレージ使用量"
+  },
+  "headingTopDomains": {
+    "description": "Heading for the top domains section on dashboard",
+    "message": "トップドメイン"
+  },
+  "headingUsageStats": {
+    "description": "Heading for usage stats section in options",
+    "message": "使用統計"
+  },
+  "headingWeeklyActivity": {
+    "description": "Heading for the weekly activity chart section",
+    "message": "週間アクティビティ"
+  },
+  "headingWhatsNew": {
+    "description": "Heading for the changelog section in options",
+    "message": "新機能"
+  },
+  "headingYourData": {
+    "description": "Heading for the data management section in options",
+    "message": "あなたのデータ"
+  },
+  "importArticlesImported": {
+    "description": "Import result detail",
+    "message": "$COUNT$件の記事をインポートしました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "150"
+      }
+    }
+  },
+  "importDescription": {
+    "description": "Description text on the import page",
+    "message": "リーディングリスト全体をPocketから移行できます。記事、タグ、既読/未読のステータスがすべて保持されます。"
+  },
+  "importDropzoneHint": {
+    "description": "Secondary text in the import drop zone",
+    "message": "またはクリックしてHTMLファイルを選択"
+  },
+  "importDropzoneText": {
+    "description": "Primary text in the import drop zone",
+    "message": "Pocketエクスポートファイルをここにドロップ"
+  },
+  "importDuplicatesSkipped": {
+    "description": "Import result detail for skipped duplicates",
+    "message": "$COUNT$件の重複をスキップしました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "importStep1": {
+    "description": "Import step 1 instruction",
+    "message": "getpocket.com/exportにアクセスして、HTMLエクスポートファイルをダウンロードしてください"
+  },
+  "importStep2": {
+    "description": "Import step 2 instruction",
+    "message": "以下のエリアをクリックするか、エクスポートファイルをドラッグしてください"
+  },
+  "importStep3": {
+    "description": "Import step 3 instruction",
+    "message": "記事とタグが自動的にインポートされます"
+  },
+  "importTagsCreated": {
+    "description": "Import result detail for created tags",
+    "message": "$COUNT$件のタグを作成しました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "importTitle": {
+    "description": "Main heading on the import page",
+    "message": "Pocketからインポート"
+  },
+  "labelArticleActions": {
+    "description": "Aria-label for the context menu",
+    "message": "記事の操作"
+  },
+  "labelArticleFilters": {
+    "description": "Aria-label for the filter tabs navigation",
+    "message": "記事フィルター"
+  },
+  "labelArticleList": {
+    "description": "Aria-label for the article list container",
+    "message": "記事一覧"
+  },
+  "labelClosePaywall": {
+    "description": "Aria-label for the paywall close button",
+    "message": "ペイウォールを閉じる"
+  },
+  "labelContents": {
+    "description": "Title for the table of contents sidebar",
+    "message": "目次"
+  },
+  "labelDecreaseFontSize": {
+    "description": "Aria-label for font size decrease button",
+    "message": "フォントサイズを小さくする"
+  },
+  "labelDefaultContentWidth": {
+    "description": "Label for content width select",
+    "message": "デフォルトのコンテンツ幅"
+  },
+  "labelDefaultFontSize": {
+    "description": "Label for font size select",
+    "message": "デフォルトのフォントサイズ"
+  },
+  "labelDefaultTheme": {
+    "description": "Label for the default theme select",
+    "message": "デフォルトテーマ"
+  },
+  "labelDeleteSelected": {
+    "description": "Aria-label for batch delete button",
+    "message": "選択した記事を削除"
+  },
+  "labelDropzone": {
+    "description": "Aria-label for the import drop zone",
+    "message": "Pocketエクスポートファイルのドロップゾーン、クリックまたはここにファイルをドラッグ"
+  },
+  "labelFilterEvents": {
+    "description": "Aria-label for the event filter dropdown in diagnostics",
+    "message": "タイプでイベントをフィルター"
+  },
+  "labelFontFamily": {
+    "description": "Label for font family select",
+    "message": "フォントファミリー"
+  },
+  "labelFontSize": {
+    "description": "Label for font size in reader settings panel",
+    "message": "フォントサイズ"
+  },
+  "labelHealthScore": {
+    "description": "Aria-label for the health score meter",
+    "message": "ヘルススコア"
+  },
+  "labelImportJsonFile": {
+    "description": "Aria-label for the JSON import file input",
+    "message": "JSONバックアップファイルをインポート"
+  },
+  "labelImportProgress": {
+    "description": "Aria-label for the import progress bar",
+    "message": "インポートの進捗"
+  },
+  "labelIncreaseFontSize": {
+    "description": "Aria-label for font size increase button",
+    "message": "フォントサイズを大きくする"
+  },
+  "labelLicenseKey": {
+    "description": "Aria-label for the license key input",
+    "message": "ライセンスキー"
+  },
+  "labelLineHeight": {
+    "description": "Label for line height select",
+    "message": "行の高さ"
+  },
+  "labelMarkReadOnOpen": {
+    "description": "Label for mark read on open toggle",
+    "message": "開いた時に既読にする"
+  },
+  "labelMarkSelectedRead": {
+    "description": "Aria-label for batch mark read button",
+    "message": "選択した記事を既読にする"
+  },
+  "labelOnboardingProgress": {
+    "description": "Aria-label for the onboarding progress bar",
+    "message": "はじめにの進捗"
+  },
+  "labelOnboardingSteps": {
+    "description": "Aria-label for the onboarding dots navigation",
+    "message": "はじめにのステップ"
+  },
+  "labelReadingProgress": {
+    "description": "Aria-label for the reader progress bar",
+    "message": "閲覧の進捗"
+  },
+  "labelReengagementDescription": {
+    "description": "Description for re-engagement reminders setting",
+    "message": "ReadLaterをしばらく使っていない場合に親切なリマインダーを受け取れます"
+  },
+  "labelReengagementReminders": {
+    "description": "Label for re-engagement notification toggle",
+    "message": "リエンゲージメントリマインダー"
+  },
+  "labelSaveOffline": {
+    "description": "Label for auto-offline toggle",
+    "message": "オフライン閲覧用に記事を保存"
+  },
+  "labelSearchArticles": {
+    "description": "Aria-label for the search input in sidebar",
+    "message": "記事を検索"
+  },
+  "labelSelectPocketFile": {
+    "description": "Aria-label for the file input on import page",
+    "message": "Pocketエクスポートファイルを選択"
+  },
+  "labelShowNotifications": {
+    "description": "Label for the notification toggle",
+    "message": "保存時に通知を表示"
+  },
+  "labelSortErrors": {
+    "description": "Aria-label for the error sort dropdown in diagnostics",
+    "message": "エラーを並べ替え"
+  },
+  "labelStorageUsage": {
+    "description": "Aria-label for the storage usage progress bar",
+    "message": "ストレージ使用量"
+  },
+  "labelTagName": {
+    "description": "Label for the tag name input in the tag prompt",
+    "message": "タグ名"
+  },
+  "labelTheme": {
+    "description": "Label for theme selection in reader settings panel",
+    "message": "テーマ"
+  },
+  "labelWidth": {
+    "description": "Label for width selection in reader settings panel",
+    "message": "幅"
+  },
+  "lineHeightCompact": {
+    "description": "Compact line height option",
+    "message": "コンパクト (1.4)"
+  },
+  "lineHeightDouble": {
+    "description": "Double line height option",
+    "message": "2倍 (2.0)"
+  },
+  "lineHeightNormal": {
+    "description": "Normal line height option",
+    "message": "標準 (1.6)"
+  },
+  "lineHeightRelaxed": {
+    "description": "Relaxed line height option",
+    "message": "ゆったり (1.7)"
+  },
+  "lineHeightSpacious": {
+    "description": "Spacious line height option",
+    "message": "広め (1.8)"
+  },
+  "linkOpensNewTab": {
+    "description": "Screen reader text indicating a link opens in a new tab",
+    "message": "（新しいタブで開きます）"
+  },
+  "linkPrivacyPolicy": {
+    "description": "Link text for the privacy policy page",
+    "message": "プライバシーポリシー"
+  },
+  "linkSupport": {
+    "description": "Link text for support page",
+    "message": "サポート"
+  },
+  "linkTermsOfService": {
+    "description": "Link text for the terms of service page",
+    "message": "利用規約"
+  },
+  "notifArticlesWaitingBody": {
+    "description": "Re-engagement notification body variant 2",
+    "message": "リーディングリストの準備ができています。続きから読みましょう"
+  },
+  "notifArticlesWaitingTitle": {
+    "description": "Re-engagement notification title variant 2",
+    "message": "記事があなたを待っています"
+  },
+  "notifCatchUpBody": {
+    "description": "Re-engagement notification body variant 3",
+    "message": "$DAYS$日が経ちました。保存した記事があなたを待っています。",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifCatchUpTitle": {
+    "description": "Re-engagement notification title variant 3",
+    "message": "追いつく時間です"
+  },
+  "notifMilestoneBody": {
+    "description": "Notification body for milestone achievements",
+    "message": "$COUNT$件の記事を保存しました。読み続けましょう。",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "notifMilestoneTitle": {
+    "description": "Notification title for milestone achievements",
+    "message": "ReadLater Pro マイルストーン"
+  },
+  "notifMissesYouBody": {
+    "description": "Re-engagement notification body variant 1",
+    "message": "$COUNT$日間の連続記録がありました。戻ってきて記録を続けましょう",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifMissesYouTitle": {
+    "description": "Re-engagement notification title variant 1",
+    "message": "ReadLater Proがあなたを待っています"
+  },
+  "notifWeeklyImpactBody": {
+    "description": "Notification body for weekly impact summary",
+    "message": "今週$COUNT$件の記事を保存しました",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifWeeklyImpactTitle": {
+    "description": "Notification title for weekly impact reminder",
+    "message": "今週のReadLaterまとめ"
+  },
+  "paywallFeature": {
+    "description": "Table header in paywall comparison table",
+    "message": "機能"
+  },
+  "paywallFree": {
+    "description": "Table header in paywall comparison table",
+    "message": "Free"
+  },
+  "paywallPro": {
+    "description": "Table header in paywall comparison table",
+    "message": "Pro"
+  },
+  "paywallUnlimited": {
+    "description": "Paywall feature access label for unlimited",
+    "message": "無制限"
+  },
+  "pcInfoSuffix": {
+    "description": "Info text suffix for privacy controls",
+    "message": "をご覧ください。"
+  },
+  "pcInfoText": {
+    "description": "Info text prefix for privacy controls",
+    "message": "すべてのデータはお使いのデバイスに保存されます。詳しくは"
+  },
+  "pcSubtitle": {
+    "description": "Subtitle for the privacy controls section",
+    "message": "ReadLater Proが収集できるデータを管理します。変更は即座に反映されます。"
+  },
+  "placeholderLicenseKey": {
+    "description": "Placeholder for license key input fields",
+    "message": "XXXX-XXXX-XXXX-XXXX"
+  },
+  "placeholderSearch": {
+    "description": "Placeholder for the article search input in sidebar",
+    "message": "記事を検索..."
+  },
+  "placeholderSearchErrors": {
+    "description": "Placeholder for the error search input in diagnostics",
+    "message": "エラーを検索..."
+  },
+  "placeholderSearchEvents": {
+    "description": "Placeholder for the event search input in diagnostics",
+    "message": "イベントを検索..."
+  },
+  "placeholderTagInput": {
+    "description": "Placeholder for the tag input prompt",
+    "message": "タグを入力..."
+  },
+  "popupOpenList": {
+    "message": "リーディングリスト"
+  },
+  "popupSavePage": {
+    "message": "ページを保存"
+  },
+  "proFeaturesHeader": {
+    "description": "Header for the pro feature preview section",
+    "message": "Pro機能"
+  },
+  "pullToRefresh": {
+    "description": "Text shown during pull to refresh gesture",
+    "message": "引っ張って更新"
+  },
+  "readTimeMin": {
+    "description": "Estimated read time on article card",
+    "message": "$COUNT$分",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "readerFavoriteAdded": {
+    "description": "Tooltip when article is added to favorites",
+    "message": "お気に入りに追加しました"
+  },
+  "readerFavoriteRemoved": {
+    "description": "Tooltip when article is removed from favorites",
+    "message": "お気に入りから削除しました"
+  },
+  "readerFinished": {
+    "description": "Reader time remaining text when article is done",
+    "message": "読了"
+  },
+  "readerFontSizeChanged": {
+    "description": "Tooltip when changing font size",
+    "message": "フォントサイズ：$SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "readerLessThan1Min": {
+    "description": "Reader time remaining when less than 1 min left",
+    "message": "残り1分未満"
+  },
+  "readerMinRead": {
+    "description": "Article estimated read time",
+    "message": "$COUNT$分で読了",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "readerMinRemaining": {
+    "description": "Reader time remaining display",
+    "message": "残り$COUNT$分",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "readerNoContent": {
+    "description": "Message when reader has no article content",
+    "message": "この記事のコンテンツは利用できません。"
+  },
+  "readerSaved": {
+    "description": "Article saved date in reader meta",
+    "message": "$DATE$に保存",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "12/15/2025"
+      }
+    }
+  },
+  "readerSearchCleared": {
+    "description": "Screen reader announcement when search is cleared",
+    "message": "検索をクリアしました"
+  },
+  "readerThemeChanged": {
+    "description": "Tooltip when cycling reader themes",
+    "message": "テーマ：$THEME$",
+    "placeholders": {
+      "theme": {
+        "content": "$1",
+        "example": "Sepia"
+      }
+    }
+  },
+  "readerViewOriginalPage": {
+    "description": "Link text to view the original article page",
+    "message": "オリジナルページを表示"
+  },
+  "readerWidthChanged": {
+    "description": "Tooltip when cycling reader width",
+    "message": "幅：$LABEL$ ($SIZE$px)",
+    "placeholders": {
+      "label": {
+        "content": "$1",
+        "example": "Medium"
+      },
+      "size": {
+        "content": "$2",
+        "example": "680"
+      }
+    }
+  },
+  "refreshing": {
+    "description": "Text shown during refresh operation",
+    "message": "更新中"
+  },
+  "releaseToRefresh": {
+    "description": "Text shown when pull threshold is exceeded",
+    "message": "離して更新"
+  },
+  "shortcutCustomizeLink": {
+    "description": "Link text to customize shortcuts",
+    "message": "Chromeの設定でショートカットをカスタマイズ"
+  },
+  "shortcutOpenReadingList": {
+    "description": "Description for the open reading list keyboard shortcut",
+    "message": "リーディングリストを開く"
+  },
+  "shortcutSaveCurrentPage": {
+    "description": "Description for the save page keyboard shortcut",
+    "message": "現在のページを保存"
+  },
+  "skipToMainContent": {
+    "description": "Accessibility skip link to jump to main content",
+    "message": "メインコンテンツへスキップ"
+  },
+  "sortByContext": {
+    "description": "Sort option in diagnostics error table",
+    "message": "コンテキスト順"
+  },
+  "sortByType": {
+    "description": "Sort option in diagnostics error table",
+    "message": "タイプ順"
+  },
+  "sortDomainAZ": {
+    "description": "Sort option: alphabetical by domain ascending (Pro)",
+    "message": "ドメイン A-Z"
+  },
+  "sortDomainZA": {
+    "description": "Sort option: alphabetical by domain descending (Pro)",
+    "message": "ドメイン Z-A"
+  },
+  "sortLongest": {
+    "description": "Sort option: longest read time first",
+    "message": "長い順"
+  },
+  "sortNewest": {
+    "description": "Sort option: newest articles first",
+    "message": "新しい順"
+  },
+  "sortNewestFirst": {
+    "description": "Sort option in diagnostics error table",
+    "message": "新しい順"
+  },
+  "sortOldest": {
+    "description": "Sort option: oldest articles first",
+    "message": "古い順"
+  },
+  "sortOldestFirst": {
+    "description": "Sort option in diagnostics error table",
+    "message": "古い順"
+  },
+  "sortShortest": {
+    "description": "Sort option: shortest read time first",
+    "message": "短い順"
+  },
+  "sortTitleAZ": {
+    "description": "Sort option: alphabetical by title ascending",
+    "message": "タイトル A-Z"
+  },
+  "sortTitleZA": {
+    "description": "Sort option: alphabetical by title descending",
+    "message": "タイトル Z-A"
+  },
+  "statArticlesRead": {
+    "description": "Stat label on dashboard for articles read",
+    "message": "読んだ記事"
+  },
+  "statArticlesSaved": {
+    "description": "Stat label for total articles saved",
+    "message": "保存した記事"
+  },
+  "statBestStreak": {
+    "description": "Stat label for best streak",
+    "message": "最高連続記録"
+  },
+  "statCurrentStreak": {
+    "description": "Stat label for current streak",
+    "message": "現在の連続記録"
+  },
+  "statErrorCount": {
+    "description": "Stat label in diagnostics for error count",
+    "message": "エラー数"
+  },
+  "statEventCount": {
+    "description": "Stat label in diagnostics for event count",
+    "message": "イベント数"
+  },
+  "statOffline": {
+    "description": "Stat label for offline article count",
+    "message": "オフライン"
+  },
+  "statReadingStreak": {
+    "description": "Stat label on dashboard for reading streak",
+    "message": "閲覧連続記録"
+  },
+  "statReadingTime": {
+    "description": "Stat label on dashboard for total reading time",
+    "message": "閲覧時間"
+  },
+  "statRuntimeLogCount": {
+    "description": "Stat label in diagnostics for runtime log count",
+    "message": "ランタイムログ数"
+  },
+  "statTags": {
+    "description": "Stat label for tag count",
+    "message": "タグ"
+  },
+  "statTotalDaysUsed": {
+    "description": "Stat label for total days used",
+    "message": "合計使用日数"
+  },
+  "statTotalStorage": {
+    "description": "Stat label in diagnostics for total storage",
+    "message": "合計ストレージ"
+  },
+  "statUnread": {
+    "description": "Stat label for unread article count",
+    "message": "未読"
+  },
+  "statUnreadQueue": {
+    "description": "Stat label on dashboard for unread article count",
+    "message": "未読キュー"
+  },
+  "statusArticleCount": {
+    "description": "Singular article count shown in footer",
+    "message": "$COUNT$件の記事",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "statusArticleCountPlural": {
+    "description": "Plural article count shown in footer",
+    "message": "$COUNT$件の記事",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "statusCalculating": {
+    "description": "Calculating text for storage and health score",
+    "message": "計算中..."
+  },
+  "statusFoundArticles": {
+    "description": "Import progress text after parsing",
+    "message": "$ARTICLES$件の記事と$TAGS$件のタグが見つかりました。インポート中...",
+    "placeholders": {
+      "articles": {
+        "content": "$1",
+        "example": "150"
+      },
+      "tags": {
+        "content": "$2",
+        "example": "12"
+      }
+    }
+  },
+  "statusImporting": {
+    "description": "Import progress text",
+    "message": "インポート中..."
+  },
+  "statusLoading": {
+    "description": "Generic loading state text",
+    "message": "読み込み中..."
+  },
+  "statusLoadingArticle": {
+    "description": "Loading text in reader view",
+    "message": "記事を読み込み中..."
+  },
+  "statusLoadingChart": {
+    "description": "Loading text in weekly chart placeholder",
+    "message": "チャートを読み込み中..."
+  },
+  "statusLoadingDomains": {
+    "description": "Loading text in top domains placeholder",
+    "message": "ドメインを読み込み中..."
+  },
+  "statusParsingExport": {
+    "description": "Import progress text during file parsing",
+    "message": "エクスポートファイルを解析中..."
+  },
+  "swipeDelete": {
+    "description": "Swipe action label on article cards",
+    "message": "削除"
+  },
+  "tabAll": {
+    "description": "Label for the All articles filter tab",
+    "message": "すべて"
+  },
+  "tabFavorites": {
+    "description": "Label for the Favorites filter tab",
+    "message": "お気に入り"
+  },
+  "tabUnread": {
+    "description": "Label for the Unread filter tab in sidebar",
+    "message": "未読"
+  },
+  "themeDark": {
+    "description": "Dark theme option",
+    "message": "ダーク"
+  },
+  "themeLight": {
+    "description": "Light theme option",
+    "message": "ライト"
+  },
+  "themeSepia": {
+    "description": "Sepia theme option",
+    "message": "セピア"
+  },
+  "timeAgoDays": {
+    "description": "Time ago abbreviation for days",
+    "message": "$COUNT$日",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "timeAgoHours": {
+    "description": "Time ago abbreviation for hours",
+    "message": "$COUNT$時間",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "timeAgoMinutes": {
+    "description": "Time ago abbreviation for minutes",
+    "message": "$COUNT$分",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeAgoMonths": {
+    "description": "Time ago abbreviation for months",
+    "message": "$COUNT$ヶ月",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "timeAgoNow": {
+    "description": "Time ago label for just now",
+    "message": "たった今"
+  },
+  "titleDashboard": {
+    "description": "Page title for the reading statistics dashboard",
+    "message": "閲覧統計 - ReadLater Pro"
+  },
+  "titleDiagnostics": {
+    "description": "Page title for the diagnostics dashboard",
+    "message": "ReadLater Pro - 診断"
+  },
+  "titleImport": {
+    "description": "Page title for the Pocket import page",
+    "message": "Pocketからインポート - ReadLater Pro"
+  },
+  "titlePopup": {
+    "message": "ReadLater Pro"
+  },
+  "titleReader": {
+    "description": "Page title for the reader view",
+    "message": "リーダー - ReadLater Pro"
+  },
+  "titleReadingList": {
+    "description": "Page title for the sidebar reading list",
+    "message": "リーディングリスト"
+  },
+  "titleSettings": {
+    "description": "Page title for the settings/options page",
+    "message": "ReadLater Pro 設定"
+  },
+  "titleUpgrade": {
+    "description": "Page title for the upgrade page",
+    "message": "Proにアップグレード - ReadLater Pro"
+  },
+  "titleWelcome": {
+    "description": "Page title for the onboarding page",
+    "message": "ReadLater Proへようこそ"
+  },
+  "toastAllDataCleared": {
+    "description": "Toast message after clearing all data",
+    "message": "すべてのデータを消去しました"
+  },
+  "toastArticleDeleted": {
+    "description": "Toast message when an article is deleted",
+    "message": "記事を削除しました"
+  },
+  "toastArticlesDeleted": {
+    "description": "Toast after batch deleting articles",
+    "message": "$COUNT$件の記事を削除しました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastArticlesMarkedRead": {
+    "description": "Toast after batch marking articles as read",
+    "message": "$COUNT$件の記事を既読にしました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "toastCleanupFailed": {
+    "description": "Toast when cleanup fails",
+    "message": "クリーンアップに失敗しました：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Database error"
+      }
+    }
+  },
+  "toastCleanupResult": {
+    "description": "Toast after cleaning up old articles",
+    "message": "$COUNT$件の古い既読記事を削除しました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "toastClearDataFailed": {
+    "description": "Toast when clearing all data fails",
+    "message": "データの消去に失敗しました：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Unknown error"
+      }
+    }
+  },
+  "toastDebugReportCopied": {
+    "description": "Toast after debug report is copied",
+    "message": "デバッグレポートをクリップボードにコピーしました"
+  },
+  "toastDebugReportDownloaded": {
+    "description": "Toast after debug report is downloaded",
+    "message": "デバッグレポートをダウンロードしました"
+  },
+  "toastErrorLogCleared": {
+    "description": "Toast after error log is cleared",
+    "message": "エラーログを消去しました"
+  },
+  "toastEventLogCleared": {
+    "description": "Toast after event log is cleared",
+    "message": "イベントログを消去しました"
+  },
+  "toastExportFailed": {
+    "description": "Toast when export fails",
+    "message": "エクスポートに失敗しました：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "toastExportedArticles": {
+    "description": "Toast after exporting articles",
+    "message": "$COUNT$件の記事をエクスポートしました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "toastFailedToSaveSettings": {
+    "description": "Toast message when settings save fails",
+    "message": "設定の保存に失敗しました"
+  },
+  "toastImportedArticles": {
+    "description": "Toast after importing articles",
+    "message": "$COUNT$件の記事をインポートしました",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "toastImportedArticlesFailed": {
+    "description": "Toast after importing with some failures",
+    "message": "$IMPORTED$件の記事をインポートしました（$FAILED$件失敗）",
+    "placeholders": {
+      "failed": {
+        "content": "$2",
+        "example": "5"
+      },
+      "imported": {
+        "content": "$1",
+        "example": "20"
+      }
+    }
+  },
+  "toastInvalidBackupFormat": {
+    "description": "Toast when imported backup has wrong structure",
+    "message": "無効なバックアップ形式：記事の配列がありません"
+  },
+  "toastInvalidJson": {
+    "description": "Toast when imported JSON file is invalid",
+    "message": "無効なJSONファイルです"
+  },
+  "toastNoArticlesInBackup": {
+    "description": "Toast when imported backup has no articles",
+    "message": "バックアップに記事が見つかりませんでした"
+  },
+  "toastRemindersDisabled": {
+    "description": "Toast message when re-engagement reminders are disabled",
+    "message": "リマインダーを無効にしました"
+  },
+  "toastRemindersEnabled": {
+    "description": "Toast message when re-engagement reminders are enabled",
+    "message": "リマインダーを有効にしました"
+  },
+  "toastSettingsResetDefaults": {
+    "description": "Screen reader announcement after data clear",
+    "message": "設定をデフォルトにリセットしました"
+  },
+  "toastSettingsSaved": {
+    "description": "Toast message after settings are saved",
+    "message": "設定を保存しました"
+  },
+  "toastSettingsSavedSuccess": {
+    "description": "Screen reader announcement after settings save",
+    "message": "設定が正常に保存されました"
+  },
+  "toastTagAdded": {
+    "description": "Toast message when a tag is added",
+    "message": "タグ「$NAME$」を追加しました",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "technology"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "description": "Toast message when URL is copied to clipboard",
+    "message": "URLをコピーしました"
+  },
+  "tooltipAlreadySaved": {
+    "description": "Action title for tab badge when page is already saved",
+    "message": "ReadLaterに保存済み"
+  },
+  "tooltipBackToList": {
+    "description": "Tooltip for the back button in reader view",
+    "message": "リストに戻る"
+  },
+  "tooltipBackToReadingList": {
+    "description": "Tooltip for back link on dashboard page",
+    "message": "リーディングリストに戻る"
+  },
+  "tooltipClose": {
+    "description": "Tooltip for close buttons",
+    "message": "閉じる"
+  },
+  "tooltipCloseTOC": {
+    "description": "Aria-label for the close TOC button",
+    "message": "目次を閉じる"
+  },
+  "tooltipExitSelection": {
+    "description": "Tooltip for the batch bar close button",
+    "message": "選択モードを終了"
+  },
+  "tooltipPrintArticle": {
+    "description": "Tooltip for the print button in reader view",
+    "message": "記事を印刷"
+  },
+  "tooltipReadingSettings": {
+    "description": "Tooltip for the reading settings panel toggle",
+    "message": "閲覧設定"
+  },
+  "tooltipSaveToReadLater": {
+    "description": "Action title for tab badge when page is not saved",
+    "message": "ReadLaterに保存"
+  },
+  "tooltipSettings": {
+    "description": "Tooltip and aria-label for the settings button",
+    "message": "設定"
+  },
+  "tooltipSortArticles": {
+    "description": "Tooltip and aria-label for the sort dropdown",
+    "message": "記事を並べ替え"
+  },
+  "tooltipTableOfContents": {
+    "description": "Tooltip for the TOC toggle button",
+    "message": "目次"
+  },
+  "tooltipToggleFavorite": {
+    "description": "Tooltip for the favorite toggle button",
+    "message": "お気に入りを切り替え"
+  },
+  "tooltipToggleFavoriteShortcut": {
+    "description": "Tooltip for favorite button showing keyboard shortcut",
+    "message": "お気に入りを切り替え (F)"
+  },
+  "tooltipViewOriginal": {
+    "description": "Tooltip for the view original page button",
+    "message": "オリジナルを表示"
+  },
+  "tooltipViewOriginalNewTab": {
+    "description": "Aria-label for the view original button",
+    "message": "オリジナルページを表示（新しいタブで開きます）"
+  },
+  "trialBannerText": {
+    "description": "Trial countdown banner text",
+    "message": "Proプレビュー：残り$DAYS$日",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "upgradeAlreadyHaveLicense": {
+    "description": "Toggle link to show license key form in paywall",
+    "message": "ライセンスキーをお持ちですか？"
+  },
+  "upgradeLicenseActivated": {
+    "description": "Success message in paywall after license activation",
+    "message": "ライセンスがアクティベートされました。再読み込み中..."
+  },
+  "upgradeLimitReached": {
+    "description": "Limit banner message on upgrade page",
+    "message": "$FEATURE$の無料プラン上限に達しました。Proにアップグレードして無制限にご利用ください。",
+    "placeholders": {
+      "feature": {
+        "content": "$1",
+        "example": "Full-Text Search"
+      }
+    }
+  },
+  "upgradePaywallSubtitle": {
+    "description": "Paywall modal subtitle",
+    "message": "ReadLater Proにアップグレードして、完全な閲覧体験を手に入れましょう。"
+  },
+  "upgradePaywallTitle": {
+    "description": "Paywall modal title",
+    "message": "$FEATURE$をアンロック",
+    "placeholders": {
+      "feature": {
+        "content": "$1",
+        "example": "Full-Text Search"
+      }
+    }
+  },
+  "upgradeSuccessAnnouncement": {
+    "description": "Screen reader announcement for upgrade success",
+    "message": "アップグレードに成功しました。Proへようこそ"
+  },
+  "upgradeSuccessText": {
+    "description": "Text on upgrade success overlay",
+    "message": "アカウントがアップグレードされました。すべてのPro機能がアンロックされました。完全な閲覧体験をお楽しみください。"
+  },
+  "upgradeSuccessTitle": {
+    "description": "Title on upgrade success overlay",
+    "message": "Proへようこそ"
+  },
+  "upgradeTrustCancel": {
+    "description": "Trust signal on upgrade page",
+    "message": "いつでもキャンセル可能"
+  },
+  "upgradeTrustSecure": {
+    "description": "Trust signal on upgrade page",
+    "message": "安全な決済"
+  },
+  "whatsNewClose": {
+    "description": "Close button aria label for what's new overlay",
+    "message": "閉じる"
+  },
+  "whatsNewTitle": {
+    "description": "Title for the update notification overlay",
+    "message": "新機能"
+  },
+  "widthMedium": {
+    "description": "Medium content width option",
+    "message": "中"
+  },
+  "widthMediumPx": {
+    "description": "Medium width option with pixel value",
+    "message": "中 (680px)"
+  },
+  "widthNarrow": {
+    "description": "Narrow content width option",
+    "message": "狭い"
+  },
+  "widthNarrowPx": {
+    "description": "Narrow width option with pixel value",
+    "message": "狭い (560px)"
+  },
+  "widthWide": {
+    "description": "Wide content width option",
+    "message": "広い"
+  },
+  "widthWidePx": {
+    "description": "Wide width option with pixel value",
+    "message": "広い (800px)"
+  }
+}

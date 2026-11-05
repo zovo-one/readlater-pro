@@ -1,0 +1,373 @@
+/* ReadLater Pro - Design System
+ * Augments design-tokens.css and components.css with brand identity,
+ * prefers-color-scheme dark mode, and additional component/utility classes.
+ *
+ * NOTE: This file complements design-tokens.css (which defines --color-*,
+ * --space-*, --text-*, --radius-*, --shadow-*, --transition-*, --font-sans,
+ * and [data-theme="dark"]) and components.css (which defines .btn, .btn-primary,
+ * .btn-icon, .input, .card, .badge, .badge-pro, .chip, .toast).
+ * Only NEW tokens and classes are defined here to avoid conflicts.
+ */
+
+/* ============================================================
+   1. Brand-specific Custom Properties (additions only)
+   ============================================================ */
+:root {
+    /* Brand colors. These were literals identical to the --color-* values in
+       light, which made them a third copy of the same palette and left them
+       stuck on the light values in dark mode. They are aliases now, so brand
+       follows the theme and there is one violet in the build. */
+    --brand-primary: var(--color-primary);
+    --brand-primary-hover: var(--color-primary-hover);
+    --brand-primary-light: var(--color-primary-light);
+    --brand-secondary: var(--color-primary-text);
+    --brand-accent: var(--color-warning);
+
+    /* Alias backgrounds to existing tokens for convenience */
+    --bg-primary: var(--color-bg);
+    --bg-secondary: var(--color-bg-secondary);
+    --bg-tertiary: var(--color-bg-tertiary);
+
+    /* Alias text hierarchy to existing tokens */
+    --text-primary: var(--color-text);
+    --text-secondary: var(--color-text-secondary);
+    --text-muted: var(--color-text-tertiary);
+    --text-inverse: var(--color-text-inverse);
+
+    /* Border aliases */
+    --border-default: var(--color-border);
+    --border-focus: var(--brand-primary);
+
+    /* Font family, extended stack with Inter */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    /* Font sizes, aliases using numbered scale */
+    --font-xs: var(--text-xs);   /* 11px */
+    --font-sm: var(--text-sm);   /* 13px */
+    --font-base: var(--text-base); /* 14px */
+    --font-md: var(--text-md);   /* 15px */
+    --font-lg: var(--text-lg);   /* 18px */
+    --font-xl: var(--text-xl);   /* 22px */
+    --font-2xl: var(--text-2xl); /* 28px */
+
+    /* Font weights, not in design-tokens.css */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    /* Numbered spacing scale, aliases to existing tokens */
+    --space-1: var(--space-xs);  /* 4px */
+    --space-2: var(--space-sm);  /* 8px */
+    --space-3: var(--space-md);  /* 12px */
+    --space-4: var(--space-lg);  /* 16px */
+    --space-6: var(--space-xl);  /* 24px */
+    --space-8: var(--space-2xl); /* 32px */
+
+    /* Transition alias */
+    --transition-base: 200ms ease;
+}
+
+
+/* ============================================================
+   2. Dark mode
+
+   Deliberately empty. The dark palette lives in design-tokens.css, defined once
+   as --dark-* and applied there by both [data-theme="dark"] and
+   prefers-color-scheme. This file used to carry a second, hand-written copy
+   that had drifted from the first: --color-primary and --color-primary-hover
+   were transposed between the two, so a token name resolved to a different
+   colour depending on which sheet won on a given surface. Every contrast
+   measurement taken against one of them was unsound while the other existed.
+   Do not reintroduce a palette here.
+   ============================================================ */
+
+
+/* ============================================================
+   3. Component Classes (only those NOT in components.css)
+   ============================================================ */
+
+/* ----- App Header ----- */
+.app-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-sm) var(--space-lg);
+    border-bottom: 1px solid var(--color-border-light);
+    background: var(--color-surface);
+    min-height: 48px;
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.header-logo {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.header-title {
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    color: var(--color-text);
+}
+
+.header-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 1px 6px;
+    border-radius: var(--radius-full);
+    font-size: 9px;
+    font-weight: var(--font-bold);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%);
+    color: #fff;
+}
+
+/* ----- App Footer ----- */
+.app-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-sm) var(--space-lg);
+    border-top: 1px solid var(--color-border-light);
+    background: var(--color-bg-secondary);
+    font-size: var(--text-xs);
+    color: var(--color-text-tertiary);
+}
+
+/* ----- Button Variants (supplements .btn + .btn-primary from components.css) ----- */
+.btn-secondary {
+    background: var(--color-bg-tertiary);
+    color: var(--color-text);
+    border-color: var(--color-border);
+}
+
+.btn-secondary:hover {
+    background: var(--color-border);
+}
+
+.btn-ghost {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-text-secondary);
+}
+
+.btn-ghost:hover {
+    background: var(--color-bg-tertiary);
+    color: var(--color-text);
+}
+
+.btn-sm {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: var(--text-xs);
+    border-radius: var(--radius-sm);
+}
+
+.btn-lg {
+    padding: var(--space-md) var(--space-xl);
+    font-size: var(--text-base);
+    border-radius: var(--radius-md);
+}
+
+.btn-block {
+    display: flex;
+    width: 100%;
+}
+
+.btn:disabled,
+.btn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* ----- Input focus ring (augments .input from components.css) ----- */
+.input:focus {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+/* ----- Card hover variant (augments .card from components.css) ----- */
+.card-hover {
+    cursor: pointer;
+}
+
+.card-hover:hover {
+    border-color: var(--brand-primary);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+}
+
+/* ----- Badge Variants (supplements .badge + .badge-pro from components.css) ----- */
+.badge-free {
+    background: var(--color-bg-tertiary);
+    color: var(--color-text-secondary);
+    font-weight: var(--font-medium);
+}
+
+.badge-new {
+    background: #ecfdf5;
+    color: #065F46;
+    font-weight: var(--font-semibold);
+}
+
+[data-theme="dark"] .badge-new {
+    background: #064e3b;
+    color: #6ee7b7;
+}
+
+/* ----- Toast slide-up animation (augments .toast from components.css) ----- */
+@keyframes toast-slide-up {
+    from {
+        transform: translateX(-50%) translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+
+.toast.toast-animate {
+    animation: toast-slide-up var(--transition-normal) ease forwards;
+    pointer-events: auto;
+}
+
+.toast-success {
+    background: var(--color-success-fill);
+    color: #fff;
+}
+
+.toast-error {
+    background: var(--color-error-fill);
+    color: #fff;
+}
+
+/* Amber cannot carry white at any usable saturation. #fff on #F59E0B is
+   2.15:1; near-black is 8.08:1. */
+.toast-warning {
+    background: var(--color-warning-fill);
+    color: var(--color-on-warning);
+}
+
+
+/* ============================================================
+   4. Utility Classes
+   ============================================================ */
+
+/* Text alignment */
+.text-center { text-align: center; }
+
+/* Text color / size helpers */
+.text-muted { color: var(--color-text-tertiary); }
+.text-sm { font-size: var(--text-sm); }
+
+/* Margin-top */
+.mt-2 { margin-top: var(--space-sm); }
+.mt-4 { margin-top: var(--space-lg); }
+
+/* Margin-bottom */
+.mb-2 { margin-bottom: var(--space-sm); }
+.mb-4 { margin-bottom: var(--space-lg); }
+
+/* Padding */
+.p-4 { padding: var(--space-lg); }
+
+/* Flexbox */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+
+/* Gap */
+.gap-2 { gap: var(--space-sm); }
+.gap-4 { gap: var(--space-lg); }
+
+/* Visibility */
+.hidden { display: none !important; }
+
+/* Screen-reader only (accessibility) */
+.sr-only,
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Skip-to-main-content link (accessibility) */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    padding: 0.75rem 1.5rem;
+    background: var(--brand-primary, #7C3AED);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 10000;
+    transition: top 0.2s ease;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* ============================================================
+   Focus-Visible Styles for Design System Components
+   ============================================================ */
+
+.btn-ghost:focus-visible {
+    outline: 2px solid var(--brand-primary, #7C3AED);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.2);
+}
+
+.btn-secondary:focus-visible {
+    outline: 2px solid var(--brand-primary, #7C3AED);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.2);
+}
+
+.card-hover:focus-visible {
+    outline: 2px solid var(--brand-primary, #7C3AED);
+    outline-offset: 2px;
+    border-color: var(--brand-primary);
+}
+
+.chip:focus-visible {
+    outline: 2px solid var(--brand-primary, #7C3AED);
+    outline-offset: 1px;
+}
+
+/* Links should be distinguishable from body text */
+a:not([class]) {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* ============================================================
+   Reduced Motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

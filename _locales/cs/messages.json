@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "Uložit do ReadLater"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing (max 132 chars)",
+      "message": "Ukládejte články jedním kliknutím. Seznam četby, štítky, režim čtečky a offline režim. Správce záložek a knihovna článků."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - Uložit a Číst Offline"
+   }
+}

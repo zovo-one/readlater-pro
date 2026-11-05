@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "Αποθήκευση στο ReadLater"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing (max 132 chars)",
+      "message": "Αποθηκεύστε άρθρα με ένα κλικ. Λίστα ανάγνωσης, ετικέτες, προβολή αναγνώστη και λειτουργία εκτός σύνδεσης. Διαχείριση σελιδοδεικτών."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - Αποθήκευση & Ανάγνωση Offline"
+   }
+}

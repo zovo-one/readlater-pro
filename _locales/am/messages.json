@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Toolbar tooltip",
+      "message": "ወደ ReadLater አስቀምጥ"
+   },
+   "extDescription": {
+      "description": "CWS description",
+      "message": "ጽሑፎችን አስቀምጡ እና ወደ ንባብ ዝርዝር ያክሉ። የአንባቢ እይታ፣ ከመስመር ውጭ ንባብ። በመለያዎች ያደራጁ። ከ Pocket ያስገቡ።"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "ReadLater Pro - አስቀምጥ እና ከመስመር ውጭ አንብብ"
+   }
+}

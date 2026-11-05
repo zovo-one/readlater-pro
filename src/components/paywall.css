@@ -1,0 +1,406 @@
+/**
+ * ReadLater Pro - Paywall Modal Styles
+ * Standalone CSS for the paywall modal component.
+ * Can be linked via <link> in HTML pages, or falls back to inline injection from paywall.js.
+ */
+
+/* ========================================================================
+   Overlay
+   ======================================================================== */
+.pw-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 250ms ease;
+}
+
+.pw-overlay.visible {
+    opacity: 1;
+}
+
+/* ========================================================================
+   Modal
+   ======================================================================== */
+.pw-modal {
+    background: var(--color-bg, #fff);
+    border-radius: 16px;
+    max-width: 420px;
+    width: 90vw;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 24px;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transform: translateY(16px);
+    transition: transform 250ms ease;
+}
+
+.pw-overlay.visible .pw-modal {
+    transform: translateY(0);
+}
+
+/* Scrollbar styling */
+.pw-modal::-webkit-scrollbar {
+    width: 6px;
+}
+
+.pw-modal::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.pw-modal::-webkit-scrollbar-thumb {
+    background: var(--color-border, #E4E4E7);
+    border-radius: 3px;
+}
+
+.pw-modal::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-tertiary, #6E6E73);
+}
+
+/* ========================================================================
+   Close Button
+   ======================================================================== */
+.pw-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--color-text-secondary, #71717A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pw-close:hover {
+    background: var(--color-bg-tertiary, #E8E8ED);
+    /* The tertiary glyph on the tertiary panel measures 4.15:1, under AA.
+       Darkening to --color-text gives 16.2:1 light and 10.3:1 dark. */
+    color: var(--color-text, #0A0A0B);
+}
+
+/* ========================================================================
+   Header / PRO Badge
+   ======================================================================== */
+.pw-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    /* PINNED LITERAL, do not tokenise. Measured 2026-08-09 with white text:
+       #7C3AED is 5.70:1 in light, in design-tokens [data-theme=dark], and in
+       design-system prefers-color-scheme dark. Boundary against the page
+       background is 5.46 / 3.05 / 3.13:1, all over the 3:1 non-text threshold.
+       var(--color-primary) drops to 4.23:1 under [data-theme=dark] and
+       var(--color-primary-hover) drops to 4.23:1 under prefers-color-scheme
+       dark, because the two stylesheets swap that pair. No token passes all three. */
+    background: #7C3AED;
+    color: #FFFFFF;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.pw-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.pw-subtitle {
+    font-size: 14px;
+    color: var(--color-text-secondary, #71717A);
+    margin-bottom: 20px;
+}
+
+/* ========================================================================
+   Feature Comparison Table
+   ======================================================================== */
+.pw-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.pw-table th {
+    text-align: left;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-bottom: 2px solid var(--color-border, #E4E4E7);
+}
+
+.pw-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid var(--color-border-light, #E4E4E7);
+}
+
+.pw-check {
+    color: var(--color-success, #4CAF50);
+    font-weight: 700;
+}
+
+.pw-cross {
+    color: var(--color-text-tertiary, #6E6E73);
+}
+
+.pw-limit {
+    color: var(--color-warning, #FF9800);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.pw-unlimited {
+    color: var(--color-success, #4CAF50);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* ========================================================================
+   CTA Buttons
+   ======================================================================== */
+.pw-cta {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: all 150ms;
+}
+
+.pw-cta-primary {
+    background: #7C3AED;
+    color: #FFFFFF;
+}
+
+.pw-cta-primary:hover {
+    opacity: 0.9;
+}
+
+.pw-cta-secondary {
+    background: var(--color-bg-secondary, #F5F5F7);
+    color: var(--color-text, #0A0A0B);
+}
+
+.pw-cta-secondary:hover {
+    background: var(--color-bg-tertiary, #E8E8ED);
+}
+
+/* ========================================================================
+   Trust Signals
+   ======================================================================== */
+.pw-trust {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 11px;
+    color: var(--color-text-tertiary, #6E6E73);
+    margin: 16px 0 12px;
+}
+
+/* ========================================================================
+   License Key Form
+   ======================================================================== */
+.pw-license-toggle {
+    background: none;
+    border: none;
+    color: var(--color-primary-text, #7C3AED);
+    font-size: 12px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.pw-license-form {
+    display: none;
+    margin-top: 12px;
+}
+
+.pw-license-form.visible {
+    display: flex;
+    gap: 8px;
+}
+
+.pw-license-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid var(--color-border, #d1d5db);
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: monospace;
+}
+
+.pw-license-submit {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #7C3AED;
+    color: #FFFFFF;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.pw-license-error {
+    display: none;
+    color: var(--color-error, #F44336);
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.pw-license-error.visible {
+    display: block;
+}
+
+.pw-license-success {
+    display: none;
+    color: var(--color-success, #4CAF50);
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.pw-license-success.visible {
+    display: block;
+}
+
+/* ========================================================================
+   Focus-Visible Styles (Paywall-specific)
+   ======================================================================== */
+
+.pw-close:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+}
+
+.pw-cta:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.25);
+}
+
+.pw-cta-primary:focus-visible {
+    outline: 2px solid var(--color-text-inverse, #FFFFFF);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.5);
+}
+
+.pw-license-toggle:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+}
+
+.pw-license-input:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: -1px;
+    border-color: var(--color-primary-text, #7C3AED);
+}
+
+.pw-license-submit:focus-visible {
+    outline: 2px solid var(--color-text-inverse, #FFFFFF);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ========================================================================
+   v1.2.0 additions: value stack, preview CTA, reframe, guarantee
+   ======================================================================== */
+.pw-stack {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.pw-stack li {
+    position: relative;
+    padding: 4px 0 4px 20px;
+    color: var(--color-text, #0A0A0B);
+}
+
+.pw-stack li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-primary, #7C3AED);
+}
+
+.pw-reframe {
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--color-text, #0A0A0B);
+    text-align: center;
+    margin: 12px 0 4px;
+}
+
+.pw-guarantee {
+    font-size: 11px;
+    line-height: 1.4;
+    color: var(--color-text-tertiary, #6E6E73);
+    text-align: center;
+    margin: 0 0 12px;
+}
+
+.pw-badge {
+    display: inline-block;
+    background: #7C3AED;
+    color: #FFFFFF;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+}
+
+.pw-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    color: var(--color-text-tertiary, #6E6E73);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.pw-close:hover {
+    background: var(--color-bg-tertiary, #E8E8ED);
+    /* The tertiary glyph on the tertiary panel measures 4.15:1, under AA.
+       Darkening to --color-text gives 16.2:1 light and 10.3:1 dark. */
+    color: var(--color-text, #0A0A0B);
+}

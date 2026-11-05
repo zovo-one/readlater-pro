@@ -1,0 +1,115 @@
+/**
+ * ReadLater Pro Cross-Browser CSS Normalization
+ * Ensures consistent rendering across Chrome, Firefox, and Safari.
+ */
+
+/* ── Consistent box model ──────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ── Firefox scrollbar styling ─────────────────────────────────────── */
+@supports (scrollbar-width: thin) {
+    .sidebar-content,
+    .reader-body,
+    .options-container,
+    .scrollable {
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-border, #ccc) transparent;
+    }
+}
+
+/* ── WebKit (Chrome/Safari) scrollbar styling ──────────────────────── */
+.sidebar-content::-webkit-scrollbar,
+.reader-body::-webkit-scrollbar,
+.options-container::-webkit-scrollbar,
+.scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar-content::-webkit-scrollbar-track,
+.reader-body::-webkit-scrollbar-track,
+.options-container::-webkit-scrollbar-track,
+.scrollable::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb,
+.reader-body::-webkit-scrollbar-thumb,
+.options-container::-webkit-scrollbar-thumb,
+.scrollable::-webkit-scrollbar-thumb {
+    background: var(--color-border, #ccc);
+    border-radius: 3px;
+}
+
+/* ── Safari input styling fixes ────────────────────────────────────── */
+input,
+textarea,
+select,
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Re-apply select dropdown arrow (appearance:none removes it) */
+select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+    padding-right: 28px;
+}
+
+[dir="rtl"] select {
+    background-position: left 8px center;
+    padding-right: 8px;
+    padding-left: 28px;
+}
+
+/* ── Prevent Safari from zooming on input focus ────────────────────── */
+@supports (-webkit-touch-callout: none) {
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    textarea,
+    select {
+        font-size: max(16px, 1em);
+    }
+}
+
+/* ── Firefox focus ring normalization ──────────────────────────────── */
+:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* ── Safari button alignment fix ───────────────────────────────────── */
+button {
+    vertical-align: middle;
+}
+
+/* ── Firefox details/summary marker fix ────────────────────────────── */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    list-style: none;
+}
+
+/* ── Cross-browser text rendering ──────────────────────────────────── */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}

@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "Salvesta ReadLaterisse"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing (max 132 chars)",
+      "message": "Salvesta artiklid ühe klõpsuga. Lugemisloend, sildid, lugejavaade ja võrguühenduseta režiim. Järjehoidjate haldur ja kogu."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - Salvesta ja Loe Offline"
+   }
+}

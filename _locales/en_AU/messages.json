@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Toolbar tooltip",
+      "message": "Save to ReadLater"
+   },
+   "extDescription": {
+      "description": "CWS description",
+      "message": "Save articles to your reading list. Reader view for offline reading. Organise with tags. Import from Pocket."
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "ReadLater Pro - Save Pages to an Offline Reader View"
+   }
+}

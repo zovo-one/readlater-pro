@@ -1,0 +1,36 @@
+/* ReadLater Pro - Legal Pages Shared Styles */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #111827; background: #FFFFFF; line-height: 1.7; font-size: 15px;
+}
+
+.legal-page { max-width: 720px; margin: 0 auto; padding: 40px 24px; }
+
+.legal-header { margin-bottom: 32px; padding-bottom: 16px; border-bottom: 2px solid #E5E7EB; }
+.legal-header h1 { font-size: 28px; font-weight: 700; color: #111827; margin-bottom: 4px; }
+.legal-meta { font-size: 14px; color: #6B7280; }
+
+.legal-content section { margin-bottom: 28px; }
+.legal-content h2 { font-size: 20px; font-weight: 600; color: #111827; margin-bottom: 12px; padding-top: 8px; }
+.legal-content h3 { font-size: 16px; font-weight: 600; color: #374151; margin-bottom: 8px; margin-top: 16px; }
+.legal-content p { margin-bottom: 12px; color: #374151; }
+.legal-content ul { margin: 0 0 12px 24px; color: #374151; }
+.legal-content li { margin-bottom: 6px; }
+.legal-content code { background: #F3F4F6; padding: 1px 5px; border-radius: 4px; font-size: 13px; color: #6D28D9; }
+.legal-content a { color: #6D28D9; text-decoration: none; }
+.legal-content a:hover { text-decoration: underline; }
+
+.legal-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+.legal-table th, .legal-table td { text-align: left; padding: 10px 12px; border: 1px solid #E5E7EB; }
+.legal-table th { background: #F9FAFB; font-weight: 600; color: #111827; }
+.legal-table td { color: #374151; }
+
+.legal-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #E5E7EB; text-align: center; font-size: 13px; color: #9CA3AF; }
+.legal-footer a { color: #6D28D9; text-decoration: none; }
+.legal-footer a:hover { text-decoration: underline; }
+.legal-footer p { margin-bottom: 6px; }
+
+:focus-visible { outline: 2px solid #6D28D9; outline-offset: 2px; }

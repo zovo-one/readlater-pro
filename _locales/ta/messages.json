@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "ReadLater-இல் சேமி"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing",
+      "message": "கட்டுரைகளை சேமித்து வாசிப்பு பட்டியலில் சேருங்கள். ரீடர் வியூ, ஆஃப்லைன் படிப்பு. குறிச்சொற்கள். Pocket இறக்குமதி."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - சேமி & ஆஃப்லைன் படிப்பு"
+   }
+}

@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What's new in ReadLater Pro</title>
+<link rel="icon" href="../../icons/icon32.png">
+<link rel="stylesheet" href="whats-new.css">
+<script src="../../membership/eligibility.js"></script>
+<script src="whats-new.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview-bar" id="previewBar" role="region" aria-label="Preview controls" hidden>
+  <span>Preview with sample numbers. In the extension every number comes from the user's own library.</span>
+  <span>
+    <a data-preview="free" href="?state=free">Free user</a> ·
+    <a data-preview="pro" href="?state=pro">Pro member</a> ·
+    <a data-preview="fresh" href="?state=fresh">Empty library</a> ·
+    <a data-preview="lapsed" href="?state=lapsed">Pro switched off</a>
+  </span>
+</div>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="https://zovo.one/?utm_source=readlater-pro&amp;utm_medium=extension&amp;utm_campaign=whats-new-1-3-0&amp;utm_content=logo" target="_blank" rel="noopener">
+      <img src="../../icons/icon48.png" alt="" width="36" height="36">
+      <span class="brand-name">ReadLater Pro <span class="brand-by">by Zovo</span></span>
+    </a>
+    <span class="version-pill" data-version="v">v1.3.0</span>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <h1 id="heroTitle">
+        <span class="nowrap">ReadLater Pro</span> is up to date.
+        <span class="line2" id="heroLine2Count" hidden>You've saved <em id="heroSaved">0</em> <span id="heroSavedNoun">articles</span><span id="heroReadPart"> and finished <em id="heroRead">0</em></span>.</span>
+        <span class="line2" id="heroLine2Plain">Here's what changed in this release.</span>
+      </h1>
+
+      <details class="changes" id="changes" open>
+        <summary><span>What's new in <span data-version="release">1.3.0</span></span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="changes-body">
+          <h2 class="sr-only">Changes in this release</h2>
+          <div class="change">
+            <span class="tag new">New</span>
+            <div>
+              <h3>Highlights and notes</h3>
+              <p>Select any text in reader view to highlight it in one of four colors, and add a note if you like. Your highlights come back every time you open the article, they're all in one place in the side panel. In reader view you can copy or download an article's highlights as Markdown; exporting every highlight at once is part of Pro, with one free try.</p>
+            </div>
+          </div>
+          <div class="change">
+            <span class="tag new">New</span>
+            <div>
+              <h3>Listen to an article</h3>
+              <p>Press Listen in reader view and ReadLater reads the article aloud with a voice installed on your computer, so it works offline too. Pick the speed and the voice, skip a paragraph forward or back, and follow along as the current paragraph is marked. Chrome's online voices are in the list as well, marked online. Free for 3 articles a day, and unlimited with Pro.</p>
+            </div>
+          </div>
+          <div class="change">
+            <span class="tag new">New</span>
+            <div>
+              <h3>Read right in the side panel</h3>
+              <p>Articles can now open inside the side panel, so you can read next to the page you're on. Choose "This panel" in the side panel's view options, or right-click an article and pick Read in panel.</p>
+            </div>
+          </div>
+          <div class="change">
+            <span class="tag new">New</span>
+            <div>
+              <h3>Bring your library from Pocket, Omnivore and others</h3>
+              <p>The import page now reads Pocket's final export (the ZIP brings tags, archive status and highlights; the CSV alone brings tags and archive status), Omnivore's export with the full article text and highlights, Instapaper and Raindrop CSV files, any browser's bookmarks file and a plain list of links. You see what's in the file before anything is added, and a real progress bar while it runs.</p>
+            </div>
+          </div>
+          <div class="change">
+            <span class="tag new">New</span>
+            <div>
+              <h3>Take your data anywhere</h3>
+              <p>Export your library as Markdown with your highlights, as a CSV in Pocket's format, as a bookmarks file any browser can import, or as a full backup that brings back your tags and highlights when you restore it. The CSV, bookmarks and backup exports are free; Markdown export is part of Pro, and everyone gets one free try.</p>
+            </div>
+          </div>
+          <div class="change">
+            <span class="tag new">New</span>
+            <div>
+              <h3>A side panel that does more</h3>
+              <p>Save the page you're on or every tab in a window from the panel (with the full text when ReadLater can read the page, otherwise as a link), filter to quick reads or long reads, and let Rediscover pick something you saved a while ago. The panel now remembers your tab and sort order, shows how long your list would take to read, and opens your reading stats.</p>
+            </div>
+          </div>
+          <div class="change">
+            <span class="tag improved">Improved</span>
+            <div>
+              <h3>Reader view that fits the way you read</h3>
+              <p>Choose a serif, sans, extra-readable or monospace font and set the line spacing. The new Auto theme follows your computer's dark mode. The font and spacing you picked in Settings used to be ignored; they now apply. At the end of an article, Next unread takes you straight to the next one.</p>
+            </div>
+          </div>
+          <p class="changes-sub">Fixed in this release</p>
+          <ul class="changes-list">
+            <li>The side panel updates while it's open, so an article you just finished leaves Unread right away.</li>
+            <li>Picking a tag keeps your tab, search and sort instead of showing everything.</li>
+            <li>Deleting from the list can be undone, and Ctrl or Cmd shortcuts no longer trigger list actions.</li>
+            <li>The unread count on the toolbar icon shows on normal web pages again.</li>
+            <li>Big imports now save in batches and check what was actually saved, so a slow import no longer shows as a failure while it's still running.</li>
+            <li>Pages that reader view couldn't fully parse now show their saved text instead of "No content available".</li>
+            <li>Data exports no longer include your license key.</li>
+          </ul>
+          <p class="changes-foot">Everything above is free except unlimited Listen and Markdown export, which come with Pro. Your saved articles, tags and settings carry over exactly as you left them.</p>
+        </div>
+      </details>
+
+      <div class="stats" id="stats" hidden>
+        <h2 class="sr-only">Your numbers</h2>
+        <div class="stat" id="cardSaved" hidden>
+          <span class="stat-num" id="statSaved">0</span>
+          <span class="stat-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg><span id="statSavedLabel">Articles in your library</span></span>
+          <span class="stat-note" id="statSavedNote"></span>
+        </div>
+        <div class="stat" id="cardRead" hidden>
+          <span class="stat-num" id="statRead">0</span>
+          <span class="stat-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><span id="statReadLabel">Articles finished</span></span>
+          <span class="stat-note" id="statReadNote"></span>
+        </div>
+        <div class="stat" id="cardWeek" hidden>
+          <span class="stat-num" id="statWeek">0</span>
+          <span class="stat-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span id="statWeekLabel">Saved this week</span></span>
+          <span class="stat-note" id="statWeekNote"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why this release: everyone -->
+    <section class="section" aria-labelledby="sponsorTitle" id="sponsorNote">
+      <div class="sponsor-note">
+        <span class="eyebrow">A note from Michael</span>
+        <h2 id="sponsorTitle">Why this update is so big</h2>
+        <p>Zovo recently got its first sponsors on GitHub. It's not a lot of money, but it meant a great deal to me, and so did watching how quickly the number of people reading with ReadLater has grown. So I put that energy into the things readers ask for most: highlights, listening, a side panel you can read in, and imports and exports that don't hold your library hostage.</p>
+        <p>Nearly all of it comes free. Pro members also get unlimited Listen and Markdown export on top of unlimited full-text search, which is what keeps this going. As more of you join, I'll keep adding to ReadLater and making it better. I'm really happy to share this one with you.</p>
+        <p class="sig"><span class="sig-name">Michael Lip</span>, developer of ReadLater Pro</p>
+        <p class="sponsor-foot" data-for="free unknown" hidden>If you'd like to back this work, there's a <a data-cta="github-sponsors" href="https://github.com/sponsors/theluckystrike" target="_blank" rel="noopener">GitHub Sponsors page</a>. It's completely optional, and nothing in ReadLater depends on it.</p>
+      </div>
+    </section>
+
+    <!-- Pro members -->
+    <section class="section" aria-labelledby="thanksTitle" data-for="protected" hidden>
+      <div class="thanks">
+        <span class="eyebrow">Your Pro is active</span>
+        <h2 id="thanksTitle">Thank you for backing ReadLater Pro</h2>
+        <p class="sub thanks-sub">There's nothing to buy here. Full-text search and Listen have no daily limit for you, Markdown export is included, and the same membership covers Pro in 14 other Zovo extensions.</p>
+        <div class="row">
+          <button class="cta" type="button" data-open="panel">Open my reading list</button>
+          <a class="cta secondary" href="mailto:support@zovo.one?subject=ReadLater%20Pro">Email support</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Members whose Pro is switched off -->
+    <section class="section" aria-labelledby="lapsedTitle" data-for="lapsed" hidden>
+      <div class="thanks">
+        <span class="eyebrow">Your license needs a check</span>
+        <h2 id="lapsedTitle">Pro is switched off on this browser</h2>
+        <p class="sub thanks-sub">This browser has a Zovo license key saved, but the license server says it isn't active. Usually it's a lapsed payment or an old key, so paste your current key on the license page or renew if your plan has ended.</p>
+        <div class="row">
+          <button class="cta" type="button" data-open="license">Enter my key</button>
+          <a class="cta secondary" data-cta="lapsed-renew" href="https://zovo.one/join" target="_blank" rel="noopener">Renew on zovo.one</a>
+        </div>
+        <p class="thanks-foot">Not sure what happened? <a href="mailto:support@zovo.one?subject=ReadLater%20Pro%20license">Email support</a> and I'll check your license.</p>
+      </div>
+    </section>
+
+    <!-- Pivot + plans: free users only -->
+    <section class="section pivot center tight" aria-labelledby="pivotTitle" data-for="free" hidden>
+      <h2 id="pivotTitle">ReadLater is free to use. <span class="accent">Pro lifts the limits.</span></h2>
+      <p class="sub">Search inside every saved article, listen to as many articles as you like, and export to Markdown.</p>
+
+      <div class="plans" id="plans">
+        <p class="paid-note" id="paidNote" hidden>Bought Pro after clicking through earlier? Your key is in your purchase email, so <button class="linkish" type="button" data-open="license">paste it on the license page</button> and Pro turns on right away.</p>
+        <div class="plan-grid">
+          <div class="plan">
+            <h3 class="plan-name">Monthly</h3>
+            <div class="price"><span class="amt">$4.99</span><span class="per">/month</span></div>
+            <span class="plan-sub">Renews monthly. Cancel any time from your dashboard, with no fee.</span>
+            <a class="cta secondary" data-cta="plan-monthly" href="https://zovo.one/join?tier=pro" target="_blank" rel="noopener">Get Pro monthly</a>
+          </div>
+          <div class="plan best">
+            <span class="badge">Pays for itself in 20 months</span>
+            <h3 class="plan-name">Lifetime</h3>
+            <div class="price"><span class="amt">$99</span><span class="per">once</span></div>
+            <span class="plan-sub">One payment and no renewals, so Pro is yours to keep.</span>
+            <a class="cta" data-cta="plan-lifetime" href="https://zovo.one/join?tier=lifetime" target="_blank" rel="noopener">Get Pro for life</a>
+          </div>
+        </div>
+        <p class="both">Both plans include Pro in 14 other Zovo extensions too.</p>
+        <div class="assure">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Secure checkout by Stripe</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg>Your key arrives as soon as payment clears</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Monthly cancels any time</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg><a data-cta="refund-terms" href="https://zovo.one/refund" target="_blank" rel="noopener">Refund terms</a></span>
+        </div>
+        <p class="have-key">Already paid? <button class="linkish" type="button" data-open="license">Enter your license key</button></p>
+        <p class="seller">Sold by Zovo through zovo.one, not by Google.</p>
+      </div>
+    </section>
+
+    <!-- Compare: free users only -->
+    <section class="section" aria-labelledby="compareTitle" data-for="free" hidden>
+      <div class="center">
+        <span class="eyebrow">Free and Pro</span>
+        <h2 id="compareTitle">Here's exactly what you get</h2>
+        <p class="sub">Pro changes three things in ReadLater. The rest is identical.</p>
+      </div>
+            <p class="compare-lead">Saving, reader view, offline copies, highlights and notes, the side panel, tags, every import, the backup, CSV and bookmarks exports, and your reading stats are free, with no cap.</p>
+      <div class="compare">
+        <table>
+          <caption class="sr-only">Limits in the free version and in Pro</caption>
+          <thead>
+            <tr><th scope="col">Limit</th><th scope="col">Free</th><th scope="col" class="pro-col">Pro</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Full-text search<small>Free searches of two or more words read inside every article you've saved. Searching titles, sites and excerpts stays free and unlimited.</small></th>
+              <td data-label="Free">20 a day</td>
+              <td class="pro" data-label="Pro">No limit, single words too</td>
+            </tr>
+            <tr>
+              <th scope="row">Listen<small>Reader view reads the article aloud with your computer's voices.</small></th>
+              <td data-label="Free">3 articles a day</td>
+              <td class="pro" data-label="Pro">No limit</td>
+            </tr>
+            <tr>
+              <th scope="row">Markdown export<small>Articles or highlights as Markdown for Obsidian and other notes apps. The backup, CSV and bookmarks exports are free.</small></th>
+              <td data-label="Free">One free try</td>
+              <td class="pro" data-label="Pro">Included</td>
+            </tr>
+            <tr>
+              <th scope="row">Other Zovo extensions<small>The same membership turns on Pro across the included extensions.</small></th>
+              <td data-label="Free">Not included</td>
+              <td class="pro" data-label="Pro">14 extensions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="compare-foot">Stop paying and nothing in your library changes.</p>
+      <p class="center again"><a class="cta secondary" href="#plans">Choose a plan</a></p>
+    </section>
+
+    <!-- Tips: value for everyone -->
+    <section class="section" aria-labelledby="tipsTitle">
+      <div class="center">
+        <span class="eyebrow">Free for everyone</span>
+        <h2 id="tipsTitle">Four things to try first</h2>
+        <p class="sub">Each takes under a minute and works without Pro.</p>
+      </div>
+      <div class="tips">
+        <article class="tip">
+          <span class="tip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 11-6 6v3h9l3-3"/><path d="m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4"/></svg></span>
+          <h3>Highlight what matters</h3>
+          <p>Open a saved article, select a sentence and pick a color. Press H to highlight in yellow without reaching for the mouse.</p>
+          <button class="tip-link" type="button" data-open="panel">Pick an article to read</button>
+        </article>
+        <article class="tip">
+          <span class="tip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg></span>
+          <h3>Listen while you do something else</h3>
+          <p>In reader view, click the headphones button or press L. Long reads turn into something you can finish while cooking or walking.</p>
+          <button class="tip-link" type="button" data-open="panel">Pick an article to listen to</button>
+        </article>
+        <article class="tip">
+          <span class="tip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M15 3v18"/></svg></span>
+          <h3>Keep your list beside the page</h3>
+          <p>The side panel stays open while you browse. Press <kbd data-cmd="open-reading-list">Ctrl+Shift+L</kbd> to open it and <kbd data-cmd="save-current-page">Ctrl+Shift+S</kbd> to save the page you're on.</p>
+          <button class="tip-link" type="button" data-open="panel">Open the side panel</button>
+        </article>
+        <article class="tip">
+          <span class="tip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg></span>
+          <h3>Bring your old list, keep a backup</h3>
+          <p>Coming from Pocket or Omnivore? Drop the export file on the import page. Your articles live in this browser, so a full backup from Settings now and then keeps a new computer from costing you your list.</p>
+          <button class="tip-link" type="button" data-open="import">Open the import page</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Founder: everyone -->
+    <section class="section" aria-labelledby="founderTitle">
+      <div class="founder">
+        <img src="founder-192.webp" alt="Michael Lip" width="112" height="112">
+        <div>
+          <h2 id="founderTitle">Support goes straight to the developer</h2>
+          <p>I'm Michael, and I build ReadLater Pro on my own. If an article won't save, an import doesn't look right or you have an idea for the next update, write to <a href="mailto:support@zovo.one?subject=ReadLater%20Pro">support@zovo.one</a>. It lands in my inbox, not a ticket queue, and I read every one.</p>
+          <p class="sig"><span class="sig-name">Michael Lip</span>, developer of ReadLater Pro</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section narrow" aria-labelledby="faqTitle">
+      <h2 id="faqTitle" class="center">Questions people ask</h2>
+      <div class="faq">
+        <details>
+          <summary>Where are my saved articles stored?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div><p>In this browser, on your computer. ReadLater keeps each article's text so you can read it offline, and nothing about your library is uploaded. That also means a cleared browser profile clears your list, so export a backup from Settings once in a while.</p></div>
+        </details>
+        <details>
+          <summary>Does ReadLater Pro send anything to a server?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div><p>Your articles, searches and reading stats stay in your browser. Pro confirms your license key with Zovo's server from time to time, sending only the key and the extension's name. If you uninstall, Chrome opens a zovo.one page whose address carries the version, how long it was installed, its update count and the extension's ID. Pictures load from the sites that published them.</p></div>
+        </details>
+        <details data-for="free" hidden>
+          <summary>What happens if I stop paying for Pro?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div><p>If you cancel, Pro stays on until the license server reports the plan has ended. After that you're on the free version again, with your whole library where you left it, full-text search goes back to 20 a day, Listen to 3 articles a day, and Markdown export switches off. The backup, CSV and bookmarks exports stay free.</p></div>
+        </details>
+        <details data-for="free" hidden>
+          <summary>Can I get a refund?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div><p>Monthly plans can be cancelled at any time. Lifetime is a one-time payment delivered instantly, so it's final once the key and archive have been sent. If anything is faulty or not as described, it gets fixed or refunded.</p>
+            <p><a data-cta="faq-refund" href="https://zovo.one/refund" target="_blank" rel="noopener">Read the full refund terms</a></p></div>
+        </details>
+        <details>
+          <summary>I already paid. How do I turn Pro on?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div><p>Open the license page, choose Enter License Key, and paste the key that starts with ZOVO-. You'll find it in your purchase email and on your <a data-cta="faq-dashboard" href="https://zovo.one/dashboard" target="_blank" rel="noopener">zovo.one dashboard</a>. Can't find it? Email support@zovo.one.</p>
+            <p><button class="linkish" type="button" data-open="license">Open the license page</button></p></div>
+        </details>
+        <details>
+          <summary>Can I stop this page from opening after updates?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div><p>Yes. Tick the box at the bottom of this page, or switch off "Show what's new after an update" in Settings under Notifications. Updates will still install, just without this tab.</p></div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <label class="optout"><input type="checkbox" id="optout"> Don't open this page after future updates</label>
+    <nav aria-label="Footer">
+      <a href="../legal/privacy-policy.html" target="_blank" rel="noopener">Privacy</a>
+      <a href="../legal/terms.html" target="_blank" rel="noopener">Terms</a>
+      <a href="mailto:support@zovo.one?subject=ReadLater%20Pro">Support</a>
+    </nav>
+  </footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

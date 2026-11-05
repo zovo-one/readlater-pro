@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cross-browser.css">
+    <link rel="stylesheet" href="../styles/design-tokens.css">
+    <link rel="stylesheet" href="../styles/design-system.css">
+    <link rel="stylesheet" href="reader.css">
+    <link rel="stylesheet" href="reader-features.css">
+    <link rel="stylesheet" href="../components/paywall.css">
+    <link rel="stylesheet" href="../styles/high-contrast.css">
+    <link rel="stylesheet" href="../styles/i18n-rtl.css">
+    <title data-i18n="titleReader">Reader - ReadLater Pro</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToMainContent">Skip to main content</a>
+
+    <!-- Progress bar -->
+    <div class="reader-progress" id="progress-bar" role="progressbar" data-i18n-aria="labelReadingProgress" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+    <!-- Toolbar -->
+    <header class="reader-toolbar">
+        <div class="reader-toolbar-left">
+            <button class="reader-toolbar-btn" id="btn-back" data-i18n-title="tooltipBackToList" title="Back to list" data-i18n-aria="tooltipBackToList" aria-label="Back to list">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <line x1="19" y1="12" x2="5" y2="12"/>
+                    <polyline points="12 19 5 12 12 5"/>
+                </svg>
+            </button>
+            <span class="reader-toolbar-title" id="toolbar-title"></span>
+        </div>
+        <div class="reader-toolbar-center">
+            <span class="reader-time-remaining" id="time-remaining"></span>
+        </div>
+        <div class="reader-toolbar-right">
+            <button class="reader-toolbar-btn" id="btn-favorite" data-i18n-title="tooltipToggleFavoriteShortcut" title="Toggle favorite (F)" data-i18n-aria="tooltipToggleFavorite" aria-label="Toggle favorite">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+            </button>
+            <button class="reader-toolbar-btn" id="btn-listen" data-i18n-title="readerTtsListenTitle" title="Listen (L)" data-i18n-aria="readerTtsListen" aria-label="Listen" aria-pressed="false">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/>
+                    <path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+                </svg>
+            </button>
+            <button class="reader-toolbar-btn rl-hl-toolbar-btn" id="btn-highlights" data-i18n-title="readerHlButtonTitle" title="Highlights and notes" data-i18n-aria="readerHlButton" aria-label="Highlights" aria-expanded="false" aria-controls="hl-drawer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M12 20h9"/>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                </svg>
+                <span class="rl-count-badge" id="hl-badge" aria-hidden="true" hidden></span>
+            </button>
+            <button class="reader-toolbar-btn" id="btn-print" data-i18n-title="tooltipPrintArticle" title="Print article" data-i18n-aria="tooltipPrintArticle" aria-label="Print article">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <polyline points="6 9 6 2 18 2 18 9"/>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                    <rect x="6" y="14" width="12" height="8"/>
+                </svg>
+            </button>
+            <button class="reader-toolbar-btn" id="btn-original" data-i18n-title="tooltipViewOriginal" title="View original" data-i18n-aria="tooltipViewOriginalNewTab" aria-label="View original page (opens in new tab)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+            </button>
+            <button class="reader-toolbar-btn" id="btn-toc" data-i18n-title="tooltipTableOfContents" title="Table of contents" data-i18n-aria="tooltipTableOfContents" aria-label="Table of contents" style="display:none;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <line x1="8" y1="6" x2="21" y2="6"/>
+                    <line x1="8" y1="12" x2="21" y2="12"/>
+                    <line x1="8" y1="18" x2="21" y2="18"/>
+                    <line x1="3" y1="6" x2="3.01" y2="6"/>
+                    <line x1="3" y1="12" x2="3.01" y2="12"/>
+                    <line x1="3" y1="18" x2="3.01" y2="18"/>
+                </svg>
+            </button>
+            <button class="reader-toolbar-btn" id="btn-font-settings" data-i18n-title="tooltipReadingSettings" title="Reading settings" data-i18n-aria="tooltipReadingSettings" aria-label="Reading settings" aria-expanded="false" aria-controls="font-settings">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <polyline points="4 7 4 4 20 4 20 7"/>
+                    <line x1="9" y1="20" x2="15" y2="20"/>
+                    <line x1="12" y1="4" x2="12" y2="20"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Font settings panel -->
+    <div class="reader-settings" id="font-settings" role="region" aria-label="Reading settings" style="display:none;">
+        <div class="reader-settings-group">
+            <label class="reader-settings-label" id="theme-label" data-i18n="labelTheme">Theme</label>
+            <div class="reader-settings-row" role="radiogroup" aria-labelledby="theme-label">
+                <button class="reader-theme-btn" data-theme="auto" data-i18n-title="readerThemeAutoTitle" title="Auto (follows your system)" data-i18n-aria="readerThemeAutoAria" aria-label="Auto theme, follows your system" role="radio" aria-checked="false">
+                    <span style="background:linear-gradient(135deg, #fff 0 50%, #1A1A1D 50% 100%); border:1px solid #ddd;" aria-hidden="true"></span>
+                </button>
+                <button class="reader-theme-btn active" data-theme="light" data-i18n-title="themeLight" title="Light" aria-label="Light theme" role="radio" aria-checked="true">
+                    <span style="background:#fff; border:1px solid #ddd;" aria-hidden="true"></span>
+                </button>
+                <button class="reader-theme-btn" data-theme="sepia" data-i18n-title="themeSepia" title="Sepia" aria-label="Sepia theme" role="radio" aria-checked="false">
+                    <span style="background:#f4ecd8;" aria-hidden="true"></span>
+                </button>
+                <button class="reader-theme-btn" data-theme="dark" data-i18n-title="themeDark" title="Dark" aria-label="Dark theme" role="radio" aria-checked="false">
+                    <span style="background:#1A1A1D;" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        <div class="reader-settings-group">
+            <span class="reader-settings-label" id="font-family-label" data-i18n="readerTypeFontLabel">Font</span>
+            <div class="reader-settings-row reader-settings-wrap" role="radiogroup" aria-labelledby="font-family-label">
+                <button class="reader-font-btn" data-font="serif" role="radio" aria-checked="true" data-i18n="readerTypeFontSerif">Serif</button>
+                <button class="reader-font-btn" data-font="sans" role="radio" aria-checked="false" data-i18n="readerTypeFontSans">Sans</button>
+                <button class="reader-font-btn" data-font="readable" role="radio" aria-checked="false" data-i18n="readerTypeFontReadable">Readable</button>
+                <button class="reader-font-btn" data-font="mono" role="radio" aria-checked="false" data-i18n="readerTypeFontMono">Mono</button>
+                <button class="reader-font-btn" data-font="system" role="radio" aria-checked="false" data-i18n="readerTypeFontSystem">System</button>
+            </div>
+        </div>
+        <div class="reader-settings-group">
+            <label class="reader-settings-label" data-i18n="labelFontSize">Font size</label>
+            <div class="reader-settings-row">
+                <button class="reader-size-btn" id="btn-size-down" data-i18n-aria="labelDecreaseFontSize" aria-label="Decrease font size">A-</button>
+                <span class="reader-size-value" id="font-size-value" aria-live="polite">18</span>
+                <button class="reader-size-btn" id="btn-size-up" data-i18n-aria="labelIncreaseFontSize" aria-label="Increase font size">A+</button>
+            </div>
+        </div>
+        <div class="reader-settings-group">
+            <span class="reader-settings-label" id="line-height-label" data-i18n="readerTypeLineLabel">Line spacing</span>
+            <div class="reader-settings-row reader-settings-wrap" role="radiogroup" aria-labelledby="line-height-label">
+                <button class="reader-lh-btn" data-lh="1.4" role="radio" aria-checked="false" data-i18n="readerTypeLineCompact">Compact</button>
+                <button class="reader-lh-btn" data-lh="1.6" role="radio" aria-checked="true" data-i18n="readerTypeLineNormal">Normal</button>
+                <button class="reader-lh-btn" data-lh="1.8" role="radio" aria-checked="false" data-i18n="readerTypeLineRelaxed">Relaxed</button>
+                <button class="reader-lh-btn" data-lh="2.0" role="radio" aria-checked="false" data-i18n="readerTypeLineLoose">Loose</button>
+            </div>
+        </div>
+        <div class="reader-settings-group reader-width-group">
+            <label class="reader-settings-label" id="width-label" data-i18n="labelWidth">Width</label>
+            <div class="reader-settings-row" role="radiogroup" aria-labelledby="width-label">
+                <button class="reader-width-btn" data-width="560" aria-label="Narrow width (560px)" data-i18n="widthNarrow" role="radio" aria-checked="false">Narrow</button>
+                <button class="reader-width-btn active" data-width="680" aria-label="Medium width (680px)" data-i18n="widthMedium" role="radio" aria-checked="true">Medium</button>
+                <button class="reader-width-btn" data-width="800" aria-label="Wide width (800px)" data-i18n="widthWide" role="radio" aria-checked="false">Wide</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table of Contents sidebar -->
+    <nav class="reader-toc" id="reader-toc" style="display:none;">
+        <div class="reader-toc-header">
+            <span class="reader-toc-title" data-i18n="labelContents">Contents</span>
+            <button class="reader-toc-close" id="btn-toc-close" data-i18n-title="tooltipCloseTOC" title="Close TOC" data-i18n-aria="tooltipCloseTOC" aria-label="Close table of contents">&times;</button>
+        </div>
+        <ul class="reader-toc-list" id="toc-list" aria-label="Article sections"></ul>
+    </nav>
+
+    <!-- Shortcut tooltip -->
+    <div class="reader-shortcut-tooltip" id="shortcut-tooltip" role="status" aria-live="polite"></div>
+
+    <!-- Article content -->
+    <main id="main-content">
+    <article class="reader-article" id="reader-article">
+        <header class="reader-header">
+            <h1 class="reader-title" id="article-title"></h1>
+            <div class="reader-meta" id="article-meta"></div>
+        </header>
+        <div class="reader-body" id="article-body">
+            <div class="reader-loading" data-i18n="statusLoadingArticle">Loading article...</div>
+        </div>
+        <section class="rl-end" id="rl-end" aria-labelledby="rl-end-title" hidden>
+            <h2 class="rl-end-title" id="rl-end-title" data-i18n="readerEndTitle">End of article</h2>
+            <div class="rl-end-row">
+                <span class="rl-end-state" id="rl-end-state" hidden>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span data-i18n="readerEndMarkedRead">Marked as read</span>
+                </span>
+                <button class="rl-btn" id="rl-end-mark" data-i18n="readerEndMarkRead" hidden>Mark as read</button>
+                <button class="rl-btn rl-btn-quiet" id="rl-end-unmark" data-i18n="readerEndMarkUnread" hidden>Mark unread</button>
+                <button class="rl-btn rl-btn-quiet" id="rl-end-back" data-i18n="readerEndBack">Back to list</button>
+            </div>
+            <a class="rl-end-next" id="rl-end-next" href="#" hidden>
+                <span class="rl-end-next-label"><span data-i18n="readerEndNextUnread">Next unread</span> <kbd aria-hidden="true">N</kbd></span>
+                <span class="rl-end-next-title" id="rl-end-next-title"></span>
+                <span class="rl-end-next-meta" id="rl-end-next-meta"></span>
+            </a>
+            <p class="rl-end-done" id="rl-end-done" data-i18n="readerEndCaughtUp" hidden>That was your last unread article. Nice work.</p>
+        </section>
+    </article>
+    </main>
+
+    <!-- Highlights drawer (a bottom sheet in the side panel) -->
+    <aside class="rl-drawer" id="hl-drawer" role="dialog" aria-modal="false" aria-labelledby="hl-drawer-title" hidden>
+        <div class="rl-drawer-head">
+            <h2 class="rl-drawer-title" id="hl-drawer-title"><span data-i18n="readerHlDrawerTitle">Highlights</span> <span class="rl-drawer-count" id="hl-count"></span></h2>
+            <button class="rl-icon-btn" id="hl-drawer-close" data-i18n-aria="readerHlDrawerClose" aria-label="Close highlights">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="rl-drawer-actions" id="hl-actions">
+            <button class="rl-btn" id="hl-copy-all" data-i18n="readerHlCopyAll">Copy all as Markdown</button>
+            <button class="rl-btn rl-btn-quiet" id="hl-download" data-i18n="readerHlDownload">Download .md</button>
+        </div>
+        <ol class="rl-hl-list" id="hl-list"></ol>
+        <p class="rl-hl-empty" id="hl-empty" data-i18n="readerHlEmpty">No highlights yet. Select text in the article, then pick a color.</p>
+    </aside>
+
+    <!-- Listen player -->
+    <div class="rl-tts" id="tts-bar" role="region" data-i18n-aria="readerTtsPlayer" aria-label="Listen player" hidden>
+        <div class="rl-tts-controls">
+            <button class="rl-icon-btn" id="tts-prev" data-i18n-aria="readerTtsPrev" aria-label="Previous paragraph" title="Previous paragraph">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg>
+            </button>
+            <button class="rl-icon-btn rl-tts-play" id="tts-play" data-i18n-aria="readerTtsPause" aria-label="Pause">
+                <svg class="rl-ico-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                <svg class="rl-ico-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7 4v16l13-8z"/></svg>
+            </button>
+            <button class="rl-icon-btn" id="tts-next" data-i18n-aria="readerTtsNext" aria-label="Next paragraph" title="Next paragraph">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg>
+            </button>
+            <span class="rl-tts-status" id="tts-status"></span>
+        </div>
+        <div class="rl-tts-options">
+            <label class="sr-only" for="tts-rate" data-i18n="readerTtsSpeed">Speed</label>
+            <select class="rl-select" id="tts-rate"></select>
+            <label class="sr-only" for="tts-voice" data-i18n="readerTtsVoice">Voice</label>
+            <select class="rl-select rl-tts-voice" id="tts-voice"></select>
+        </div>
+        <button class="rl-icon-btn rl-tts-close" id="tts-close" data-i18n-aria="readerTtsClose" aria-label="Stop listening" title="Stop listening">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+    </div>
+
+    <!-- Undo toast -->
+    <div class="rl-toast" id="rl-toast" role="status" aria-live="polite" hidden>
+        <span class="rl-toast-msg" id="rl-toast-msg"></span>
+        <button class="rl-toast-btn" id="rl-toast-action" data-i18n="readerHlUndo">Undo</button>
+    </div>
+
+    <!-- Screen reader announcements -->
+    <div id="sr-announcements" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="../utils/focus-manager.js"></script>
+    <script src="../utils/announcer.js"></script>
+    <script src="../utils/perf-monitor.js"></script>
+    <script src="../utils/sanitize.js"></script>
+    <script src="../shared/message-types.js"></script>
+    <script src="../utils/error-handler.js"></script>
+    <script src="../utils/analytics.js"></script>
+    <script src="../shared/i18n.js"></script>
+    <script src="../utils/i18n-loader.js"></script>
+    <script src="../shared/highlights-store.js"></script>
+    <script src="reader.js"></script>
+    <script src="reader-highlights.js"></script>
+    <script src="../utils/feature-gate.js"></script>
+    <script src="../components/paywall.js"></script>
+    <script src="reader-tts.js"></script>
+    <script src="reader-end.js"></script>
+</body>
+</html>

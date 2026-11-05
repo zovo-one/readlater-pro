@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Toolbar tooltip",
+      "message": "ReadLater에 저장"
+   },
+   "extDescription": {
+      "description": "CWS description",
+      "message": "기사를 저장하고 읽기 목록에 추가. 리더 뷰로 오프라인 읽기. 태그로 정리. Pocket에서 가져오기 지원."
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "ReadLater Pro - 저장 및 오프라인 읽기"
+   }
+}

@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "Hifadhi kwenye ReadLater"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing",
+      "message": "Hifadhi makala kwenye orodha ya kusoma. Mwonekano safi, soma bila mtandao. Panga kwa vitambulisho. Ingiza kutoka Pocket."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - Hifadhi & Soma Bila Mtandao"
+   }
+}

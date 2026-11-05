@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cross-browser.css">
+    <link rel="stylesheet" href="../styles/design-tokens.css">
+    <link rel="stylesheet" href="../styles/design-system.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="../styles/high-contrast.css">
+    <link rel="stylesheet" href="../styles/i18n-rtl.css">
+    <title data-i18n="titleDashboard">Reading Statistics - ReadLater Pro</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToMainContent">Skip to main content</a>
+    <main class="dashboard" id="main-content">
+
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="dashboard-header-top">
+                <div class="dashboard-header-info">
+                    <h1 class="dashboard-title"><span data-i18n="appName">ReadLater Pro</span> <span class="dashboard-pro-badge" id="tier-badge" data-i18n="badgeFree">Free</span></h1>
+                    <p class="dashboard-member-since" id="member-since"></p>
+                </div>
+                <button type="button" class="dashboard-back-link" id="back-link" data-i18n-title="tooltipBackToReadingList" title="Back to reading list" data-i18n-aria="tooltipBackToReadingList" aria-label="Back to reading list">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <line x1="19" y1="12" x2="5" y2="12"/>
+                        <polyline points="12 19 5 12 12 5"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Value Summary Cards -->
+        <section class="dashboard-section">
+            <h2 class="dashboard-section-title" data-i18n="headingOverview">Overview</h2>
+            <div class="value-cards" id="value-cards">
+                <div class="value-card value-card-primary">
+                    <div class="value-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                    </div>
+                    <div class="value-card-number" id="stat-read">0</div>
+                    <div class="value-card-label" data-i18n="statArticlesRead">Articles Read</div>
+                </div>
+                <div class="value-card">
+                    <div class="value-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div class="value-card-number" id="stat-time">0h</div>
+                    <div class="value-card-label" data-i18n="statReadingTime">Reading Time</div>
+                </div>
+                <div class="value-card">
+                    <div class="value-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <div class="value-card-number" id="stat-streak">0</div>
+                    <div class="value-card-label" data-i18n="statReadingStreak">Reading Streak</div>
+                </div>
+                <div class="value-card">
+                    <div class="value-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <div class="value-card-number" id="stat-unread">0</div>
+                    <div class="value-card-label" data-i18n="statUnreadQueue">Unread Queue</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Activity Chart -->
+        <section class="dashboard-section">
+            <h2 class="dashboard-section-title" data-i18n="headingWeeklyActivity">Weekly Activity</h2>
+            <div class="weekly-chart" id="weekly-chart">
+                <div class="weekly-chart-placeholder" data-i18n="statusLoadingChart">Loading chart...</div>
+            </div>
+        </section>
+
+        <!-- Top Domains -->
+        <section class="dashboard-section">
+            <h2 class="dashboard-section-title" data-i18n="headingTopDomains">Top Domains</h2>
+            <div class="top-domains" id="top-domains">
+                <div class="top-domains-placeholder" data-i18n="statusLoadingDomains">Loading domains...</div>
+            </div>
+        </section>
+
+        <!-- Monthly Trend -->
+        <section class="dashboard-section">
+            <h2 class="dashboard-section-title" data-i18n="headingMonthlyTrend">Monthly Trend</h2>
+            <div class="monthly-trend" id="monthly-trend">
+                <div class="trend-item">
+                    <span class="trend-label" data-i18n="dashboardSavedThisWeek">Saved this week</span>
+                    <span class="trend-value" id="trend-week">0</span>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-label" data-i18n="dashboardSavedThisMonth">Saved this month</span>
+                    <span class="trend-value" id="trend-month">0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upgrade CTA (hidden for Pro users) -->
+        <section class="dashboard-section" id="upgrade-cta-section" style="display:none;">
+            <div class="upgrade-cta">
+                <div class="upgrade-cta-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                </div>
+                <h3 class="upgrade-cta-title" data-i18n="dashboardUpgradeTitleClean">Search the words, not just the titles</h3>
+                <p class="upgrade-cta-desc" data-i18n="dashboardUpgradeDescClean">These statistics are free and stay free. The one thing Pro adds is full-text search with no daily cap.</p>
+                <button class="upgrade-cta-btn" id="btn-upgrade" data-i18n="buttonUpgradeToPro">Upgrade to Pro</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <button type="button" class="dashboard-footer-link" id="btn-reset-stats" data-i18n="buttonResetStats">Reset Stats</button>
+            <span class="dashboard-footer-sep" aria-hidden="true"></span>
+            <button type="button" class="dashboard-footer-link" id="btn-export-stats" data-i18n="buttonExportStats">Export Stats</button>
+        </footer>
+
+    </main>
+
+    <!-- Screen reader announcements -->
+    <div id="sr-announcements" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="../utils/focus-manager.js"></script>
+    <script src="../utils/announcer.js"></script>
+    <script src="../utils/sanitize.js"></script>
+    <script src="../shared/message-types.js"></script>
+    <script src="../shared/i18n.js"></script>
+    <script src="../utils/i18n-loader.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

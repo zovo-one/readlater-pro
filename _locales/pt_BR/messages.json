@@ -1,0 +1,1521 @@
+{
+  "aboutDangerZoneDesc": {
+    "message": "Esta acao e permanente e nao pode ser desfeita."
+  },
+  "aboutDescription": {
+    "message": "Salve artigos para ler depois. Salvamento com um clique, modo leitura, tags e leitura offline."
+  },
+  "aboutDiagnosticsDesc": {
+    "message": "Visualize registros de erros, eventos de analise e integridade da extensao."
+  },
+  "aboutStorageNote": {
+    "message": "IndexedDB armazena artigos. chrome.storage armazena configuracoes."
+  },
+  "actionFavorite": {
+    "message": "Favorito"
+  },
+  "announcerArticleLoaded": {
+    "message": "Artigo carregado"
+  },
+  "announcerArticleNavigation": {
+    "message": "Artigo $INDEX$ de $TOTAL$: $TITLE$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "3"
+      },
+      "title": {
+        "content": "$3",
+        "example": "How to Build a Chrome Extension"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "announcerArticleRemoved": {
+    "message": "Artigo removido"
+  },
+  "announcerFavoriteToggled": {
+    "message": "Favorito alternado"
+  },
+  "announcerFilteredByTag": {
+    "message": "Filtrado por tag: $TAG$",
+    "placeholders": {
+      "tag": {
+        "content": "$1",
+        "example": "technology"
+      }
+    }
+  },
+  "announcerStepOfTotal": {
+    "message": "Etapa $CURRENT$ de $TOTAL$",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "announcerTabSelected": {
+    "message": "Aba $TAB$ selecionada",
+    "placeholders": {
+      "tab": {
+        "content": "$1",
+        "example": "Favorites"
+      }
+    }
+  },
+  "announcerUpgradeDialogOpened": {
+    "message": "Dialogo de atualizacao aberto"
+  },
+  "appName": {
+    "message": "ReadLater Pro"
+  },
+  "badgeFree": {
+    "message": "Gratis"
+  },
+  "badgeLifetime": {
+    "message": "Vitalicio"
+  },
+  "badgePro": {
+    "message": "PRO"
+  },
+  "badgeTrial": {
+    "message": "Teste"
+  },
+  "batchMarkRead": {
+    "message": "Marcar como lido"
+  },
+  "batchSelectedCount": {
+    "message": "$COUNT$ selecionados",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "bugReportCopied": {
+    "message": "Copiado"
+  },
+  "bugReportDownload": {
+    "message": "Baixar"
+  },
+  "buttonActivate": {
+    "message": "Ativar"
+  },
+  "buttonActivating": {
+    "message": "Ativando..."
+  },
+  "buttonBack": {
+    "message": "Voltar"
+  },
+  "buttonChecking": {
+    "message": "Verificando..."
+  },
+  "buttonCleaningUp": {
+    "message": "Limpando..."
+  },
+  "buttonCleanup": {
+    "message": "Limpar artigos antigos lidos"
+  },
+  "buttonClearAllData": {
+    "message": "Limpar todos os dados"
+  },
+  "buttonClearErrorLog": {
+    "message": "Limpar registro de erros"
+  },
+  "buttonClearEventLog": {
+    "message": "Limpar registro de eventos"
+  },
+  "buttonClearing": {
+    "message": "Limpando..."
+  },
+  "buttonDelete": {
+    "message": "Excluir"
+  },
+  "buttonEnterLicenseKey": {
+    "message": "Inserir chave de licenca"
+  },
+  "buttonExportArticles": {
+    "message": "Exportar artigos"
+  },
+  "buttonExportDebugReport": {
+    "message": "Exportar relatorio de depuracao"
+  },
+  "buttonExportStats": {
+    "message": "Exportar estatisticas"
+  },
+  "buttonExported": {
+    "message": "Exportado"
+  },
+  "buttonExporting": {
+    "message": "Exportando..."
+  },
+  "buttonGetStarted": {
+    "message": "Comecar"
+  },
+  "buttonImportJsonBackup": {
+    "message": "Importar backup JSON"
+  },
+  "buttonImportPocket": {
+    "message": "Importar do Pocket"
+  },
+  "buttonImporting": {
+    "message": "Importando..."
+  },
+  "buttonImportingProgress": {
+    "message": "Importando... ($CURRENT$/$TOTAL$)",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "15"
+      },
+      "total": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "buttonNext": {
+    "message": "Proximo"
+  },
+  "buttonOpenDiagnostics": {
+    "message": "Abrir painel de diagnosticos"
+  },
+  "buttonResetStats": {
+    "message": "Redefinir estatisticas"
+  },
+  "buttonRestorePurchase": {
+    "message": "Restaurar compra"
+  },
+  "buttonRetry": {
+    "message": "Tentar novamente"
+  },
+  "buttonStatsReset": {
+    "message": "Estatisticas redefinidas"
+  },
+  "buttonUpgradeToPro": {
+    "message": "Atualizar para Pro"
+  },
+  "changelogSubtitle": {
+    "message": "Veja o que mudou em cada versao"
+  },
+  "communitySubtitle": {
+    "message": "Conecte-se com outros usuarios do ReadLater Pro"
+  },
+  "communityTitle": {
+    "message": "Comunidade"
+  },
+  "confirmCleanup": {
+    "message": "Excluir todos os artigos lidos com mais de 30 dias?\n\nEsta acao nao pode ser desfeita."
+  },
+  "confirmClearAllData": {
+    "message": "Tem certeza de que deseja limpar TODOS os dados?\n\nIsso excluira permanentemente todos os artigos, tags e configuracoes."
+  },
+  "confirmClearAllDataSecond": {
+    "message": "Isso nao pode ser desfeito. Digite OK para confirmar que deseja excluir tudo.\n\nPressione OK para excluir permanentemente todos os dados."
+  },
+  "confirmImportJson": {
+    "message": "Importar $COUNT$ artigos do backup?\n\nArtigos existentes nao serao removidos.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "confirmResetStats": {
+    "message": "Tem certeza de que deseja redefinir todas as estatisticas de leitura? Isso nao pode ser desfeito."
+  },
+  "contextMenuOpenList": {
+    "message": "Abrir lista de leitura"
+  },
+  "contextMenuSaveLink": {
+    "message": "Salvar link no ReadLater"
+  },
+  "contextMenuSavePage": {
+    "message": "Salvar pagina no ReadLater"
+  },
+  "ctxAddTag": {
+    "message": "Adicionar tag"
+  },
+  "ctxCopyUrl": {
+    "message": "Copiar URL"
+  },
+  "ctxOpenOriginal": {
+    "message": "Abrir URL original"
+  },
+  "ctxOpenReader": {
+    "message": "Abrir no leitor"
+  },
+  "ctxToggleFavorite": {
+    "message": "Alternar favorito"
+  },
+  "dashboardDayUnit": {
+    "message": "dias"
+  },
+  "dashboardDayUnitSingular": {
+    "message": "dia"
+  },
+  "dashboardMemberSince": {
+    "message": "Membro desde $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 2025"
+      }
+    }
+  },
+  "dashboardNoDomainsYet": {
+    "message": "Nenhum dominio rastreado ainda. Salve alguns artigos para ver suas principais fontes."
+  },
+  "dashboardSavedThisMonth": {
+    "message": "Salvos este mes"
+  },
+  "dashboardSavedThisWeek": {
+    "message": "Salvos esta semana"
+  },
+  "dashboardStatsExported": {
+    "message": "Estatisticas exportadas"
+  },
+  "dashboardStatsLoaded": {
+    "message": "Estatisticas carregadas"
+  },
+  "dashboardStatsReset": {
+    "message": "Estatisticas foram redefinidas"
+  },
+  "diagColumnFeature": {
+    "message": "Recurso"
+  },
+  "diagColumnFree": {
+    "message": "Gratis"
+  },
+  "diagColumnPro": {
+    "message": "Pro"
+  },
+  "diagFeatureComparison": {
+    "message": "Comparacao de recursos entre os planos Gratis e Pro"
+  },
+  "diagFilterAll": {
+    "message": "Todos"
+  },
+  "diagHealthExcellent": {
+    "message": "Excelente"
+  },
+  "diagHealthFair": {
+    "message": "Regular"
+  },
+  "diagHealthGood": {
+    "message": "Bom"
+  },
+  "diagHealthNeedsAttention": {
+    "message": "Precisa de atencao"
+  },
+  "diagIncluded": {
+    "message": "Incluido"
+  },
+  "diagInfoChromeVersion": {
+    "message": "Versao do Chrome"
+  },
+  "diagInfoId": {
+    "message": "ID"
+  },
+  "diagInfoName": {
+    "message": "Nome"
+  },
+  "diagInfoPlatform": {
+    "message": "Plataforma"
+  },
+  "diagInfoVersion": {
+    "message": "Versao"
+  },
+  "diagLimitedAccess": {
+    "message": "Limitado"
+  },
+  "diagNoErrors": {
+    "message": "Nenhum erro registrado."
+  },
+  "diagNoEvents": {
+    "message": "Nenhum evento registrado."
+  },
+  "diagNoIssues": {
+    "message": "Nenhum problema detectado nas ultimas 24 horas."
+  },
+  "diagNotIncluded": {
+    "message": "Nao incluido"
+  },
+  "diagStorageQuota": {
+    "message": "Cota de armazenamento"
+  },
+  "diagTableContext": {
+    "message": "Contexto"
+  },
+  "diagTableEvent": {
+    "message": "Evento"
+  },
+  "diagTableMessage": {
+    "message": "Mensagem"
+  },
+  "diagTableProperties": {
+    "message": "Propriedades"
+  },
+  "diagTableStack": {
+    "message": "Pilha"
+  },
+  "diagTableTime": {
+    "message": "Hora"
+  },
+  "diagTableType": {
+    "message": "Tipo"
+  },
+  "dmConfirmCancel": {
+    "message": "Cancelar"
+  },
+  "dmConfirmDelete": {
+    "message": "Sim, excluir tudo"
+  },
+  "dmConfirmText": {
+    "message": "Isso excluira permanentemente todas as suas configuracoes, preferencias e dados salvos. Esta acao nao pode ser desfeita."
+  },
+  "dmConfirmTitle": {
+    "message": "Tem certeza?"
+  },
+  "dmDeleteAllData": {
+    "message": "Excluir todos os dados"
+  },
+  "dmExportAllData": {
+    "message": "Exportar todos os dados"
+  },
+  "dmNote": {
+    "message": "Os dados exportados sao salvos como arquivo JSON na sua pasta de downloads. Excluir os dados redefinira a extensao ao estado inicial."
+  },
+  "dmStorageUsed": {
+    "message": "Armazenamento usado"
+  },
+  "dmSubtitle": {
+    "message": "Visualize, exporte ou exclua todos os dados armazenados pelo ReadLater Pro"
+  },
+  "emptyStateTitle": {
+    "message": "Nenhum artigo ainda"
+  },
+  "errorArticleNotFound": {
+    "message": "Artigo nao encontrado."
+  },
+  "errorFailedToConnect": {
+    "message": "Falha na conexao. Por favor, tente novamente."
+  },
+  "errorFailedToLoadArticle": {
+    "message": "Falha ao carregar artigo. Por favor, tente novamente."
+  },
+  "errorFailedToLoadArticles": {
+    "message": "Falha ao carregar artigos"
+  },
+  "errorFailedToLoadStats": {
+    "message": "Falha ao carregar estatisticas"
+  },
+  "errorFailedToReadFile": {
+    "message": "Falha ao ler o arquivo. Por favor, tente novamente."
+  },
+  "errorFeatureUnavailable": {
+    "message": "Este recurso esta temporariamente indisponivel."
+  },
+  "errorImportFailed": {
+    "message": "Falha na importacao: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "errorInvalidLicenseKey": {
+    "message": "Chave de licenca invalida. Verifique e tente novamente."
+  },
+  "errorInvalidLicenseKeyPaywall": {
+    "message": "Chave de licenca invalida."
+  },
+  "errorNoArticleId": {
+    "message": "Nenhum ID de artigo fornecido."
+  },
+  "errorNoArticlesInExport": {
+    "message": "Nenhum artigo encontrado no arquivo de exportacao. Verifique se e uma exportacao valida do Pocket."
+  },
+  "errorNoProSubscription": {
+    "message": "Nenhuma assinatura Pro ativa encontrada. Adquira um plano ou insira uma chave de licenca."
+  },
+  "errorPleaseEnterLicenseKey": {
+    "message": "Por favor, insira uma chave de licenca."
+  },
+  "errorSelectHtmlFile": {
+    "message": "Por favor, selecione um arquivo HTML exportado do Pocket."
+  },
+  "errorStorageCalcFailed": {
+    "message": "Nao foi possivel calcular"
+  },
+  "errorTryReloading": {
+    "message": "Tente recarregar a extensao."
+  },
+  "extActionTitle": {
+    "message": "Salvar no ReadLater"
+  },
+  "extDescription": {
+    "message": "Salve artigos com um clique. Lista de leitura, tags, modo leitor e leitura offline. Seu gerenciador de favoritos e biblioteca."
+  },
+  "extName": {
+    "message": "ReadLater Pro - Salvar e Ler Offline"
+  },
+  "faqNoResults": {
+    "message": "Nenhum resultado encontrado. Tente um termo de busca diferente."
+  },
+  "faqSendFeedback": {
+    "message": "Envie-nos seu feedback"
+  },
+  "faqStillNeedHelp": {
+    "message": "Ainda precisa de ajuda?"
+  },
+  "featureExportArticles": {
+    "message": "Exportar artigos"
+  },
+  "featureFullTextSearch": {
+    "message": "Busca em texto completo"
+  },
+  "featureOfflineArticles": {
+    "message": "Artigos offline"
+  },
+  "featurePocketImport": {
+    "message": "Importacao do Pocket"
+  },
+  "featureReaderView": {
+    "message": "Modo leitura"
+  },
+  "featureSaveReadArticles": {
+    "message": "Salvar e ler artigos"
+  },
+  "featureTagsBasicSearch": {
+    "message": "Tags e busca basica"
+  },
+  "feedbackDraftSaved": {
+    "message": "Rascunho salvo"
+  },
+  "feedbackIncludeDiagnostics": {
+    "message": "Incluir dados de diagnostico neste relatorio"
+  },
+  "feedbackLabelDescription": {
+    "message": "Descricao"
+  },
+  "feedbackLabelEmail": {
+    "message": "E-mail (opcional)"
+  },
+  "feedbackLabelSubject": {
+    "message": "Assunto"
+  },
+  "feedbackLabelType": {
+    "message": "Tipo"
+  },
+  "feedbackPreviewDiagnostics": {
+    "message": "Visualizar dados de diagnostico"
+  },
+  "feedbackSubtitle": {
+    "message": "Reporte um bug, solicite um recurso ou compartilhe suas ideias."
+  },
+  "feedbackTypeBugReport": {
+    "message": "Relatorio de bug"
+  },
+  "feedbackTypeFeatureRequest": {
+    "message": "Solicitacao de recurso"
+  },
+  "feedbackTypeGeneral": {
+    "message": "Feedback geral"
+  },
+  "fontGeorgiaSerif": {
+    "message": "Georgia (serif)"
+  },
+  "fontInterSansSerif": {
+    "message": "Inter (sans-serif)"
+  },
+  "fontMerriweatherSerif": {
+    "message": "Merriweather (serif)"
+  },
+  "fontSizeExtraLarge": {
+    "message": "Extra grande (20px)"
+  },
+  "fontSizeHuge": {
+    "message": "Enorme (22px)"
+  },
+  "fontSizeLarge": {
+    "message": "Grande (18px)"
+  },
+  "fontSizeMedium": {
+    "message": "Medio (16px)"
+  },
+  "fontSizeSmall": {
+    "message": "Pequeno (14px)"
+  },
+  "fontSystemDefault": {
+    "message": "Padrao do sistema"
+  },
+  "footerManageSubscription": {
+    "message": "Gerenciar assinatura"
+  },
+  "headingAbout": {
+    "message": "Sobre"
+  },
+  "headingBehavior": {
+    "message": "Comportamento"
+  },
+  "headingDangerZone": {
+    "message": "Zona de perigo"
+  },
+  "headingData": {
+    "message": "Dados"
+  },
+  "headingDiagnostics": {
+    "message": "Diagnosticos"
+  },
+  "headingEventLog": {
+    "message": "Registro de eventos"
+  },
+  "headingExtensionInfo": {
+    "message": "Informacoes da extensao"
+  },
+  "headingFeedback": {
+    "message": "Feedback"
+  },
+  "headingFreeVsPro": {
+    "message": "Gratis vs Pro"
+  },
+  "headingHealthScore": {
+    "message": "Pontuacao de integridade"
+  },
+  "headingKeyboardShortcuts": {
+    "message": "Atalhos de teclado"
+  },
+  "headingMonthlyTrend": {
+    "message": "Tendencia mensal"
+  },
+  "headingNotifications": {
+    "message": "Notificacoes"
+  },
+  "headingOverview": {
+    "message": "Visao geral"
+  },
+  "headingPrivacy": {
+    "message": "Sua privacidade importa"
+  },
+  "headingPrivacyControls": {
+    "message": "Controles de privacidade"
+  },
+  "headingReaderSettings": {
+    "message": "Configuracoes do leitor"
+  },
+  "headingRecentErrors": {
+    "message": "Erros recentes"
+  },
+  "headingStatistics": {
+    "message": "Estatisticas"
+  },
+  "headingStorage": {
+    "message": "Armazenamento"
+  },
+  "headingStorageUsage": {
+    "message": "Uso de armazenamento"
+  },
+  "headingTopDomains": {
+    "message": "Principais dominios"
+  },
+  "headingUsageStats": {
+    "message": "Estatisticas de uso"
+  },
+  "headingWeeklyActivity": {
+    "message": "Atividade semanal"
+  },
+  "headingWhatsNew": {
+    "message": "Novidades"
+  },
+  "headingYourData": {
+    "message": "Seus dados"
+  },
+  "importArticlesImported": {
+    "message": "$COUNT$ artigos importados",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "150"
+      }
+    }
+  },
+  "importDescription": {
+    "message": "Traga toda sua lista de leitura do Pocket. Seus artigos, tags e status de lido/nao lido serao preservados."
+  },
+  "importDropzoneHint": {
+    "message": "ou clique para procurar o arquivo HTML"
+  },
+  "importDropzoneText": {
+    "message": "Solte sua exportacao do Pocket aqui"
+  },
+  "importDuplicatesSkipped": {
+    "message": "$COUNT$ duplicatas ignoradas",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "importStep1": {
+    "message": "Acesse getpocket.com/export e baixe seu arquivo de exportacao HTML"
+  },
+  "importStep2": {
+    "message": "Clique na area abaixo ou arraste seu arquivo de exportacao"
+  },
+  "importStep3": {
+    "message": "Seus artigos e tags serao importados automaticamente"
+  },
+  "importTagsCreated": {
+    "message": "$COUNT$ tags criadas",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "importTitle": {
+    "message": "Importar do Pocket"
+  },
+  "labelArticleActions": {
+    "message": "Acoes do artigo"
+  },
+  "labelArticleFilters": {
+    "message": "Filtros de artigos"
+  },
+  "labelArticleList": {
+    "message": "Lista de artigos"
+  },
+  "labelClosePaywall": {
+    "message": "Fechar paywall"
+  },
+  "labelContents": {
+    "message": "Indice"
+  },
+  "labelDecreaseFontSize": {
+    "message": "Diminuir tamanho da fonte"
+  },
+  "labelDefaultContentWidth": {
+    "message": "Largura de conteudo padrao"
+  },
+  "labelDefaultFontSize": {
+    "message": "Tamanho de fonte padrao"
+  },
+  "labelDefaultTheme": {
+    "message": "Tema padrao"
+  },
+  "labelDeleteSelected": {
+    "message": "Excluir artigos selecionados"
+  },
+  "labelDropzone": {
+    "message": "Zona de soltar para arquivo de exportacao do Pocket, clique ou arraste o arquivo aqui"
+  },
+  "labelFilterEvents": {
+    "message": "Filtrar eventos por tipo"
+  },
+  "labelFontFamily": {
+    "message": "Familia da fonte"
+  },
+  "labelFontSize": {
+    "message": "Tamanho da fonte"
+  },
+  "labelHealthScore": {
+    "message": "Pontuacao de integridade"
+  },
+  "labelImportJsonFile": {
+    "message": "Importar arquivo de backup JSON"
+  },
+  "labelImportProgress": {
+    "message": "Progresso da importacao"
+  },
+  "labelIncreaseFontSize": {
+    "message": "Aumentar tamanho da fonte"
+  },
+  "labelLicenseKey": {
+    "message": "Chave de licenca"
+  },
+  "labelLineHeight": {
+    "message": "Altura da linha"
+  },
+  "labelMarkReadOnOpen": {
+    "message": "Marcar como lido ao abrir"
+  },
+  "labelMarkSelectedRead": {
+    "message": "Marcar selecionados como lidos"
+  },
+  "labelOnboardingProgress": {
+    "message": "Progresso da introducao"
+  },
+  "labelOnboardingSteps": {
+    "message": "Etapas da introducao"
+  },
+  "labelReadingProgress": {
+    "message": "Progresso de leitura"
+  },
+  "labelReengagementDescription": {
+    "message": "Receba um lembrete amigavel se voce nao usar o ReadLater por alguns dias"
+  },
+  "labelReengagementReminders": {
+    "message": "Lembretes de reengajamento"
+  },
+  "labelSaveOffline": {
+    "message": "Salvar artigos para leitura offline"
+  },
+  "labelSearchArticles": {
+    "message": "Pesquisar artigos"
+  },
+  "labelSelectPocketFile": {
+    "message": "Selecionar arquivo de exportacao do Pocket"
+  },
+  "labelShowNotifications": {
+    "message": "Mostrar notificacoes de salvamento"
+  },
+  "labelSortErrors": {
+    "message": "Ordenar erros"
+  },
+  "labelStorageUsage": {
+    "message": "Uso de armazenamento"
+  },
+  "labelTagName": {
+    "message": "Nome da tag"
+  },
+  "labelTheme": {
+    "message": "Tema"
+  },
+  "labelWidth": {
+    "message": "Largura"
+  },
+  "lineHeightCompact": {
+    "message": "Compacto (1.4)"
+  },
+  "lineHeightDouble": {
+    "message": "Duplo (2.0)"
+  },
+  "lineHeightNormal": {
+    "message": "Normal (1.6)"
+  },
+  "lineHeightRelaxed": {
+    "message": "Relaxado (1.7)"
+  },
+  "lineHeightSpacious": {
+    "message": "Espacoso (1.8)"
+  },
+  "linkOpensNewTab": {
+    "message": "(abre em nova aba)"
+  },
+  "linkPrivacyPolicy": {
+    "message": "Politica de privacidade"
+  },
+  "linkSupport": {
+    "message": "Suporte"
+  },
+  "linkTermsOfService": {
+    "message": "Termos de servico"
+  },
+  "notifArticlesWaitingBody": {
+    "message": "Sua lista de leitura esta pronta. Continue de onde parou."
+  },
+  "notifArticlesWaitingTitle": {
+    "message": "Artigos esperando por voce"
+  },
+  "notifCatchUpBody": {
+    "message": "Ja se passaram $DAYS$ dias. Seus artigos salvos estao esperando.",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifCatchUpTitle": {
+    "message": "Hora de colocar a leitura em dia."
+  },
+  "notifMilestoneBody": {
+    "message": "Voce salvou $COUNT$ artigos. Continue lendo.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "notifMilestoneTitle": {
+    "message": "Marco do ReadLater Pro."
+  },
+  "notifMissesYouBody": {
+    "message": "Voce tinha uma sequencia de $COUNT$ dias. Volte para mante-la.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifMissesYouTitle": {
+    "message": "O ReadLater Pro sente sua falta."
+  },
+  "notifWeeklyImpactBody": {
+    "message": "Voce salvou $COUNT$ artigos esta semana.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifWeeklyImpactTitle": {
+    "message": "Seu resumo semanal do ReadLater"
+  },
+  "paywallFeature": {
+    "message": "Recurso"
+  },
+  "paywallFree": {
+    "message": "Gratis"
+  },
+  "paywallPro": {
+    "message": "Pro"
+  },
+  "paywallUnlimited": {
+    "message": "Ilimitado"
+  },
+  "pcInfoSuffix": {
+    "message": "para todos os detalhes."
+  },
+  "pcInfoText": {
+    "message": "Todos os dados permanecem no seu dispositivo. Leia nossa"
+  },
+  "pcSubtitle": {
+    "message": "Controle quais dados o ReadLater Pro pode coletar. As alteracoes entram em vigor imediatamente."
+  },
+  "placeholderLicenseKey": {
+    "message": "XXXX-XXXX-XXXX-XXXX"
+  },
+  "placeholderSearch": {
+    "message": "Pesquisar artigos..."
+  },
+  "placeholderSearchErrors": {
+    "message": "Pesquisar erros..."
+  },
+  "placeholderSearchEvents": {
+    "message": "Pesquisar eventos..."
+  },
+  "placeholderTagInput": {
+    "message": "Digite a tag..."
+  },
+  "popupOpenList": {
+    "message": "Lista de leitura"
+  },
+  "popupSavePage": {
+    "message": "Salvar pagina"
+  },
+  "proFeaturesHeader": {
+    "message": "Recursos Pro"
+  },
+  "pullToRefresh": {
+    "message": "Puxe para atualizar"
+  },
+  "readTimeMin": {
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "readerFavoriteAdded": {
+    "message": "Adicionado aos favoritos"
+  },
+  "readerFavoriteRemoved": {
+    "message": "Removido dos favoritos"
+  },
+  "readerFinished": {
+    "message": "Finalizado"
+  },
+  "readerFontSizeChanged": {
+    "message": "Tamanho da fonte: $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "readerLessThan1Min": {
+    "message": "< 1 min restante"
+  },
+  "readerMinRead": {
+    "message": "$COUNT$ min de leitura",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "readerMinRemaining": {
+    "message": "$COUNT$ min restantes",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "readerNoContent": {
+    "message": "Nenhum conteudo disponivel para este artigo."
+  },
+  "readerSaved": {
+    "message": "Salvo em $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "12/15/2025"
+      }
+    }
+  },
+  "readerSearchCleared": {
+    "message": "Pesquisa limpa"
+  },
+  "readerThemeChanged": {
+    "message": "Tema: $THEME$",
+    "placeholders": {
+      "theme": {
+        "content": "$1",
+        "example": "Sepia"
+      }
+    }
+  },
+  "readerViewOriginalPage": {
+    "message": "Ver pagina original"
+  },
+  "readerWidthChanged": {
+    "message": "Largura: $LABEL$ ($SIZE$px)",
+    "placeholders": {
+      "label": {
+        "content": "$1",
+        "example": "Medium"
+      },
+      "size": {
+        "content": "$2",
+        "example": "680"
+      }
+    }
+  },
+  "refreshing": {
+    "message": "Atualizando"
+  },
+  "releaseToRefresh": {
+    "message": "Solte para atualizar"
+  },
+  "shortcutCustomizeLink": {
+    "message": "Personalizar atalhos nas configuracoes do Chrome"
+  },
+  "shortcutOpenReadingList": {
+    "message": "Abrir lista de leitura"
+  },
+  "shortcutSaveCurrentPage": {
+    "message": "Salvar pagina atual"
+  },
+  "skipToMainContent": {
+    "message": "Pular para o conteudo principal"
+  },
+  "sortByContext": {
+    "message": "Por contexto"
+  },
+  "sortByType": {
+    "message": "Por tipo"
+  },
+  "sortDomainAZ": {
+    "message": "Dominio A-Z"
+  },
+  "sortDomainZA": {
+    "message": "Dominio Z-A"
+  },
+  "sortLongest": {
+    "message": "Mais longos"
+  },
+  "sortNewest": {
+    "message": "Mais recentes"
+  },
+  "sortNewestFirst": {
+    "message": "Mais recentes primeiro"
+  },
+  "sortOldest": {
+    "message": "Mais antigos"
+  },
+  "sortOldestFirst": {
+    "message": "Mais antigos primeiro"
+  },
+  "sortShortest": {
+    "message": "Mais curtos"
+  },
+  "sortTitleAZ": {
+    "message": "Titulo A-Z"
+  },
+  "sortTitleZA": {
+    "message": "Titulo Z-A"
+  },
+  "statArticlesRead": {
+    "message": "Artigos lidos"
+  },
+  "statArticlesSaved": {
+    "message": "Artigos salvos"
+  },
+  "statBestStreak": {
+    "message": "Melhor sequencia"
+  },
+  "statCurrentStreak": {
+    "message": "Sequencia atual"
+  },
+  "statErrorCount": {
+    "message": "Contagem de erros"
+  },
+  "statEventCount": {
+    "message": "Contagem de eventos"
+  },
+  "statOffline": {
+    "message": "Offline"
+  },
+  "statReadingStreak": {
+    "message": "Sequencia de leitura"
+  },
+  "statReadingTime": {
+    "message": "Tempo de leitura"
+  },
+  "statRuntimeLogCount": {
+    "message": "Contagem de logs de execucao"
+  },
+  "statTags": {
+    "message": "Tags"
+  },
+  "statTotalDaysUsed": {
+    "message": "Total de dias usados"
+  },
+  "statTotalStorage": {
+    "message": "Armazenamento total"
+  },
+  "statUnread": {
+    "message": "Nao lidos"
+  },
+  "statUnreadQueue": {
+    "message": "Fila de nao lidos"
+  },
+  "statusArticleCount": {
+    "message": "$COUNT$ artigo",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "statusArticleCountPlural": {
+    "message": "$COUNT$ artigos",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "statusCalculating": {
+    "message": "Calculando..."
+  },
+  "statusFoundArticles": {
+    "message": "$ARTICLES$ artigos e $TAGS$ tags encontrados. Importando...",
+    "placeholders": {
+      "articles": {
+        "content": "$1",
+        "example": "150"
+      },
+      "tags": {
+        "content": "$2",
+        "example": "12"
+      }
+    }
+  },
+  "statusImporting": {
+    "message": "Importando..."
+  },
+  "statusLoading": {
+    "message": "Carregando..."
+  },
+  "statusLoadingArticle": {
+    "message": "Carregando artigo..."
+  },
+  "statusLoadingChart": {
+    "message": "Carregando grafico..."
+  },
+  "statusLoadingDomains": {
+    "message": "Carregando dominios..."
+  },
+  "statusParsingExport": {
+    "message": "Analisando arquivo de exportacao..."
+  },
+  "swipeDelete": {
+    "message": "Excluir"
+  },
+  "tabAll": {
+    "message": "Todos"
+  },
+  "tabFavorites": {
+    "message": "Favoritos"
+  },
+  "tabUnread": {
+    "message": "Nao lidos"
+  },
+  "themeDark": {
+    "message": "Escuro"
+  },
+  "themeLight": {
+    "message": "Claro"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "timeAgoDays": {
+    "message": "$COUNT$d",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "timeAgoHours": {
+    "message": "$COUNT$h",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "timeAgoMinutes": {
+    "message": "$COUNT$m",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeAgoMonths": {
+    "message": "$COUNT$m",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "timeAgoNow": {
+    "message": "agora"
+  },
+  "titleDashboard": {
+    "message": "Estatisticas de leitura - ReadLater Pro"
+  },
+  "titleDiagnostics": {
+    "message": "ReadLater Pro - Diagnosticos"
+  },
+  "titleImport": {
+    "message": "Importar do Pocket - ReadLater Pro"
+  },
+  "titlePopup": {
+    "message": "ReadLater Pro"
+  },
+  "titleReader": {
+    "message": "Leitor - ReadLater Pro"
+  },
+  "titleReadingList": {
+    "message": "Lista de leitura"
+  },
+  "titleSettings": {
+    "message": "Configuracoes do ReadLater Pro"
+  },
+  "titleUpgrade": {
+    "message": "Atualizar para Pro - ReadLater Pro"
+  },
+  "titleWelcome": {
+    "message": "Bem-vindo ao ReadLater Pro"
+  },
+  "toastAllDataCleared": {
+    "message": "Todos os dados apagados"
+  },
+  "toastArticleDeleted": {
+    "message": "Artigo excluido"
+  },
+  "toastArticlesDeleted": {
+    "message": "$COUNT$ artigo(s) excluido(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastArticlesMarkedRead": {
+    "message": "$COUNT$ artigo(s) marcado(s) como lido(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "toastCleanupFailed": {
+    "message": "Falha na limpeza: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Database error"
+      }
+    }
+  },
+  "toastCleanupResult": {
+    "message": "$COUNT$ artigo(s) antigo(s) lido(s) removido(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "toastClearDataFailed": {
+    "message": "Falha ao limpar dados: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Unknown error"
+      }
+    }
+  },
+  "toastDebugReportCopied": {
+    "message": "Relatorio de depuracao copiado para a area de transferencia"
+  },
+  "toastDebugReportDownloaded": {
+    "message": "Relatorio de depuracao baixado"
+  },
+  "toastErrorLogCleared": {
+    "message": "Registro de erros limpo"
+  },
+  "toastEventLogCleared": {
+    "message": "Registro de eventos limpo"
+  },
+  "toastExportFailed": {
+    "message": "Falha na exportacao: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "toastExportedArticles": {
+    "message": "$COUNT$ artigos exportados",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "toastFailedToSaveSettings": {
+    "message": "Falha ao salvar configuracoes"
+  },
+  "toastImportedArticles": {
+    "message": "$COUNT$ artigos importados",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "toastImportedArticlesFailed": {
+    "message": "$IMPORTED$ artigos importados ($FAILED$ falharam)",
+    "placeholders": {
+      "failed": {
+        "content": "$2",
+        "example": "5"
+      },
+      "imported": {
+        "content": "$1",
+        "example": "20"
+      }
+    }
+  },
+  "toastInvalidBackupFormat": {
+    "message": "Formato de backup invalido: array de artigos ausente"
+  },
+  "toastInvalidJson": {
+    "message": "Arquivo JSON invalido"
+  },
+  "toastNoArticlesInBackup": {
+    "message": "Nenhum artigo encontrado no backup"
+  },
+  "toastRemindersDisabled": {
+    "message": "Lembretes desativados"
+  },
+  "toastRemindersEnabled": {
+    "message": "Lembretes ativados"
+  },
+  "toastSettingsResetDefaults": {
+    "message": "Configuracoes restauradas para o padrao"
+  },
+  "toastSettingsSaved": {
+    "message": "Configuracoes salvas"
+  },
+  "toastSettingsSavedSuccess": {
+    "message": "Configuracoes salvas com sucesso"
+  },
+  "toastTagAdded": {
+    "message": "Tag \"$NAME$\" adicionada",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "technology"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "message": "URL copiada"
+  },
+  "tooltipAlreadySaved": {
+    "message": "Ja salvo no ReadLater"
+  },
+  "tooltipBackToList": {
+    "message": "Voltar para a lista"
+  },
+  "tooltipBackToReadingList": {
+    "message": "Voltar para a lista de leitura"
+  },
+  "tooltipClose": {
+    "message": "Fechar"
+  },
+  "tooltipCloseTOC": {
+    "message": "Fechar indice"
+  },
+  "tooltipExitSelection": {
+    "message": "Sair do modo de selecao"
+  },
+  "tooltipPrintArticle": {
+    "message": "Imprimir artigo"
+  },
+  "tooltipReadingSettings": {
+    "message": "Configuracoes de leitura"
+  },
+  "tooltipSaveToReadLater": {
+    "message": "Salvar no ReadLater"
+  },
+  "tooltipSettings": {
+    "message": "Configuracoes"
+  },
+  "tooltipSortArticles": {
+    "message": "Ordenar artigos"
+  },
+  "tooltipTableOfContents": {
+    "message": "Indice"
+  },
+  "tooltipToggleFavorite": {
+    "message": "Alternar favorito"
+  },
+  "tooltipToggleFavoriteShortcut": {
+    "message": "Alternar favorito (F)"
+  },
+  "tooltipViewOriginal": {
+    "message": "Ver original"
+  },
+  "tooltipViewOriginalNewTab": {
+    "message": "Ver pagina original (abre em nova aba)"
+  },
+  "trialBannerText": {
+    "message": "Previa Pro: $DAYS$ dias restantes",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "upgradeAlreadyHaveLicense": {
+    "message": "Ja possui uma chave de licenca?"
+  },
+  "upgradeLicenseActivated": {
+    "message": "Licenca ativada. Recarregando..."
+  },
+  "upgradeLimitReached": {
+    "message": "Voce atingiu o limite do plano gratuito para $FEATURE$. Atualize para o Pro para acesso ilimitado.",
+    "placeholders": {
+      "feature": {
+        "content": "$1",
+        "example": "Full-Text Search"
+      }
+    }
+  },
+  "upgradePaywallSubtitle": {
+    "message": "Atualize para o ReadLater Pro para a experiencia completa de leitura."
+  },
+  "upgradePaywallTitle": {
+    "message": "Desbloqueie $FEATURE$",
+    "placeholders": {
+      "feature": {
+        "content": "$1",
+        "example": "Full-Text Search"
+      }
+    }
+  },
+  "upgradeSuccessAnnouncement": {
+    "message": "Atualizacao bem-sucedida. Bem-vindo ao Pro."
+  },
+  "upgradeSuccessText": {
+    "message": "Sua conta foi atualizada. Todos os recursos Pro estao desbloqueados. Aproveite a experiencia completa de leitura."
+  },
+  "upgradeSuccessTitle": {
+    "message": "Bem-vindo ao Pro"
+  },
+  "upgradeTrustCancel": {
+    "message": "Cancele a qualquer momento"
+  },
+  "upgradeTrustSecure": {
+    "message": "Checkout seguro"
+  },
+  "whatsNewClose": {
+    "message": "Fechar"
+  },
+  "whatsNewTitle": {
+    "message": "Novidades"
+  },
+  "widthMedium": {
+    "message": "Medio"
+  },
+  "widthMediumPx": {
+    "message": "Medio (680px)"
+  },
+  "widthNarrow": {
+    "message": "Estreito"
+  },
+  "widthNarrowPx": {
+    "message": "Estreito (560px)"
+  },
+  "widthWide": {
+    "message": "Largo"
+  },
+  "widthWidePx": {
+    "message": "Largo (800px)"
+  }
+}

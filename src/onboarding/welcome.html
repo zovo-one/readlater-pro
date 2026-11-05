@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ============================================================
+     ReadLater Pro - first run (Zovo serif premium base, 6 steps)
+     Narrative arc: villain -> instant win -> setup -> trust ->
+     offer -> sign-off. Step 2 delivers a real save before any ask.
+     Every visible string carries data-i18n; the hardcoded English
+     is the fallback used when a locale has no entry for the key.
+     ============================================================ -->
+<title data-i18n="titleWelcome">Welcome to ReadLater Pro</title>
+<meta name="theme-color" content="#7c6cf0">
+<link rel="stylesheet" href="welcome.css">
+</head>
+<body data-upgrade-url="https://zovo.one/pricing?utm_source=readlater_pro&amp;utm_medium=extension&amp;utm_campaign=upgrade&amp;utm_content=onboarding">
+<div class="bg-fx" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+
+<a class="skip-link" href="#stage" data-i18n="obSkipToContent">Skip to the first step</a>
+
+<nav class="topnav" aria-label="ReadLater Pro">
+  <div class="brand">
+    <span class="z"><b>zovo</b>.</span>
+    <span class="sep" aria-hidden="true"></span>
+    <span class="prod" data-slot="extName" data-i18n="appName">ReadLater Pro</span>
+  </div>
+  <a class="ghlink" href="https://www.zovo.one" target="_blank" rel="noopener">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <span data-i18n="obNavPrivacyLine">Your list stays in this browser</span>
+    <span class="arr" aria-hidden="true">&#8599;</span>
+    <span class="sr-only" data-i18n="linkOpensNewTab">(opens in new tab)</span>
+  </a>
+</nav>
+
+<div class="progress" role="progressbar" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1" data-i18n-aria="labelOnboardingProgress" aria-label="Onboarding progress" id="progressTrack">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
+
+<main class="stage" id="stage" tabindex="-1">
+
+  <!-- STEP 1 - the villain -->
+  <section class="step active" data-step="1" data-next="Show me" data-i18n-next="obNext1">
+    <div class="center">
+      <span class="kicker" data-i18n="obStep1Kicker">For everyone who has lost a reading list once</span>
+      <h1><span data-i18n="obStep1TitleA">Pocket closed. Your reading list</span> <span class="em" data-i18n="obStep1TitleB">went with it</span>.</h1>
+      <p class="lede" data-i18n="obStep1Lede">Pocket shut down in July 2025, and a list people had trusted for years stopped being theirs. ReadLater Pro keeps your articles in your own browser, on your own machine, so no company can switch your reading list off.</p>
+
+      <div class="villain">
+        <div class="villain-top">
+          <span class="villain-title" data-i18n="obVillainTitle">The usual backup plan</span>
+          <span class="villain-flag" data-i18n="obVillainFlag">fragile</span>
+        </div>
+        <div class="villain-row"><span class="vr-k" data-i18n="obVillainK1">Open tab</span><span class="vr-v" data-i18n="obVillainV1">still open since Tuesday, still unread</span></div>
+        <div class="villain-row"><span class="vr-k" data-i18n="obVillainK2">Bookmark</span><span class="vr-v" data-i18n="obVillainV2">filed in a folder you never open again</span></div>
+        <div class="villain-row"><span class="vr-k" data-i18n="obVillainK3">Self message</span><span class="vr-v" data-i18n="obVillainV3">a link you sent yourself and scrolled past</span></div>
+        <div class="villain-row"><span class="vr-k" data-i18n="obVillainK4">Cloud list</span><span class="vr-v" data-i18n="obVillainV4">someone else decides how long it lives</span></div>
+      </div>
+
+      <div class="chips-row">
+        <span class="chip-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="obChipLocal">Stored in your browser</span></span>
+        <span class="chip-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="obChipNoAccount">No account needed</span></span>
+        <span class="chip-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="obChipMv3">Manifest V3</span></span>
+        <span class="chip-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="obChipImport">Pocket import is free</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 2 - the instant win, a real save before any ask -->
+  <section class="step" data-step="2" data-role="demo-save" data-next="That was it" data-i18n-next="obNext2">
+    <div class="center">
+      <span class="kicker" data-i18n="obStep2Kicker">One click, and it is already saved</span>
+      <h2><span data-i18n="obStep2TitleA">Save one now.</span> <span class="em" data-i18n="obStep2TitleB">Nothing to sign up for</span>.</h2>
+      <p class="lede" data-i18n="obStep2Lede">Pick something you already have open. ReadLater Pro puts it on your reading list in this browser right away, before you have agreed to anything and before we mention money. No account, no setup, and it is yours from that second on.</p>
+
+      <div class="savedemo">
+        <div class="sd-col">
+          <div class="sd-head">
+            <span class="sd-title" id="sdTabsLabel" data-i18n="obTabsTitle">Tabs you have open</span>
+            <span class="sd-meta" id="sdTabCount" data-i18n="obTabsLoading">reading your tabs</span>
+          </div>
+          <div class="sd-list" id="sdTabList" role="radiogroup" aria-labelledby="sdTabsLabel"></div>
+          <p class="sd-note" id="sdEmpty" hidden data-i18n="obTabsEmpty">No other pages are open right now. Open an article in another tab, then use the toolbar icon or press the save shortcut. It works exactly the same way.</p>
+        </div>
+        <div class="sd-col sd-panel">
+          <div class="sd-head">
+            <span class="sd-title" data-i18n="obPanelTitle">Your reading list</span>
+            <span class="sd-meta" id="sdSavedCount" data-i18n="obPanelEmptyCount">nothing saved yet</span>
+          </div>
+          <div class="sd-list" id="sdSavedList">
+            <p class="sd-ph" id="sdPlaceholder" data-i18n="obPanelPlaceholder">Whatever you save lands here, and in the side panel.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="cta" id="sdSaveBtn" type="button" disabled>
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span id="sdSaveLabel" data-i18n="obSaveCta">Save it to my list</span>
+      </button>
+      <p class="sd-status" id="sdStatus" role="status" aria-live="polite"></p>
+      <button class="ghost-btn" id="sdOpenPanel" type="button" hidden data-i18n="obOpenPanel">Open the side panel</button>
+    </div>
+  </section>
+
+  <!-- STEP 3 - make it yours, writes real settings -->
+  <section class="step" data-step="3" data-role="setup" data-next="Save and continue" data-i18n-next="obNext3">
+    <div class="center">
+      <span class="kicker" data-i18n="obStep3Kicker">Twenty seconds, then never again</span>
+      <h2><span data-i18n="obStep3TitleA">Set the reading part</span> <span class="em" data-i18n="obStep3TitleB">the way you like it</span>.</h2>
+      <p class="lede" data-i18n="obStep3Lede">These are the real settings the reader uses. Nothing here is a preview, and you can change any of it later under Settings.</p>
+
+      <div class="setup">
+        <div class="opt">
+          <span class="opt-lbl" id="themeLbl" data-i18n="obThemeLabel">Reader theme</span>
+          <div class="seg seg-theme" id="themeSeg" role="radiogroup" aria-labelledby="themeLbl">
+            <button type="button" role="radio" aria-checked="true" class="on" data-setting-value="light" data-i18n="obThemeLight">Light</button>
+            <button type="button" role="radio" aria-checked="false" data-setting-value="sepia" data-i18n="obThemeSepia">Sepia</button>
+            <button type="button" role="radio" aria-checked="false" data-setting-value="dark" data-i18n="obThemeDark">Dark</button>
+          </div>
+          <p class="opt-hint" data-i18n="obThemeHint">Reader view uses this background when you open a saved article.</p>
+        </div>
+
+        <div class="opt">
+          <span class="opt-lbl" id="sizeLbl" data-i18n="obSizeLabel">Text size</span>
+          <div class="seg seg-size" id="sizeSeg" role="radiogroup" aria-labelledby="sizeLbl">
+            <button type="button" role="radio" aria-checked="false" data-setting-value="16" data-i18n="obSizeSmall">Small</button>
+            <button type="button" role="radio" aria-checked="true" class="on" data-setting-value="18" data-i18n="obSizeMedium">Medium</button>
+            <button type="button" role="radio" aria-checked="false" data-setting-value="21" data-i18n="obSizeLarge">Large</button>
+          </div>
+          <p class="opt-hint" data-i18n="obSizeHint">Reader text starts at this size. The reader has its own controls once you are in an article.</p>
+        </div>
+
+        <div class="opt tgls">
+          <div class="tgl-row">
+            <span class="tgl-tx"><span class="tgl-t" data-i18n="obMarkReadTitle">Mark an article read when I open it</span><span class="tgl-d" data-i18n="obMarkReadDesc">Keeps the unread tab honest without you tidying it.</span></span>
+            <label class="tgl"><input type="checkbox" id="markReadOnOpen" checked><span class="tgl-s" aria-hidden="true"></span><span class="sr-only" data-i18n="obMarkReadTitle">Mark an article read when I open it</span></label>
+          </div>
+          <div class="tgl-row">
+            <span class="tgl-tx"><span class="tgl-t" data-i18n="obNotifTitle">Let ReadLater Pro send me reminders</span><span class="tgl-d" data-i18n="obNotifDesc">A quiet nudge about a list you have not opened in a while. Off is fine.</span></span>
+            <label class="tgl"><input type="checkbox" id="showNotifications"><span class="tgl-s" aria-hidden="true"></span><span class="sr-only" data-i18n="obNotifTitle">Let ReadLater Pro send me reminders</span></label>
+          </div>
+        </div>
+
+        <p class="setup-status" id="setupStatus" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 4 - trust, then the person behind it -->
+  <section class="step" data-step="4" data-next="See what Pro costs" data-i18n-next="obNext4">
+    <div class="center">
+      <span class="kicker" data-i18n="obStep4Kicker">Where your articles actually live</span>
+      <h2><span data-i18n="obStep4TitleA">Safe by design,</span> <span class="em" data-i18n="obStep4TitleB">and by default</span>.</h2>
+      <p class="lede" data-i18n="obStep4Lede">Your articles, tags and settings are written to this browser's own storage on this machine. Nothing is uploaded while you read, and there is no account to create.</p>
+
+      <div class="receipts">
+        <span class="receipt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="obReceipt1">Articles and settings are stored locally, and the list works offline</span></span>
+        <span class="receipt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="obReceipt2">Manifest V3, no remote code, no third-party scripts</span></span>
+        <span class="receipt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="obReceipt3">Usage counts stay on your device, and only you can export them</span></span>
+        <span class="receipt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="obReceipt4">The only call to our servers is checking a licence key. Articles you open may load their images from the original site</span></span>
+      </div>
+
+      <div class="founder">
+        <img class="pic" src="assets/founder.png" alt="" width="96" height="96">
+        <div class="body">
+          <p class="nm">
+            <span data-i18n="obFounderName">Michal Lip</span>
+            <svg class="verified" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2l2.4 1.8 3-.2 1 2.8 2.6 1.4-.6 2.9 1.4 2.6-2 2.2.2 3-2.8.9-1.4 2.6-2.9-.7-2.5 1.6-2.5-1.6-2.9.7L6.9 21l-2.8-.9.2-3-2-2.2 1.4-2.6-.6-2.9L5.7 6l1-2.8 3 .2z"/></svg>
+            <span class="role" data-i18n="obFounderRole">founder, Zovo</span>
+          </p>
+          <p class="cred" data-i18n="obFounderCred">Zovo is one person. I write every extension, I keep the data on your device, and I answer the support mail myself. ReadLater Pro asks for the permissions it needs to read the page you are saving and nothing beyond that.</p>
+          <p class="socials">
+            <a href="https://github.com/theluckystrike" target="_blank" rel="noopener">github.com/theluckystrike<span class="sr-only" data-i18n="linkOpensNewTab">(opens in new tab)</span></a>
+            <a href="mailto:support@zovo.one">support@zovo.one</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 5 - the single ask -->
+  <section class="step" data-step="5" data-role="pricing" data-next="Get Pro" data-i18n-next="obNext5">
+    <div class="center">
+      <span class="kicker" data-i18n="obStep5Kicker">Saving and reading stay free, for good</span>
+      <h2><span data-i18n="obStep5TitleA">The reading list is free.</span> <span class="em" data-i18n="obStep5TitleB">Pro is for the heavy shelf</span>.</h2>
+      <p class="lede" data-i18n="obStep5Lede">Saving, reader view, the side panel, tags, highlights, title search, reading progress, right-click save, imports, offline reading and the backup, CSV and bookmarks exports are free, complete and uncapped. Unlimited full-text search, unlimited Listen and Markdown export sit behind the upgrade.</p>
+
+      <div class="pricing">
+        <div class="pcard">
+          <!-- Each price figure resolves from exactly one i18n key, named on the
+               plan button below. There is no price literal in this markup, no
+               second copy in prose, and the break-even month count is computed
+               from the two amounts rather than written down. Changing a tier is
+               a one-key edit to obPriceLifetimeAmount or obPriceMonthlyAmount. -->
+          <div class="seg" id="planSeg" role="radiogroup" data-i18n-aria="obPlanGroupLabel" aria-label="Choose a plan"
+               data-upgrade-url="https://zovo.one/pricing?utm_source=readlater_pro&amp;utm_medium=extension&amp;utm_campaign=upgrade&amp;utm_content=onboarding">
+            <button type="button" role="radio" aria-checked="true" data-plan="lifetime" class="on"
+                    data-amount-i18n="obPriceLifetimeAmount"
+                    data-per-i18n="obPriceLifetimePer"
+                    data-sub-i18n="obPriceLifetimeSub"
+                    data-reassure-i18n="obReassureLifetime"
+                    data-breakeven><span data-i18n="obPlanLifetime">Lifetime</span></button>
+            <button type="button" role="radio" aria-checked="false" data-plan="monthly"
+                    data-amount-i18n="obPriceMonthlyAmount"
+                    data-per-i18n="obPriceMonthlyPer"
+                    data-sub-i18n="obPriceMonthlySub"
+                    data-reassure-i18n="obReassureMonthly"><span data-i18n="obPlanMonthly">Monthly</span></button>
+          </div>
+          <p class="price"><span class="amt" id="priceAmt"></span><span class="per" id="pricePer"></span></p>
+          <p class="price-sub" id="priceSub"></p>
+          <p class="breakeven" id="breakeven" hidden><span class="be-n" id="breakevenMonths"></span><span data-i18n="obBreakevenLabel">months, and the one payment has paid for itself</span></p>
+          <p class="refund" data-i18n="obRefund">Monthly cancels any time</p>
+
+          <!-- Exactly what Pro is, read off src/features/limits-config.json, the
+               declared authority for the split. full_text_search is the only
+               feature tiered "pro". highlights_notes and auto_tagging are listed
+               under notSold with no implementation in src/, so they are not sold
+               here. Everything else is free, so it is not listed as a Pro perk. -->
+          <div class="pfeat">
+            <div class="pf"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span><span class="tx"><span class="ttl" data-i18n="obProFullText">Full-text search</span><span data-i18n="obProFullTextDesc">Search the words inside every article you saved, with no daily limit.</span></span></div>
+            <div class="pf"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg></span><span class="tx"><span class="ttl" data-i18n="obProMembership">The whole Zovo membership</span><span data-i18n="obProMembershipDesc">One membership covers ReadLater Pro and the rest of the Zovo tools at zovo.one.</span></span></div>
+            <div class="pf"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span><span class="tx"><span class="ttl" data-i18n="obProUpdates">Every future update</span><span data-i18n="obProUpdatesDesc">Whatever gets built next is included, and the one-time plan never bills again.</span></span></div>
+          </div>
+
+          <!-- The free allowance is read at runtime from the same limits config
+               the gate reads, so this line cannot drift from the actual cap. -->
+          <p class="freecap" id="freeCap" hidden><span class="fc-n" id="freeCapCount"></span><span data-i18n="obFreeCapLabel">full-text searches and 3 Listen articles a day are free. Saving, reading, highlights and imports have no cap</span></p>
+
+          <p class="reassure-row">
+            <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg><span id="reassure1"></span></span>
+            <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="obReassureFree">The free list keeps working either way</span></span>
+            <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="obReassureCheckout">Checkout runs on zovo.one</span></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq" id="faq">
+        <div class="faq-item">
+          <h3><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="obFaqQ1">Do I have to pay to keep my reading list</span><span class="pm" aria-hidden="true">+</span></button></h3>
+          <div class="faq-a"><p data-i18n="obFaqA1">No. Saving, reader view, the side panel, tags, highlights, title search, offline reading, imports and the backup, CSV and bookmarks exports are free and uncapped. If you never upgrade, nothing you have saved gets taken away.</p></div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="obFaqQ2">What does Lifetime actually cover</span><span class="pm" aria-hidden="true">+</span></button></h3>
+          <div class="faq-a"><p data-i18n="obFaqA2">One payment unlocks the Pro features in ReadLater Pro, including the ones added later. There is no renewal and nothing to cancel.</p></div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="obFaqQ3">I am coming from Pocket. Can I bring my library</span><span class="pm" aria-hidden="true">+</span></button></h3>
+          <div class="faq-a"><p data-i18n="obFaqA3">Yes, and the import is free. Open Settings, choose the import option, and give it the export file Pocket produced. Titles, tags and read status come across.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 6 - the habit, then a human sign-off -->
+  <section class="step" data-step="6" data-next="Start reading" data-i18n-next="obNext6">
+    <div class="center">
+      <span class="done-ic" aria-hidden="true"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg></span>
+      <span class="kicker mint" data-i18n="obStep6Kicker">Set up and ready</span>
+      <h2><span data-i18n="obStep6TitleA">You are</span> <span class="em" data-i18n="obStep6TitleB">good to go</span>.</h2>
+      <p class="lede" data-i18n="obStep6Lede">Three habits turn this into the place your reading actually lands. Pin the icon first, so saving is always one click away.</p>
+
+      <p class="sc-title" data-i18n="obShortcutsTitle">The three you will use every day</p>
+      <div class="shortcuts">
+        <div class="sc"><span class="keys"><kbd data-key="mod">Ctrl</kbd><kbd>Shift</kbd><kbd>S</kbd></span><span data-i18n="obShortcutSave">Save the page you are on, without leaving it</span></div>
+        <div class="sc"><span class="keys"><kbd data-key="mod">Ctrl</kbd><kbd>Shift</kbd><kbd>L</kbd></span><span data-i18n="obShortcutPanel">Open your reading list in the side panel</span></div>
+        <div class="sc"><span class="keys"><kbd data-i18n="obKeyRightClick">Right click</kbd></span><span data-i18n="obShortcutContext">Save a link straight from the page, without opening it</span></div>
+      </div>
+
+      <div class="pin">
+        <span class="pin-ic" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 17v5"/><path d="M5 17h14v-1.8a2 2 0 0 0-1.1-1.8l-1.8-.9A2 2 0 0 1 15 10.8V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.8a2 2 0 0 1-1.1 1.8l-1.8.9A2 2 0 0 0 5 15.2z"/></svg></span>
+        <span data-i18n="obPinTip">Click the puzzle piece in your toolbar, find ReadLater Pro, then pin it. It stays put after that.</span>
+      </div>
+
+      <div class="signoff">
+        <div class="signoff-head">
+          <img class="pic" src="assets/founder.png" alt="" width="52" height="52">
+          <div class="who">
+            <p class="nm">
+              <span data-i18n="obFounderName">Michal Lip</span>
+              <svg class="verified" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2l2.4 1.8 3-.2 1 2.8 2.6 1.4-.6 2.9 1.4 2.6-2 2.2.2 3-2.8.9-1.4 2.6-2.9-.7-2.5 1.6-2.5-1.6-2.9.7L6.9 21l-2.8-.9.2-3-2-2.2 1.4-2.6-.6-2.9L5.7 6l1-2.8 3 .2z"/></svg>
+            </p>
+            <p class="role" data-i18n="obSignoffRole">a note from the person who wrote this</p>
+          </div>
+        </div>
+        <p data-i18n="obSignoffP1">I built ReadLater Pro after watching a service people relied on for a decade close its doors and take the reading lists with it. The fix is not a better cloud. The fix is keeping the list where you can see it, in your own browser, exportable any day you want it back.</p>
+        <p data-i18n="obSignoffP2">It is one person here. I write the code, I read the support mail, and I answer it. If a page saves badly or the reader mangles something, send me the link and I will look at it myself.</p>
+        <p class="sig" data-i18n="obSignoffSig">Michal</p>
+        <p class="reach">
+          <a href="https://github.com/theluckystrike" target="_blank" rel="noopener">github.com/theluckystrike<span class="sr-only" data-i18n="linkOpensNewTab">(opens in new tab)</span></a>
+          <a href="mailto:support@zovo.one">support@zovo.one</a>
+        </p>
+        <p class="ps" data-i18n="obSignoffPs">One more thing. Lifetime is a single payment that never renews, and you saw both plans a moment ago. Saving and reading are free forever, and that part is the point.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="navbar">
+  <div class="navbar-in">
+    <button class="nbtn back" id="backBtn" type="button" hidden>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      <span data-i18n="buttonBack">Back</span>
+    </button>
+    <div class="indicator">
+      <span class="counter" id="counter">01 / 06</span>
+      <div class="dots" id="dots" role="group" data-i18n-aria="labelOnboardingSteps" aria-label="Onboarding steps">
+        <button class="dot active" type="button" data-step="1" data-i18n-aria="obDot1" aria-label="Step 1, why this exists"></button>
+        <button class="dot" type="button" data-step="2" data-i18n-aria="obDot2" aria-label="Step 2, save your first article"></button>
+        <button class="dot" type="button" data-step="3" data-i18n-aria="obDot3" aria-label="Step 3, reader settings"></button>
+        <button class="dot" type="button" data-step="4" data-i18n-aria="obDot4" aria-label="Step 4, privacy and who built it"></button>
+        <button class="dot" type="button" data-step="5" data-i18n-aria="obDot5" aria-label="Step 5, pricing"></button>
+        <button class="dot" type="button" data-step="6" data-i18n-aria="obDot6" aria-label="Step 6, all set"></button>
+      </div>
+    </div>
+    <button class="nbtn next" id="nextBtn" type="button">
+      <span id="nextLabel">Show me</span>
+      <svg id="nextArrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </button>
+  </div>
+</div>
+
+<p id="stepAnnounce" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+
+<script src="../shared/i18n.js"></script>
+<script src="../shared/message-types.js"></script>
+<script src="../shared/attribution.js"></script>
+<script src="../shared/referral.js"></script>
+<script src="attribution-capture.js"></script>
+<script src="welcome.js"></script>
+</body>
+</html>

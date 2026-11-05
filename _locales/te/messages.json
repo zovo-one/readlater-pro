@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "ReadLater లో సేవ్ చేయండి"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing",
+      "message": "వ్యాసాలను సేవ్ చేసి రీడింగ్ లిస్ట్‌కు జోడించండి. రీడర్ వ్యూలో ఆఫ్‌లైన్‌లో చదవండి. ట్యాగ్‌లతో నిర్వహించండి. Pocket నుండి దిగుమతి."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - సేవ్ చేసి ఆఫ్‌లైన్‌లో చదవండి"
+   }
+}

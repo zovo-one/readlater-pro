@@ -1,0 +1,265 @@
+/* ReadLater Pro - High Contrast Theme & Accessibility Overrides
+ * Provides enhanced contrast for users who need it, including:
+ * - data-theme="high-contrast" manual toggle
+ * - prefers-contrast: more (OS-level preference)
+ * - forced-colors: active (Windows High Contrast Mode)
+ */
+
+/* ============================================================
+   1. High Contrast Theme (data attribute toggle)
+   ============================================================ */
+
+[data-theme="high-contrast"] {
+    --color-bg: #FFFFFF;
+    --color-bg-secondary: #F0F0F0;
+    --color-bg-tertiary: #E0E0E0;
+    --color-surface: #FFFFFF;
+    --color-border: #000000;
+    --color-border-light: #333333;
+
+    --color-text: #000000;
+    --color-text-secondary: #1A1A1A;
+    --color-text-tertiary: #333333;
+    --color-text-inverse: #FFFFFF;
+
+    --color-primary: #0000CC;
+    --color-primary-hover: #000099;
+    --color-primary-light: #E6E6FF;
+
+    --color-success: #006600;
+    --color-warning: #CC6600;
+    --color-error: #CC0000;
+    --color-info: #0000CC;
+
+    --color-favorite: #CC8800;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+
+    /* Brand overrides */
+    --brand-primary: #0000CC;
+    --brand-primary-hover: #000099;
+    --brand-primary-light: #E6E6FF;
+}
+
+/* Stronger borders on interactive elements */
+[data-theme="high-contrast"] .btn,
+[data-theme="high-contrast"] .input,
+[data-theme="high-contrast"] select,
+[data-theme="high-contrast"] .card {
+    border-width: 2px;
+    border-color: #000000;
+}
+
+/* Thicker focus rings */
+[data-theme="high-contrast"] :focus-visible {
+    outline: 3px solid #0000CC;
+    outline-offset: 2px;
+}
+
+[data-theme="high-contrast"] button:focus-visible,
+[data-theme="high-contrast"] .btn:focus-visible {
+    outline: 3px solid #0000CC;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px rgba(0, 0, 204, 0.3);
+}
+
+/* Bolder text weight */
+[data-theme="high-contrast"] body {
+    font-weight: 500;
+}
+
+[data-theme="high-contrast"] .badge,
+[data-theme="high-contrast"] .chip {
+    border: 2px solid currentColor;
+    font-weight: 700;
+}
+
+/* Links always underlined with strong color */
+[data-theme="high-contrast"] a {
+    color: #0000CC;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+[data-theme="high-contrast"] a:hover {
+    color: #000066;
+}
+
+/* Ensure disabled states are still perceivable */
+[data-theme="high-contrast"] .btn:disabled,
+[data-theme="high-contrast"] .btn[disabled] {
+    opacity: 1;
+    background: #E0E0E0;
+    color: #666666;
+    border-color: #666666;
+    border-style: dashed;
+}
+
+
+/* ============================================================
+   2. OS-Level High Contrast Preference
+   ============================================================ */
+
+@media (prefers-contrast: more) {
+    :root {
+        --color-text: #000000;
+        --color-text-secondary: #1A1A1A;
+        --color-text-tertiary: #333333;
+        --color-bg: #FFFFFF;
+        --color-bg-secondary: #F0F0F0;
+        --color-border: #000000;
+        --color-border-light: #333333;
+        --color-primary: #0000CC;
+        --color-primary-hover: #000099;
+    }
+
+    :focus-visible {
+        outline-width: 3px;
+    }
+
+    .btn,
+    .input,
+    select {
+        border-width: 2px;
+    }
+
+    a {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+}
+
+@media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]):not([data-theme="sepia"]) {
+        --color-text: #FFFFFF;
+        --color-text-secondary: #E5E5E5;
+        --color-text-tertiary: #CCCCCC;
+        --color-bg: #000000;
+        --color-bg-secondary: #111111;
+        --color-bg-tertiary: #222222;
+        --color-surface: #0A0A0A;
+        --color-border: #FFFFFF;
+        --color-border-light: #CCCCCC;
+        --color-primary: #6699FF;
+        --color-primary-hover: #4477DD;
+    }
+}
+
+
+/* ============================================================
+   3. Windows High Contrast Mode (forced-colors)
+   ============================================================ */
+
+@media (forced-colors: active) {
+    /* Buttons get explicit borders */
+    button,
+    .btn,
+    [role="button"] {
+        border: 2px solid ButtonText;
+    }
+
+    button:focus,
+    .btn:focus,
+    [role="button"]:focus {
+        outline: 3px solid Highlight;
+        outline-offset: 2px;
+    }
+
+    button:hover,
+    .btn:hover {
+        border-color: Highlight;
+    }
+
+    /* Disabled buttons */
+    button:disabled,
+    .btn:disabled {
+        border-color: GrayText;
+        color: GrayText;
+    }
+
+    /* Links */
+    a {
+        color: LinkText;
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: VisitedText;
+    }
+
+    /* Inputs */
+    input,
+    select,
+    textarea {
+        border: 2px solid ButtonText;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        outline: 3px solid Highlight;
+        outline-offset: 2px;
+    }
+
+    /* Badges and chips need visible borders */
+    .badge,
+    .chip,
+    .badge-pro,
+    .tier-badge {
+        border: 1px solid ButtonText;
+    }
+
+    /* Cards need visible borders */
+    .card,
+    .value-card,
+    .upgrade-card {
+        border: 2px solid ButtonText;
+    }
+
+    /* Remove decorative gradients */
+    .badge-pro,
+    .pro-badge,
+    .header-badge,
+    .upgrade-banner-cta,
+    .upgrade-btn-primary,
+    .pw-cta-primary,
+    .pw-badge {
+        background: Highlight;
+        color: HighlightText;
+        forced-color-adjust: none;
+    }
+
+    /* Toggle switches */
+    .toggle-slider {
+        border: 2px solid ButtonText;
+    }
+
+    .toggle-switch input:checked + .toggle-slider {
+        background: Highlight;
+        border-color: Highlight;
+    }
+
+    /* Progress bars */
+    .reader-progress,
+    .onboarding-progress-bar,
+    .import-progress-bar,
+    .usage-counter-fill,
+    .storage-bar,
+    .domain-bar,
+    .weekly-chart-bar {
+        background: Highlight;
+        forced-color-adjust: none;
+    }
+
+    /* Toast notifications */
+    .toast {
+        border: 2px solid ButtonText;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar-thumb {
+        background: ButtonText;
+    }
+}

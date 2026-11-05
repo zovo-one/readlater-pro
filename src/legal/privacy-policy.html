@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReadLater Pro - Privacy Policy</title>
+  <link rel="stylesheet" href="legal.css">
+</head>
+<body>
+  <div class="legal-page">
+    <header class="legal-header">
+      <h1>Privacy Policy</h1>
+      <p class="legal-meta">ReadLater Pro | Last Updated August 9, 2026</p>
+    </header>
+
+    <main class="legal-content">
+      <section>
+        <h2>Introduction</h2>
+        <p>ReadLater Pro ("we," "us," or "our") respects your privacy and takes protecting your personal data seriously. This Privacy Policy explains what information we collect (and don't collect), how we use it, and how we keep it safe.</p>
+        <p>By installing or using ReadLater Pro, you agree to the practices described in this policy.</p>
+      </section>
+
+      <section>
+        <h2>Data We Collect</h2>
+        <h3>Data Stored Locally on Your Device</h3>
+        <p>All data created by ReadLater Pro is stored locally on your device using Chrome's built-in <code>chrome.storage.local</code> and IndexedDB APIs. Article text can grow large, roughly 31.6 KB per saved article, so a 5,000-article library uses about 154 MB of disk. It stays on your machine and includes</p>
+        <ul>
+          <li><strong>Saved Articles</strong> such as URLs, titles, excerpts, and full article content you save for later reading</li>
+          <li><strong>Tags and Organization</strong> including any tags you create to organize your reading list</li>
+          <li><strong>User Preferences</strong> like your reader settings (theme, font size, content width), notification preferences, and other configuration choices</li>
+          <li><strong>Reading Statistics</strong> such as article counts, reading streaks, and usage milestones</li>
+          <li><strong>Usage Counters</strong> meaning anonymous counts of feature usage, stored locally only</li>
+        </ul>
+
+        <h3>Data We Do NOT Collect</h3>
+        <ul>
+          <li>We do <strong>not</strong> collect your browsing history</li>
+          <li>We do <strong>not</strong> collect personal identification information</li>
+          <li>We do <strong>not</strong> track your activity across websites</li>
+          <li>We do <strong>not</strong> set cookies and we do <strong>not</strong> embed tracking pixels of our own. Images inside a saved article still load from the site that published them, which is covered under Network Connections below</li>
+          <li>We do <strong>not</strong> sell or share any user data</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How We Use Your Data</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Purpose</th>
+              <th>Storage Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Saved articles</td>
+              <td>Provide core reading list functionality and offline reading</td>
+              <td>Local device (IndexedDB)</td>
+            </tr>
+            <tr>
+              <td>Tags &amp; organization</td>
+              <td>Let you categorize and filter your reading list</td>
+              <td>Local device (IndexedDB)</td>
+            </tr>
+            <tr>
+              <td>User preferences</td>
+              <td>Remember your reader settings between sessions</td>
+              <td>Local device (chrome.storage.local)</td>
+            </tr>
+            <tr>
+              <td>Reading statistics</td>
+              <td>Display usage stats, streaks, and milestones</td>
+              <td>Local device (chrome.storage.local)</td>
+            </tr>
+            <tr>
+              <td>Usage counters</td>
+              <td>Power features like tip rotation and rating prompts</td>
+              <td>Local device (chrome.storage.local)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Network Connections</h2>
+        <p>ReadLater Pro makes the following network connections. This list is complete.</p>
+        <ul>
+          <li><strong>License Verification.</strong> If you enter a Pro license key, the extension sends that key to <code>zgubxqomnbmxgbdhvwja.supabase.co</code> (a Supabase Edge Function operated by Zovo) to check whether it is valid. The request contains the license key and the extension version. It does not contain your articles, your reading list, your browsing history, or any account identifier. If you never enter a license key, this request is never made.</li>
+          <li><strong>Article Text Extraction.</strong> When you save the page you are currently viewing, the extension reads that page inside your browser and stores the text on your device. This makes no network request of any kind and nothing is uploaded. Saving a link you have not opened stores only the address and a title derived from it; the extension does not fetch the page behind that link.</li>
+          <li><strong>Images Inside Saved Articles.</strong> Article text is stored on your device, but images inside an article keep their original addresses. When you open a saved article while online, your browser loads those images from the sites that host them, which makes your IP address visible to those sites in the same way that visiting the page would. Images already in your browser cache display offline.</li>
+          <li><strong>Feedback.</strong> The feedback form opens your own email app with a message addressed to <code>support@zovo.one</code>. Nothing is sent unless you send that email yourself, and it never includes your articles.</li>
+          <li><strong>Uninstall Page.</strong> If you remove the extension, Chrome opens a page on <code>zovo.one</code> in a new tab. The address carries the version you had installed, how many days it was installed, how many updates it received and the extension's public store ID. It carries no identifier for you and no data about what you saved. You can close the tab.</li>
+        </ul>
+        <p>There is no analytics endpoint, no advertising network, no crash-reporting vendor, and no third-party SDK in this extension. Your articles and your reading list are never transmitted anywhere.</p>
+      </section>
+
+      <section>
+        <h2>Optional Data Collection</h2>
+        <p>ReadLater Pro has two toggles in Options &gt; Privacy Controls. Both are <strong>off by default</strong>.</p>
+        <ul>
+          <li><strong>Usage Analytics.</strong> When on, the extension counts how often you use each feature. Those counts are written to <code>chrome.storage.local</code> on your device and are used to decide which tip to show you. They are not uploaded. Turning this on does not send anything to us.</li>
+          <li><strong>Crash Reporting.</strong> When on, the extension records error details on your device so that the Options &gt; Diagnostics page and the feedback form can show them to you. Nothing is uploaded unless you submit the feedback form yourself.</li>
+        </ul>
+        <p>Turning either toggle off deletes the records it produced.</p>
+      </section>
+
+      <section>
+        <h2>Data Sharing</h2>
+        <p>We do <strong>not</strong> share, sell, rent, or trade your data with any third parties. All article data remains on your local device.</p>
+      </section>
+
+      <section>
+        <h2>Data Retention</h2>
+        <p>Your data is retained locally on your device for as long as the extension is installed. When you uninstall ReadLater Pro, Chrome automatically removes all data stored by the extension.</p>
+        <p>You can also manually delete all data at any time from the extension's Options page under "Your Data."</p>
+      </section>
+
+      <section>
+        <h2>Your Rights</h2>
+        <ul>
+          <li><strong>Access.</strong> You can view all stored data via Options &gt; Your Data &gt; Export All Data</li>
+          <li><strong>Delete.</strong> You can delete all stored data via Options &gt; Your Data &gt; Delete All Data</li>
+          <li><strong>Portability.</strong> You can export your data as a JSON file at any time</li>
+          <li><strong>Control.</strong> You can toggle analytics and crash reporting in Options &gt; Privacy Controls</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Chrome Permissions</h2>
+        <p>ReadLater Pro requests these permissions and no others.</p>
+        <ul>
+          <li><strong>storage</strong> saves your settings and extension data locally</li>
+          <li><strong>activeTab</strong> reads the page you are on, and only at the moment you ask to save it</li>
+          <li><strong>sidePanel</strong> displays your reading list in Chrome's side panel</li>
+          <li><strong>tabs</strong> detects when you are on a page you already saved and shows that in the toolbar icon</li>
+          <li><strong>alarms</strong> schedules reminders and streak tracking</li>
+          <li><strong>notifications</strong> displays milestone and reminder notifications</li>
+          <li><strong>contextMenus</strong> adds "Save to ReadLater" to the right-click menu</li>
+          <li><strong>scripting</strong> extracts article text from the page you are saving</li>
+          <li><strong>favicon</strong> shows each site's icon next to its entry in your list, using Chrome's own local icon store</li>
+          <li><strong>unlimitedStorage</strong> stops Chrome deleting your saved articles. See below</li>
+        </ul>
+        <p><strong>Why unlimitedStorage.</strong> Saved article text is written to IndexedDB on your device. Measured against 23 real articles put through the extension, a stored article averages 31.6 KB, so a 500-article library is about 15.4 MB and a 5,000-article library is about <strong>154 MB</strong>. Without this permission, Chrome treats that data as evictable and is free to delete it without warning when the device runs low on disk. For a read-it-later tool, that means losing the saved articles that are the entire point of the product. This permission asks Chrome to keep them. It grants no access to anything outside this extension's own storage, and it does not let us read any other site's data.</p>
+        <p>ReadLater Pro asks for <strong>no site access at all</strong>. It does not request access to every site you visit, and it does not request access to any specific site. The only way it ever reads a page is <code>activeTab</code>, which Chrome grants for one page at the moment you ask to save that page, and which lapses as soon as you navigate away. When you save a link from the right-click menu without opening it, the extension stores the address and the title only; it does not open or read the page behind the link.</p>
+        <p>We do not request access to your browsing history, your bookmarks, your downloads, your cookies, or any other sensitive browser data.</p>
+      </section>
+
+      <section>
+        <h2>Children's Privacy</h2>
+        <p>ReadLater Pro is not intended for children under 13. We do not knowingly collect data from children under 13. If you believe a child has provided data through our extension, please contact us and we will delete it.</p>
+      </section>
+
+      <section>
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last Updated" date at the top of this page. If you keep using the extension after a change, that counts as acceptance of the updated policy.</p>
+      </section>
+
+      <section>
+        <h2>Contact Us</h2>
+        <p>For privacy questions or to exercise your data rights, you can reach us at</p>
+        <p><strong>Email</strong> <a href="mailto:privacy@zovo.one">privacy@zovo.one</a></p>
+        <p><strong>Website</strong> <a href="https://www.zovo.one" target="_blank" rel="noopener">zovo.one</a></p>
+      </section>
+    </main>
+
+    <footer class="legal-footer">
+      <p><a href="terms.html">Terms of Service</a></p>
+      <p>&copy; 2026 ReadLater Pro. All rights reserved.</p>
+    </footer>
+  </div>
+  <div role="status" aria-live="polite" class="sr-only" id="sr-announcements"></div>
+</body>
+</html>

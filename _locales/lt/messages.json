@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "Išsaugoti ReadLater"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing (max 132 chars)",
+      "message": "Išsaugokite straipsnius vienu spustelėjimu. Skaitymo sąrašas, žymės, skaitytuvo rodinys ir režimas neprisijungus."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - Išsaugoti ir Skaityti"
+   }
+}

@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "ReadLater-ലേക്ക് സേവ് ചെയ്യുക"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing",
+      "message": "ലേഖനങ്ങൾ സേവ് ചെയ്ത് വായന ലിസ്റ്റിൽ ചേർക്കൂ. റീഡർ വ്യൂവിൽ ഓഫ്‌ലൈൻ വായിക്കൂ. ടാഗുകളാൽ ക്രമീകരിക്കൂ. Pocket-ൽ നിന്ന് ഇറക്കുമതി."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - സേവ് ചെയ്ത് ഓഫ്‌ലൈൻ വായിക്കൂ"
+   }
+}

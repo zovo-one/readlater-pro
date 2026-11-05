@@ -1,0 +1,145 @@
+/**
+ * ReadLater Pro - Community Links Styles
+ */
+
+.community {
+    padding: 24px 0;
+    border-top: 1px solid var(--color-border-light, #E5E5EA);
+    margin-top: 24px;
+}
+
+.community__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text, #1D1D1F);
+    margin: 0 0 4px 0;
+}
+
+.community__subtitle {
+    font-size: 13px;
+    color: var(--color-text-secondary, #86868B);
+    margin: 0 0 16px 0;
+}
+
+/* ========================================================================
+   Channel Cards Grid
+   ======================================================================== */
+
+.community__channels {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.community__channel-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border: 1px solid var(--color-border-light, #E5E5EA);
+    border-radius: 8px;
+    background: var(--color-bg, #FFFFFF);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.community__channel-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: var(--channel-color, #D2D2D7);
+}
+
+.community__channel-card:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+}
+
+.community__channel-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.community__channel-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.community__channel-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text, #1D1D1F);
+}
+
+.community__channel-desc {
+    font-size: 11px;
+    color: var(--color-text-secondary, #86868B);
+}
+
+/* ========================================================================
+   Footer
+   ======================================================================== */
+
+.community__footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--color-text-tertiary, #AEAEB2);
+}
+
+/* ========================================================================
+   Dark Theme
+   ======================================================================== */
+
+[data-theme="dark"] .community {
+    border-top-color: var(--color-border, #38383A);
+}
+
+[data-theme="dark"] .community__channel-card {
+    background: var(--color-bg-secondary, #1C1C1E);
+    border-color: var(--color-border, #38383A);
+}
+
+[data-theme="dark"] .community__channel-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Same refinement for people who never picked a theme and whose
+   operating system is set to dark. */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]):not([data-theme="sepia"]) .community {
+        border-top-color: var(--color-border, #38383A);
+    }
+
+    :root:not([data-theme="light"]):not([data-theme="sepia"]) .community__channel-card {
+        background: var(--color-bg-secondary, #1C1C1E);
+        border-color: var(--color-border, #38383A);
+    }
+
+    :root:not([data-theme="light"]):not([data-theme="sepia"]) .community__channel-card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* ========================================================================
+   Reduced Motion
+   ======================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .community__channel-card {
+        transition: none;
+    }
+
+    .community__channel-card:hover {
+        transform: none;
+    }
+
+    .community__contributor {
+        transition: none;
+    }
+}

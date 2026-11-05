@@ -1,0 +1,129 @@
+{
+  "versions": [
+    {
+      "version": "1.3.0",
+      "date": "2026-10-10",
+      "page": "src/pages/whats-new.html?from=panel",
+      "highlights": [
+        {
+          "type": "feature",
+          "title": "Highlights and notes",
+          "description": "Select text in reader view to highlight it in four colors and add notes. Find them all in the side panel's new Highlights tab."
+        },
+        {
+          "type": "feature",
+          "title": "Listen to your articles",
+          "description": "Press Listen in reader view to hear an article read aloud with a voice installed on your computer, offline too, at the speed you like. 3 articles a day free, unlimited with Pro."
+        },
+        {
+          "type": "feature",
+          "title": "Read in the side panel",
+          "description": "Open articles inside the side panel, next to the page you're on. Pick This panel in the panel's view options, or right-click an article and choose Read in panel."
+        },
+        {
+          "type": "feature",
+          "title": "Import from Pocket, Omnivore and more",
+          "description": "Drop Pocket's final export, an Omnivore ZIP, an Instapaper or Raindrop CSV, or a bookmarks file on the import page. Tags, read status and any highlights in the file come along."
+        },
+        {
+          "type": "feature",
+          "title": "Export anywhere",
+          "description": "Pocket-style CSV, browser bookmarks, or a full backup that restores tags and highlights, all free. Markdown with highlights comes with Pro, with one free try."
+        },
+        {
+          "type": "improvement",
+          "title": "Reader view your way",
+          "description": "New fonts, line spacing and an Auto theme that follows dark mode. Your Settings choices now apply."
+        }
+      ],
+      "note": {
+        "title": "Why this update is so big",
+        "body": "Zovo recently got its first sponsors on GitHub. It's not a lot of money, but it meant a great deal to me, so I put it into the things readers ask for most. Nearly all of it comes free, and as more of you join I'll keep making ReadLater better. I'm really happy to share this with you.",
+        "signature": "Michael, developer of ReadLater Pro"
+      }
+    },
+    {
+      "version": "1.2.6",
+      "date": "2026-10-01",
+      "highlights": [
+        {
+          "type": "fix",
+          "title": "Searching your list no longer opens blank tabs",
+          "description": "Every letter you typed into side panel search opened an empty tab. Typing now just filters your list."
+        },
+        {
+          "type": "fix",
+          "title": "A search counts once, not once per letter",
+          "description": "On the free plan you get 20 full-text searches a day, and one finished search now costs one."
+        },
+        {
+          "type": "fix",
+          "title": "Quieter, accurate notifications",
+          "description": "Milestones show once and respect your reminders setting. The weekly recap counts only articles you saved that week and stays silent when there were none."
+        },
+        {
+          "type": "fix",
+          "title": "Settings shows your real numbers",
+          "description": "Unread, tag and offline counts now match your library, and the anonymous usage counts switch works and stays off unless you turn it on."
+        },
+        {
+          "type": "fix",
+          "title": "Full-text search for one-word searches",
+          "description": "With Pro, a single word now searches the full text of every saved article."
+        },
+        {
+          "type": "feature",
+          "title": "A What's new page you control",
+          "description": "After a feature update a short page opens in the background. Switch it off in Settings under Notifications."
+        }
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "date": "2026-08-09",
+      "highlights": [
+        {
+          "type": "fix",
+          "title": "Saved articles now keep their full text",
+          "description": "Article extraction was failing silently, so saves stored only the page title and link. Saving now captures the article body, and reader view has something to show."
+        },
+        {
+          "type": "fix",
+          "title": "Offline reading is free for everyone",
+          "description": "Every article you save keeps its full text, on any plan."
+        },
+        {
+          "type": "fix",
+          "title": "The badge counts unread articles",
+          "description": "It was showing your total library instead, so the number never went down when you finished something."
+        },
+        {
+          "type": "fix",
+          "title": "Duplicate saves are caught",
+          "description": "Links that differ only by a tracking parameter or an anchor are now recognised as the same page."
+        },
+        {
+          "type": "fix",
+          "title": "Pocket import keeps your unread pile unread",
+          "description": "Imports were marking every article as already read. Import is also much faster on large export files."
+        }
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-02-20",
+      "highlights": [
+        {
+          "type": "feature",
+          "title": "Initial Release",
+          "description": "Save articles for later with one-click save, reader view, tags, and offline reading."
+        },
+        {
+          "type": "feature",
+          "title": "Multi-language Support",
+          "description": "Available in English, Spanish, German, French, Japanese, and Filipino."
+        }
+      ]
+    }
+  ]
+}

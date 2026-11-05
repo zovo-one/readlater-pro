@@ -1,0 +1,659 @@
+/* ============================================================
+   ReadLater Pro - Popup Styles
+   Apple-quality design · Zovo Brand
+   ============================================================ */
+
+/* --- Reset & base --- */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 340px;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI',
+                 Roboto, Oxygen, Ubuntu, sans-serif;
+    font-size: 14px;
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.47;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Screen-reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* --- Easing curves (Apple-style) --- */
+
+:root {
+    --ease-standard: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+    --ease-decelerate: cubic-bezier(0.0, 0.0, 0.2, 1.0);
+    --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1.0);
+    --popup-gutter: 20px;
+}
+
+/* ============================================================
+   Header
+   ============================================================ */
+
+.popup-header {
+    display: flex;
+    align-items: center;
+    padding: 20px var(--popup-gutter) 6px;
+}
+
+.popup-title {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.022em;
+    color: var(--color-text);
+    line-height: 1.24;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.popup-title-pro {
+    font-weight: 800;
+    background: linear-gradient(135deg, #7C3AED 0%, #8B5CF6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* ============================================================
+   Page Info Card
+   ============================================================ */
+
+.popup-page-card {
+    padding: 14px var(--popup-gutter) 0;
+}
+
+.popup-page-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-lg, 14px);
+    transition: opacity 0.3s var(--ease-standard);
+}
+
+.popup-page-favicon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 9px;
+    background: var(--color-bg-tertiary);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-page-favicon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.popup-page-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.popup-page-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 1.38;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: -0.01em;
+}
+
+.popup-page-url {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-text-tertiary);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 2px;
+    line-height: 1.33;
+}
+
+/* ============================================================
+   Action Buttons
+   ============================================================ */
+
+.popup-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px var(--popup-gutter) 0;
+}
+
+/* Shared button base */
+.popup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    border: none;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    transition:
+        background-color 0.25s var(--ease-standard),
+        transform 0.15s var(--ease-standard),
+        box-shadow 0.25s var(--ease-standard),
+        border-color 0.25s var(--ease-standard),
+        opacity 0.2s var(--ease-standard);
+}
+
+.popup-btn:focus-visible {
+    outline: 3px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.25);
+}
+
+.popup-btn:disabled {
+    cursor: default;
+}
+
+/* --- Primary (Save) button --- */
+
+.popup-btn-primary {
+    padding: 12px 20px;
+    border-radius: var(--radius-md, 10px);
+    background: var(--color-primary);
+    color: #fff;
+    box-shadow:
+        0 1px 3px rgba(124, 58, 237, 0.28),
+        0 4px 12px rgba(124, 58, 237, 0.12),
+        0 0.5px 0 0 rgba(255, 255, 255, 0.10) inset;
+}
+
+.popup-btn-primary:hover:not(:disabled) {
+    background: var(--color-primary-hover);
+    box-shadow:
+        0 2px 6px rgba(124, 58, 237, 0.35),
+        0 6px 20px rgba(124, 58, 237, 0.18),
+        0 0.5px 0 0 rgba(255, 255, 255, 0.10) inset;
+    transform: translateY(-0.5px);
+}
+
+.popup-btn-primary:active:not(:disabled) {
+    transform: scale(0.98) translateY(0);
+    box-shadow:
+        0 0.5px 2px rgba(124, 58, 237, 0.22),
+        0 0.5px 0 0 rgba(255, 255, 255, 0.10) inset;
+}
+
+.popup-btn-primary:disabled {
+    opacity: 0.45;
+}
+
+/* Icon container inside primary button */
+.popup-btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    position: relative;
+}
+
+/* All icons hidden by default, then revealed based on state */
+.popup-btn-icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:
+        opacity 0.3s var(--ease-standard),
+        transform 0.4s var(--ease-bounce);
+}
+
+.popup-btn-icon .icon-bookmark {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup-btn-icon .icon-check,
+.popup-btn-icon .icon-bookmark-check,
+.popup-btn-icon .icon-x {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+/* Saved state: show checkmark */
+.popup-btn-saved .popup-btn-icon .icon-bookmark { opacity: 0; transform: scale(0.5); }
+.popup-btn-saved .popup-btn-icon .icon-check    { opacity: 1; transform: scale(1); }
+
+/* Duplicate state: show bookmark-check */
+.popup-btn-duplicate .popup-btn-icon .icon-bookmark       { opacity: 0; transform: scale(0.5); }
+.popup-btn-duplicate .popup-btn-icon .icon-bookmark-check  { opacity: 1; transform: scale(1); }
+
+/* Error state: show X */
+.popup-btn-error .popup-btn-icon .icon-bookmark { opacity: 0; transform: scale(0.5); }
+.popup-btn-error .popup-btn-icon .icon-x        { opacity: 1; transform: scale(1); }
+
+
+/* --- Saved state --- */
+
+.popup-btn-saved {
+    background: var(--color-success-fill);
+    color: #fff;
+    box-shadow:
+        0 1px 3px rgba(16, 185, 129, 0.30),
+        0 0.5px 0 0 rgba(255, 255, 255, 0.10) inset;
+}
+
+.popup-btn-saved:hover:not(:disabled) {
+    background: #096244;
+}
+
+/* --- Duplicate state --- */
+
+.popup-btn-duplicate {
+    background: var(--color-info-fill);
+    color: #fff;
+    box-shadow:
+        0 1px 3px rgba(0, 122, 255, 0.25),
+        0 0.5px 0 0 rgba(255, 255, 255, 0.10) inset;
+}
+
+.popup-btn-duplicate:hover:not(:disabled) {
+    background: #0055B3;
+}
+
+/* --- Error state --- */
+
+.popup-btn-error {
+    background: var(--color-error-fill);
+    color: #fff;
+    box-shadow:
+        0 1px 3px rgba(239, 68, 68, 0.30),
+        0 0.5px 0 0 rgba(255, 255, 255, 0.10) inset;
+}
+
+.popup-btn-error:hover:not(:disabled) {
+    background: #B81B1B;
+}
+
+/* --- Side-panel (Manage Reading List) button --- */
+
+.popup-btn-sidepanel {
+    padding: 10px 16px;
+    border-radius: var(--radius-md, 10px);
+    background: var(--color-primary-light);
+    color: var(--color-primary-text);
+    font-weight: 600;
+    font-size: 13px;
+    border: 1px solid rgba(124, 58, 237, 0.15);
+    letter-spacing: -0.005em;
+}
+
+.popup-btn-sidepanel:hover:not(:disabled) {
+    background: rgba(124, 58, 237, 0.14);
+    border-color: rgba(124, 58, 237, 0.30);
+    color: var(--color-primary-text-hover);
+    transform: translateY(-0.5px);
+}
+
+.popup-btn-sidepanel:active:not(:disabled) {
+    transform: scale(0.98);
+    background: rgba(124, 58, 237, 0.18);
+}
+
+.popup-btn-sidepanel svg {
+    opacity: 0.7;
+    transition: opacity 0.2s var(--ease-standard);
+}
+
+.popup-btn-sidepanel:hover:not(:disabled) svg {
+    opacity: 1;
+}
+
+/* ============================================================
+   Footer Stats / Unread Count
+   ============================================================ */
+
+.popup-stats {
+    display: flex;
+    justify-content: center;
+    padding: 16px var(--popup-gutter) 18px;
+}
+
+.popup-stat {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--color-primary-text);
+    letter-spacing: 0.01em;
+    padding: 4px 12px;
+    background: var(--color-primary-light);
+    border-radius: var(--radius-full, 9999px);
+    transition:
+        background-color 0.2s var(--ease-standard),
+        color 0.2s var(--ease-standard);
+}
+
+/* First-time user welcome badge */
+.popup-stat-welcome {
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--color-primary-light), rgba(139, 92, 246, 0.12));
+    color: var(--color-primary-text);
+    padding: 5px 14px;
+    animation: welcomeBadgeFadeIn 0.6s var(--ease-decelerate) both;
+}
+
+@keyframes welcomeBadgeFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ============================================================
+   Status Overlay (for full-popup status messages)
+   ============================================================ */
+
+.popup-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 40px 24px;
+    text-align: center;
+}
+
+.popup-status-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-status-icon.success {
+    background: var(--color-success-fill);
+    color: #fff;
+}
+
+.popup-status-icon.duplicate {
+    background: var(--color-info-fill);
+    color: #fff;
+}
+
+.popup-status-icon.error {
+    background: var(--color-error-fill);
+    color: #fff;
+}
+
+.popup-status-text {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+/* ============================================================
+   Restricted Page State
+   ============================================================ */
+
+/* Muted without opacity: dimming the whole card took the title and URL
+   below 4.5:1. Only the favicon fades; the text stays readable. */
+.popup-restricted {
+    border-style: dashed;
+}
+
+.popup-restricted .popup-page-favicon {
+    opacity: 0.5;
+    filter: grayscale(1);
+}
+
+.popup-restricted .popup-page-title {
+    color: var(--color-text-secondary);
+}
+
+.popup-restricted .popup-btn {
+    pointer-events: none;
+}
+
+.popup-restricted .popup-btn:focus {
+    pointer-events: auto;
+}
+
+.popup-restricted-msg {
+    font-size: 12px;
+    color: var(--color-text-tertiary);
+    text-align: center;
+    padding: 0 var(--popup-gutter) 8px;
+}
+
+/* The save button on a page the extension cannot read. It keeps aria-disabled
+   rather than the disabled attribute so it stays in the tab order, which means
+   its label is real text a contrast check will sample. --color-text-secondary
+   on --color-bg-tertiary is the pairing the token file measures as AA safe in
+   light, dark and sepia, so the muted look does not cost legibility. */
+.popup-btn-restricted {
+    padding: 12px 20px;
+    border-radius: var(--radius-md, 10px);
+    background: var(--color-bg-tertiary);
+    color: var(--color-text-secondary);
+    box-shadow: none;
+    cursor: default;
+}
+
+/* ============================================================
+   Dark theme refinements
+   ============================================================ */
+
+[data-theme="dark"] .popup-title-pro {
+    background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="dark"] .popup-page-info {
+    background: var(--color-bg-secondary);
+    border-color: var(--color-border);
+}
+
+[data-theme="dark"] .popup-btn-primary {
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.35),
+        0 4px 12px rgba(0, 0, 0, 0.15),
+        0 0.5px 0 0 rgba(255, 255, 255, 0.06) inset;
+}
+
+[data-theme="dark"] .popup-btn-primary:hover:not(:disabled) {
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.40),
+        0 6px 20px rgba(0, 0, 0, 0.20),
+        0 0.5px 0 0 rgba(255, 255, 255, 0.06) inset;
+}
+
+[data-theme="dark"] .popup-btn-sidepanel {
+    background: rgba(139, 92, 246, 0.12);
+    border-color: rgba(139, 92, 246, 0.22);
+    color: #A78BFA;
+}
+
+[data-theme="dark"] .popup-btn-sidepanel:hover:not(:disabled) {
+    background: rgba(139, 92, 246, 0.20);
+    border-color: rgba(139, 92, 246, 0.38);
+    color: #C4B5FD;
+}
+
+
+[data-theme="dark"] .popup-stat {
+    background: var(--color-primary-light);
+    color: #A78BFA;
+}
+
+/* ============================================================
+   Sepia theme refinements
+   ============================================================ */
+
+[data-theme="sepia"] .popup-page-info {
+    border-color: var(--color-border-light);
+}
+
+[data-theme="sepia"] .popup-btn-sidepanel {
+    background: rgba(124, 58, 237, 0.08);
+    border-color: rgba(124, 58, 237, 0.12);
+}
+
+[data-theme="sepia"] .popup-btn-sidepanel:hover:not(:disabled) {
+    background: rgba(124, 58, 237, 0.14);
+    border-color: rgba(124, 58, 237, 0.25);
+}
+
+[data-theme="sepia"] .popup-stat {
+    background: rgba(124, 58, 237, 0.08);
+}
+
+/* ============================================================
+   Animations
+   ============================================================ */
+
+/* Gentle entrance for the popup content */
+.popup-main {
+    animation: popupFadeIn 0.28s var(--ease-decelerate) both;
+}
+
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px) scale(0.99);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Button state transition (saved/duplicate/error) -- smooth color morph */
+.popup-btn-primary,
+.popup-btn-saved,
+.popup-btn-duplicate,
+.popup-btn-error {
+    transition:
+        background-color 0.4s var(--ease-standard),
+        box-shadow 0.4s var(--ease-standard),
+        transform 0.15s var(--ease-standard),
+        opacity 0.2s var(--ease-standard);
+}
+
+/* ============================================================
+   Post-save actions
+   Only rendered after a save actually returns an article id.
+   ============================================================ */
+
+.popup-saved-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 10px var(--popup-gutter) 0;
+    animation: savedActionsIn 0.25s var(--ease-decelerate) both;
+}
+
+.popup-saved-actions[hidden] { display: none; }
+
+@keyframes savedActionsIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.popup-link-btn {
+    border: none;
+    background: transparent;
+    padding: 6px 10px;
+    border-radius: var(--radius-sm, 6px);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-primary-text);
+    cursor: pointer;
+    transition: background 0.2s var(--ease-standard), color 0.2s var(--ease-standard);
+}
+
+.popup-link-btn:hover:not(:disabled) { background: var(--color-primary-light); }
+
+.popup-link-btn:disabled { opacity: 0.5; cursor: default; }
+
+.popup-link-btn[hidden] { display: none; }
+
+.popup-link-btn-quiet { color: var(--color-text-secondary); }
+
+.popup-link-btn-quiet:hover:not(:disabled) {
+    background: var(--color-bg-tertiary);
+    color: var(--color-text);
+}
+
+.popup-link-btn:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+}
+
+/* ============================================================
+   System dark mode
+   design-system.css carries the shared prefers-color-scheme block and is now
+   linked from popup.html, so the popup follows the desktop like every other
+   page. Only the popup-specific pieces live here.
+   ============================================================ */
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]):not([data-theme="sepia"]) .popup-title-pro {
+        background: linear-gradient(135deg, #A78BFA 0%, #C4B5FD 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    :root:not([data-theme="light"]):not([data-theme="sepia"]) .popup-btn-primary {
+        box-shadow:
+            0 1px 3px rgba(0, 0, 0, 0.4),
+            0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    :root:not([data-theme="light"]):not([data-theme="sepia"]) .popup-page-info {
+        border-color: var(--color-border);
+    }
+}

@@ -1,0 +1,192 @@
+/* ReadLater Pro - Changelog Section Styles */
+
+.changelog-section {
+    max-width: 600px;
+}
+
+.changelog-subtitle {
+    font-size: var(--text-sm);
+    color: var(--color-text-tertiary);
+    margin-bottom: var(--space-xl);
+}
+
+/* Timeline layout */
+.changelog-timeline {
+    position: relative;
+    padding-left: 24px;
+}
+
+.changelog-timeline::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-border-light);
+}
+
+/* Version card */
+.changelog-card {
+    position: relative;
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-sm);
+}
+
+.changelog-card::before {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-border);
+    border: 2px solid var(--color-bg);
+}
+
+.changelog-card.has-new::before {
+    background: var(--color-success);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+/* Card header */
+.changelog-card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.changelog-version {
+    font-size: var(--text-md);
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.changelog-date {
+    font-size: var(--text-xs);
+    color: var(--color-text-tertiary);
+}
+
+/* Type badges */
+.changelog-type-badge {
+    display: inline-block;
+    padding: 1px 6px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.changelog-type-badge.major {
+    background: var(--color-error-fill);
+    color: #fff;
+}
+
+.changelog-type-badge.minor {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+}
+
+.changelog-type-badge.patch {
+    background: var(--color-bg-tertiary);
+    color: var(--color-text);
+}
+
+/* NEW badge */
+.changelog-new-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 1px 8px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--color-success-fill);
+    border-radius: var(--radius-full);
+    animation: changelogPulse 2s ease infinite;
+}
+
+.changelog-new-badge::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+
+@keyframes changelogPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Change list */
+.changelog-changes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.changelog-change {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    padding: var(--space-xs) 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+/* Change type icons */
+.changelog-change-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 1px;
+}
+
+.changelog-change-icon.feature {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+}
+
+.changelog-change-icon.improvement {
+    background: var(--color-success-fill);
+    color: #fff;
+}
+
+.changelog-change-icon.fix {
+    background: var(--color-warning-fill);
+    color: var(--color-on-warning);
+}
+
+/* Notification dot on nav tab */
+.changelog-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-error);
+    margin-left: 4px;
+    vertical-align: super;
+}
+
+.changelog-dot.hidden {
+    display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .changelog-new-badge {
+        animation: none;
+    }
+}

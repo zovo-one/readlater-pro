@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Toolbar tooltip",
+      "message": "儲存至 ReadLater"
+   },
+   "extDescription": {
+      "description": "CWS description",
+      "message": "儲存文章到閱讀清單，使用閱讀檢視離線閱讀。標籤分類整理，支援從 Pocket 匯入。"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "ReadLater Pro - 儲存文章離線閱讀"
+   }
+}

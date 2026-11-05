@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "ReadLater'a Kaydet"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing (max 132 chars)",
+      "message": "Makaleleri tek tıkla kaydedin. Okuma listesi, etiketler, okuyucu görünümü ve çevrimdışı mod. Yer imi yöneticisi ve makale kitaplığı."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - Kaydet ve Çevrimdışı Oku"
+   }
+}

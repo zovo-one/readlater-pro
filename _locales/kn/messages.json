@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "ReadLater ಗೆ ಉಳಿಸಿ"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing",
+      "message": "ಲೇಖನಗಳನ್ನು ಉಳಿಸಿ ಓದುವ ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ. ರೀಡರ್ ವ್ಯೂನಲ್ಲಿ ಆಫ್‌ಲೈನ್ ಓದಿ. ಟ್ಯಾಗ್‌ಗಳಿಂದ ಸಂಘಟಿಸಿ. Pocket ನಿಂದ ಆಮದು."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - ಉಳಿಸಿ ಮತ್ತು ಆಫ್‌ಲೈನ್ ಓದಿ"
+   }
+}

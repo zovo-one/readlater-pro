@@ -1,0 +1,304 @@
+/**
+ * ReadLater Pro -- RTL / Bidirectional Support
+ * Uses CSS logical properties for automatic LTR<>RTL layout.
+ * Linked from all HTML pages; activated by dir="rtl" on <html>.
+ */
+
+/* -- Base direction overrides ------------------------------------------------ */
+[dir="rtl"] {
+    text-align: right;
+}
+
+/* -- Logical properties for common patterns ---------------------------------- */
+
+/* Sidebar search icon positioning */
+[dir="rtl"] .sidebar-search-icon {
+    left: auto;
+    right: 8px;
+}
+
+[dir="rtl"] .sidebar-search-input {
+    padding-left: 8px;
+    padding-right: 32px;
+}
+
+[dir="rtl"] .sidebar-search-input.has-value {
+    padding-right: 32px;
+    padding-left: 80px;
+}
+
+/* The clear button and the result count live on the trailing edge, which is
+   the left edge in RTL. Without these they sat on top of the search icon. */
+[dir="rtl"] .sidebar-search-clear {
+    right: auto;
+    left: 6px;
+}
+
+[dir="rtl"] .sidebar-search-count {
+    right: auto;
+    left: 34px;
+}
+
+/* Sort dropdown background-image arrow flip */
+[dir="rtl"] .sort-select {
+    background-position: left 6px center;
+    padding-right: 6px;
+    padding-left: 22px;
+}
+
+/* Arrow/directional icons flip in RTL */
+[dir="rtl"] .icon-arrow-forward,
+[dir="rtl"] .icon-arrow-back,
+[dir="rtl"] #btn-back svg {
+    transform: scaleX(-1);
+}
+
+/* Dashboard back link arrow flip */
+[dir="rtl"] .dashboard-back-link svg {
+    transform: scaleX(-1);
+}
+
+/* Universal icons do NOT flip */
+.icon-check,
+.icon-close,
+.icon-settings,
+.icon-search,
+.icon-star,
+.icon-delete {
+    /* Intentionally empty -- these stay the same in RTL */
+}
+
+/* -- Input fields ------------------------------------------------------------ */
+[dir="rtl"] input[type="text"],
+[dir="rtl"] input[type="email"],
+[dir="rtl"] input[type="url"],
+[dir="rtl"] input[type="search"],
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+    text-align: right;
+}
+
+/* -- Toast / notification positioning ---------------------------------------- */
+[dir="rtl"] .toast {
+    left: 16px;
+    right: auto;
+}
+
+[dir="ltr"] .toast {
+    right: 16px;
+    left: auto;
+}
+
+/* -- Context menu positioning ------------------------------------------------ */
+[dir="rtl"] .context-menu {
+    text-align: right;
+}
+
+[dir="rtl"] .context-menu-item svg {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+[dir="ltr"] .context-menu-item svg {
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+/* -- Batch bar --------------------------------------------------------------- */
+[dir="rtl"] .batch-bar-info {
+    flex-direction: row-reverse;
+}
+
+/* -- Sidebar header ---------------------------------------------------------- */
+[dir="rtl"] .sidebar-header-actions {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* -- Pro badge / tier badge margin flip -------------------------------------- */
+[dir="rtl"] .pro-badge {
+    margin-left: 0;
+    margin-right: var(--space-sm);
+}
+
+[dir="rtl"] .tier-badge {
+    margin-left: 0;
+    margin-right: var(--space-xs);
+}
+
+/* -- Reader toolbar ---------------------------------------------------------- */
+[dir="rtl"] .reader-toolbar-left {
+    flex-direction: row-reverse;
+}
+
+/* -- Progress bar ------------------------------------------------------------ */
+[dir="rtl"] .reader-progress {
+    transform-origin: right;
+}
+
+/* -- Article card progress bar ----------------------------------------------- */
+[dir="rtl"] .article-card-progress {
+    left: auto;
+    right: 0;
+    border-radius: 1px 0 0 0;
+}
+
+[dir="rtl"] .article-card-progress-bg {
+    left: auto;
+    right: 0;
+}
+
+/* -- Article card checkbox --------------------------------------------------- */
+[dir="rtl"] .article-card-checkbox {
+    left: auto;
+    right: var(--space-sm);
+}
+
+[dir="rtl"] .sidebar-content.selection-mode .article-card {
+    padding-left: var(--space-md);
+    padding-right: 36px;
+}
+
+/* -- Swipe-to-delete --------------------------------------------------------- */
+[dir="rtl"] .article-card .swipe-delete-indicator {
+    right: auto;
+    left: 0;
+    border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+[dir="rtl"] .swipe-container .swipe-action-bg {
+    justify-content: flex-start;
+    padding-left: var(--space-lg);
+    padding-right: 0;
+}
+
+/* -- Shortcut keys ----------------------------------------------------------- */
+[dir="rtl"] .shortcut-keys {
+    direction: ltr; /* Keep keyboard shortcuts LTR */
+    unicode-bidi: embed;
+}
+
+/* -- Options page ------------------------------------------------------------ */
+[dir="rtl"] .options-row {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .toggle-switch {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* -- Upgrade page cards ------------------------------------------------------ */
+[dir="rtl"] .upgrade-trust {
+    direction: rtl;
+}
+
+[dir="rtl"] .upgrade-trust-item svg {
+    margin-left: 6px;
+    margin-right: 0;
+}
+
+/* -- Import page steps ------------------------------------------------------- */
+[dir="rtl"] .import-step {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .import-step-number {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+/* -- Dashboard cards --------------------------------------------------------- */
+[dir="rtl"] .value-card {
+    text-align: right;
+}
+
+/* -- Social proof elements --------------------------------------------------- */
+[dir="rtl"] .social-proof-users {
+    margin-left: 0;
+    margin-right: var(--space-sm);
+}
+
+[dir="rtl"] .manage-link {
+    margin-left: 0;
+    margin-right: var(--space-sm);
+}
+
+/* -- Lock icon --------------------------------------------------------------- */
+[dir="rtl"] .lock-icon {
+    margin-left: 0;
+    margin-right: 3px;
+}
+
+/* -- Pro lock badge ---------------------------------------------------------- */
+[dir="rtl"] .pro-lock-badge {
+    right: auto;
+    left: 4px;
+}
+
+[dir="rtl"] .pro-preview-card .pro-lock-badge {
+    right: auto;
+    left: -4px;
+}
+
+/* -- Skip link --------------------------------------------------------------- */
+[dir="rtl"] .skip-link {
+    left: auto;
+    right: 0;
+    border-radius: 0 0 0 4px;
+}
+
+/* -- Focus outline direction-aware adjustments ------------------------------ */
+[dir="rtl"] .skip-link:focus-visible {
+    left: auto;
+    right: 0;
+    outline-offset: -2px;
+}
+
+/* -- Generic spacing utilities ----------------------------------------------- */
+[dir="rtl"] .ml-auto { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .mr-auto { margin-right: 0; margin-left: auto; }
+
+/* -- Reader table of contents ------------------------------------------------ */
+[dir="rtl"] .reader-toc {
+    left: auto;
+    right: 0;
+    border-right: none;
+    border-left: 1px solid var(--color-border-light);
+}
+
+[dir="rtl"] .reader-toc-list a {
+    border-left: none;
+    border-right: 3px solid transparent;
+}
+
+[dir="rtl"] .reader-toc-list a.active {
+    border-right-color: var(--color-primary);
+}
+
+[dir="rtl"] .reader-toc-list li.toc-h3 a {
+    padding-left: var(--space-lg);
+    padding-right: calc(var(--space-lg) + var(--space-lg));
+}
+
+/* -- Sidebar card action overlay --------------------------------------------- */
+[dir="rtl"] .article-card-actions {
+    right: auto;
+    left: var(--space-sm);
+}
+
+/* -- Sidebar footer links ---------------------------------------------------- */
+[dir="rtl"] .sidebar-footer-manage-link,
+[dir="rtl"] .sidebar-footer-shortcut-hint {
+    margin-left: 0;
+    margin-right: var(--space-sm);
+}
+
+/* -- Popup ------------------------------------------------------------------- */
+[dir="rtl"] .popup-page-info {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .popup-saved-actions {
+    flex-direction: row-reverse;
+}

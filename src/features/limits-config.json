@@ -1,0 +1,198 @@
+{
+    "version": "1.3.0",
+    "authority": "This file is the only place the free/pro split and the free caps are defined. src/utils/feature-gate.js loads it at runtime. config.json and feature-registry.js point here and carry no numbers.",
+    "tiers": {
+        "one_click_save": "free",
+        "reader_view": "free",
+        "side_panel_list": "free",
+        "tags": "free",
+        "pocket_import": "free",
+        "context_menu_save": "free",
+        "basic_search": "free",
+        "reading_progress": "free",
+        "offline_reading": "free",
+        "bulk_export": "free",
+        "reading_stats": "free",
+        "highlights_notes": "free",
+        "full_text_search": "pro",
+        "listen_aloud": "pro",
+        "markdown_export": "pro"
+    },
+    "notSold": {
+        "auto_tagging": "No implementation exists in src/. Nothing in the codebase produces a tag suggestion. Verified 2026-08-09 by grep across src/ for autoTag, auto_tag, suggestTags. Not gated, not advertised, not sold until it is built."
+    },
+    "splitRationale": {
+        "offline_reading": "Free and uncapped. The live listing title is 'ReadLater Pro, Save and Read Offline', so this is the printed promise. The save handler in src/background/service-worker.js blanks article.content when the gate denies, so any cap destroys the article body at capture time rather than locking a view. A cap here is data loss, not a wedge.",
+        "bulk_export": "Free. Pocket import is free and the stated audience is people escaping a shutdown. Charging to get data back out of an escape hatch is the lock-in this product sells against.",
+        "reading_stats": "Free. Low willingness to pay, and it is the surface that produces the honest 'you finished N articles' number that earns the upgrade ask.",
+        "full_text_search": "Pro, metered not locked. The only Pro candidate that is actually implemented: src/utils/db-manager.js filters on options.fullTextSearch across article.textContent. It is a true multiplier over the free title and tag search, non-destructive when unavailable, and it scales with library size so only heavy users reach the cap.",
+        "listen_aloud": "Pro, metered not locked. Free users get 3 articles a day read aloud, counted once per article per local day when playback starts (reopening or resuming an article already counted today is free; the count resets at the user's local midnight). Uses the browser's own voices, so nothing is lost when the cap is reached: the article is still there to read.",
+        "markdown_export": "Pro with one free try (firstTouchGrace). A formatting convenience for note apps. Getting data out stays free: CSV in Pocket's format, bookmarks HTML and the full JSON backup (with tags and highlights) are free, so bulk_export's no-lock-in promise holds."
+    },
+    "freeCaps": {
+        "full_text_search": 20,
+        "listen_aloud": 3
+    },
+    "capPeriods": {
+        "full_text_search": "daily",
+        "listen_aloud": "daily"
+    },
+    "dailyResets": [
+        "full_text_search",
+        "listen_aloud"
+    ],
+    "firstTouchGrace": [
+        "markdown_export"
+    ],
+    "aliases": {
+        "save_article": "one_click_save",
+        "read_article": "reader_view",
+        "basic_tags": "tags",
+        "highlights": "highlights_notes",
+        "annotations": "highlights_notes",
+        "export_articles": "bulk_export",
+        "unlimited_offline": "offline_reading",
+        "tts": "listen_aloud",
+        "listen": "listen_aloud",
+        "export_markdown": "markdown_export"
+    },
+    "limits": {
+        "one_click_save": {
+            "free": {
+                "daily": null,
+                "total": null
+            },
+            "pro": {
+                "daily": null,
+                "total": null
+            }
+        },
+        "reader_view": {
+            "free": {
+                "daily": null
+            },
+            "pro": {
+                "daily": null
+            }
+        },
+        "side_panel_list": {
+            "free": {
+                "daily": null
+            },
+            "pro": {
+                "daily": null
+            }
+        },
+        "tags": {
+            "free": {
+                "daily": null,
+                "per_article": null
+            },
+            "pro": {
+                "daily": null,
+                "per_article": null
+            }
+        },
+        "pocket_import": {
+            "free": {
+                "daily": null
+            },
+            "pro": {
+                "daily": null
+            }
+        },
+        "context_menu_save": {
+            "free": {
+                "daily": null
+            },
+            "pro": {
+                "daily": null
+            }
+        },
+        "basic_search": {
+            "free": {
+                "daily": null
+            },
+            "pro": {
+                "daily": null
+            }
+        },
+        "reading_progress": {
+            "free": {
+                "daily": null
+            },
+            "pro": {
+                "daily": null
+            }
+        },
+        "offline_reading": {
+            "free": {
+                "daily": null,
+                "total": null
+            },
+            "pro": {
+                "daily": null,
+                "total": null
+            }
+        },
+        "bulk_export": {
+            "free": {
+                "daily": null
+            },
+            "pro": {
+                "daily": null
+            }
+        },
+        "reading_stats": {
+            "free": {
+                "daily": null
+            },
+            "pro": {
+                "daily": null
+            }
+        },
+        "full_text_search": {
+            "free": {
+                "daily": 20
+            },
+            "pro": {
+                "daily": null
+            }
+        },
+        "listen_aloud": {
+            "free": {
+                "daily": 3
+            },
+            "pro": {
+                "daily": null
+            }
+        },
+        "markdown_export": {
+            "free": {
+                "daily": 0
+            },
+            "pro": {
+                "daily": null
+            }
+        }
+    },
+    "implemented": {
+        "one_click_save": true,
+        "reader_view": true,
+        "side_panel_list": true,
+        "tags": true,
+        "pocket_import": true,
+        "context_menu_save": true,
+        "basic_search": true,
+        "reading_progress": true,
+        "offline_reading": true,
+        "bulk_export": true,
+        "reading_stats": true,
+        "full_text_search": true,
+        "auto_tagging": false,
+        "highlights_notes": true,
+        "listen_aloud": true,
+        "markdown_export": true
+    },
+    "firstTouchGraceNote": "Applies only to a Pro feature with NO numeric free cap: it grants exactly one use so the wall never lands on the first touch. full_text_search is not listed because a cap of 20 a day already gives the user twenty wins before the wall, which satisfies the same timing rule."
+}

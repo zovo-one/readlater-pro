@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "ReadLater-এ সংরক্ষণ করুন"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing",
+      "message": "নিবন্ধ সংরক্ষণ করুন ও পড়ার তালিকায় যোগ করুন। রিডার ভিউতে অফলাইনে পড়ুন। ট্যাগ দিয়ে সাজান। Pocket থেকে আমদানি।"
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - সংরক্ষণ ও অফলাইনে পড়ুন"
+   }
+}

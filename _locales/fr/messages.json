@@ -1,0 +1,1929 @@
+{
+  "aboutDangerZoneDesc": {
+    "description": "Warning text in the danger zone section",
+    "message": "Cette action est permanente et ne peut pas etre annulee."
+  },
+  "aboutDescription": {
+    "description": "About section description in options",
+    "message": "Sauvegardez des articles pour plus tard. Sauvegarde en un clic, mode lecture, tags et lecture hors ligne."
+  },
+  "aboutDiagnosticsDesc": {
+    "description": "Diagnostics description in options",
+    "message": "Consultez les journaux d'erreurs, les evenements d'analyse et l'etat de l'extension."
+  },
+  "aboutStorageNote": {
+    "description": "Storage info note in options",
+    "message": "IndexedDB stocke les articles. chrome.storage stocke les parametres."
+  },
+  "actionFavorite": {
+    "description": "Action title for favorite button on article cards",
+    "message": "Favori"
+  },
+  "announcerArticleLoaded": {
+    "description": "Screen reader announcement when article loads in reader",
+    "message": "Article charge"
+  },
+  "announcerArticleNavigation": {
+    "description": "Screen reader announcement when navigating articles with keyboard",
+    "message": "Article $INDEX$ sur $TOTAL$ : $TITLE$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "3"
+      },
+      "title": {
+        "content": "$3",
+        "example": "How to Build a Chrome Extension"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      }
+    }
+  },
+  "announcerArticleRemoved": {
+    "description": "Screen reader announcement when article is deleted via swipe",
+    "message": "Article supprime"
+  },
+  "announcerFavoriteToggled": {
+    "description": "Screen reader announcement when favorite is toggled",
+    "message": "Favori bascule"
+  },
+  "announcerFilteredByTag": {
+    "description": "Screen reader announcement when filtering by tag",
+    "message": "Filtre par tag : $TAG$",
+    "placeholders": {
+      "tag": {
+        "content": "$1",
+        "example": "technology"
+      }
+    }
+  },
+  "announcerStepOfTotal": {
+    "description": "Screen reader announcement during onboarding",
+    "message": "Etape $CURRENT$ sur $TOTAL$",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "announcerTabSelected": {
+    "description": "Screen reader announcement when switching tabs",
+    "message": "Onglet $TAB$ selectionne",
+    "placeholders": {
+      "tab": {
+        "content": "$1",
+        "example": "Favorites"
+      }
+    }
+  },
+  "announcerUpgradeDialogOpened": {
+    "description": "Screen reader announcement when paywall opens",
+    "message": "Boite de dialogue de mise a niveau ouverte"
+  },
+  "appName": {
+    "description": "Application name used throughout the UI",
+    "message": "ReadLater Pro"
+  },
+  "badgeFree": {
+    "description": "Badge text for free tier users",
+    "message": "Gratuit"
+  },
+  "badgeLifetime": {
+    "description": "Badge text for lifetime tier users",
+    "message": "A vie"
+  },
+  "badgePro": {
+    "description": "Badge text for Pro tier users",
+    "message": "PRO"
+  },
+  "badgeTrial": {
+    "description": "Badge text for trial tier users",
+    "message": "Essai"
+  },
+  "batchMarkRead": {
+    "description": "Batch action button to mark selected as read",
+    "message": "Marquer comme lu"
+  },
+  "batchSelectedCount": {
+    "description": "Batch selection bar showing number selected",
+    "message": "$COUNT$ selectionne(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "bugReportCopied": {
+    "description": "Button text after copying diagnostic report",
+    "message": "Copie"
+  },
+  "bugReportDownload": {
+    "description": "Button text to download diagnostic report",
+    "message": "Telecharger"
+  },
+  "buttonActivate": {
+    "description": "Button text for activating a license key",
+    "message": "Activer"
+  },
+  "buttonActivating": {
+    "description": "Button text while license activation is in progress",
+    "message": "Activation en cours..."
+  },
+  "buttonBack": {
+    "description": "Back button on onboarding and upgrade page",
+    "message": "Retour"
+  },
+  "buttonChecking": {
+    "description": "Button text while checking restore status",
+    "message": "Verification en cours..."
+  },
+  "buttonCleaningUp": {
+    "description": "Button text while cleanup is in progress",
+    "message": "Nettoyage en cours..."
+  },
+  "buttonCleanup": {
+    "description": "Button text for cleaning up old read articles",
+    "message": "Nettoyer les anciens articles lus"
+  },
+  "buttonClearAllData": {
+    "description": "Button text for clearing all data",
+    "message": "Effacer toutes les donnees"
+  },
+  "buttonClearErrorLog": {
+    "description": "Button text for clearing error log",
+    "message": "Effacer le journal des erreurs"
+  },
+  "buttonClearEventLog": {
+    "description": "Button text for clearing event log",
+    "message": "Effacer le journal des evenements"
+  },
+  "buttonClearing": {
+    "description": "Button text while clearing data",
+    "message": "Effacement en cours..."
+  },
+  "buttonDelete": {
+    "description": "Delete button text used in batch bar and context menu",
+    "message": "Supprimer"
+  },
+  "buttonEnterLicenseKey": {
+    "description": "Button text to show the license key input",
+    "message": "Saisir une cle de licence"
+  },
+  "buttonExportArticles": {
+    "description": "Button text for exporting articles",
+    "message": "Exporter les articles"
+  },
+  "buttonExportDebugReport": {
+    "description": "Button text for exporting debug report",
+    "message": "Exporter le rapport de debogage"
+  },
+  "buttonExportStats": {
+    "description": "Button text for exporting statistics",
+    "message": "Exporter les statistiques"
+  },
+  "buttonExported": {
+    "description": "Temporary button text after export completes",
+    "message": "Exporte"
+  },
+  "buttonExporting": {
+    "description": "Button text while export is in progress",
+    "message": "Exportation en cours..."
+  },
+  "buttonGetStarted": {
+    "description": "Button text on the upgrade success overlay",
+    "message": "Commencer"
+  },
+  "buttonImportJsonBackup": {
+    "description": "Button text for importing a JSON backup",
+    "message": "Importer une sauvegarde JSON"
+  },
+  "buttonImportPocket": {
+    "description": "Button text for importing from Pocket",
+    "message": "Importer depuis Pocket"
+  },
+  "buttonImporting": {
+    "description": "Button text while import is in progress",
+    "message": "Importation en cours..."
+  },
+  "buttonImportingProgress": {
+    "description": "Button text during import showing progress",
+    "message": "Importation en cours... ($CURRENT$/$TOTAL$)",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "15"
+      },
+      "total": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "buttonNext": {
+    "description": "Next button on onboarding",
+    "message": "Suivant"
+  },
+  "buttonOpenDiagnostics": {
+    "description": "Button text to open diagnostics page",
+    "message": "Ouvrir le tableau de bord de diagnostics"
+  },
+  "buttonResetStats": {
+    "description": "Button text for resetting reading statistics",
+    "message": "Reinitialiser les statistiques"
+  },
+  "buttonRestorePurchase": {
+    "description": "Button text for restoring a previous purchase",
+    "message": "Restaurer l'achat"
+  },
+  "buttonRetry": {
+    "description": "Retry button text on error UI",
+    "message": "Reessayer"
+  },
+  "buttonStatsReset": {
+    "description": "Temporary button text after stats are reset",
+    "message": "Statistiques reinitialisees"
+  },
+  "buttonUpgradeToPro": {
+    "description": "CTA button text to upgrade",
+    "message": "Passer a Pro"
+  },
+  "changelogSubtitle": {
+    "description": "Subtitle for the changelog section",
+    "message": "Decouvrez les changements de chaque version"
+  },
+  "communitySubtitle": {
+    "description": "Subtitle for the community links section",
+    "message": "Connectez-vous avec d'autres utilisateurs de ReadLater Pro"
+  },
+  "communityTitle": {
+    "description": "Title for the community links section in options",
+    "message": "Communaute"
+  },
+  "confirmCleanup": {
+    "description": "Confirm dialog for cleanup old articles",
+    "message": "Supprimer tous les articles lus datant de plus de 30 jours ?\n\nCette action ne peut pas etre annulee."
+  },
+  "confirmClearAllData": {
+    "description": "First confirm dialog when clearing all data",
+    "message": "Etes-vous sur de vouloir effacer TOUTES les donnees ?\n\nCela supprimera definitivement tous les articles, tags et parametres."
+  },
+  "confirmClearAllDataSecond": {
+    "description": "Second confirm dialog when clearing all data",
+    "message": "Cette action est irreversible. Saisissez OK pour confirmer que vous souhaitez tout supprimer.\n\nAppuyez sur OK pour supprimer definitivement toutes les donnees."
+  },
+  "confirmImportJson": {
+    "description": "Confirm dialog for JSON import",
+    "message": "Importer $COUNT$ articles depuis la sauvegarde ?\n\nLes articles existants ne seront pas supprimes.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "confirmResetStats": {
+    "description": "Confirm dialog for resetting stats",
+    "message": "Etes-vous sur de vouloir reinitialiser toutes les statistiques de lecture ? Cette action est irreversible."
+  },
+  "contextMenuOpenList": {
+    "description": "Context menu item to open the reading list side panel",
+    "message": "Ouvrir la liste de lecture"
+  },
+  "contextMenuSaveLink": {
+    "description": "Context menu item to save a link",
+    "message": "Sauvegarder le lien dans ReadLater"
+  },
+  "contextMenuSavePage": {
+    "description": "Context menu item to save the current page",
+    "message": "Sauvegarder la page dans ReadLater"
+  },
+  "ctxAddTag": {
+    "description": "Context menu action to add a tag",
+    "message": "Ajouter un tag"
+  },
+  "ctxCopyUrl": {
+    "description": "Context menu action to copy article URL",
+    "message": "Copier l'URL"
+  },
+  "ctxOpenOriginal": {
+    "description": "Context menu action to open original article URL",
+    "message": "Ouvrir l'URL originale"
+  },
+  "ctxOpenReader": {
+    "description": "Context menu action to open article in reader view",
+    "message": "Ouvrir dans le lecteur"
+  },
+  "ctxToggleFavorite": {
+    "description": "Context menu action to toggle favorite status",
+    "message": "Basculer le favori"
+  },
+  "dashboardDayUnit": {
+    "description": "Day unit for streak display on dashboard (plural form)",
+    "message": "jours"
+  },
+  "dashboardDayUnitSingular": {
+    "description": "Day unit for streak display on dashboard (singular form)",
+    "message": "jour"
+  },
+  "dashboardMemberSince": {
+    "description": "Member since text on dashboard",
+    "message": "Membre depuis $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "Jan 2025"
+      }
+    }
+  },
+  "dashboardNoDomainsYet": {
+    "description": "Empty state message for top domains",
+    "message": "Aucun domaine suivi pour l'instant. Sauvegardez des articles pour voir vos principales sources."
+  },
+  "dashboardSavedThisMonth": {
+    "description": "Monthly trend label for monthly saves",
+    "message": "Sauvegardes ce mois-ci"
+  },
+  "dashboardSavedThisWeek": {
+    "description": "Monthly trend label for weekly saves",
+    "message": "Sauvegardes cette semaine"
+  },
+  "dashboardStatsExported": {
+    "description": "Screen reader announcement after stats export",
+    "message": "Statistiques exportees"
+  },
+  "dashboardStatsLoaded": {
+    "description": "Screen reader announcement when dashboard stats finish loading",
+    "message": "Statistiques chargees"
+  },
+  "dashboardStatsReset": {
+    "description": "Screen reader announcement after stats reset",
+    "message": "Les statistiques ont ete reinitialisees"
+  },
+  "diagColumnFeature": {
+    "description": "Column header for feature name in comparison table",
+    "message": "Fonctionnalite"
+  },
+  "diagColumnFree": {
+    "description": "Column header for free tier in comparison table",
+    "message": "Free"
+  },
+  "diagColumnPro": {
+    "description": "Column header for pro tier in comparison table",
+    "message": "Pro"
+  },
+  "diagFeatureComparison": {
+    "description": "Caption for the feature comparison table",
+    "message": "Comparaison des fonctionnalites entre les plans Free et Pro"
+  },
+  "diagFilterAll": {
+    "description": "Event filter option to show all events",
+    "message": "Tous"
+  },
+  "diagHealthExcellent": {
+    "description": "Health score label for 90-100",
+    "message": "Excellent"
+  },
+  "diagHealthFair": {
+    "description": "Health score label for 50-69",
+    "message": "Correct"
+  },
+  "diagHealthGood": {
+    "description": "Health score label for 70-89",
+    "message": "Bon"
+  },
+  "diagHealthNeedsAttention": {
+    "description": "Health score label for below 50",
+    "message": "Attention requise"
+  },
+  "diagIncluded": {
+    "description": "Aria-label/title for check mark in comparison table",
+    "message": "Inclus"
+  },
+  "diagInfoChromeVersion": {
+    "description": "Info list label for Chrome version",
+    "message": "Version de Chrome"
+  },
+  "diagInfoId": {
+    "description": "Info list label for extension ID",
+    "message": "ID"
+  },
+  "diagInfoName": {
+    "description": "Info list label for extension name",
+    "message": "Nom"
+  },
+  "diagInfoPlatform": {
+    "description": "Info list label for platform",
+    "message": "Plateforme"
+  },
+  "diagInfoVersion": {
+    "description": "Info list label for extension version",
+    "message": "Version"
+  },
+  "diagLimitedAccess": {
+    "description": "Text for limited access in comparison table",
+    "message": "Limite"
+  },
+  "diagNoErrors": {
+    "description": "Empty state message for error table",
+    "message": "Aucune erreur enregistree."
+  },
+  "diagNoEvents": {
+    "description": "Empty state message for event table",
+    "message": "Aucun evenement enregistre."
+  },
+  "diagNoIssues": {
+    "description": "Health score detail when no issues found",
+    "message": "Aucun probleme detecte au cours des 24 dernieres heures."
+  },
+  "diagNotIncluded": {
+    "description": "Aria-label/title for dash in comparison table",
+    "message": "Non inclus"
+  },
+  "diagStorageQuota": {
+    "description": "Label for storage quota progress bar in diagnostics",
+    "message": "Quota de stockage"
+  },
+  "diagTableContext": {
+    "description": "Table column header for context",
+    "message": "Contexte"
+  },
+  "diagTableEvent": {
+    "description": "Table column header for event name",
+    "message": "Evenement"
+  },
+  "diagTableMessage": {
+    "description": "Table column header for message",
+    "message": "Message"
+  },
+  "diagTableProperties": {
+    "description": "Table column header for event properties",
+    "message": "Proprietes"
+  },
+  "diagTableStack": {
+    "description": "Table column header for stack trace",
+    "message": "Pile"
+  },
+  "diagTableTime": {
+    "description": "Table column header for timestamp",
+    "message": "Heure"
+  },
+  "diagTableType": {
+    "description": "Table column header for type",
+    "message": "Type"
+  },
+  "dmConfirmCancel": {
+    "description": "Button text to cancel deletion",
+    "message": "Annuler"
+  },
+  "dmConfirmDelete": {
+    "description": "Button text to confirm deletion of all data",
+    "message": "Oui, tout supprimer"
+  },
+  "dmConfirmText": {
+    "description": "Text for the delete confirmation dialog",
+    "message": "Cela supprimera definitivement tous vos parametres, preferences et donnees sauvegardees. Cette action est irreversible."
+  },
+  "dmConfirmTitle": {
+    "description": "Title for the delete confirmation dialog",
+    "message": "Etes-vous sur ?"
+  },
+  "dmDeleteAllData": {
+    "description": "Button text for deleting all extension data",
+    "message": "Supprimer toutes les donnees"
+  },
+  "dmExportAllData": {
+    "description": "Button text for exporting all extension data",
+    "message": "Exporter toutes les donnees"
+  },
+  "dmNote": {
+    "description": "Info note in the data management section",
+    "message": "Les donnees exportees sont enregistrees sous forme de fichier JSON dans votre dossier de telechargements. La suppression des donnees reinitialise l'extension a son etat initial."
+  },
+  "dmStorageUsed": {
+    "description": "Label for storage usage stat in data management",
+    "message": "Stockage utilise"
+  },
+  "dmSubtitle": {
+    "description": "Subtitle for the data management section",
+    "message": "Voir, exporter ou supprimer toutes les donnees stockees par ReadLater Pro"
+  },
+  "emptyStateTitle": {
+    "description": "Empty state heading when no articles are saved",
+    "message": "Aucun article pour l'instant"
+  },
+  "errorArticleNotFound": {
+    "description": "Error message when article cannot be found",
+    "message": "Article introuvable."
+  },
+  "errorFailedToConnect": {
+    "description": "Error when paywall license activation has connection issues",
+    "message": "Echec de la connexion. Veuillez reessayer."
+  },
+  "errorFailedToLoadArticle": {
+    "description": "Error message when article fails to load in reader",
+    "message": "Echec du chargement de l'article. Veuillez reessayer."
+  },
+  "errorFailedToLoadArticles": {
+    "description": "Error message when articles fail to load",
+    "message": "Echec du chargement des articles"
+  },
+  "errorFailedToLoadStats": {
+    "description": "Error message when statistics fail to load",
+    "message": "Echec du chargement des statistiques"
+  },
+  "errorFailedToReadFile": {
+    "description": "Error when file reading fails during import",
+    "message": "Echec de la lecture du fichier. Veuillez reessayer."
+  },
+  "errorFeatureUnavailable": {
+    "description": "Error text when a feature crashes",
+    "message": "Cette fonctionnalite est temporairement indisponible."
+  },
+  "errorImportFailed": {
+    "description": "Error when import operation fails",
+    "message": "Echec de l'importation : $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "errorInvalidLicenseKey": {
+    "description": "Error when license key activation fails",
+    "message": "Cle de licence invalide. Veuillez verifier et reessayer."
+  },
+  "errorInvalidLicenseKeyPaywall": {
+    "description": "Error in paywall when license key is invalid",
+    "message": "Cle de licence invalide."
+  },
+  "errorNoArticleId": {
+    "description": "Error message when reader is opened without an article ID",
+    "message": "Aucun identifiant d'article fourni."
+  },
+  "errorNoArticlesInExport": {
+    "description": "Error when Pocket export contains no articles",
+    "message": "Aucun article trouve dans le fichier d'exportation. Assurez-vous qu'il s'agit d'un export Pocket valide."
+  },
+  "errorNoProSubscription": {
+    "description": "Error when restore purchase finds no subscription",
+    "message": "Aucun abonnement Pro actif trouve. Veuillez acheter un plan ou saisir une cle de licence."
+  },
+  "errorPleaseEnterLicenseKey": {
+    "description": "Error when license key field is empty",
+    "message": "Veuillez saisir une cle de licence."
+  },
+  "errorSelectHtmlFile": {
+    "description": "Error when user selects wrong file type for import",
+    "message": "Veuillez selectionner un fichier HTML exporte depuis Pocket."
+  },
+  "errorStorageCalcFailed": {
+    "description": "Error text when storage calculation fails",
+    "message": "Impossible de calculer"
+  },
+  "errorTryReloading": {
+    "description": "Recovery suggestion when a feature fails",
+    "message": "Essayez de recharger l'extension."
+  },
+  "extActionTitle": {
+    "description": "Tooltip for the browser action icon in the toolbar",
+    "message": "Sauvegarder dans ReadLater"
+  },
+  "extDescription": {
+    "description": "Extension description for Chrome Web Store listing (max 132 chars)",
+    "message": "Sauvegardez des articles en un clic. Liste de lecture, tags, mode lecteur et lecture hors ligne. Votre bibliothèque d'articles."
+  },
+  "extName": {
+    "description": "Extension name shown in Chrome Web Store and extensions page",
+    "message": "ReadLater Pro - Sauvegarder & Lire Hors Ligne"
+  },
+  "faqNoResults": {
+    "description": "Empty state when FAQ search has no matches",
+    "message": "Aucun resultat trouve. Essayez un autre terme de recherche."
+  },
+  "faqSendFeedback": {
+    "description": "Link text in FAQ footer to open feedback form",
+    "message": "Envoyez-nous vos commentaires"
+  },
+  "faqStillNeedHelp": {
+    "description": "Footer text in FAQ section",
+    "message": "Besoin d'aide supplementaire ?"
+  },
+  "featureExportArticles": {
+    "description": "Feature list item in upgrade prompt",
+    "message": "Exporter les articles"
+  },
+  "featureFullTextSearch": {
+    "description": "Feature list item in upgrade prompt",
+    "message": "Recherche en texte integral"
+  },
+  "featureOfflineArticles": {
+    "description": "Feature name in paywall comparison table",
+    "message": "Articles hors ligne"
+  },
+  "featurePocketImport": {
+    "description": "Feature name in paywall comparison table",
+    "message": "Import Pocket"
+  },
+  "featureReaderView": {
+    "description": "Feature name in paywall comparison table",
+    "message": "Mode lecture"
+  },
+  "featureSaveReadArticles": {
+    "description": "Feature name in paywall comparison table",
+    "message": "Sauvegarder et lire des articles"
+  },
+  "featureTagsBasicSearch": {
+    "description": "Feature name in paywall comparison table",
+    "message": "Tags et recherche basique"
+  },
+  "feedbackDraftSaved": {
+    "description": "Indicator text when feedback draft is auto-saved",
+    "message": "Brouillon enregistre"
+  },
+  "feedbackIncludeDiagnostics": {
+    "description": "Checkbox label for including diagnostics in bug reports",
+    "message": "Inclure les donnees de diagnostic avec ce rapport"
+  },
+  "feedbackLabelDescription": {
+    "description": "Label for feedback description textarea",
+    "message": "Description"
+  },
+  "feedbackLabelEmail": {
+    "description": "Label for feedback email input",
+    "message": "E-mail (facultatif)"
+  },
+  "feedbackLabelSubject": {
+    "description": "Label for feedback subject input",
+    "message": "Sujet"
+  },
+  "feedbackLabelType": {
+    "description": "Label for feedback type dropdown",
+    "message": "Type"
+  },
+  "feedbackPreviewDiagnostics": {
+    "description": "Toggle button to show/hide diagnostic data preview",
+    "message": "Apercu des donnees de diagnostic"
+  },
+  "feedbackSubtitle": {
+    "description": "Subtitle for the feedback section",
+    "message": "Signalez un bug, demandez une fonctionnalite ou partagez vos idees."
+  },
+  "feedbackTypeBugReport": {
+    "description": "Feedback type option for bug reports",
+    "message": "Rapport de bug"
+  },
+  "feedbackTypeFeatureRequest": {
+    "description": "Feedback type option for feature requests",
+    "message": "Demande de fonctionnalite"
+  },
+  "feedbackTypeGeneral": {
+    "description": "Feedback type option for general feedback",
+    "message": "Commentaires generaux"
+  },
+  "fontGeorgiaSerif": {
+    "description": "Georgia font option",
+    "message": "Georgia (serif)"
+  },
+  "fontInterSansSerif": {
+    "description": "Inter font option",
+    "message": "Inter (sans-serif)"
+  },
+  "fontMerriweatherSerif": {
+    "description": "Merriweather font option",
+    "message": "Merriweather (serif)"
+  },
+  "fontSizeExtraLarge": {
+    "description": "Extra large font size option",
+    "message": "Tres grand (20px)"
+  },
+  "fontSizeHuge": {
+    "description": "Huge font size option",
+    "message": "Enorme (22px)"
+  },
+  "fontSizeLarge": {
+    "description": "Large font size option",
+    "message": "Grand (18px)"
+  },
+  "fontSizeMedium": {
+    "description": "Medium font size option",
+    "message": "Moyen (16px)"
+  },
+  "fontSizeSmall": {
+    "description": "Small font size option",
+    "message": "Petit (14px)"
+  },
+  "fontSystemDefault": {
+    "description": "System default font option",
+    "message": "Systeme par defaut"
+  },
+  "footerManageSubscription": {
+    "description": "Link text for managing subscription",
+    "message": "Gerer l'abonnement"
+  },
+  "headingAbout": {
+    "description": "Heading for about section in options",
+    "message": "A propos"
+  },
+  "headingBehavior": {
+    "description": "Heading for behavior settings section",
+    "message": "Comportement"
+  },
+  "headingDangerZone": {
+    "description": "Heading for the danger zone section",
+    "message": "Zone de danger"
+  },
+  "headingData": {
+    "description": "Heading for data import/export section",
+    "message": "Donnees"
+  },
+  "headingDiagnostics": {
+    "description": "Heading for diagnostics section in options",
+    "message": "Diagnostics"
+  },
+  "headingEventLog": {
+    "description": "Heading for the event log section in diagnostics",
+    "message": "Journal des evenements"
+  },
+  "headingExtensionInfo": {
+    "description": "Heading for the extension info section in diagnostics",
+    "message": "Informations sur l'extension"
+  },
+  "headingFeedback": {
+    "description": "Heading for the feedback section in options",
+    "message": "Commentaires"
+  },
+  "headingFreeVsPro": {
+    "description": "Heading for the feature comparison section on upgrade page",
+    "message": "Gratuit vs Pro"
+  },
+  "headingHealthScore": {
+    "description": "Heading for the health score section in diagnostics",
+    "message": "Score de sante"
+  },
+  "headingKeyboardShortcuts": {
+    "description": "Heading for keyboard shortcuts section",
+    "message": "Raccourcis clavier"
+  },
+  "headingMonthlyTrend": {
+    "description": "Heading for the monthly trend section on dashboard",
+    "message": "Tendance mensuelle"
+  },
+  "headingNotifications": {
+    "description": "Heading for notifications settings section",
+    "message": "Notifications"
+  },
+  "headingOverview": {
+    "description": "Heading for the overview section on dashboard",
+    "message": "Vue d'ensemble"
+  },
+  "headingPrivacy": {
+    "description": "Heading for the privacy section on welcome page",
+    "message": "Votre vie privee compte"
+  },
+  "headingPrivacyControls": {
+    "description": "Heading for the privacy controls section in options",
+    "message": "Controles de confidentialite"
+  },
+  "headingReaderSettings": {
+    "description": "Heading for reader settings section in options",
+    "message": "Parametres du lecteur"
+  },
+  "headingRecentErrors": {
+    "description": "Heading for the error log section in diagnostics",
+    "message": "Erreurs recentes"
+  },
+  "headingStatistics": {
+    "description": "Heading for statistics section in options",
+    "message": "Statistiques"
+  },
+  "headingStorage": {
+    "description": "Heading for storage section in options",
+    "message": "Stockage"
+  },
+  "headingStorageUsage": {
+    "description": "Heading for storage usage section in diagnostics",
+    "message": "Utilisation du stockage"
+  },
+  "headingTopDomains": {
+    "description": "Heading for the top domains section on dashboard",
+    "message": "Domaines principaux"
+  },
+  "headingUsageStats": {
+    "description": "Heading for usage stats section in options",
+    "message": "Statistiques d'utilisation"
+  },
+  "headingWeeklyActivity": {
+    "description": "Heading for the weekly activity chart section",
+    "message": "Activite hebdomadaire"
+  },
+  "headingWhatsNew": {
+    "description": "Heading for the changelog section in options",
+    "message": "Nouveautes"
+  },
+  "headingYourData": {
+    "description": "Heading for the data management section in options",
+    "message": "Vos donnees"
+  },
+  "importArticlesImported": {
+    "description": "Import result detail",
+    "message": "$COUNT$ articles importes",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "150"
+      }
+    }
+  },
+  "importDescription": {
+    "description": "Description text on the import page",
+    "message": "Recuperez toute votre liste de lecture depuis Pocket. Vos articles, tags et statut lu/non lu seront preserves."
+  },
+  "importDropzoneHint": {
+    "description": "Secondary text in the import drop zone",
+    "message": "ou cliquez pour rechercher le fichier HTML"
+  },
+  "importDropzoneText": {
+    "description": "Primary text in the import drop zone",
+    "message": "Deposez votre exportation Pocket ici"
+  },
+  "importDuplicatesSkipped": {
+    "description": "Import result detail for skipped duplicates",
+    "message": "$COUNT$ doublons ignores",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "importStep1": {
+    "description": "Import step 1 instruction",
+    "message": "Rendez-vous sur getpocket.com/export et telechargez votre fichier d'exportation HTML"
+  },
+  "importStep2": {
+    "description": "Import step 2 instruction",
+    "message": "Cliquez sur la zone ci-dessous ou deposez-y votre fichier d'exportation"
+  },
+  "importStep3": {
+    "description": "Import step 3 instruction",
+    "message": "Vos articles et tags seront importes automatiquement"
+  },
+  "importTagsCreated": {
+    "description": "Import result detail for created tags",
+    "message": "$COUNT$ tags crees",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "importTitle": {
+    "description": "Main heading on the import page",
+    "message": "Importer depuis Pocket"
+  },
+  "labelArticleActions": {
+    "description": "Aria-label for the context menu",
+    "message": "Actions sur l'article"
+  },
+  "labelArticleFilters": {
+    "description": "Aria-label for the filter tabs navigation",
+    "message": "Filtres d'articles"
+  },
+  "labelArticleList": {
+    "description": "Aria-label for the article list container",
+    "message": "Liste des articles"
+  },
+  "labelClosePaywall": {
+    "description": "Aria-label for the paywall close button",
+    "message": "Fermer le paywall"
+  },
+  "labelContents": {
+    "description": "Title for the table of contents sidebar",
+    "message": "Sommaire"
+  },
+  "labelDecreaseFontSize": {
+    "description": "Aria-label for font size decrease button",
+    "message": "Diminuer la taille de police"
+  },
+  "labelDefaultContentWidth": {
+    "description": "Label for content width select",
+    "message": "Largeur de contenu par defaut"
+  },
+  "labelDefaultFontSize": {
+    "description": "Label for font size select",
+    "message": "Taille de police par defaut"
+  },
+  "labelDefaultTheme": {
+    "description": "Label for the default theme select",
+    "message": "Theme par defaut"
+  },
+  "labelDeleteSelected": {
+    "description": "Aria-label for batch delete button",
+    "message": "Supprimer les articles selectionnes"
+  },
+  "labelDropzone": {
+    "description": "Aria-label for the import drop zone",
+    "message": "Zone de depot pour le fichier d'exportation Pocket, cliquez ou deposez le fichier ici"
+  },
+  "labelFilterEvents": {
+    "description": "Aria-label for the event filter dropdown in diagnostics",
+    "message": "Filtrer les evenements par type"
+  },
+  "labelFontFamily": {
+    "description": "Label for font family select",
+    "message": "Famille de police"
+  },
+  "labelFontSize": {
+    "description": "Label for font size in reader settings panel",
+    "message": "Taille de police"
+  },
+  "labelHealthScore": {
+    "description": "Aria-label for the health score meter",
+    "message": "Score de sante"
+  },
+  "labelImportJsonFile": {
+    "description": "Aria-label for the JSON import file input",
+    "message": "Importer un fichier de sauvegarde JSON"
+  },
+  "labelImportProgress": {
+    "description": "Aria-label for the import progress bar",
+    "message": "Progression de l'importation"
+  },
+  "labelIncreaseFontSize": {
+    "description": "Aria-label for font size increase button",
+    "message": "Augmenter la taille de police"
+  },
+  "labelLicenseKey": {
+    "description": "Aria-label for the license key input",
+    "message": "Cle de licence"
+  },
+  "labelLineHeight": {
+    "description": "Label for line height select",
+    "message": "Hauteur de ligne"
+  },
+  "labelMarkReadOnOpen": {
+    "description": "Label for mark read on open toggle",
+    "message": "Marquer comme lu a l'ouverture"
+  },
+  "labelMarkSelectedRead": {
+    "description": "Aria-label for batch mark read button",
+    "message": "Marquer la selection comme lue"
+  },
+  "labelOnboardingProgress": {
+    "description": "Aria-label for the onboarding progress bar",
+    "message": "Progression de l'introduction"
+  },
+  "labelOnboardingSteps": {
+    "description": "Aria-label for the onboarding dots navigation",
+    "message": "Etapes de l'introduction"
+  },
+  "labelReadingProgress": {
+    "description": "Aria-label for the reader progress bar",
+    "message": "Progression de la lecture"
+  },
+  "labelReengagementDescription": {
+    "description": "Description for re-engagement reminders setting",
+    "message": "Recevez un rappel amical si vous n'avez pas utilise ReadLater depuis quelques jours"
+  },
+  "labelReengagementReminders": {
+    "description": "Label for re-engagement notification toggle",
+    "message": "Rappels de retour"
+  },
+  "labelSaveOffline": {
+    "description": "Label for auto-offline toggle",
+    "message": "Sauvegarder les articles pour la lecture hors ligne"
+  },
+  "labelSearchArticles": {
+    "description": "Aria-label for the search input in sidebar",
+    "message": "Rechercher des articles"
+  },
+  "labelSelectPocketFile": {
+    "description": "Aria-label for the file input on import page",
+    "message": "Selectionner le fichier d'exportation Pocket"
+  },
+  "labelShowNotifications": {
+    "description": "Label for the notification toggle",
+    "message": "Afficher les notifications de sauvegarde"
+  },
+  "labelSortErrors": {
+    "description": "Aria-label for the error sort dropdown in diagnostics",
+    "message": "Trier les erreurs"
+  },
+  "labelStorageUsage": {
+    "description": "Aria-label for the storage usage progress bar",
+    "message": "Utilisation du stockage"
+  },
+  "labelTagName": {
+    "description": "Label for the tag name input in the tag prompt",
+    "message": "Nom du tag"
+  },
+  "labelTheme": {
+    "description": "Label for theme selection in reader settings panel",
+    "message": "Theme"
+  },
+  "labelWidth": {
+    "description": "Label for width selection in reader settings panel",
+    "message": "Largeur"
+  },
+  "lineHeightCompact": {
+    "description": "Compact line height option",
+    "message": "Compact (1.4)"
+  },
+  "lineHeightDouble": {
+    "description": "Double line height option",
+    "message": "Double (2.0)"
+  },
+  "lineHeightNormal": {
+    "description": "Normal line height option",
+    "message": "Normal (1.6)"
+  },
+  "lineHeightRelaxed": {
+    "description": "Relaxed line height option",
+    "message": "Detendu (1.7)"
+  },
+  "lineHeightSpacious": {
+    "description": "Spacious line height option",
+    "message": "Spacieux (1.8)"
+  },
+  "linkOpensNewTab": {
+    "description": "Screen reader text indicating a link opens in a new tab",
+    "message": "(ouvre dans un nouvel onglet)"
+  },
+  "linkPrivacyPolicy": {
+    "description": "Link text for the privacy policy page",
+    "message": "Politique de confidentialite"
+  },
+  "linkSupport": {
+    "description": "Link text for support page",
+    "message": "Support"
+  },
+  "linkTermsOfService": {
+    "description": "Link text for the terms of service page",
+    "message": "Conditions d'utilisation"
+  },
+  "notifArticlesWaitingBody": {
+    "description": "Re-engagement notification body variant 2",
+    "message": "Votre liste de lecture est prete. Reprenez la ou vous vous etiez arrete."
+  },
+  "notifArticlesWaitingTitle": {
+    "description": "Re-engagement notification title variant 2",
+    "message": "Des articles vous attendent"
+  },
+  "notifCatchUpBody": {
+    "description": "Re-engagement notification body variant 3",
+    "message": "Cela fait $DAYS$ jours. Vos articles sauvegardes vous attendent.",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifCatchUpTitle": {
+    "description": "Re-engagement notification title variant 3",
+    "message": "Il est temps de rattraper votre retard."
+  },
+  "notifMilestoneBody": {
+    "description": "Notification body for milestone achievements",
+    "message": "Vous avez sauvegarde $COUNT$ articles. Continuez a lire.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "notifMilestoneTitle": {
+    "description": "Notification title for milestone achievements",
+    "message": "Jalon ReadLater Pro"
+  },
+  "notifMissesYouBody": {
+    "description": "Re-engagement notification body variant 1",
+    "message": "Vous aviez une serie de $COUNT$ jours. Revenez pour la maintenir.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifMissesYouTitle": {
+    "description": "Re-engagement notification title variant 1",
+    "message": "ReadLater Pro vous manque."
+  },
+  "notifWeeklyImpactBody": {
+    "description": "Notification body for weekly impact summary",
+    "message": "Vous avez sauvegarde $COUNT$ articles cette semaine.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "notifWeeklyImpactTitle": {
+    "description": "Notification title for weekly impact reminder",
+    "message": "Votre bilan ReadLater de la semaine"
+  },
+  "paywallFeature": {
+    "description": "Table header in paywall comparison table",
+    "message": "Fonctionnalite"
+  },
+  "paywallFree": {
+    "description": "Table header in paywall comparison table",
+    "message": "Free"
+  },
+  "paywallPro": {
+    "description": "Table header in paywall comparison table",
+    "message": "Pro"
+  },
+  "paywallUnlimited": {
+    "description": "Paywall feature access label for unlimited",
+    "message": "Illimite"
+  },
+  "pcInfoSuffix": {
+    "description": "Info text suffix for privacy controls",
+    "message": "pour tous les details."
+  },
+  "pcInfoText": {
+    "description": "Info text prefix for privacy controls",
+    "message": "Toutes les donnees restent sur votre appareil. Consultez notre"
+  },
+  "pcSubtitle": {
+    "description": "Subtitle for the privacy controls section",
+    "message": "Controlez quelles donnees ReadLater Pro peut collecter. Les modifications prennent effet immediatement."
+  },
+  "placeholderLicenseKey": {
+    "description": "Placeholder for license key input fields",
+    "message": "XXXX-XXXX-XXXX-XXXX"
+  },
+  "placeholderSearch": {
+    "description": "Placeholder for the article search input in sidebar",
+    "message": "Rechercher des articles..."
+  },
+  "placeholderSearchErrors": {
+    "description": "Placeholder for the error search input in diagnostics",
+    "message": "Rechercher des erreurs..."
+  },
+  "placeholderSearchEvents": {
+    "description": "Placeholder for the event search input in diagnostics",
+    "message": "Rechercher des evenements..."
+  },
+  "placeholderTagInput": {
+    "description": "Placeholder for the tag input prompt",
+    "message": "Saisir un tag..."
+  },
+  "popupOpenList": {
+    "message": "Liste de lecture"
+  },
+  "popupSavePage": {
+    "message": "Sauvegarder la page"
+  },
+  "proFeaturesHeader": {
+    "description": "Header for the pro feature preview section",
+    "message": "Fonctionnalites Pro"
+  },
+  "pullToRefresh": {
+    "description": "Text shown during pull to refresh gesture",
+    "message": "Tirez pour actualiser"
+  },
+  "readTimeMin": {
+    "description": "Estimated read time on article card",
+    "message": "$COUNT$ min",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "readerFavoriteAdded": {
+    "description": "Tooltip when article is added to favorites",
+    "message": "Ajoute aux favoris"
+  },
+  "readerFavoriteRemoved": {
+    "description": "Tooltip when article is removed from favorites",
+    "message": "Retire des favoris"
+  },
+  "readerFinished": {
+    "description": "Reader time remaining text when article is done",
+    "message": "Termine"
+  },
+  "readerFontSizeChanged": {
+    "description": "Tooltip when changing font size",
+    "message": "Taille de police : $SIZE$px",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
+  },
+  "readerLessThan1Min": {
+    "description": "Reader time remaining when less than 1 min left",
+    "message": "< 1 min restante"
+  },
+  "readerMinRead": {
+    "description": "Article estimated read time",
+    "message": "$COUNT$ min de lecture",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "readerMinRemaining": {
+    "description": "Reader time remaining display",
+    "message": "$COUNT$ min restantes",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "readerNoContent": {
+    "description": "Message when reader has no article content",
+    "message": "Aucun contenu disponible pour cet article."
+  },
+  "readerSaved": {
+    "description": "Article saved date in reader meta",
+    "message": "Sauvegarde le $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "12/15/2025"
+      }
+    }
+  },
+  "readerSearchCleared": {
+    "description": "Screen reader announcement when search is cleared",
+    "message": "Recherche effacee"
+  },
+  "readerThemeChanged": {
+    "description": "Tooltip when cycling reader themes",
+    "message": "Theme : $THEME$",
+    "placeholders": {
+      "theme": {
+        "content": "$1",
+        "example": "Sepia"
+      }
+    }
+  },
+  "readerViewOriginalPage": {
+    "description": "Link text to view the original article page",
+    "message": "Voir la page originale"
+  },
+  "readerWidthChanged": {
+    "description": "Tooltip when cycling reader width",
+    "message": "Largeur : $LABEL$ ($SIZE$px)",
+    "placeholders": {
+      "label": {
+        "content": "$1",
+        "example": "Medium"
+      },
+      "size": {
+        "content": "$2",
+        "example": "680"
+      }
+    }
+  },
+  "refreshing": {
+    "description": "Text shown during refresh operation",
+    "message": "Actualisation"
+  },
+  "releaseToRefresh": {
+    "description": "Text shown when pull threshold is exceeded",
+    "message": "Relachez pour actualiser"
+  },
+  "shortcutCustomizeLink": {
+    "description": "Link text to customize shortcuts",
+    "message": "Personnaliser les raccourcis dans les parametres Chrome"
+  },
+  "shortcutOpenReadingList": {
+    "description": "Description for the open reading list keyboard shortcut",
+    "message": "Ouvrir la liste de lecture"
+  },
+  "shortcutSaveCurrentPage": {
+    "description": "Description for the save page keyboard shortcut",
+    "message": "Sauvegarder la page actuelle"
+  },
+  "skipToMainContent": {
+    "description": "Accessibility skip link to jump to main content",
+    "message": "Aller au contenu principal"
+  },
+  "sortByContext": {
+    "description": "Sort option in diagnostics error table",
+    "message": "Par contexte"
+  },
+  "sortByType": {
+    "description": "Sort option in diagnostics error table",
+    "message": "Par type"
+  },
+  "sortDomainAZ": {
+    "description": "Sort option: alphabetical by domain ascending (Pro)",
+    "message": "Domaine A-Z"
+  },
+  "sortDomainZA": {
+    "description": "Sort option: alphabetical by domain descending (Pro)",
+    "message": "Domaine Z-A"
+  },
+  "sortLongest": {
+    "description": "Sort option: longest read time first",
+    "message": "Plus longs"
+  },
+  "sortNewest": {
+    "description": "Sort option: newest articles first",
+    "message": "Plus recents"
+  },
+  "sortNewestFirst": {
+    "description": "Sort option in diagnostics error table",
+    "message": "Plus recents d'abord"
+  },
+  "sortOldest": {
+    "description": "Sort option: oldest articles first",
+    "message": "Plus anciens"
+  },
+  "sortOldestFirst": {
+    "description": "Sort option in diagnostics error table",
+    "message": "Plus anciens d'abord"
+  },
+  "sortShortest": {
+    "description": "Sort option: shortest read time first",
+    "message": "Plus courts"
+  },
+  "sortTitleAZ": {
+    "description": "Sort option: alphabetical by title ascending",
+    "message": "Titre A-Z"
+  },
+  "sortTitleZA": {
+    "description": "Sort option: alphabetical by title descending",
+    "message": "Titre Z-A"
+  },
+  "statArticlesRead": {
+    "description": "Stat label on dashboard for articles read",
+    "message": "Articles lus"
+  },
+  "statArticlesSaved": {
+    "description": "Stat label for total articles saved",
+    "message": "Articles sauvegardes"
+  },
+  "statBestStreak": {
+    "description": "Stat label for best streak",
+    "message": "Meilleure serie"
+  },
+  "statCurrentStreak": {
+    "description": "Stat label for current streak",
+    "message": "Serie actuelle"
+  },
+  "statErrorCount": {
+    "description": "Stat label in diagnostics for error count",
+    "message": "Nombre d'erreurs"
+  },
+  "statEventCount": {
+    "description": "Stat label in diagnostics for event count",
+    "message": "Nombre d'evenements"
+  },
+  "statOffline": {
+    "description": "Stat label for offline article count",
+    "message": "Hors ligne"
+  },
+  "statReadingStreak": {
+    "description": "Stat label on dashboard for reading streak",
+    "message": "Serie de lecture"
+  },
+  "statReadingTime": {
+    "description": "Stat label on dashboard for total reading time",
+    "message": "Temps de lecture"
+  },
+  "statRuntimeLogCount": {
+    "description": "Stat label in diagnostics for runtime log count",
+    "message": "Nombre de journaux d'execution"
+  },
+  "statTags": {
+    "description": "Stat label for tag count",
+    "message": "Tags"
+  },
+  "statTotalDaysUsed": {
+    "description": "Stat label for total days used",
+    "message": "Jours d'utilisation total"
+  },
+  "statTotalStorage": {
+    "description": "Stat label in diagnostics for total storage",
+    "message": "Stockage total"
+  },
+  "statUnread": {
+    "description": "Stat label for unread article count",
+    "message": "Non lus"
+  },
+  "statUnreadQueue": {
+    "description": "Stat label on dashboard for unread article count",
+    "message": "File d'attente non lue"
+  },
+  "statusArticleCount": {
+    "description": "Singular article count shown in footer",
+    "message": "$COUNT$ article",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "statusArticleCountPlural": {
+    "description": "Plural article count shown in footer",
+    "message": "$COUNT$ articles",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "statusCalculating": {
+    "description": "Calculating text for storage and health score",
+    "message": "Calcul en cours..."
+  },
+  "statusFoundArticles": {
+    "description": "Import progress text after parsing",
+    "message": "$ARTICLES$ articles et $TAGS$ tags trouves. Importation en cours...",
+    "placeholders": {
+      "articles": {
+        "content": "$1",
+        "example": "150"
+      },
+      "tags": {
+        "content": "$2",
+        "example": "12"
+      }
+    }
+  },
+  "statusImporting": {
+    "description": "Import progress text",
+    "message": "Importation en cours..."
+  },
+  "statusLoading": {
+    "description": "Generic loading state text",
+    "message": "Chargement..."
+  },
+  "statusLoadingArticle": {
+    "description": "Loading text in reader view",
+    "message": "Chargement de l'article..."
+  },
+  "statusLoadingChart": {
+    "description": "Loading text in weekly chart placeholder",
+    "message": "Chargement du graphique..."
+  },
+  "statusLoadingDomains": {
+    "description": "Loading text in top domains placeholder",
+    "message": "Chargement des domaines..."
+  },
+  "statusParsingExport": {
+    "description": "Import progress text during file parsing",
+    "message": "Analyse du fichier d'exportation..."
+  },
+  "swipeDelete": {
+    "description": "Swipe action label on article cards",
+    "message": "Supprimer"
+  },
+  "tabAll": {
+    "description": "Label for the All articles filter tab",
+    "message": "Tous"
+  },
+  "tabFavorites": {
+    "description": "Label for the Favorites filter tab",
+    "message": "Favoris"
+  },
+  "tabUnread": {
+    "description": "Label for the Unread filter tab in sidebar",
+    "message": "Non lus"
+  },
+  "themeDark": {
+    "description": "Dark theme option",
+    "message": "Sombre"
+  },
+  "themeLight": {
+    "description": "Light theme option",
+    "message": "Clair"
+  },
+  "themeSepia": {
+    "description": "Sepia theme option",
+    "message": "Sepia"
+  },
+  "timeAgoDays": {
+    "description": "Time ago abbreviation for days",
+    "message": "$COUNT$j",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "timeAgoHours": {
+    "description": "Time ago abbreviation for hours",
+    "message": "$COUNT$h",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "timeAgoMinutes": {
+    "description": "Time ago abbreviation for minutes",
+    "message": "$COUNT$min",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "timeAgoMonths": {
+    "description": "Time ago abbreviation for months",
+    "message": "$COUNT$mo",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "timeAgoNow": {
+    "description": "Time ago label for just now",
+    "message": "maintenant"
+  },
+  "titleDashboard": {
+    "description": "Page title for the reading statistics dashboard",
+    "message": "Statistiques de lecture - ReadLater Pro"
+  },
+  "titleDiagnostics": {
+    "description": "Page title for the diagnostics dashboard",
+    "message": "ReadLater Pro - Diagnostics"
+  },
+  "titleImport": {
+    "description": "Page title for the Pocket import page",
+    "message": "Importer depuis Pocket - ReadLater Pro"
+  },
+  "titlePopup": {
+    "message": "ReadLater Pro"
+  },
+  "titleReader": {
+    "description": "Page title for the reader view",
+    "message": "Lecteur - ReadLater Pro"
+  },
+  "titleReadingList": {
+    "description": "Page title for the sidebar reading list",
+    "message": "Liste de lecture"
+  },
+  "titleSettings": {
+    "description": "Page title for the settings/options page",
+    "message": "Parametres de ReadLater Pro"
+  },
+  "titleUpgrade": {
+    "description": "Page title for the upgrade page",
+    "message": "Passer a Pro - ReadLater Pro"
+  },
+  "titleWelcome": {
+    "description": "Page title for the onboarding page",
+    "message": "Bienvenue dans ReadLater Pro"
+  },
+  "toastAllDataCleared": {
+    "description": "Toast message after clearing all data",
+    "message": "Toutes les donnees effacees"
+  },
+  "toastArticleDeleted": {
+    "description": "Toast message when an article is deleted",
+    "message": "Article supprime"
+  },
+  "toastArticlesDeleted": {
+    "description": "Toast after batch deleting articles",
+    "message": "$COUNT$ article(s) supprime(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "toastArticlesMarkedRead": {
+    "description": "Toast after batch marking articles as read",
+    "message": "$COUNT$ article(s) marque(s) comme lu(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "toastCleanupFailed": {
+    "description": "Toast when cleanup fails",
+    "message": "Echec du nettoyage : $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Database error"
+      }
+    }
+  },
+  "toastCleanupResult": {
+    "description": "Toast after cleaning up old articles",
+    "message": "$COUNT$ ancien(s) article(s) lu(s) supprime(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "toastClearDataFailed": {
+    "description": "Toast when clearing all data fails",
+    "message": "Echec de la suppression des donnees : $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Unknown error"
+      }
+    }
+  },
+  "toastDebugReportCopied": {
+    "description": "Toast after debug report is copied",
+    "message": "Rapport de debogage copie dans le presse-papiers"
+  },
+  "toastDebugReportDownloaded": {
+    "description": "Toast after debug report is downloaded",
+    "message": "Rapport de debogage telecharge"
+  },
+  "toastErrorLogCleared": {
+    "description": "Toast after error log is cleared",
+    "message": "Journal des erreurs efface"
+  },
+  "toastEventLogCleared": {
+    "description": "Toast after event log is cleared",
+    "message": "Journal des evenements efface"
+  },
+  "toastExportFailed": {
+    "description": "Toast when export fails",
+    "message": "Echec de l'exportation : $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "toastExportedArticles": {
+    "description": "Toast after exporting articles",
+    "message": "$COUNT$ articles exportes",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "toastFailedToSaveSettings": {
+    "description": "Toast message when settings save fails",
+    "message": "Echec de l'enregistrement des parametres"
+  },
+  "toastImportedArticles": {
+    "description": "Toast after importing articles",
+    "message": "$COUNT$ articles importes",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "25"
+      }
+    }
+  },
+  "toastImportedArticlesFailed": {
+    "description": "Toast after importing with some failures",
+    "message": "$IMPORTED$ articles importes ($FAILED$ echoue(s))",
+    "placeholders": {
+      "failed": {
+        "content": "$2",
+        "example": "5"
+      },
+      "imported": {
+        "content": "$1",
+        "example": "20"
+      }
+    }
+  },
+  "toastInvalidBackupFormat": {
+    "description": "Toast when imported backup has wrong structure",
+    "message": "Format de sauvegarde invalide : tableau d'articles manquant"
+  },
+  "toastInvalidJson": {
+    "description": "Toast when imported JSON file is invalid",
+    "message": "Fichier JSON invalide"
+  },
+  "toastNoArticlesInBackup": {
+    "description": "Toast when imported backup has no articles",
+    "message": "Aucun article trouve dans la sauvegarde"
+  },
+  "toastRemindersDisabled": {
+    "description": "Toast message when re-engagement reminders are disabled",
+    "message": "Rappels desactives"
+  },
+  "toastRemindersEnabled": {
+    "description": "Toast message when re-engagement reminders are enabled",
+    "message": "Rappels actives"
+  },
+  "toastSettingsResetDefaults": {
+    "description": "Screen reader announcement after data clear",
+    "message": "Parametres reinitialises aux valeurs par defaut"
+  },
+  "toastSettingsSaved": {
+    "description": "Toast message after settings are saved",
+    "message": "Parametres enregistres"
+  },
+  "toastSettingsSavedSuccess": {
+    "description": "Screen reader announcement after settings save",
+    "message": "Parametres enregistres avec succes"
+  },
+  "toastTagAdded": {
+    "description": "Toast message when a tag is added",
+    "message": "Tag \"$NAME$\" ajoute",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "technology"
+      }
+    }
+  },
+  "toastUrlCopied": {
+    "description": "Toast message when URL is copied to clipboard",
+    "message": "URL copiee"
+  },
+  "tooltipAlreadySaved": {
+    "description": "Action title for tab badge when page is already saved",
+    "message": "Deja sauvegarde dans ReadLater"
+  },
+  "tooltipBackToList": {
+    "description": "Tooltip for the back button in reader view",
+    "message": "Retour a la liste"
+  },
+  "tooltipBackToReadingList": {
+    "description": "Tooltip for back link on dashboard page",
+    "message": "Retour a la liste de lecture"
+  },
+  "tooltipClose": {
+    "description": "Tooltip for close buttons",
+    "message": "Fermer"
+  },
+  "tooltipCloseTOC": {
+    "description": "Aria-label for the close TOC button",
+    "message": "Fermer la table des matieres"
+  },
+  "tooltipExitSelection": {
+    "description": "Tooltip for the batch bar close button",
+    "message": "Quitter le mode selection"
+  },
+  "tooltipPrintArticle": {
+    "description": "Tooltip for the print button in reader view",
+    "message": "Imprimer l'article"
+  },
+  "tooltipReadingSettings": {
+    "description": "Tooltip for the reading settings panel toggle",
+    "message": "Parametres de lecture"
+  },
+  "tooltipSaveToReadLater": {
+    "description": "Action title for tab badge when page is not saved",
+    "message": "Sauvegarder dans ReadLater"
+  },
+  "tooltipSettings": {
+    "description": "Tooltip and aria-label for the settings button",
+    "message": "Parametres"
+  },
+  "tooltipSortArticles": {
+    "description": "Tooltip and aria-label for the sort dropdown",
+    "message": "Trier les articles"
+  },
+  "tooltipTableOfContents": {
+    "description": "Tooltip for the TOC toggle button",
+    "message": "Table des matieres"
+  },
+  "tooltipToggleFavorite": {
+    "description": "Tooltip for the favorite toggle button",
+    "message": "Basculer le favori"
+  },
+  "tooltipToggleFavoriteShortcut": {
+    "description": "Tooltip for favorite button showing keyboard shortcut",
+    "message": "Basculer le favori (F)"
+  },
+  "tooltipViewOriginal": {
+    "description": "Tooltip for the view original page button",
+    "message": "Voir l'original"
+  },
+  "tooltipViewOriginalNewTab": {
+    "description": "Aria-label for the view original button",
+    "message": "Voir la page originale (ouvre dans un nouvel onglet)"
+  },
+  "trialBannerText": {
+    "description": "Trial countdown banner text",
+    "message": "Apercu Pro : $DAYS$ jours restants",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "upgradeAlreadyHaveLicense": {
+    "description": "Toggle link to show license key form in paywall",
+    "message": "Vous avez deja une cle de licence ?"
+  },
+  "upgradeLicenseActivated": {
+    "description": "Success message in paywall after license activation",
+    "message": "Licence activee. Rechargement en cours..."
+  },
+  "upgradeLimitReached": {
+    "description": "Limit banner message on upgrade page",
+    "message": "Vous avez atteint la limite gratuite pour $FEATURE$. Passez a Pro pour un acces illimite.",
+    "placeholders": {
+      "feature": {
+        "content": "$1",
+        "example": "Full-Text Search"
+      }
+    }
+  },
+  "upgradePaywallSubtitle": {
+    "description": "Paywall modal subtitle",
+    "message": "Passez a ReadLater Pro pour l'experience de lecture complete."
+  },
+  "upgradePaywallTitle": {
+    "description": "Paywall modal title",
+    "message": "Debloquer $FEATURE$",
+    "placeholders": {
+      "feature": {
+        "content": "$1",
+        "example": "Full-Text Search"
+      }
+    }
+  },
+  "upgradeSuccessAnnouncement": {
+    "description": "Screen reader announcement for upgrade success",
+    "message": "Mise a niveau reussie. Bienvenue dans Pro."
+  },
+  "upgradeSuccessText": {
+    "description": "Text on upgrade success overlay",
+    "message": "Votre compte a ete mis a niveau. Toutes les fonctionnalites Pro sont desormais debloquees. Profitez de l'experience de lecture complete."
+  },
+  "upgradeSuccessTitle": {
+    "description": "Title on upgrade success overlay",
+    "message": "Bienvenue dans Pro"
+  },
+  "upgradeTrustCancel": {
+    "description": "Trust signal on upgrade page",
+    "message": "Annulable a tout moment"
+  },
+  "upgradeTrustSecure": {
+    "description": "Trust signal on upgrade page",
+    "message": "Paiement securise"
+  },
+  "whatsNewClose": {
+    "description": "Close button aria label for what's new overlay",
+    "message": "Fermer"
+  },
+  "whatsNewTitle": {
+    "description": "Title for the update notification overlay",
+    "message": "Nouveautes"
+  },
+  "widthMedium": {
+    "description": "Medium content width option",
+    "message": "Moyen"
+  },
+  "widthMediumPx": {
+    "description": "Medium width option with pixel value",
+    "message": "Moyen (680px)"
+  },
+  "widthNarrow": {
+    "description": "Narrow content width option",
+    "message": "Etroit"
+  },
+  "widthNarrowPx": {
+    "description": "Narrow width option with pixel value",
+    "message": "Etroit (560px)"
+  },
+  "widthWide": {
+    "description": "Wide content width option",
+    "message": "Large"
+  },
+  "widthWidePx": {
+    "description": "Wide width option with pixel value",
+    "message": "Large (800px)"
+  }
+}

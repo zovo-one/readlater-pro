@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "Simpan ke ReadLater"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing",
+      "message": "Simpan artikel ke daftar baca. Tampilan baca bersih, baca offline. Atur dengan tag. Impor dari Pocket."
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - Simpan & Baca Offline"
+   }
+}

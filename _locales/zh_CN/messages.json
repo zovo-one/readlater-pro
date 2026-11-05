@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Toolbar tooltip",
+      "message": "保存到 ReadLater"
+   },
+   "extDescription": {
+      "description": "CWS description",
+      "message": "保存文章到阅读列表，使用阅读视图离线阅读。标签分类整理，支持从 Pocket 导入。"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "ReadLater Pro - 保存文章离线阅读"
+   }
+}

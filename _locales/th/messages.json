@@ -1,0 +1,14 @@
+{
+   "extActionTitle": {
+      "description": "Tooltip for the browser action icon in the toolbar",
+      "message": "บันทึกลง ReadLater"
+   },
+   "extDescription": {
+      "description": "Extension description for Chrome Web Store listing",
+      "message": "บันทึกบทความลงรายการอ่าน โหมดอ่านสะอาดตา อ่านออฟไลน์ จัดระเบียบด้วยแท็ก นำเข้าจาก Pocket"
+   },
+   "extName": {
+      "description": "Extension name shown in Chrome Web Store and extensions page",
+      "message": "ReadLater Pro - บันทึกและอ่านออฟไลน์"
+   }
+}

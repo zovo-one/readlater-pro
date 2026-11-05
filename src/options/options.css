@@ -1,0 +1,985 @@
+/* ReadLater Pro - Options Page Styles */
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-2xl);
+    min-height: 100vh;
+}
+
+.options-container {
+    max-width: 560px;
+    width: 100%;
+}
+
+/* ----------------------------------------------------------------
+ *  Header
+ * ---------------------------------------------------------------- */
+.options-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.options-title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.options-title-accent {
+    background: linear-gradient(135deg, #7C3AED 0%, #8B5CF6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+}
+
+[data-theme="dark"] .options-title-accent {
+    background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.options-version {
+    font-size: var(--text-xs);
+    color: var(--color-text-tertiary);
+    margin-left: auto;
+}
+
+/* ----------------------------------------------------------------
+ *  Sections
+ * ---------------------------------------------------------------- */
+.options-section {
+    margin-bottom: var(--space-2xl);
+}
+
+.options-section-title {
+    font-size: var(--text-md);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    color: var(--color-text);
+}
+
+.options-row {
+    margin-bottom: var(--space-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+}
+
+.options-label {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.options-select {
+    padding: var(--space-xs) var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: var(--text-sm);
+    font-family: var(--font-sans);
+    cursor: pointer;
+    transition: border-color var(--transition-fast);
+}
+
+.options-select:hover {
+    border-color: var(--color-primary);
+}
+
+.options-select:focus:not(:focus-visible) {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+
+/* ----------------------------------------------------------------
+ *  Stats
+ * ---------------------------------------------------------------- */
+.options-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+}
+
+.options-stat {
+    text-align: center;
+    padding: var(--space-md);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-md);
+}
+
+.options-stat-value {
+    display: block;
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--color-primary-text);
+}
+
+.options-stat-label {
+    display: block;
+    font-size: var(--text-xs);
+    color: var(--color-text-tertiary);
+    margin-top: var(--space-xs);
+}
+
+/* ----------------------------------------------------------------
+ *  Storage Usage
+ * ---------------------------------------------------------------- */
+.storage-info {
+    margin-bottom: var(--space-sm);
+}
+
+.storage-bar-container {
+    width: 100%;
+    height: 8px;
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.storage-bar {
+    height: 100%;
+    width: 0;
+    border-radius: var(--radius-full);
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.storage-bar-green {
+    background: #4caf50;
+}
+
+.storage-bar-yellow {
+    background: #ff9800;
+}
+
+.storage-bar-red {
+    background: #f44336;
+}
+
+.storage-text {
+    display: block;
+    font-size: var(--text-xs);
+    color: var(--color-text-tertiary);
+    margin-top: var(--space-xs);
+}
+
+/* ----------------------------------------------------------------
+ *  Text & Links
+ * ---------------------------------------------------------------- */
+.options-text {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-xs);
+}
+
+.options-text-muted {
+    color: var(--color-text-tertiary);
+}
+
+.options-link {
+    color: var(--color-primary-text);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+    font-size: var(--text-sm);
+    transition: color var(--transition-fast);
+}
+
+.options-link:hover {
+    color: var(--color-primary-text-hover);
+    text-decoration-thickness: 2px;
+}
+
+.options-about-links {
+    margin-top: var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.options-link-separator {
+    color: var(--color-border);
+    font-size: var(--text-sm);
+}
+
+/* ----------------------------------------------------------------
+ *  iOS-style Toggle Switch
+ * ---------------------------------------------------------------- */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-border);
+    border-radius: var(--radius-full);
+    transition: background var(--transition-fast);
+}
+
+.toggle-slider::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 3px;
+    bottom: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: transform var(--transition-fast);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-switch input:checked + .toggle-slider {
+    background: var(--color-primary);
+}
+
+.toggle-switch input:checked + .toggle-slider::before {
+    transform: translateX(18px);
+}
+
+.toggle-switch input:focus-visible + .toggle-slider {
+    box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+
+/* ----------------------------------------------------------------
+ *  Keyboard Shortcut Styles
+ * ---------------------------------------------------------------- */
+.shortcut-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-sm) 0;
+    margin-bottom: var(--space-xs);
+}
+
+.shortcut-desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+.shortcut-keys {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: var(--text-xs);
+    color: var(--color-text-tertiary);
+}
+
+kbd {
+    display: inline-block;
+    padding: 2px 6px;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--color-text-secondary);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 1px 0 var(--color-border);
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.shortcut-link-row {
+    margin-top: var(--space-sm);
+}
+
+/* ----------------------------------------------------------------
+ *  Button Hover States
+ * ---------------------------------------------------------------- */
+.btn {
+    transition: all var(--transition-fast);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* ----------------------------------------------------------------
+ *  Secondary Button
+ * ---------------------------------------------------------------- */
+.btn-secondary {
+    background: transparent;
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary-text);
+}
+
+/* ----------------------------------------------------------------
+ *  Danger Zone
+ * ---------------------------------------------------------------- */
+.danger-zone {
+    border-left: 3px solid var(--color-error);
+    background: rgba(244, 67, 54, 0.04);
+    padding: var(--space-lg);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.danger-zone-title {
+    color: var(--color-error-text);
+}
+
+/* Accent as text: --color-primary-text is the same violet in light and a lighter
+   one in dark (#7C3AED is only 3.1:1 on the dark background). :root lifts these
+   over faq-section.css, which loads later. */
+:root .faq-expand-all,
+:root .faq-footer-link {
+    color: var(--color-primary-text);
+}
+
+:root .faq-footer-link:hover {
+    color: var(--color-primary-text-hover);
+}
+
+.btn-danger {
+    background: transparent;
+    color: var(--color-error-text);
+    border: 1px solid var(--color-error);
+}
+
+.btn-danger:hover {
+    background: var(--color-error-fill);
+    color: #fff;
+    border-color: var(--color-error-fill);
+}
+
+/* ----------------------------------------------------------------
+ *  Toast Notifications
+ * ---------------------------------------------------------------- */
+.toast {
+    position: fixed;
+    bottom: var(--space-2xl);
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    padding: var(--space-sm) var(--space-xl);
+    border-radius: var(--radius-md);
+    background: var(--color-text);
+    color: var(--color-text-inverse);
+    font-size: var(--text-sm);
+    font-family: var(--font-sans);
+    box-shadow: var(--shadow-lg);
+    z-index: 10000;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 400px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.toast.visible {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.toast-success {
+    background: var(--color-success);
+}
+
+.toast-error {
+    background: var(--color-error);
+}
+
+/* Slide-in keyframe animation as fallback / enhancement */
+@keyframes toast-slide-in {
+    from {
+        transform: translateX(-50%) translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes toast-slide-out {
+    from {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-50%) translateY(100px);
+        opacity: 0;
+    }
+}
+
+/* ----------------------------------------------------------------
+ *  Usage Stats (Streak) Grid
+ * ---------------------------------------------------------------- */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 16px 8px;
+    background: var(--color-bg-secondary, #f8fafc);
+    border-radius: 8px;
+    border: 1px solid var(--color-border, #e2e8f0);
+}
+
+.stat-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary-text, #7C3AED);
+}
+
+.stat-label {
+    display: block;
+    font-size: 11px;
+    color: var(--color-text-tertiary, #94a3b8);
+    margin-top: 4px;
+}
+
+/* ----------------------------------------------------------------
+ *  Notification Setting Description
+ * ---------------------------------------------------------------- */
+.setting-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+}
+
+.setting-description {
+    font-size: var(--text-xs);
+    color: var(--color-text-tertiary);
+    line-height: var(--line-height-relaxed, 1.6);
+}
+
+/* ----------------------------------------------------------------
+ *  Hidden file input (already hidden via HTML attr, belt-and-suspenders)
+ * ---------------------------------------------------------------- */
+#import-json-file {
+    display: none;
+}
+
+/* ----------------------------------------------------------------
+ *  Focus-Visible Styles (Options-specific)
+ * ---------------------------------------------------------------- */
+
+.options-select:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: -1px;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+.toggle-switch input:focus-visible + .toggle-slider {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+.options-link:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.btn-danger:focus-visible {
+    outline: 2px solid var(--color-error, #F44336);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.25);
+}
+
+.feedback-submit:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.25);
+}
+
+.feedback-input:focus-visible,
+.feedback-textarea:focus-visible,
+.feedback-select:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: -1px;
+    border-color: var(--color-primary);
+}
+
+.feedback-diagnostics-toggle:focus-visible,
+.feedback-diag-btn:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+}
+
+.faq-expand-all:focus-visible,
+.faq-footer-link:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+}
+
+.faq-search-input:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: -1px;
+    border-color: var(--color-primary);
+}
+
+.pc-toggle input:focus-visible + .pc-toggle__slider {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+}
+
+.dm-btn:focus-visible {
+    outline: 2px solid var(--color-primary, #7C3AED);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+}
+
+/* ----------------------------------------------------------------
+ *  Zovo Footer
+ * ---------------------------------------------------------------- */
+.options-footer {
+    text-align: center;
+    padding: var(--space-2xl) 0 var(--space-lg);
+    margin-top: var(--space-xl);
+    border-top: 1px solid var(--color-border-light);
+}
+
+.options-footer-text {
+    font-size: var(--text-xs);
+    color: var(--color-text-tertiary);
+    font-weight: 400;
+}
+
+.options-footer-link {
+    font-size: var(--text-xs);
+    color: var(--color-primary-text);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 3px;
+    transition: opacity 0.15s ease;
+}
+
+.options-footer-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.options-footer-link:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* ----------------------------------------------------------------
+ *  Reduced Motion
+ * ---------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+ *  Legal Links
+ * ---------------------------------------------------------------- */
+.options-legal-links {
+    margin-top: var(--space-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+/* ----------------------------------------------------------------
+ *  Data Management Styles
+ * ---------------------------------------------------------------- */
+.dm-section { padding: 16px 0; }
+.dm-title { font-size: 18px; font-weight: 600; color: var(--color-text, #111827); margin: 0 0 4px 0; }
+.dm-subtitle { font-size: 13px; color: var(--color-text-tertiary, #6B7280); margin: 0 0 16px 0; }
+.dm-stats { display: flex; gap: 16px; margin-bottom: 16px; }
+.dm-stat { background: var(--color-bg-secondary, #F9FAFB); border: 1px solid var(--color-border, #E5E7EB); border-radius: 8px; padding: 12px 16px; flex: 1; text-align: center; }
+.dm-stat__value { display: block; font-size: 20px; font-weight: 700; color: var(--color-text, #111827); }
+.dm-stat__label { display: block; font-size: 11px; color: var(--color-text-tertiary, #6B7280); margin-top: 2px; }
+.dm-actions { display: flex; gap: 10px; margin-bottom: 16px; }
+.dm-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; border: none; transition: background 0.15s ease; }
+.dm-btn--export { background: var(--color-primary, #6D28D9); color: #FFFFFF; }
+.dm-btn--export:hover { background: var(--color-primary-hover, #5B21B6); }
+.dm-btn--delete { background: var(--color-surface); color: var(--color-error-text); border: 1px solid var(--color-border); }
+.dm-btn--delete:hover { background: var(--color-bg-secondary); border-color: var(--color-error-text); }
+.dm-btn--danger { background: var(--color-error-fill); color: #fff; flex: 1; }
+.dm-btn--danger:hover { background: var(--color-error-text); }
+.dm-btn--cancel { background: var(--color-bg-secondary); color: var(--color-text); border: 1px solid var(--color-border); flex: 1; }
+.dm-btn--cancel:hover { background: var(--color-bg-tertiary); }
+.dm-confirm__card { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-left: 3px solid var(--color-error); border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+.dm-confirm__title { font-size: 14px; font-weight: 600; color: var(--color-text); margin: 0 0 6px 0; }
+.dm-confirm__text { font-size: 12px; color: var(--color-text); margin: 0 0 12px 0; line-height: 1.5; }
+.dm-confirm__actions { display: flex; gap: 8px; }
+.dm-note { font-size: 12px; color: var(--color-text-tertiary, #9CA3AF); margin: 0; line-height: 1.5; }
+
+/* ----------------------------------------------------------------
+ *  Privacy Controls Styles
+ * ---------------------------------------------------------------- */
+.pc-section { padding: 16px 0; }
+.pc-title { font-size: 18px; font-weight: 600; color: var(--color-text, #111827); margin: 0 0 4px 0; }
+.pc-subtitle { font-size: 13px; color: var(--color-text-tertiary, #6B7280); margin: 0 0 16px 0; }
+.pc-controls { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+
+.pc-control {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 16px; border: 1px solid var(--color-border, #E5E7EB); border-radius: 8px; background: var(--color-surface, #FFFFFF);
+}
+.pc-control__info { flex: 1; min-width: 0; }
+.pc-control__label { display: block; font-size: 13px; font-weight: 600; color: var(--color-text, #111827); margin-bottom: 2px; transition: color 0.3s ease; }
+.pc-control__desc { display: block; font-size: 11px; color: var(--color-text-tertiary, #6B7280); line-height: 1.4; }
+.pc-control__badge { flex-shrink: 0; font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: 10px; background: var(--color-bg-tertiary); color: var(--color-text); }
+
+/* Toggle Switch for Privacy Controls */
+.pc-toggle { position: relative; flex-shrink: 0; width: 44px; height: 24px; display: inline-block; }
+.pc-toggle input { opacity: 0; width: 0; height: 0; position: absolute; }
+.pc-toggle__slider {
+    position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--color-bg-tertiary); border-radius: 24px; transition: background 0.2s ease;
+}
+.pc-toggle__slider::before {
+    content: ''; position: absolute; height: 18px; width: 18px; left: 3px; bottom: 3px;
+    background: #FFFFFF; border-radius: 50%; transition: transform 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+.pc-toggle input:checked + .pc-toggle__slider { background: var(--color-primary, #6D28D9); }
+.pc-toggle input:checked + .pc-toggle__slider::before { transform: translateX(20px); }
+.pc-toggle input:focus-visible + .pc-toggle__slider { box-shadow: 0 0 0 2px rgba(124,58,237,0.2); }
+.pc-toggle--locked { opacity: 0.6; }
+.pc-toggle--locked .pc-toggle__slider { cursor: not-allowed; background: #9CA3AF; }
+.pc-toggle--locked input:checked + .pc-toggle__slider { background: #9CA3AF; }
+
+.pc-info {
+    display: flex; align-items: flex-start; gap: 8px;
+    padding: 10px 14px; background: var(--color-bg-secondary); border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-success); border-radius: 8px;
+    font-size: 12px; color: var(--color-text); line-height: 1.5;
+}
+.pc-info svg { flex-shrink: 0; margin-top: 2px; color: var(--color-success); }
+.pc-info a { color: var(--color-primary-text, #7C3AED); text-decoration: underline; }
+.pc-info a:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ----------------------------------------------------------------
+ *  Upgrade rail
+ *  MONETIZE-STANDARD section 5. An offer that sits still. It does not
+ *  gate anything, it does not dismiss, it does not come back, and it
+ *  carries no rating, count, countdown or was-price. Every colour is a
+ *  token, so contrast holds in light and dark without a second palette.
+ * ---------------------------------------------------------------- */
+.upgrade-rail {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-primary);
+    border-radius: var(--radius-md, 8px);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+}
+
+.upgrade-rail-title {
+    font-size: var(--text-md);
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 4px 0;
+}
+
+.upgrade-rail-lede {
+    font-size: var(--text-sm);
+    color: var(--color-text);
+    margin: 0 0 var(--space-md) 0;
+}
+
+.upgrade-rail-stack {
+    margin: 0 0 var(--space-md) 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.upgrade-rail-stack li {
+    font-size: var(--text-sm);
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+.upgrade-rail-free,
+.upgrade-rail-guarantee {
+    font-size: var(--text-xs);
+    color: var(--color-text-tertiary);
+    line-height: 1.5;
+    margin: 0 0 var(--space-sm) 0;
+}
+
+.upgrade-rail-guarantee {
+    color: var(--color-text);
+    font-weight: 500;
+    margin-bottom: var(--space-md);
+}
+
+.upgrade-rail-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 16px;
+    border-radius: var(--radius-sm, 6px);
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background var(--transition-fast, 150ms ease);
+}
+
+.upgrade-rail-cta:hover {
+    background: var(--color-primary-hover);
+}
+
+.upgrade-rail-cta:focus-visible,
+.upgrade-rail-manage:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.upgrade-rail-manage {
+    display: inline-block;
+    margin-left: var(--space-md);
+    font-size: var(--text-xs);
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------------------
+ *  Data management and privacy control states
+ * ---------------------------------------------------------------- */
+.dm-note--good { color: var(--color-text); font-weight: 500; }
+.dm-note--bad { color: var(--color-error-text); font-weight: 500; }
+.pc-control__label--saved { color: var(--color-text); }
+
+/* No dark block here any more. The red used to be a literal, which needed one
+   override per theme state and still missed the system-preference path. It is
+   now --color-error-text and --color-error-fill, both of which already resolve
+   per theme in design-tokens.css, so there is nothing left to re-light. */
+
+/* ----------------------------------------------------------------
+ *  Data: import and export cards (1.3.0)
+ * ---------------------------------------------------------------- */
+.data-card {
+    padding: var(--space-lg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    margin-bottom: var(--space-md);
+}
+
+.data-card-title {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 var(--space-xs);
+}
+
+.data-card-text {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0 0 var(--space-md);
+}
+
+.export-formats {
+    border: 0;
+    margin: 0 0 var(--space-md);
+    padding: 0;
+    display: grid;
+    gap: var(--space-xs);
+    min-width: 0;
+}
+
+.export-legend {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0;
+    margin-bottom: var(--space-xs);
+}
+
+.export-option {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.export-option:hover {
+    border-color: var(--color-primary);
+}
+
+.export-option:has(input:checked) {
+    border-color: var(--color-primary);
+    background: var(--color-primary-light);
+}
+
+.export-option input,
+.export-check input {
+    -webkit-appearance: auto;
+    appearance: auto;
+    width: 16px;
+    height: 16px;
+}
+
+.export-option input {
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: var(--color-primary);
+}
+
+.export-option input:focus-visible,
+.export-check input:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.export-option-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.export-option-name {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.export-option-desc {
+    font-size: var(--text-xs);
+    color: var(--color-text-secondary);
+    line-height: 1.45;
+}
+
+.export-option:has(input:checked) .export-option-name {
+    color: var(--color-primary-text);
+}
+
+.export-sub[hidden],
+.export-check[hidden] {
+    display: none;
+}
+
+.export-check {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-md);
+    cursor: pointer;
+}
+
+.export-check input {
+    accent-color: var(--color-primary);
+}
+
+.export-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.export-status {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    margin: 0;
+    overflow-wrap: anywhere;
+    min-width: 0;
+    flex: 1 1 200px;
+}
+
+.export-status-ok {
+    color: var(--color-success-fill);
+}
+
+.export-status-error {
+    color: var(--color-error-text);
+}
+
+@media (prefers-color-scheme: dark) {
+    .export-status-ok {
+        color: var(--color-success);
+    }
+
+    .export-option:has(input:checked) {
+        background: color-mix(in srgb, var(--color-primary) 16%, var(--color-surface));
+    }
+}
+
+@media (max-width: 420px) {
+    .data-card {
+        padding: var(--space-md);
+    }
+
+    .options-row {
+        flex-wrap: wrap;
+    }
+}
+
+/* 1.3.0: Pro tag on the Markdown export formats */
+.export-pro { display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 5px; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; vertical-align: 1px; background: var(--color-primary-light, #EDE9FE); color: var(--color-primary-text, #7C3AED); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]):not([data-theme="sepia"]) .export-pro { background: rgba(124, 58, 237, .22); color: #C4B5FD; } }
